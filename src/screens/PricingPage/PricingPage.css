@@ -1,0 +1,69 @@
+/* src/screens/PricingPage/PricingPage.css */
+
+/* --- Main Pricing Card Styles --- */
+.pricing-card {
+  padding: 2rem;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Specific background colors for each card */
+.pricing-card.one-to-one {
+  background-color: var(--teal-green);
+}
+
+.pricing-card.group-classes {
+  background-color: var(--primary-blue);
+}
+
+.pricing-card h3 {
+  color: white;
+  font-weight: 700;
+}
+
+.pricing-card .price-amount {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.pricing-card .price-per-class {
+  opacity: 0.8;
+}
+
+.pricing-card .btn {
+  margin-top: auto; /* Pushes the button to the bottom of the card */
+  background-color: white;
+  color: var(--dark-navy);
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.pricing-card .btn:hover {
+  transform: scale(1.05);
+}
+
+/* --- Pricing Feature List on the left --- */
+.pricing-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-feature-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.pricing-feature-item .feature-text h5 {
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}

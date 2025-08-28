@@ -1,0 +1,84 @@
+/* src/screens/SubjectPage/SubjectPage.css */
+
+/* --- Sidebar Card --- */
+.sidebar-card {
+  background-color: #F7F6EE;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid #e9ecef;
+}
+
+.sidebar-card h4 {
+  font-weight: 700;
+}
+
+.sidebar-card ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+/* --- Course Content Section --- */
+.course-content-section {
+  background-color: #F7F6EE;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.topic-block {
+  margin-bottom: 2rem;
+}
+
+.topic-block h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.topic-block ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+/* --- Designed for Results Banner --- */
+/* src/screens/SubjectPage/SubjectPage.css */
+
+/* ... (keep other CSS like .sidebar-card, .course-content-section) ... */
+
+
+/* --- Designed for Results Banner --- */
+.results-banner {
+  background-color: var(--primary-blue);
+  border-radius: 30px;
+  padding: 3rem;
+  color: white;
+  overflow: hidden; /* This is important for containing the rounded corners */
+  position: relative; /* This is the anchor for the absolute positioned image */
+}
+
+/* Make sure headings inside are white */
+.results-banner h2 {
+  color: white;
+}
+
+/* Styling for the "Call or WhatsApp" text link */
+.call-link {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+}
+
+.call-link:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+/* Styling for the phone number text below the link */
+.phone-number {
+  color: white;
+  opacity: 0.8;
+  font-size: 0.9rem;
+  margin-top: -0.5rem; /* Pull it a bit closer to the link above */
+}

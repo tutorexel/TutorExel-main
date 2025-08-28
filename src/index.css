@@ -1,0 +1,876 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito-Sans:wght@400;500;600;700;800&display=swap');
+
+/* Define brand colors as CSS variables */
+:root {
+  --primary-blue: #22A3D2;
+  --primary-orange: #FF9E10;
+  --light-gray: #F3F5F5;
+  --dark-navy: #0F2A47;
+  --almost-black: #070709;
+  --teal-green: #05AC8F;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Custom Bootstrap Button Variants */
+.btn-primary-orange {
+  background-color: var(--primary-orange);
+  border-color: var(--primary-orange);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: transform 0.2s;
+}
+.btn-primary-orange:hover {
+  background-color: #e68e0e;
+  border-color: #e68e0e;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-secondary-blue {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: transform 0.2s;
+}
+.btn-secondary-blue:hover {
+  background-color: #1e92bb;
+  border-color: #1e92bb;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Custom Text Colors */
+.text-dark-navy { color: var(--dark-navy) !important; }
+.text-primary-orange { color: var(--primary-orange) !important; }
+.text-primary-blue { color: var(--primary-blue) !important; }
+
+/* Custom Background Colors */
+.bg-light-gray { background-color: var(--light-gray); }
+.bg-almost-black { background-color: var(--almost-black); }
+.bg-primary-orange-gradient { background: linear-gradient(to right, #FF9E10, #ffb74e); }
+
+/* General Styling */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-navy);
+  font-weight: 700;
+}
+
+/* Find and replace or add this class */
+.hero-section-bg {
+  /* This gradient goes from light blue, to white, to light orange */
+  background: linear-gradient(to right, #CDF2FF, #FFE8C7);
+}
+
+/* Add this new class for the styled feature pointers */
+.feature-item {
+  background-color: #F3F5F5; /* The light gray background */
+  padding: 0.6rem 1.25rem;
+  border-radius: 50px;       /* This creates the pill shape */
+  color: var(--dark-navy);
+  font-weight: 500;
+  display: inline-flex;      /* Ensures the background fits the content */
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Add this new class for the section with the wavy orange background */
+.why-trust-section {
+  background-color: var(--primary-orange);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Add this class for the testimonial card's speech bubble tail */
+.testimonial-card {
+  position: relative; /* Required for the pseudo-element positioning */
+  background-color: var(--primary-blue);
+  border: none;
+  padding: 2rem;
+  border-radius: 20px;
+  color: white;
+}
+
+/* The ::after pseudo-element creates the triangle/tail */
+.testimonial-card::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* Position it at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 20px 20px 0 20px;
+  border-style: solid;
+  border-color: var(--primary-blue) transparent transparent transparent;
+}
+
+/* Add this new class for the white CTA button */
+.btn-white-custom {
+  background-color: white;
+  color: var(--primary-orange);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  border: 2px solid white; /* Optional: adds thickness */
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-white-custom:hover {
+  background-color: #fff8f0; /* A very light orange for hover */
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+
+.btn-white-custom:active {
+  background-color: var(--primary-orange) !important;
+  border-color: white !important; /* White border on click */
+  color: white !important; /* White text on click */
+  transform: scale(1.05); /* Keep it zoomed while clicked */
+  box-shadow: none;
+}
+
+/* Custom styles for the footer */
+.footer-section {
+  padding-top: 80px; /* Use a larger padding for better aesthetics */
+  padding-bottom: 30px;
+}
+
+/* Custom bullet points for the subjects list */
+.footer-subjects-list {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-subjects-list li {
+  padding-left: 1.2rem;
+  position: relative;
+}
+.footer-subjects-list li::before {
+  content: '•';
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Custom styles for the subscribe form */
+.subscribe-input {
+  border-radius: 50px !important;
+  padding: 0.75rem 1.25rem !important;
+  border: none !important;
+}
+
+.subscribe-button {
+  border-radius: 50px !important;
+  background-color: var(--primary-orange) !important;
+  border-color: var(--primary-orange) !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 1.5rem !important;
+  transition: transform 0.2s;
+}
+
+.subscribe-button:hover {
+  transform: scale(1.05);
+}
+
+/* src/index.css */
+
+/* ... (keep all the existing CSS) ... */
+
+/* Find and replace the existing .why-trust-section class */
+.why-trust-section {
+  /* 
+    Layering multiple backgrounds with CSS.
+    The first image listed is the TOP layer.
+  */
+  background:
+    url('./assets/icons/topo-lines-bg.png') center / cover no-repeat, /* Blue lines on top */
+    var(--primary-orange); /* Base orange color at the very back */
+  
+  position: relative; /* Good practice for sections with complex backgrounds */
+}
+/* === RESPONSIVE HERO SECTION STYLES === */
+
+.responsive-hero {
+  padding: 3rem 0;
+}
+
+.hero-row {
+  min-height: 70vh;
+}
+
+.hero-content {
+  padding: 1rem 0;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.325rem;
+    max-width: 500px;
+    /* margin: 0 auto; */
+    color: #0f2a47;
+    font-weight: 600;
+}
+
+.hero-actions {
+  margin-top: 2rem;
+}
+
+.hero-cta-button {
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  white-space: nowrap;
+  min-width: 250px;
+}
+
+.hero-watch-button {
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-watch-button:hover {
+  transform: translateY(-2px);
+}
+
+.play-icon {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hero-watch-button:hover .play-icon {
+  transform: scale(1.1);
+}
+
+.hero-image-container {
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+}
+
+.hero-image {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991.98px) {
+  .responsive-hero {
+    padding: 2rem 0;
+  }
+  
+  .hero-row {
+    min-height: auto;
+  }
+  
+  .hero-content {
+    text-align: center !important;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin: 0 auto 1.5rem auto;
+  }
+  
+  .hero-actions {
+    margin-top: 1.5rem;
+    justify-content: center !important;
+  }
+  
+  .hero-cta-button {
+    min-width: 200px;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .hero-image-container {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .responsive-hero {
+    padding: 1.5rem 0;
+  }
+  
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  .hero-cta-button {
+    min-width: 280px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .hero-watch-button {
+    font-size: 0.95rem;
+  }
+  
+  .play-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .hero-image-container {
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .responsive-hero {
+    padding: 1rem 0;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-actions {
+    margin-top: 1rem;
+  }
+  
+  .hero-cta-button {
+    font-size: 0.9rem;
+    padding: 0.625rem 1.25rem;
+  }
+  
+  .hero-image-container {
+    max-width: 250px;
+  }
+}
+
+/* Large desktop adjustments */
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* Text alignment fixes for mobile */
+@media (max-width: 991.98px) {
+  .hero-content .hero-subtitle {
+    text-align: center;
+  }
+}
+
+
+/* === SPECIFIC FIXES FOR 992px-1120px BREAKPOINT RANGE === */
+
+/* Target the problematic range between tablet landscape and small desktop */
+@media (min-width: 992px) and (max-width: 1120px) {
+  
+  /* Header/Navigation fixes */
+  .responsive-navbar {
+    min-height: 85px;
+  }
+  
+  .nav-link-base {
+    height: 85px;
+    padding: 0 1.2rem !important;
+    font-size: 0.95rem;
+  }
+  
+  .subjects-mega-menu {
+    width: 95vw;
+    max-width: 1000px;
+    padding: 1.5rem;
+  }
+  
+  /* Hero section adjustments */
+  .hero-title {
+    font-size: 2.25rem;
+    line-height: 1.25;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    max-width: 450px;
+  }
+  
+  .hero-cta-button {
+    padding: 0.8rem 1.75rem;
+    font-size: 0.95rem;
+  }
+  
+  .hero-image-container {
+    max-width: 400px;
+  }
+
+  /* Tighter hero for small tablets */
+  .responsive-hero {
+    padding: 1rem 0 !important;
+  }
+}
+
+/* Extra-tight hero for phones */
+@media (max-width: 575.98px) {
+  /* Compress hero to fit one fold */
+  .responsive-hero { padding: 0.5rem 0 !important; }
+  .hero-row { align-items: center !important; }
+  .hero-content { padding: 0.5rem 0 !important; }
+
+  .hero-title {
+    font-size: 1.35rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.5rem !important;
+    letter-spacing: -0.2px;
+  }
+  .hero-subtitle {
+    font-size: 0.85rem !important;
+    margin: 0.25rem 0 0.75rem !important;
+  }
+  .hero-actions { margin-top: 0.5rem !important; gap: 0.75rem !important; }
+  .hero-cta-button { max-width: 220px !important; padding: 0.55rem 1rem !important; font-size: 0.9rem !important; }
+
+  .hero-image-col { margin-top: 0 !important; }
+  .hero-image-container { max-width: 180px !important; margin-top: 0 !important; }
+
+  /* Container gutters (scoped to hero only) */
+  .hero-section-bg .container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+}
+  
+  /* Container adjustments - removed custom override to restore Bootstrap defaults */
+  /* (intentionally left blank) */
+  
+  /* Section spacing adjustments */
+  .section-responsive {
+    padding: 3.5rem 0;
+  }
+  
+  /* Feature items spacing */
+  .feature-item {
+    padding: 0.55rem 1.1rem;
+    font-size: 0.9rem;
+    gap: 0.6rem;
+  }
+  
+  /* Subject cards grid adjustments */
+  .subject-card {
+    min-width: 230px;
+    min-height: 230px;
+  }
+  
+  /* Testimonial cards adjustments */
+  .testimonial-card {
+    padding: 1.75rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Button responsive adjustments */
+  .btn-responsive {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Typography adjustments */
+  .responsive-heading-1 {
+    font-size: 2.25rem;
+  }
+  
+  .responsive-heading-2 {
+    font-size: 1.85rem;
+  }
+  
+  .responsive-heading-3 {
+    font-size: 1.4rem;
+  }
+  
+  /* Grid and flex adjustments */
+  .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+  
+  .row > * {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  /* Trust section adjustments */
+  .why-trust-section {
+    padding: 3.5rem 0;
+  }
+  
+  /* CTA section adjustments */
+  .mobile-cta-section {
+    margin-top: 1.75rem;
+    padding-top: 1.25rem;
+  }
+  
+  /* Page hero banner adjustments */
+  .page-hero-banner {
+    min-height: 280px;
+    padding: 90px 0;
+  }
+  
+  /* Ensure proper text wrapping */
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  /* Adjust margins for better spacing */
+  .my-4 {
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+  
+  .my-5 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  /* Fix any potential overflow issues */
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  /* Ensure images scale properly */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Card deck adjustments */
+  .card-deck > .card {
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Form elements adjustments */
+  .form-control {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.9rem;
+  }
+  
+  /* Navigation dropdown adjustments */
+  .dropdown-menu {
+    font-size: 0.9rem;
+  }
+  
+  /* Ensure proper button sizing */
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.7rem 1.4rem;
+  }
+  
+  .btn-sm {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+/* Additional fine-tuning for the upper end of the range */
+@media (min-width: 1080px) and (max-width: 1120px) {
+  
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.15rem;
+    max-width: 480px;
+  }
+  
+  .container {
+    max-width: 1080px;
+  }
+  
+  .nav-link-base {
+    padding: 0 1.3rem !important;
+    font-size: 1rem;
+  }
+  
+  .subjects-mega-menu {
+    max-width: 1050px;
+    padding: 1.75rem;
+  }
+}
+
+/* Ensure smooth transitions between breakpoints */
+@media (min-width: 992px) {
+  .responsive-transition {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+
+/* === MOBILE WIDTH FIXES AND IMAGE VISIBILITY === */
+
+/* Ensure full width on mobile devices */
+@media (max-width: 767.98px) {
+  
+  /* Fix mobile viewport and container width issues */
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .container-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Show hero image on mobile (override previous rule) */
+  .hero-image-col {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  /* Keep content centered but allow image alongside/under */
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    padding: 1.5rem 0 !important;
+  }
+  
+  /* Ensure hero image scales nicely on small screens */
+  .hero-image-container {
+    max-width: 260px !important;
+  }
+  .hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Ensure sections take full width */
+  section {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Fix any potential margin/padding issues */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+  }
+  
+  .row > * {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  /* Ensure responsive hero section takes full width */
+  .responsive-hero {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  
+  .hero-row {
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Mobile-specific hero adjustments */
+  .hero-title {
+    font-size: 1.75rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem !important;
+    margin: 0 auto 1.5rem auto !important;
+    max-width: 90% !important;
+  }
+  
+  .hero-actions {
+    width: 100%;
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+  
+  .hero-cta-button {
+    width: 100% !important;
+    max-width: 280px !important;
+    padding: 0.875rem 1.5rem !important;
+    font-size: 0.95rem !important;
+  }
+  
+  .hero-watch-button {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Additional mobile fixes for smaller screens */
+@media (max-width: 575.98px) {
+  
+  .container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem !important;
+    max-width: 95% !important;
+  }
+  
+  .hero-cta-button {
+    max-width: 260px !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Hide other decorative images on mobile that are not in Figma design */
+@media (max-width: 767.98px) {
+  
+  /* Hide background decorative images */
+  .why-trust-section {
+    background-image: none !important;
+    background: var(--primary-orange) !important;
+  }
+  
+  /* Hide any other decorative images in sections */
+  .section-bg-image {
+    background-image: none !important;
+  }
+  
+  /* Ensure images in cards are responsive but hide decorative ones */
+  .decorative-image {
+    display: none !important;
+  }
+  
+  /* Keep essential images but make them smaller */
+  .essential-image {
+    max-width: 80px !important;
+    height: auto !important;
+  }
+  
+  /* Hide large feature images on mobile */
+  .feature-large-image {
+    display: none !important;
+  }
+  
+  /* Hide testimonial background images if any */
+  .testimonial-bg-image {
+    display: none !important;
+  }
+}
+
+/* Ensure proper mobile viewport behavior */
+@media (max-width: 767.98px) {
+  
+  /* Prevent horizontal scrolling */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Fix any overflow issues */
+  .overflow-hidden-mobile {
+    overflow: hidden;
+  }
+  
+  /* Ensure buttons don't cause overflow */
+  .btn {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  /* Fix navigation width issues */
+  .navbar {
+    width: 100% !important;
+  }
+  
+  .navbar-brand {
+    max-width: 150px;
+  }
+  
+  /* Ensure footer takes full width */
+  footer {
+    width: 100% !important;
+  }
+}
+
+.main-btn{
+     background-color: white;
+    color: #070709 !important;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+.main-btn-b{
+     background-color: #22a3d2;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+.main-btn1{
+     background-color: #ff9e10;
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+}

@@ -1,0 +1,8 @@
+/* src/screens/HomePage/HomePage.css */
+
+
+@media (max-width: 768px) {
+  .horizontal-scroll-container {
+    gap: 1rem;
+  }
+}

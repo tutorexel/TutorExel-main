@@ -1,0 +1,68 @@
+/* src/screens/CareersPage/CareersPage.css */
+
+/* src/screens/CareersPage/CareersPage.css */
+
+/* --- Current Openings Section --- */
+/* This div wraps each detail item (e.g., Job Type + its description) */
+.detail-item {
+  display: flex;
+  flex-wrap: wrap; /* Allows text to wrap on smaller screens */
+  margin-bottom: 1rem;
+}
+
+/* This is the label (e.g., "Job Type:") */
+.detail-item dt {
+  font-weight: 700;
+  color: var(--dark-navy);
+  min-width: 120px; /* Gives all labels a consistent width for alignment */
+  flex-shrink: 0; /* Prevents the label from shrinking */
+}
+
+/* This is the description (e.g., "Freelance / Part-time") */
+.detail-item dd {
+  color: #6c757d;
+  margin-left: 0.5rem;
+}
+
+/* src/screens/CareersPage/CareersPage.css */
+
+/* ... (keep all other CSS rules for this page) ... */
+
+
+/* New class to make the subjects list fill the height of its container */
+.subjects-list-distributed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This is the key property */
+  height: 100%; /* Ensures the ul takes up all available vertical space */
+}
+
+/* --- Life at Tutorexel Quote Section --- */
+.life-quote-card {
+  position: relative;
+  background-color: var(--primary-orange);
+  padding: 2.5rem;
+  border-radius: 25px;
+  color: white;
+  max-width: 700px; /* Constrain the width */
+  margin: 0 auto; /* Center the card */
+}
+
+/* The speech bubble tail for the quote */
+.life-quote-card::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 20px 20px 0 20px;
+  border-style: solid;
+  border-color: var(--primary-orange) transparent transparent transparent;
+}
+
+.team-avatar {
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--primary-orange);
+}

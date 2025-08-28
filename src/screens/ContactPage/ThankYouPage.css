@@ -1,0 +1,25 @@
+/* src/screens/ContactPage/ThankYouPage.css */
+
+.thank-you-container {
+  background-color: #091D32; /* Darkest blue background from the forms */
+  border: 1px solid #2a5a8e;
+  border-radius: 20px;
+  padding: 4rem; /* More vertical padding */
+  color: white;
+  text-align: center;
+  max-width: 800px; /* Constrain the width for better readability */
+  margin: 0 auto; /* Center the container on the page */
+}
+
+.thank-you-container .success-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2rem;
+}
+
+.thank-you-container .thank-you-message {
+  font-size: 1.5rem; /* Larger font size for the message */
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto; /* Center the text block within the container */
+}

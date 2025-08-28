@@ -1,0 +1,15 @@
+.sidebar-card {
+  background-color: #F7F6EE;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid #e9ecef;
+}
+
+.sidebar-card h4 {
+  font-weight: 700;
+}
+
+.sidebar-card ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
