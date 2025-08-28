@@ -38,7 +38,7 @@ const ContentBanner = ({
   ) : null;
 
   const ContentColumn = content ? (
-    <Col md={contentColSize} className="d-flex align-items-center p-5" style={contentStyles}>
+    <Col md={contentColSize} className="d-flex align-items-center p-5 content-banner" style={contentStyles}>
       {content}
     </Col>
   ) : null;

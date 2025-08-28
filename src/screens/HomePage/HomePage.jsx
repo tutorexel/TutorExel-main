@@ -374,9 +374,11 @@ const HomePage = () => {
           imagePosition="left"
           className="bg-white"
           content={
-            <h2 className="text-white fw-bolder" style={{ fontSize: '2rem', lineHeight: '1.4' }}>
-              No matter which option you choose, your child receives <strong>high-quality instruction</strong>, caring support, and measurable progress.
-            </h2>
+            <div>
+              <p className="text-white fw-semibold text-start banner-copy" style={{ fontSize: '1.25rem', lineHeight: '1.7', margin: 0 }}>
+                No matter which option you choose, your child receives <strong>high-quality instruction</strong>, caring support, and measurable progress.
+              </p>
+            </div>
           }
         />
         <FeatureSection

@@ -1,0 +1,27 @@
+/* About Us page typography tweaks */
+
+/* Lead paragraph: smaller, comfortable measure, justified without awkward gaps */
+.about-lead {
+  font-size: 1.05rem; /* slightly smaller than default lead */
+  line-height: 1.75;
+  max-width: 70ch;
+  text-justify: inter-word; /* fallback */
+  hyphens: none; /* avoid mid-word breaks */
+}
+
+/* Our Mission heading already set to black inline; refine subtext */
+.about-mission-desc {
+  color: #fff; /* white text on colored banner */
+  line-height: 1.7;
+  max-width: 60ch;
+}
+
+@media (max-width: 991.98px) {
+  .about-lead { font-size: 1rem; line-height: 1.7; max-width: 90ch; }
+  .about-mission-desc { font-size: 1rem; line-height: 1.65; max-width: 70ch; }
+}
+
+@media (max-width: 575.98px) {
+  .about-lead { font-size: 0.98rem; line-height: 1.6; max-width: 100%; }
+  .about-mission-desc { font-size: 0.98rem; line-height: 1.6; max-width: 100%; }
+}

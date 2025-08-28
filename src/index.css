@@ -143,6 +143,18 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 30px;
 }
 
+/* Footer logo size */
+.footer-logo {
+  height: 20px; /* per request */
+  width: auto;
+}
+
+@media (max-width: 575.98px) {
+  .footer-logo {
+    height: 20px; /* keep consistent on mobile */
+  }
+}
+
 /* Custom bullet points for the subjects list */
 .footer-subjects-list {
   list-style: none;

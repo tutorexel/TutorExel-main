@@ -13,22 +13,24 @@ const SubjectCard = ({
   linkHref = '#',
 }) => {
   return (
-    // Add text-start class to the Card component to align all text to the left
-    <Card className="h-100 shadow-sm p-4 text-start subject-card">
-      <Card.Body className="d-flex flex-column">
-        {/* The icon is already aligned left by default block behavior */}
+    // Center content and justify description per request
+    <Card className="h-100 shadow-sm p-4 text-center subject-card">
+      <Card.Body className="d-flex flex-column align-items-center">
+        {/* Centered icon */}
         <img 
           src={icon} 
           alt={`${title} icon`} 
-          className="mb-4" 
+          className="mb-4 mx-auto d-block" 
           style={{ width: '60px', height: '60px' }} 
         />
+        {/* Centered title */}
         <Card.Title as="h4" className="fw-bold text-dark-navy">{title}</Card.Title>
-        <Card.Text className="text-secondary mt-2 mb-4">
+        {/* Centered description without full justification to avoid awkward gaps */}
+        <Card.Text className="text-secondary mt-2 mb-4 text-center">
           {description}
         </Card.Text>
-        {/* Use align-self-start to ensure the link aligns to the left in the flex container */}
-        <p className="fw-semibold text-primary-blue d-inline-flex align-items-center gap-2 mt-auto">
+        {/* Centered link at bottom */}
+        <p className="fw-semibold text-primary-blue d-inline-flex align-items-center justify-content-center gap-2 mt-auto">
           {linkText} <FaArrowRight />
         </p>
       </Card.Body>

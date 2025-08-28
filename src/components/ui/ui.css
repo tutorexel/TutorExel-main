@@ -138,6 +138,42 @@
   }
 }
 
+/* Justified paragraph support */
+.text-justify {
+  text-align: justify;
+}
+
+/* Improve justification by enabling hyphenation where supported to reduce big gaps */
+.clean-justify {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  text-justify: inter-word; /* fallback */
+}
+
+/* Tweak large banner text readability */
+.content-banner p,
+.content-banner h2,
+.content-banner h3 {
+  letter-spacing: 0.15px;
+}
+
+/* Banner copy layout: constrain width and prevent hyphenation */
+.banner-copy {
+  max-width: 46ch; /* measure-based for optimal readability */
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media (max-width: 991.98px) {
+  .banner-copy { max-width: 52ch; font-size: 1.125rem; line-height: 1.65; }
+}
+
+@media (max-width: 575.98px) {
+  .banner-copy { max-width: 100%; font-size: 1.05rem; line-height: 1.6; }
+}
+
 @media (max-width: 575.98px) {
   .subject-card {
     min-height: 200px;

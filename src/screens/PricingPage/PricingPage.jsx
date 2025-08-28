@@ -37,7 +37,7 @@ const PricingPage = () => {
         <Container>
           <Row className="">
             <Col lg={11}>
-              <h2 className="fw-bolder" style={{ fontSize: '2.8rem' }}>Simple Pricing</h2>
+              <h2 className="fw-bolder" style={{ fontSize: '2.8rem' }}></h2>
               <p className="lead mt-3">
                 Every family begins with a free trial class so you can experience Tutorexel with no commitment. After your trial, you can choose either One-to-One Tutoring or Group Classes. <strong>All sessions are 1 hour.</strong> Payments are billed monthly in advance. Cancel anytime with 2 weeks' notice.
               </p>
