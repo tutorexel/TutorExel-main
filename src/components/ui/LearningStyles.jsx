@@ -11,9 +11,9 @@ const LearningStyles = () => {
         <section className="py-5 bg-white">
             <Container>
                 <div className="text-center mb-5">
-                    <h2 className="fw-bolder" style={{ fontSize: '2.8rem' }}>Choose Your Learning Style</h2>
+                    <h2 className="" style={{ fontSize: '2rem' }}>Choose Your Learning Style</h2>
                     <p className="lead text-secondary">
-                        At Tutorexel, we offer two <strong>flexible</strong> ways to learn:
+                        At Tutorexel, we offer two  <br></br><strong>flexible</strong> ways to learn:
                     </p>
                 </div>
                 <Row className="g-5">
@@ -28,7 +28,7 @@ const LearningStyles = () => {
                                 style={{ borderRadius: '20px 20px 0 0' }} 
                             />
                             <Card.Body className="p-4">
-                                <Card.Title as="h3" className="fw-bold">One-to-One Tutoring</Card.Title>
+                                <Card.Title as="h3" className="">One-to-One Tutoring</Card.Title>
                                 <p className="text-secondary">Focused support and individual attention.</p>
                                 {/* 3. Change to a numbered list and apply bold styling */}
                                 <ol className="text-secondary ps-3">
@@ -50,7 +50,7 @@ const LearningStyles = () => {
                                 style={{ borderRadius: '20px 20px 0 0' }} 
                             />
                             <Card.Body className="p-4">
-                                <Card.Title as="h3" className="fw-bold">Group Classes</Card.Title>
+                                <Card.Title as="h3" className="">Group Classes</Card.Title>
                                 <p className="text-secondary">Collaborative learning with peers.</p>
                                 {/* 3. Change to a numbered list and apply bold styling */}
                                 <ol className="text-secondary ps-3">

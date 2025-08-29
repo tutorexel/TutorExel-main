@@ -214,7 +214,7 @@ const whyTrustCards = [
     { 
         icon: iconPricing, 
         title: 'Clear, Affordable Pricing', 
-        description: 'Simple monthly plans with no hidden fees—and your first class is free.' 
+        description: 'Simple monthly plans with no hidden fees and your first class is free.' 
     },
 ];
 
@@ -319,15 +319,15 @@ const HomePage = () => {
         <section className="py-5">
         <Container>
           <div className="text-center">
-            <h2 className="fw-bolder" style={{ fontSize: '2.8rem' }}>Subjects We Offer</h2>
+            <h2 className="" style={{ fontSize: '2.8rem' }}>Subjects We Offer</h2>
             <p className="lead text-secondary mx-auto mt-3" style={{ maxWidth: '700px' }}>
               Tutorexel helps your child excel in every area:
             </p>
           </div>
         </Container>
         
-        <Container fluid>
-          <div className="horizontal-scroll-container row">
+        <Container>
+          <div className="horizontal-scroll-container row gx-4 gy-4">
             {subjectsData.map((subject, index) => (
               <Col md={3} lg={3} xl={3} key={index} className="flex-shrink-0">
                 {subject.isComingSoon ? (
@@ -375,7 +375,7 @@ const HomePage = () => {
           className="bg-white"
           content={
             <div>
-              <p className="text-white fw-semibold text-start banner-copy" style={{ fontSize: '1.25rem', lineHeight: '1.7', margin: 0 }}>
+              <p className="text-white  text-start banner-copy" style={{ fontSize: '1.25rem', lineHeight: '1.7', margin: 0 }}>
                 No matter which option you choose, your child receives <strong>high-quality instruction</strong>, caring support, and measurable progress.
               </p>
             </div>

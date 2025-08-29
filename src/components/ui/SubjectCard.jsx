@@ -24,7 +24,7 @@ const SubjectCard = ({
           style={{ width: '60px', height: '60px' }} 
         />
         {/* Centered title */}
-        <Card.Title as="h4" className="fw-bold text-dark-navy">{title}</Card.Title>
+        <Card.Title as="h4" className=" text-dark-navy">{title}</Card.Title>
         {/* Centered description without full justification to avoid awkward gaps */}
         <Card.Text className="text-secondary mt-2 mb-4 text-center">
           {description}

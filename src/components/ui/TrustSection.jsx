@@ -12,7 +12,7 @@ const TrustSection = ({
     <section className="why-trust-section py-5" style={customStyles}>
       <Container>
         <div className="text-center">
-          <h2 className="fw-bolder text-white" style={{ fontSize: '2.8rem' }}>
+          <h2 className=" text-white" style={{ fontSize: '2.8rem' }}>
             {headingText}
           </h2>
         </div>
@@ -34,7 +34,7 @@ const TrustSection = ({
                     className="mb-4" 
                     style={{ width: '80px', height: '80px' }} 
                   />
-                  <Card.Title as="h4" className="fw-bold text-dark-navy">{card.title}</Card.Title>
+                  <Card.Title as="h4" className=" text-dark-navy">{card.title}</Card.Title>
                   <Card.Text className="text-secondary mt-3">{card.description}</Card.Text>
                 </Card.Body>
               </Card>

@@ -49,7 +49,7 @@ const AboutUsPage = () => {
           <Row className="">
             <Col lg={11} className="">
           
-              <p className="lead mt-3">
+              <p className="para mt-3 text-center">
                 TutorExel is an online tutoring company dedicated to helping school students succeed through high-quality, personalised education. We believe that every child deserves <strong>individual attention and expert guidance</strong>, no matter where they live. That’s why we bring together <strong>qualified teachers and proven learning methods</strong> to deliver engaging lessons right to your home.
               </p>
             </Col>
@@ -61,9 +61,9 @@ const AboutUsPage = () => {
         imagePosition="left"
         className="bg-white"
         content={
-          <h2 className="fw-bolder" style={{ fontSize: '2.4rem', color: '#000' }}>
+          <h2 className="text-center " style={{ fontSize: '2.4rem', color: '#ffffffff' }}>
             Our Mission
-            <span className="d-block fs-5 mt-3 text-justify about-mission-desc">
+            <span className="d-block fs-5 mt-3 text-center about-mission-desc">
               Empowering students to achieve their best through trusted, customised online learning.
             </span>
           </h2>

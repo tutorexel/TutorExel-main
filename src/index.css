@@ -61,7 +61,7 @@ body {
 /* General Styling */
 h1, h2, h3, h4, h5, h6 {
   color: var(--dark-navy);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* Find and replace or add this class */
@@ -864,6 +864,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #070709 !important;
     font-weight: 600;
     padding: 0.75rem 1.5rem;
+    font-size: 12px;
     border-radius: 50px;
     transition: transform 0.2s ease-in-out;
     text-decoration: none;
@@ -872,6 +873,7 @@ h1, h2, h3, h4, h5, h6 {
      background-color: #22a3d2;
     color: #fff !important;
     font-weight: 600;
+    font-size: 13px;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
     transition: transform 0.2s ease-in-out;
@@ -881,8 +883,24 @@ h1, h2, h3, h4, h5, h6 {
      background-color: #ff9e10;
     color: #ffffff !important;
     font-weight: 600;
+    font-size: 15px;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
     transition: transform 0.2s ease-in-out;
     text-decoration: none;
+}
+
+.para{
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (max-width: 767.98px) {
+  .footer-logo{
+    width: 50% !important;
+  }
+  .page-hero-banner {
+    min-height: 130px;
+    padding: 9px 0;
+    text-align: center;
+}
 }

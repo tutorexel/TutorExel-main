@@ -81,7 +81,7 @@ const SubjectPage = () => {
       </section>
 
       {/* --- Course Content Section --- */}
-      <section className="py-5 bg-white">
+      <section className="py-2 bg-white">
         <Container>
           <Row className="justify-content-center">
             <Col lg={12}>

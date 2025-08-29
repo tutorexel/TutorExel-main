@@ -97,8 +97,8 @@ const Testimonials = () => {
         }
 
         .section-title {
-          font-size: 3rem;
-          font-weight: 800;
+          font-size: 2.5rem;
+          font-weight: 500;
           color: #2c3e50;
           margin-bottom: 1rem;
           position: relative;

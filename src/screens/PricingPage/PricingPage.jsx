@@ -38,7 +38,7 @@ const PricingPage = () => {
           <Row className="">
             <Col lg={11}>
               <h2 className="fw-bolder" style={{ fontSize: '2.8rem' }}></h2>
-              <p className="lead mt-3">
+              <p className="para mt-3 text-left">
                 Every family begins with a free trial class so you can experience Tutorexel with no commitment. After your trial, you can choose either One-to-One Tutoring or Group Classes. <strong>All sessions are 1 hour.</strong> Payments are billed monthly in advance. Cancel anytime with 2 weeks' notice.
               </p>
             </Col>
@@ -51,7 +51,7 @@ const PricingPage = () => {
         <Container>
           <Row className="g-4 align-items-stretch">
             <Col lg={4} className="d-flex flex-column">
-              <h3 className="fw-bolder mb-4">Simple, Transparent Pricing</h3>
+              <h3 className=" mb-4">Simple, Transparent Pricing</h3>
               <div className="d-flex flex-column justify-content-center flex-grow-1">
                 <div className="pricing-feature-item">
                   <img src={iconSchedule} alt="Schedule Icon" />

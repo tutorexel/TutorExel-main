@@ -13,7 +13,7 @@ const Hero = () => {
       <Container>
         <Row className="align-items-center gy-4 gy-lg-5 hero-row">
           <Col lg={6} className="text-center text-lg-start hero-content">
-            <h1 className="hero-title fw-bolder text-dark-navy">
+            <h1 className="hero-title  text-dark-navy">
                  Live Online Tutoring for Students from Year 2 to Year 10
 
             </h1>

@@ -189,8 +189,8 @@ const Footer = () => {
                 and helps students reach their academic goals - every step of the way.
               </p>
               <div className="d-flex gap-3 mt-4">
-                <a href="#"><img src={iconFacebook} alt="Facebook" style={{ width: '32px' }}/></a>
-                <a href="#"><img src={iconInstagram} alt="Instagram" style={{ width: '32px' }}/></a>
+                <a href="https://www.facebook.com/share/1Za9NLXEqM/"><img src={iconFacebook} alt="Facebook" style={{ width: '32px' }}/></a>
+                <a href="https://www.instagram.com/tutorexellearning?igsh=MWNrejdyMWtyd2lsOQ== https://www.facebook.com/share/1Za9NLXEqM/"><img src={iconInstagram} alt="Instagram" style={{ width: '32px' }}/></a>
               </div>
             </Col>
 

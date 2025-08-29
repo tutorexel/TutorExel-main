@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Container, Button, Row, Col, Offcanvas } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.svg';
-import { FiSearch, FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
 import { IoIosArrowDown } from 'react-icons/io';
 import './layout.css';
 
@@ -29,11 +29,8 @@ const Header = () => {
             <img src={logo} height="36" alt="TutorExel Logo" />
           </Navbar.Brand>
 
-          {/* Mobile menu toggle button */}
+          {/* Mobile menu toggle button (search removed on phones) */}
           <div className="d-lg-none mobile-nav-controls">
-            <Button variant="link" className="text-dark-navy me-2 p-1" href="#search">
-              <FiSearch size={20} />
-            </Button>
             <Button 
               variant="link" 
               className="text-dark-navy p-1 mobile-menu-toggle"
@@ -82,12 +79,12 @@ const Header = () => {
 
               <NavLink to="/pricing" className="nav-link-base">Pricing</NavLink>
               <NavLink to="/contact" className="nav-link-base">Contact Us</NavLink>
-              {/* <NavLink to="/careers" className="nav-link-base">Careers</NavLink> */}
+              <NavLink to="/careers" className="nav-link-base">Careers</NavLink>
             </Nav>
 
             <Nav className="align-items-center justify-content-end desktop-nav-actions">
               
-              <Link to="/contact">
+              <Link to="web.tutorexel.com/login">
   <Button
     variant="secondary-blue"
     className="d-inline-flex align-items-center"
@@ -188,13 +185,15 @@ const Header = () => {
                 </NavLink>
                 
                 <div className="mobile-cta-section">
-                  <Button 
-                    variant="secondary-blue" 
-                    className="w-100 mobile-cta-button"
-                    onClick={handleCloseMobileMenu}
-                  >
-                    Free Trial
-                  </Button>
+                  <Link to="/contact" className="w-100 d-block">
+                    <Button 
+                      variant="secondary-blue" 
+                      className="w-100 mobile-cta-button"
+                      onClick={handleCloseMobileMenu}
+                    >
+                      Free Trial
+                    </Button>
+                  </Link>
                 </div>
               </Nav>
             </Offcanvas.Body>

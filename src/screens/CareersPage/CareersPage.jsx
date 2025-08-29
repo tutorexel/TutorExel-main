@@ -60,8 +60,8 @@ const CareersPage = () => {
       <section className="py-5 bg-white">
         <Container>
             <Col lg={11} className="">
-              <h2 className="fw-bolder" style={{ fontSize: '2.8rem' }}>
-                Careers at <img src={logo} alt="TutorExel" style={{ height: '35px', verticalAlign: 'middle', marginTop: '-10px' }} />
+              <h2 className="fw-bolder text-left" style={{ fontSize: '2.8rem' }}>
+                Careers at <img src={logo} alt="TutorExel" style={{  width : "48%" , height: '35px', verticalAlign: 'middle', marginTop: '-10px' }} />
               </h2>
               <h4 className="fw-normal mt-3">Make a Real Impact — From Anywhere</h4>
               <p className="mt-3">At Tutorexel, we're on a mission to redefine online tutoring for school students by combining academic rigour with personalised care. If you're passionate about education and want the freedom to work from anywhere, join our growing team of expert educators.</p>

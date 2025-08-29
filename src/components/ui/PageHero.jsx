@@ -19,7 +19,7 @@ const PageHero = ({
     // 2. Use the new hardcoded CSS class. No more props for styling.
     <section className="page-hero-banner">
       <Container>
-        <div className="text-start">
+        <div className="text-center">
           <h1 className={`${titleSize} fw-bolder text-dark-navy`}>{title}</h1>
         </div>
       </Container>

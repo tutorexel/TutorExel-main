@@ -34,29 +34,29 @@ const FeatureSection = ({
 
   // Define the Image and Text columns as variables for cleaner conditional rendering
   const ImageColumn = (
-    <Col lg={6}>
+    <Col lg={6} className="d-flex justify-content-center">
       <img
         src={image}
         alt={imageAlt}
         className="img-fluid w-100"
-        style={{ borderRadius: '40px' }}
+        style={{ borderRadius: '40px', maxWidth: '640px' }}
       />
     </Col>
   );
 
   const TextColumn = (
-    <Col lg={6}>
-      <h2 className="fw-bolder" style={{ fontSize: '2.6rem', lineHeight: '1.3' }}>
+    <Col lg={6} className="text-center text-lg-start">
+      <h2 className=" feature-heading" style={{ fontSize: '2.6rem', lineHeight: '1.3' }}>
         {headingText}
       </h2>
-      <div className="text-secondary mt-3 mb-4 fs-5">
+      <div className="text-secondary mt-3 mb-4 feature-description">
         {descriptionText}
       </div>
       
-      <div className="d-grid gap-3">
+      <div className="d-grid gap-1 feature-list">
         {features.map((feature, index) => (
           <div key={index}>
-            <div className="feature-item" style={{ borderRadius: '10px' }}>
+            <div className="feature-item mx-lg-0 mx-auto" style={{ borderRadius: '10px' }}>
               <img src={checkmarkIcon} alt="Checkmark" style={{ width: '28px', height: '28px' }} />
               <span>
                 {feature.text}<strong>{feature.bold}</strong>
@@ -67,7 +67,7 @@ const FeatureSection = ({
       </div>
       
       {showButton && (
-        <Link to="/contact" variant="primary-orange" size="sm" className="mt-4 d-inline-flex align-items-center main-btn1">
+        <Link to="/contact" variant="primary-orange" size="sm" className="mt-4 d-inline-flex align-items-center main-btn1 mx-lg-0 mx-auto">
           {buttonText} <FaArrowRight className="ms-2" />
         </Link>
       )}
@@ -76,9 +76,9 @@ const FeatureSection = ({
 
   return (
     // The main section applies custom styles over a base padding
-    <section className="bg-white" style={{ padding: '80px 0', ...customStyles }}>
+    <section className="bg-white feature-section" style={{ padding: '10px 0', ...customStyles }}>
       <Container>
-        <Row className="align-items-center g-5">
+        <Row className="align-items-center g-5"  style={{ padding : '0px !important' }}>
           {/* Conditionally render columns based on the imagePosition prop */}
           {imagePosition === 'left' ? (
             <>

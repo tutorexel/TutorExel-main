@@ -38,7 +38,7 @@ const ContentBanner = ({
   ) : null;
 
   const ContentColumn = content ? (
-    <Col md={contentColSize} className="d-flex align-items-center p-5 content-banner" style={contentStyles}>
+    <Col md={contentColSize} className="d-flex align-items-center p-5 content-banner " style={contentStyles}>
       {content}
     </Col>
   ) : null;
@@ -46,7 +46,7 @@ const ContentBanner = ({
   return (
     <section className={`py-5 ${className}`} style={customStyles}>
       <Container>
-        <Row className="g-0 rounded-4 overflow-hidden shadow-lg">
+        <Row className="g-0 rounded-4 overflow-hidden shadow-lg px-0 ">
           {imagePosition === 'left' ? (
             <>
               {ImageColumn}
