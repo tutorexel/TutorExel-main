@@ -56,7 +56,7 @@ const FeatureSection = ({
       <div className="d-grid gap-1 feature-list mt-3">
         {features.map((feature, index) => (
           <div key={index}>
-            <div className="feature-item mx-lg-0 mx-auto" style={{ borderRadius: '10px' }}>
+            <div className="feature-item mx-lg-0 mx-auto p-3 mb-2">
               <img src={checkmarkIcon} alt="Checkmark" style={{ width: '28px', height: '28px', flexShrink: 0 }} />
               <span>
                 {feature.text}<strong>{feature.bold}</strong>
@@ -76,7 +76,7 @@ const FeatureSection = ({
 
   return (
     // The main section applies custom styles over a base padding
-    <section className="bg-white feature-section" style={{ padding: '46px 0', ...customStyles }}>
+    <section className="bg-white feature-section" style={{ padding: '54px 0', ...customStyles }}>
       <Container>
         <Row className="align-items-center g-5"  style={{ padding : '0px !important' }}>
           {/* Conditionally render columns based on the imagePosition prop */}
