@@ -93,7 +93,7 @@
     max-width: 560px; 
     margin-left: auto; 
     margin-right: auto;
-    gap: 0.5rem !important; /* Reduce gap between rows on mobile */
+    gap: 0.25rem !important; /* Match desktop spacing - very tight */
   }
 }
 
@@ -107,7 +107,7 @@
   }
   .feature-section { padding: 56px 0 !important; }
   .feature-section .feature-list { 
-    gap: 0.4rem !important; /* Even smaller gap on very small screens */
+    gap: 0.25rem !important; /* Same tight spacing as desktop */
   }
   .feature-heading { font-size: 1.75rem !important; line-height: 1.25 !important; }
   .feature-description { font-size: 1rem; }
