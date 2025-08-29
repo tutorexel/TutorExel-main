@@ -46,14 +46,14 @@ const FeatureSection = ({
 
   const TextColumn = (
     <Col lg={6} className="text-center text-lg-start">
-      <h2 className=" feature-heading" style={{ fontSize: '2.6rem', lineHeight: '1.3' }}>
+      <h2 className="feature-heading mb-3" style={{ fontSize: '2.6rem', lineHeight: '1.3' }}>
         {headingText}
       </h2>
-      <div className="text-secondary mt-3 mb-4 feature-description">
+      <div className="text-secondary mt-2 feature-description">
         {descriptionText}
       </div>
       
-      <div className="d-grid gap-1 feature-list">
+      <div className="d-grid gap-1 feature-list mt-3">
         {features.map((feature, index) => (
           <div key={index}>
             <div className="feature-item mx-lg-0 mx-auto" style={{ borderRadius: '10px' }}>
@@ -76,7 +76,7 @@ const FeatureSection = ({
 
   return (
     // The main section applies custom styles over a base padding
-    <section className="bg-white feature-section" style={{ padding: '64px 0', ...customStyles }}>
+    <section className="bg-white feature-section" style={{ padding: '46px 0', ...customStyles }}>
       <Container>
         <Row className="align-items-center g-5"  style={{ padding : '0px !important' }}>
           {/* Conditionally render columns based on the imagePosition prop */}
