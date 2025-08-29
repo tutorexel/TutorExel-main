@@ -84,14 +84,14 @@ const Header = () => {
 
             <Nav className="align-items-center justify-content-end desktop-nav-actions">
               
-              <Link to="web.tutorexel.com/login">
-  <Button
-    variant="secondary-blue"
-    className="d-inline-flex align-items-center"
-  >
-    Free Trial
-  </Button>
-</Link>
+              <a href="https://web.tutorexel.com/login" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="secondary-blue"
+                  className="d-inline-flex align-items-center"
+                >
+                  Free Trial
+                </Button>
+              </a>
             </Nav>
           </Navbar.Collapse>
 
@@ -185,7 +185,7 @@ const Header = () => {
                 </NavLink>
                 
                 <div className="mobile-cta-section">
-                  <Link to="/contact" className="w-100 d-block">
+                  <a href="https://web.tutorexel.com/login" target="_blank" rel="noopener noreferrer" className="w-100 d-block">
                     <Button 
                       variant="secondary-blue" 
                       className="w-100 mobile-cta-button"
@@ -193,7 +193,7 @@ const Header = () => {
                     >
                       Free Trial
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </Nav>
             </Offcanvas.Body>
