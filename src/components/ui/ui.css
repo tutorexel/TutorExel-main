@@ -88,7 +88,7 @@
     justify-content: flex-start;
   }
   /* Center FeatureSection content on tablets and phones */
-  .feature-section { padding: 70px 0 !important; }
+  .feature-section { padding: 56px 0 !important; }
   .feature-section .row { text-align: center; }
   .feature-section .feature-list { 
     max-width: 560px; 
@@ -106,7 +106,7 @@
     width: 100%;
     justify-content: flex-start;
   }
-  .feature-section { padding: 60px 0 !important; }
+  .feature-section { padding: 48px 0 !important; }
   .feature-section .feature-list { 
     gap: 0.25rem !important; /* Same tight spacing as desktop */
   }
