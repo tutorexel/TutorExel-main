@@ -84,10 +84,17 @@
     padding: 0.5rem 1rem;
     font-size: 0.95rem;
     gap: 0.5rem;
+    width: 100%;
+    justify-content: flex-start;
   }
   /* Center FeatureSection content on tablets and phones */
   .feature-section .row { text-align: center; }
-  .feature-section .feature-list { max-width: 560px; margin-left: auto; margin-right: auto; }
+  .feature-section .feature-list { 
+    max-width: 560px; 
+    margin-left: auto; 
+    margin-right: auto;
+    gap: 0.5rem !important; /* Reduce gap between rows on mobile */
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -95,8 +102,13 @@
     padding: 0.55rem 1rem;
     font-size: 0.95rem;
     gap: 0.45rem;
+    width: 100%;
+    justify-content: flex-start;
   }
   .feature-section { padding: 56px 0 !important; }
+  .feature-section .feature-list { 
+    gap: 0.4rem !important; /* Even smaller gap on very small screens */
+  }
   .feature-heading { font-size: 1.75rem !important; line-height: 1.25 !important; }
   .feature-description { font-size: 1rem; }
   .main-btn1 { width: 100%; max-width: 320px; justify-content: center; }

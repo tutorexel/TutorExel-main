@@ -57,7 +57,7 @@ const FeatureSection = ({
         {features.map((feature, index) => (
           <div key={index}>
             <div className="feature-item mx-lg-0 mx-auto" style={{ borderRadius: '10px' }}>
-              <img src={checkmarkIcon} alt="Checkmark" style={{ width: '28px', height: '28px' }} />
+              <img src={checkmarkIcon} alt="Checkmark" style={{ width: '28px', height: '28px', flexShrink: 0 }} />
               <span>
                 {feature.text}<strong>{feature.bold}</strong>
               </span>
