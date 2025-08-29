@@ -76,7 +76,7 @@ const FeatureSection = ({
 
   return (
     // The main section applies custom styles over a base padding
-    <section className="bg-white feature-section" style={{ padding: '10px 0', ...customStyles }}>
+    <section className="bg-white feature-section" style={{ padding: '80px 0', ...customStyles }}>
       <Container>
         <Row className="align-items-center g-5"  style={{ padding : '0px !important' }}>
           {/* Conditionally render columns based on the imagePosition prop */}
