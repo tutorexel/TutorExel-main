@@ -126,9 +126,9 @@
 }
 
 /* Mobile Logo Adjustments */
-.mobile-logo img {
-  height: 32px;
-  width: 120px;
+.mobile-logo img.d-lg-none {
+  height: 32px !important;
+  width: auto !important;
 }
 
 /* Desktop Navigation Actions */
@@ -256,8 +256,8 @@
   }
   
   /* Mobile logo adjustments */
-  .mobile-logo img {
-    height: 28px;
+  .mobile-logo img.d-lg-none {
+    height: 28px !important;
   }
 }
 
@@ -267,8 +267,8 @@
     min-height: 60px;
   }
   
-  .mobile-logo img {
-    height: 26px;
+  .mobile-logo img.d-lg-none {
+    height: 26px !important;
   }
   
   .top-bar {

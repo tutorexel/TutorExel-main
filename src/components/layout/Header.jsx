@@ -25,8 +25,8 @@ const Header = () => {
     
       <Navbar bg="white" expand="lg" className="shadow-sm p-0 responsive-navbar">
         <Container>
-          <Navbar.Brand as={Link} to="/">
-            <img src={logo} alt="TutorExel Logo" className="d-lg-none" style={{height: '36px'}} />
+          <Navbar.Brand as={Link} to="/" className="mobile-logo">
+            <img src={logo} alt="TutorExel Logo" className="d-lg-none" />
             <img src={logo} alt="TutorExel Logo" className="d-none d-lg-block desktop-logo" />
           </Navbar.Brand>
 
