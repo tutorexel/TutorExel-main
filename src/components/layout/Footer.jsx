@@ -250,7 +250,7 @@ const Footer = () => {
                   aria-label="Chat on WhatsApp"
                 >
                   <FaWhatsapp size={28} color="#25D366" />
-                  <span className="d-none d-sm-inline">WhatsApp</span>
+                  <span>WhatsApp</span>
                 </a>
               </div>
             </Col>

@@ -83,6 +83,7 @@
   list-style: none !important;
   padding-left: 0 !important;
   margin-left: 0 !important;
+  font-weight: 400 !important; /* ensure normal weight */
 }
 
 /* Styling for the "Call or WhatsApp" text link */
