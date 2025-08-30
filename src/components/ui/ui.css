@@ -206,6 +206,12 @@
   letter-spacing: 0.15px;
 }
 
+/* Ensure banner body text uses normal font weight */
+.content-banner p,
+.content-banner li {
+  font-weight: 400 !important;
+}
+
 /* Banner copy layout: constrain width and prevent hyphenation */
 .banner-copy {
   max-width: 46ch; /* measure-based for optimal readability */
