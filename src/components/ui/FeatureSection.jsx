@@ -46,7 +46,7 @@ const FeatureSection = ({
 
   const TextColumn = (
     <Col lg={6} className="text-center text-lg-start">
-      <h2 className="feature-heading mb-3" style={{ fontSize: '2.6rem', lineHeight: '1.3' }}>
+      <h2 className="section-heading mb-3" style={{ lineHeight: '1.3' }}>
         {headingText}
       </h2>
       <div className="text-secondary mt-2 feature-description">

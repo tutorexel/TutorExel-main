@@ -8,20 +8,22 @@
   display: flex;
   flex-wrap: wrap; /* Allows text to wrap on smaller screens */
   margin-bottom: 1rem;
+  align-items: baseline; /* Keep labels and values aligned nicely */
+  gap: 0.25rem 0.75rem;
 }
 
 /* This is the label (e.g., "Job Type:") */
 .detail-item dt {
   font-weight: 700;
   color: var(--dark-navy);
-  min-width: 120px; /* Gives all labels a consistent width for alignment */
+  min-width: 130px; /* Consistent label width for alignment */
   flex-shrink: 0; /* Prevents the label from shrinking */
 }
 
 /* This is the description (e.g., "Freelance / Part-time") */
 .detail-item dd {
   color: #6c757d;
-  margin-left: 0.5rem;
+  margin-left: 0;
 }
 
 /* src/screens/CareersPage/CareersPage.css */
@@ -35,6 +37,32 @@
   flex-direction: column;
   justify-content: space-between; /* This is the key property */
   height: 100%; /* Ensures the ul takes up all available vertical space */
+}
+
+/* Light padding for both columns */
+.current-openings-col { padding: 0.5rem 0.75rem; }
+
+/* Make subjects list spacing/elevation consistent */
+.openings-subjects { margin: 0; padding-left: 1rem; }
+.openings-subjects li { margin-bottom: 0.5rem; }
+
+/* Tighter spacing on small screens */
+@media (max-width: 575.98px) {
+  /* Stack label and value on phones for uniformity */
+  .detail-item {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .detail-item dt {
+    min-width: 0;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .detail-item dd {
+    display: block;
+    margin-left: 0;
+  }
+  .current-openings-col { padding: 0.25rem 0.5rem; }
 }
 
 /* --- Life at Tutorexel Quote Section --- */

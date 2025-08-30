@@ -89,7 +89,7 @@ const Header = () => {
                   variant="secondary-blue"
                   className="d-inline-flex align-items-center"
                 >
-                  Free Trial
+                  Login
                 </Button>
               </a>
             </Nav>

@@ -331,7 +331,7 @@ const Testimonials = () => {
       <section className="testimonials-section py-5">
         <Container>
           <div className="text-center mb-5">
-            <h2 className="section-title">What parents and students are saying</h2>
+            <h2 className="section-heading">What parents and students are saying</h2>
             <p className="section-subtitle">Real feedback from our learning community</p>
           </div>
           

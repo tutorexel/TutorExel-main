@@ -6,3 +6,16 @@
     gap: 1rem;
   }
 }
+
+/* Only affect subject card headings on HomePage */
+.subjects-section .subject-card h4 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+
+/* Trust section card titles (HomePage only) */
+.why-trust-section .card-title,
+.why-trust-section h4 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}

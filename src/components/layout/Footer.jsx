@@ -5,6 +5,7 @@ import logo from '../../assets/images/logo.svg';
 import iconFacebook from '../../assets/icons/icon-facebook.svg';
 import iconInstagram from '../../assets/icons/icon-instagram.svg';
 import { MdEmail } from 'react-icons/md';
+import { FaWhatsapp } from 'react-icons/fa';
 
 // Reuse the same Coming Soon modal design as HomePage
 const ComingSoonModal = ({ isOpen, onClose, title = "Coming Soon!" }) => {
@@ -183,7 +184,7 @@ const Footer = () => {
             {/* About Column */}
             <Col lg={4} md={12}>
               <img src={logo} alt="TutorExel Logo" className="mb-3 footer-logo" />
-              <p>
+              <p className="footer-about-text text-white-50">
                 At TutorExel, we understand student struggles and parent concerns. 
                 Our personalized online tutoring builds confidence, improves performance, 
                 and helps students reach their academic goals - every step of the way.
@@ -239,6 +240,19 @@ const Footer = () => {
               >
                 <MdEmail /> info@tutorexel.com
               </a>
+              {/* WhatsApp quick chat link */}
+              <div className="mt-3">
+                <a
+                  href="https://wa.me/919872550572"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white-50 text-decoration-none d-inline-flex align-items-center gap-2"
+                  aria-label="Chat on WhatsApp"
+                >
+                  <FaWhatsapp size={28} color="#25D366" />
+                  <span className="d-none d-sm-inline">WhatsApp</span>
+                </a>
+              </div>
             </Col>
           </Row>
           

@@ -41,16 +41,15 @@ const ourApproachSteps = [
 
 const AboutUsPage = () => {
   return (
-    <main>
+    <main className="about-page">
       <PageHero title="About Us" />
 
-      <section className="py-6 bg-white mt-5">
+      <section className="py-6 bg-white mt-5 about-intro">
         <Container>
           <Row className="">
             <Col lg={11} className="">
-          
-              <p className="para mt-3 text-center">
-                TutorExel is an online tutoring company dedicated to helping school students succeed through high-quality, personalised education. We believe that every child deserves <strong>individual attention and expert guidance</strong>, no matter where they live. That’s why we bring together <strong>qualified teachers and proven learning methods</strong> to deliver engaging lessons right to your home.
+              <p className="about-lead mt-3 text-justify">
+                TutorExel is an online tutoring company dedicated to helping school students succeed through high-quality, personalised education. We believe that every child deserves individual attention and expert guidance, no matter where they live. That’s why we bring together qualified teachers and proven learning methods to deliver engaging lessons right to your home.
               </p>
             </Col>
           </Row>
@@ -61,12 +60,14 @@ const AboutUsPage = () => {
         imagePosition="left"
         className="bg-white"
         content={
-          <h2 className="text-center " style={{ fontSize: '2.4rem', color: '#ffffffff' }}>
-            Our Mission
-            <span className="d-block fs-5 mt-3 text-center about-mission-desc">
+          <div className="w-100">
+            <h2 className="text-center section-heading" style={{ color: '#ffffffff' }}>
+              Our Mission
+            </h2>
+            <p className="text-white text-center banner-copy mx-auto mt-3" style={{ fontSize: '1.25rem', lineHeight: '1.7', margin: 0 }}>
               Empowering students to achieve their best through trusted, customised online learning.
-            </span>
-          </h2>
+            </p>
+          </div>
         }
       />
       <FeatureSection

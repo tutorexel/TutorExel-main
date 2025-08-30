@@ -64,6 +64,32 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+/* Standardized Section Headings */
+.section-heading {
+  font-size: 44.8px !important;
+  font-weight: 700 !important;
+  color: var(--dark-navy) !important;
+}
+
+/* Responsive adjustments for section headings */
+@media (max-width: 991.98px) {
+  .section-heading {
+    font-size: 36px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-heading {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-heading {
+    font-size: 28px !important;
+  }
+}
+
 /* Find and replace or add this class */
 .hero-section-bg {
   /* This gradient goes from light blue, to white, to light orange */
@@ -191,6 +217,27 @@ h1, h2, h3, h4, h5, h6 {
 .subscribe-button:hover {
   transform: scale(1.05);
 }
+
+/* Footer about paragraph justification */
+.footer-about-text {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+/* Standard page intro paragraph (below headings, non-Home pages) */
+.page-intro {
+  width: 100%;
+  max-width: 100% !important;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+.page-intro strong { font-weight: 400 !important; }
 
 /* src/index.css */
 
@@ -463,10 +510,12 @@ h1, h2, h3, h4, h5, h6 {
   .hero-content { padding: 0.5rem 0 !important; }
 
   .hero-title {
-    font-size: 1.35rem !important;
+    /* Phone size: 32px, weight handled by .section-heading */
+    font-size: 32px !important;
     line-height: 1.2 !important;
     margin-bottom: 0.5rem !important;
     letter-spacing: -0.2px;
+    font-weight: 700 !important;
   }
   .hero-subtitle {
     font-size: 0.85rem !important;

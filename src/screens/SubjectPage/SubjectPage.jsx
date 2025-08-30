@@ -51,15 +51,15 @@ const SubjectPage = () => {
         <Container>
           <Row className="g-5">
              <Col lg={8} className="d-flex flex-column justify-content-center">
-              <h2 className="fw-bolder">{subjectContent.introHeading}</h2>
-              <p className="text-secondary mt-3">{subjectContent.introP1}</p>
+              <h2 className="section-heading">{subjectContent.introHeading}</h2>
+              <p className="text-secondary mt-3 page-intro">{subjectContent.introP1}</p>
               <p 
-                className="text-secondary" 
+                className="text-secondary page-intro" 
                 dangerouslySetInnerHTML={{ __html: subjectContent.introP2 }} 
               />
               
-              <h3 className="fw-bolder mt-5">{subjectContent.learningHeading}</h3>
-              <p className="text-secondary mt-3">{subjectContent.learningP1}</p>
+              <h3 className="section-heading mt-5">{subjectContent.learningHeading}</h3>
+              <p className="text-secondary mt-3 page-intro">{subjectContent.learningP1}</p>
             </Col>
 
             <Col lg={4}>
@@ -86,7 +86,7 @@ const SubjectPage = () => {
           <Row className="justify-content-center">
             <Col lg={12}>
               <div className="course-content-section">
-                <h2 className="text-center fw-bolder">{subjectContent.courseContent.heading}</h2>
+                <h2 className="text-center section-heading">{subjectContent.courseContent.heading}</h2>
                 <hr className="my-4" />
                 <Row>
                   {subjectContent.courseContent.topics.map(topic => (
@@ -124,10 +124,10 @@ const SubjectPage = () => {
           <div className="results-banner">
             <Row className="align-items-center">
               <Col lg={7}>
-                <h2 className="display-5 fw-bolder">Designed for Results</h2>
+                <h2 className="section-heading">Designed for Results</h2>
                 {/* The year is now dynamically inserted into the hardcoded text */}
                 <p className="fs-5 mt-3">
-                  Whether your child needs help catching up or wants to move ahead, <strong>our {formattedYear} program is structured to support every learning goal.</strong>
+                  Whether your child needs help catching up or wants to move ahead, our {formattedYear} program is structured to support every learning goal.
                 </p>
                 
                 {/* Vertically stacked CTAs */}

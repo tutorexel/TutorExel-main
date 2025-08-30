@@ -31,7 +31,7 @@ export const subjectsData = {
       pageTitle: "Year 2 Mathematics – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 2 Maths program builds a strong foundation in number skills, operations, early fractions, and patterns. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 2 Maths",
       learningP1: "Year 2 builds confidence with three‑digit numbers, equal sharing and skip‑counting patterns.",
       sidebar: {
@@ -105,7 +105,7 @@ export const subjectsData = {
       pageTitle: "Year 2 English – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 2 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 2 English",
       learningP1: "Year 2 strengthens spelling patterns, builds reading stamina and develops coherent paragraphs.",
       sidebar: {
@@ -187,7 +187,7 @@ export const subjectsData = {
       pageTitle: "Year 2 Hindi – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 2 Hindi program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 2 Hindi",
       learningP1: "Year 2 sustains short dialogues, gathers information from visuals and writes short labelled sentences in Devanāgarī.",
       sidebar: {
@@ -243,7 +243,7 @@ export const subjectsData = {
       pageTitle: "Year 2 Science – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 2 Science program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 2 Science",
       learningP1: "Year 2 examines life cycles, material changes, Earth’s resources and how pushes/pulls affect motion.",
       sidebar: {
@@ -297,7 +297,7 @@ export const subjectsData = {
       pageTitle: "Year 3 Mathematics – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 3 Mathematics program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 3 Mathematics",
       learningP1: "Students master times‑tables, explore equivalent fractions and measure area, perimeter and data in real contexts.",
       sidebar: {
@@ -368,7 +368,7 @@ export const subjectsData = {
       pageTitle: "Year 3 English – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 3 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 3 English",
       learningP1: "Students master multisyllabic decoding, apply comprehension strategies and craft cohesive paragraphs for different purposes.",
       sidebar: {
@@ -452,7 +452,7 @@ export const subjectsData = {
       pageTitle: "Year 3 Hindi – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 3 Hindi program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 3 Hindi",
       learningP1: "Students exchange emails about hobbies, gather information from short texts and perform short plays using rehearsed language.",
       sidebar: {
@@ -508,7 +508,7 @@ export const subjectsData = {
       pageTitle: "Year 3 Science – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 3 Science program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 3 Science",
       learningP1: "Students explore adaptations, states of matter, Earth’s rotation and heat transfer.",
       sidebar: {
@@ -562,7 +562,7 @@ export const subjectsData = {
       pageTitle: "Year 4 Mathematics – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 4 Mathematics program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 4 Mathematics",
       learningP1: "Learners generalise multiplication, handle decimals to hundredths, and experiment with chance and data.",
       sidebar: {
@@ -634,7 +634,7 @@ export const subjectsData = {
       pageTitle: "Year 4 English – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 4 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 4 English",
       learningP1: "Learners expand vocabulary, read varied genres critically and create well-structured texts with cohesive devices.",
       sidebar: {
@@ -718,7 +718,7 @@ export const subjectsData = {
       pageTitle: "Year 4 Hindi – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 4 Hindi program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 4 Hindi",
       learningP1: "Learners collaborate on class projects, produce informative reports and explore variations in spoken and written Hindi.",
       sidebar: {
@@ -774,7 +774,7 @@ export const subjectsData = {
       pageTitle: "Year 4 Science – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 4 Science program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 4 Science",
       learningP1: "Learners study life cycles & ecosystems, material properties, Earth’s surface and contact/non-contact forces.",
       sidebar: {
@@ -828,7 +828,7 @@ export const subjectsData = {
       pageTitle: "Year 5 Mathematics – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 5 Mathematics program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 5 Mathematics",
       learningP1: "Year 5 links fractions to percentages, works with million‑level numbers, and deepens statistical investigations.",
       sidebar: {
@@ -899,7 +899,7 @@ export const subjectsData = {
       pageTitle: "Year 5 English – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 5 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 5 English",
       learningP1: "Year 5 refines morphological spelling, deepens text analysis and strengthens informative & persuasive writing.",
       sidebar: {
@@ -984,7 +984,7 @@ export const subjectsData = {
       pageTitle: "Year 5 Hindi – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 5 Hindi program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 5 Hindi",
       learningP1: "Year 5 manages everyday transactions, researches topics and writes multi-paragraph texts with cohesive devices.",
       sidebar: {
@@ -1040,7 +1040,7 @@ export const subjectsData = {
       pageTitle: "Year 5 Science – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 5 Science program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 5 Science",
       learningP1: "Year 5 investigates structural adaptations, mixtures & solutions, the solar system and light behaviour.",
       sidebar: {
@@ -1094,7 +1094,7 @@ export const subjectsData = {
       pageTitle: "Year 6 Mathematics – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 6 Mathematics program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 6 Mathematics",
       learningP1: "Students extend into negative numbers, use variables and explore proportional reasoning and experimental probability.",
       sidebar: {
@@ -1166,7 +1166,7 @@ export const subjectsData = {
       pageTitle: "Year 6 English – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 6 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 6 English",
       learningP1: "Students use nuanced vocabulary, critique diverse texts and adapt writing style to audience and purpose.",
       sidebar: {
@@ -1250,7 +1250,7 @@ export const subjectsData = {
       pageTitle: "Year 6 Hindi – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 6 Hindi program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 6 Hindi",
       learningP1: "Students debate familiar issues, compile research reports and create persuasive podcasts while reflecting on language choices.",
       sidebar: {
@@ -1306,7 +1306,7 @@ export const subjectsData = {
       pageTitle: "Year 6 Science – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 6 Science program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 6 Science",
       learningP1: "Students examine classification systems, chemical reactions, earthquakes and energy transformations.",
       sidebar: {
@@ -1360,7 +1360,7 @@ export const subjectsData = {
       pageTitle: "Year 7 Mathematics – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 7 Mathematics program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 7 Mathematics",
       learningP1: "Learners consolidate fraction skills, solve simple equations, justify angle properties and display data effectively.",
       sidebar: {
@@ -1431,7 +1431,7 @@ export const subjectsData = {
       pageTitle: "Year 7 English – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 7 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 7 English",
       learningP1: "Learners analyse literature and informative texts, extend academic vocabulary and craft multimodal creations.",
       sidebar: {
@@ -1514,7 +1514,7 @@ export const subjectsData = {
       pageTitle: "Year 7 Hindi – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 7 Hindi program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 7 Hindi",
       learningP1: "Learners conduct inquiry projects, critique diverse texts and craft imaginative pieces experimenting with style and register.",
       sidebar: {
@@ -1570,7 +1570,7 @@ export const subjectsData = {
       pageTitle: "Year 7 Science – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 7 Science program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 7 Science",
       learningP1: "Learners explore cell structures, particle theory, renewable resources and forces & motion.",
       sidebar: {
@@ -1624,7 +1624,7 @@ export const subjectsData = {
       pageTitle: "Year 8 Mathematics – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 8 Mathematics program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 8 Mathematics",
       learningP1: "Students extend index laws, model linear relationships and use right‑triangle geometry in problem solving.",
       sidebar: {
@@ -1695,7 +1695,7 @@ export const subjectsData = {
       pageTitle: "Year 8 English – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 8 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 8 English",
       learningP1: "Students scrutinise author choices, refine linguistic precision and craft sustained imaginative & persuasive texts.",
       sidebar: {
@@ -1779,7 +1779,7 @@ export const subjectsData = {
       pageTitle: "Year 8 Hindi – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 8 Hindi program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 8 Hindi",
       learningP1: "Students sustain extended discussions, evaluate sources and create persuasive multimedia while recognising code-switching practices.",
       sidebar: {
@@ -1835,7 +1835,7 @@ export const subjectsData = {
       pageTitle: "Year 8 Science – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 8 Science program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 8 Science",
       learningP1: "Year 8 examines body systems, chemical reactions, the rock cycle and forms of energy.",
       sidebar: {
@@ -1889,7 +1889,7 @@ export const subjectsData = {
       pageTitle: "Year 9 Mathematics – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 9 Mathematics program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 9 Mathematics",
       learningP1: "Year 9 introduces quadratics, formal trigonometry ratios and data inference using samples.",
       sidebar: {
@@ -1961,7 +1961,7 @@ export const subjectsData = {
       pageTitle: "Year 9 English – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 9 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 9 English",
       learningP1: "Students interrogate complex ideas in texts, manipulate rhetoric and compose sophisticated digital compositions.",
       sidebar: {
@@ -2043,7 +2043,7 @@ export const subjectsData = {
       pageTitle: "Year 9 Hindi – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 9 Hindi program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 9 Hindi",
       learningP1: "Students debate contemporary issues, critique complex texts and compose analytical & creative responses employing sophisticated grammar.",
       sidebar: {
@@ -2099,7 +2099,7 @@ export const subjectsData = {
       pageTitle: "Year 9 Science – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 9 Science program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 9 Science",
       learningP1: "Students analyse ecosystems, atomic structure, plate interactions and heat transfer mechanisms.",
       sidebar: {
@@ -2153,7 +2153,7 @@ export const subjectsData = {
       pageTitle: "Year 10 Mathematics – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 10 Mathematics program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 10 Mathematics",
       learningP1: "Students consolidate algebra with quadratics and exponentials, analyse real‑world data and explore formal probability models.",
       sidebar: {
@@ -2223,7 +2223,7 @@ export const subjectsData = {
       pageTitle: "Year 10 English – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 10 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 10 English",
       learningP1: "Students master discipline-specific language, critique diverse texts and craft substantiated arguments with reflective insight.",
       sidebar: {
@@ -2306,7 +2306,7 @@ export const subjectsData = {
       pageTitle: "Year 10 Hindi – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 10 Hindi program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 10 Hindi",
       learningP1: "Year 10 masters complex negotiation, produces extended research papers and reflects on language’s role in identity.",
       sidebar: {
@@ -2362,7 +2362,7 @@ export const subjectsData = {
       pageTitle: "Year 10 Science – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 10 Science program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group (4:1) online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 10 Science",
       learningP1: "Year 10 explores genetics & evolution, reaction rates & equilibrium, global systems and motion & energy.",
       sidebar: {

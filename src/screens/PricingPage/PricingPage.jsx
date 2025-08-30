@@ -33,13 +33,13 @@ const PricingPage = () => {
   return (
     <main>
       <PageHero title="Pricing" />
-      <section className="pt-5 bg-white">
+      <section className="py-5 bg-white">
         <Container>
           <Row className="">
             <Col lg={11}>
-              <h2 className="fw-bolder" style={{ fontSize: '2.8rem' }}></h2>
-              <p className="para mt-3 text-left">
-                Every family begins with a free trial class so you can experience Tutorexel with no commitment. After your trial, you can choose either One-to-One Tutoring or Group Classes. <strong>All sessions are 1 hour.</strong> Payments are billed monthly in advance. Cancel anytime with 2 weeks' notice.
+              <h2 className="section-heading"></h2>
+              <p className="page-intro mt-3 text-secondary">
+                Every family begins with a free trial class so you can experience Tutorexel with no commitment. After your trial, you can choose either One-to-One Tutoring or Group Classes. All sessions are 1 hour. Payments are billed monthly in advance. Cancel anytime with 2 weeks' notice.
               </p>
             </Col>
           </Row>
@@ -51,7 +51,7 @@ const PricingPage = () => {
         <Container>
           <Row className="g-4 align-items-stretch">
             <Col lg={4} className="d-flex flex-column">
-              <h3 className=" mb-4">Simple, Transparent Pricing</h3>
+              <h3 className="section-heading mb-4">Simple, Transparent Pricing</h3>
               <div className="d-flex flex-column justify-content-center flex-grow-1">
                 <div className="pricing-feature-item">
                   <img src={iconSchedule} alt="Schedule Icon" />

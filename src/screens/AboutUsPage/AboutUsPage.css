@@ -4,9 +4,13 @@
 .about-lead {
   font-size: 1.05rem; /* slightly smaller than default lead */
   line-height: 1.75;
-  max-width: 70ch;
+  width: 100%;
+  max-width: 100% !important; /* occupy full column width */
+  text-align: justify;
   text-justify: inter-word; /* fallback */
-  hyphens: none; /* avoid mid-word breaks */
+  hyphens: auto; /* allow better justification */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 /* Our Mission heading already set to black inline; refine subtext */
@@ -17,11 +21,43 @@
 }
 
 @media (max-width: 991.98px) {
-  .about-lead { font-size: 1rem; line-height: 1.7; max-width: 90ch; }
+  .about-lead { font-size: 1rem; line-height: 1.7; max-width: 100%; }
   .about-mission-desc { font-size: 1rem; line-height: 1.65; max-width: 70ch; }
 }
 
 @media (max-width: 575.98px) {
   .about-lead { font-size: 0.98rem; line-height: 1.6; max-width: 100%; }
   .about-mission-desc { font-size: 0.98rem; line-height: 1.6; max-width: 100%; }
+}
+
+/* Mobile fix: align feature bullets consistently on About page */
+@media (max-width: 767.98px) {
+  .about-page .feature-section .feature-list {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .about-page .feature-section .feature-list > div { margin: 0 !important; }
+  .about-page .feature-section .feature-item {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+  }
+  .about-page .feature-section .feature-item img { flex: 0 0 28px; }
+}
+
+/* Phone spacing reductions for About page */
+@media (max-width: 575.98px) {
+  .about-page .page-hero-banner {
+    padding: 48px 0 !important;
+    min-height: auto !important;
+  }
+  .about-intro {
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }

@@ -83,7 +83,7 @@ const TeacherForm = () => {
             <Col lg={12}>
               <Form onSubmit={handleSubmit}>
                 <div className="form-container">
-                  <h2>Apply to Join <img src={logo} alt="TutorExel" style={{ height: '35px', verticalAlign: 'text-bottom' }} /> as a Tutor</h2>
+                  <h2 className="section-heading">Apply to Join <img src={logo} alt="TutorExel" style={{ height: '35px', verticalAlign: 'text-bottom' }} /> as a Tutor</h2>
                   <h4 className="form-section-heading">Basic Details</h4>
                   <Row>
                     <Col md={6}><Form.Group className="mb-4"><Form.Control required className="form-control-custom" type="text" name="fullName" placeholder="Full Name (Required)" onChange={handleChange} /></Form.Group></Col>

@@ -37,7 +37,7 @@ const HowItWorksSection = ({
     <section className={`${backgroundClass} hiw-wrapper`}>
       <Container>
         <div className="text-center">
-          <h2 className=" hiw-title">{headingText}</h2>
+          <h2 className="section-heading hiw-title">{headingText}</h2>
         </div>
 
         <div className="hiw-card mt-5">

@@ -62,7 +62,7 @@ const CareersPage = () => {
             <Col lg={11} className="">
           
               <h4 className="fw-normal mt-3">Make a Real Impact — From Anywhere</h4>
-              <p className="mt-3">At Tutorexel, we're on a mission to redefine online tutoring for school students by combining academic rigour with personalised care. If you're passionate about education and want the freedom to work from anywhere, join our growing team of expert educators.</p>
+              <p className="mt-3 page-intro text-secondary">At Tutorexel, we're on a mission to redefine online tutoring for school students by combining academic rigour with personalised care. If you're passionate about education and want the freedom to work from anywhere, join our growing team of expert educators.</p>
             </Col>
         </Container>
       </section>
@@ -72,15 +72,15 @@ const CareersPage = () => {
         <Container>
           {/* Use a single container column for the section's content */}
           <Col lg={11} className="">
-            <h2 className="fw-bolder mb-4">Current Openings</h2>
+            <h2 className="section-heading mb-4">Current Openings</h2>
             <h4 className="fw-bold">Online Tutors – All Subjects (Years 1-10)</h4>
             <p className="text-secondary">We are currently hiring for:</p>
             
             {/* This Row is now the direct container for the two columns */}
             <Row className="mt-4">
               {/* Column 1: Subjects List */}
-              <Col md={6}>
-                <ul className="list-unstyled subjects-list-distributed">
+              <Col md={6} className="current-openings-col">
+                <ul className="list-unstyled subjects-list-distributed openings-subjects">
                   <li>• Mathematics</li>
                   <li>• Science</li>
                   <li>• English</li>
@@ -89,9 +89,9 @@ const CareersPage = () => {
               </Col>
               
               {/* Column 2: Job Details List */}
-              <Col md={6}>
+              <Col md={6} className="current-openings-col">
                 {/* Use a simple div, no more box class */}
-                <div>
+                <div className="openings-details">
                   {/* Wrap each detail in a div with the new class */}
                   <div className="detail-item">
                     <dt>Job Type:</dt>
@@ -138,7 +138,7 @@ const CareersPage = () => {
         backgroundColor="#22A3D2"
         content={
           <div className="text-white">
-            <h2 className="fw-bolder text-white">What You'll Do</h2>
+            <h2 className="section-heading text-white">What You'll Do</h2>
             <ul className="fs-5 ps-3 mt-4">
               <li>Deliver live, engaging sessions aligned to the Australian Curriculum</li>
               <li>Follow personalised student learning plans</li>
@@ -163,7 +163,7 @@ const CareersPage = () => {
       {/* Section 8: Life at Tutorexel */}
       <section className="py-5 bg-white">
         <Container>
-          <h2 className="text-center fw-bolder mb-5">Life at Tutorexel</h2>
+          <h2 className="text-center section-heading mb-5">Life at Tutorexel</h2>
           <div className="life-quote-card">
             <h3 className="fw-normal p-4" style={{color: 'white', textAlign: 'center'}}>"We're building a team of educators who genuinely care. At Tutorexel, you get the support and flexibility you need to do your best work."</h3>
           </div>

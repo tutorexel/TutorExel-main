@@ -186,12 +186,12 @@ const tutoringFeatures = [
     { text: 'Choose Your ', bold: 'Preferred Slot' },
     { text: 'Progress Reports Aligned With The ', bold: 'Australian Curriculum' },
     { text: 'Free Consultation ', bold: 'And Demo Class' },
-    { text: 'AUD 23/HOUR - ', bold: 'No Contracts' },
+    { text: 'AUD 21/HOUR - ', bold: 'No Contracts' },
 ];
 
 const progressFeatures = [
     { text: 'What Your Child Has ', bold: 'Learned' },
-    { text: 'Strengths And Areas For', bold: 'Improvement' },
+    { text: 'Strengths And Areas For ', bold: 'Improvement' },
     { text: 'Next Steps ', bold: 'Recommended By The Tutor' },
 ];
 
@@ -316,10 +316,10 @@ const HomePage = () => {
         />
 
         {/* Subjects Section */}
-        <section className="py-5">
+        <section className="py-5 subjects-section">
         <Container>
           <div className="text-center">
-            <h2 className="" style={{ fontSize: '2.8rem' }}>Subjects We Offer</h2>
+            <h2 className="section-heading">Subjects We Offer</h2>
             <p className="lead text-secondary mx-auto mt-3" style={{ maxWidth: '700px' }}>
               Tutorexel helps your child excel in every area:
             </p>
@@ -375,8 +375,8 @@ const HomePage = () => {
           className="bg-white"
           content={
             <div>
-              <p className="text-white  text-start banner-copy" style={{ fontSize: '1.25rem', lineHeight: '1.7', margin: 0 }}>
-                No matter which option you choose, your child receives <strong>high-quality instruction</strong>, caring support, and measurable progress.
+              <p className="text-white  text-start banner-copy" style={{ fontSize: '24px', lineHeight: '1.7', margin: 0 }}>
+                No matter which option you choose, your child receives high-quality instruction, caring support, and measurable progress.
               </p>
             </div>
           }

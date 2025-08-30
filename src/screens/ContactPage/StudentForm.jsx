@@ -84,7 +84,7 @@ const StudentForm = () => {
             <Col lg={12}>
                 <Form onSubmit={handleSubmit}>
                     <div className="form-container">
-                        <h2>Book a Free Trial</h2>
+                        <h2 className="section-heading">Book a Free Trial</h2>
                         <p className="subheading">Let's Get Started</p>
                         {/* --- Text Inputs --- */}
                         <Row>

@@ -32,7 +32,7 @@ const CTASection = ({
           <div className="bg-primary-orange-gradient p-5 rounded-4 overflow-hidden" style={{ minHeight: '230px'}}>
             <Row className="align-items-center text-align-center">
               <Col lg={12}>
-                <h2 className="display-7  text-white text-center">
+                <h2 className="section-heading text-white text-center">
                   {headingText}
                 </h2>
                 <div className="d-flex flex-column flex-sm-row gap-3 mt-4 text-center justify-content-center">

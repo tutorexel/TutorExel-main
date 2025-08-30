@@ -38,6 +38,23 @@
   padding-left: 1.5rem;
 }
 
+/* Mobile refinements for the Course Content container */
+@media (max-width: 767.98px) {
+  .course-content-section {
+    padding: 1.25rem 1rem !important; /* tighter, even padding */
+    border-radius: 16px !important;
+  }
+  .course-content-section hr { margin: 0.75rem 0 !important; }
+  .course-content-section .row { margin-left: 0 !important; margin-right: 0 !important; }
+  .course-content-section .row > [class^='col'],
+  .course-content-section .row > [class*=' col'] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .topic-block { margin-bottom: 1.25rem !important; }
+  .topic-block ul { padding-left: 1.25rem !important; }
+}
+
 /* --- Designed for Results Banner --- */
 /* src/screens/SubjectPage/SubjectPage.css */
 
@@ -57,6 +74,15 @@
 /* Make sure headings inside are white */
 .results-banner h2 {
   color: white;
+}
+
+/* Ensure no bullets/markers appear in banner copy */
+.results-banner p,
+.results-banner ul,
+.results-banner li {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 /* Styling for the "Call or WhatsApp" text link */

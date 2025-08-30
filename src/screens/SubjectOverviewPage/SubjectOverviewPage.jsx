@@ -46,8 +46,8 @@ const SubjectOverviewPage = () => {
         <Container>
           <Row className="">
             <Col lg={12} className="">
-              <h2 className="fw-bolder">Subjects We Offer</h2>
-              <p className="lead text-secondary mt-3">{overviewContent.description}</p>
+              <h2 className="section-heading">Subjects We Offer</h2>
+              <p className="lead text-secondary mt-3 subject-overview-lead">{overviewContent.description}</p>
             </Col>
           </Row>
         </Container>
@@ -56,8 +56,8 @@ const SubjectOverviewPage = () => {
       {/* --- Grid of Year Cards --- */}
       <section className="py-5">
         <Container>
-          <h2 className="fw-bolder mb-5">{overviewContent.heading}</h2>
-          <Row className="g-4">
+          <h2 className="section-heading mb-5">{overviewContent.heading}</h2>
+          <Row className="g-4 align-items-stretch">
             {availableYears.length > 0 ? (
               availableYears.map(({ year, data }) => (
                 <Col lg={4} md={6} key={year}>
@@ -72,7 +72,7 @@ const SubjectOverviewPage = () => {
                     <ul className="text-secondary">
                       {data.sidebar.keyAreas.map(area => <li key={area}>{area}</li>)}
                     </ul>
-                    <Link to={`/subjects/${year}/${dataKey}`} className="btn btn-primary-orange w-100">
+                    <Link to={`/subjects/${year}/${dataKey}`} className="btn btn-primary-orange w-100 mt-auto">
                       Click to learn more <FaArrowRight />
                     </Link>
                   </div>

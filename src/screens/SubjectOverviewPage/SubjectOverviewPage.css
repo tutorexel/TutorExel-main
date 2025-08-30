@@ -13,3 +13,14 @@
   list-style: disc;
   padding-left: 1.5rem;
 }
+
+/* Make top overview paragraph full width and justified */
+.subject-overview-lead {
+  width: 100%;
+  max-width: 100% !important;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}

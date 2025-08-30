@@ -11,7 +11,7 @@ const LearningStyles = () => {
         <section className="py-5 bg-white">
             <Container>
                 <div className="text-center mb-5">
-                    <h2 className="" style={{ fontSize: '2rem' }}>Choose Your Learning Style</h2>
+                    <h2 className="section-heading">Choose Your Learning Style</h2>
                     <p className="lead text-secondary">
                         At Tutorexel, we offer two  <br></br><strong>flexible</strong> ways to learn:
                     </p>

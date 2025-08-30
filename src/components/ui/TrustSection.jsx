@@ -12,7 +12,7 @@ const TrustSection = ({
     <section className="why-trust-section py-5" style={customStyles}>
       <Container>
         <div className="text-center">
-          <h2 className=" text-white" style={{ fontSize: '2.8rem' }}>
+          <h2 className="section-heading text-white">
             {headingText}
           </h2>
         </div>
