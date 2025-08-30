@@ -180,9 +180,9 @@ const Footer = () => {
     <>
       <footer className="bg-almost-black text-white-50 footer-section">
         <Container>
-          <Row className="gy-5">
+          <Row className="g-5">
             {/* About Column */}
-            <Col lg={4} md={12}>
+            <Col lg={4} md={12} className="pe-lg-5">
               <img src={logo} alt="TutorExel Logo" className="mb-3 footer-logo" />
               <p className="footer-about-text text-white-50">
                 At TutorExel, we understand student struggles and parent concerns. 
@@ -196,7 +196,7 @@ const Footer = () => {
             </Col>
 
             {/* Subjects Column */}
-            <Col lg={2} md={4}>
+            <Col lg={3} md={4}>
               <h5 className="text-white fw-bold mb-4">Subjects</h5>
               <ul className="footer-subjects-list d-grid gap-2">
                 {subjects.map((subject) => (
@@ -224,7 +224,7 @@ const Footer = () => {
             </Col>
 
             {/* Quick Links */}
-            <Col lg={3} md={4}>
+            <Col lg={2} md={4}>
               <h5 className="text-white fw-bold mb-4">Quick Links</h5>
               <Link to="/about" className="text-white-50 text-decoration-none mb-2 d-block">About Us</Link>
               <Link to="/careers" className="text-white-50 text-decoration-none mb-2 d-block">Careers</Link>

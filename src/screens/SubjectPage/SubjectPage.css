@@ -86,6 +86,12 @@
   font-weight: 400 !important; /* ensure normal weight */
 }
 
+/* Also normalize any size-only utility text inside the banner */
+.results-banner .fs-5,
+.results-banner span {
+  font-weight: 400 !important;
+}
+
 /* Styling for the "Call or WhatsApp" text link */
 .call-link {
   color: white;

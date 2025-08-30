@@ -114,7 +114,7 @@ const SubjectPage = () => {
         headingText="How Learning is Delivered"
         descriptionText="Every 4 weeks, you’ll receive a clear progress report outlining:"
         features={deliveryFeatures}
-        buttonText="Click here to see a sample report"
+        buttonText="Contact Us"
         customStyles={{ backgroundColor: '#FFFFFF' }} // Ensure background is white
       />
       
@@ -126,7 +126,7 @@ const SubjectPage = () => {
               <Col lg={7}>
                 <h2 className="section-heading">Designed for Results</h2>
                 {/* The year is now dynamically inserted into the hardcoded text */}
-                <p className="fs-5 mt-3">
+                <p className="fs-5 mt-3 fw-normal">
                   Whether your child needs help catching up or wants to move ahead, our {formattedYear} program is structured to support every learning goal.
                 </p>
                 

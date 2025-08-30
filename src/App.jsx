@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Import Layout Components
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import WhatsAppFloat from './components/ui/WhatsAppFloat';
 
 // Import Screen/Page Components
 import HomePage from './screens/HomePage/HomePage';
@@ -36,6 +37,7 @@ function App() {
       </Routes>
 
       <Footer />
+      <WhatsAppFloat />
     </Router>
   );
 }

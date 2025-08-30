@@ -386,7 +386,7 @@ const HomePage = () => {
           image={progressBoy}
           headingText="Progress You Can See"
           features={progressFeatures}
-          buttonText="Click here to see a sample report"
+          buttonText="Contact Us"
         />
         <Testimonials />
         <CTASection

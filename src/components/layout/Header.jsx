@@ -25,8 +25,9 @@ const Header = () => {
     
       <Navbar bg="white" expand="lg" className="shadow-sm p-0 responsive-navbar">
         <Container>
-          <Navbar.Brand as={Link} to="/" className="mobile-logo">
-            <img src={logo} height="36" alt="TutorExel Logo" />
+          <Navbar.Brand as={Link} to="/">
+            <img src={logo} alt="TutorExel Logo" className="d-lg-none" style={{height: '36px'}} />
+            <img src={logo} alt="TutorExel Logo" className="d-none d-lg-block desktop-logo" />
           </Navbar.Brand>
 
           {/* Mobile menu toggle button (search removed on phones) */}

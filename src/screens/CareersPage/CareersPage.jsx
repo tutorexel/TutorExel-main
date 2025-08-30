@@ -61,7 +61,7 @@ const CareersPage = () => {
         <Container>
             <Col lg={11} className="">
           
-              <h4 className="fw-normal mt-3">Make a Real Impact — From Anywhere</h4>
+              <h4 className="fw-bold mt-3" style={{fontWeight: '700'}}>Make a Real Impact - From Anywhere</h4>
               <p className="mt-3 page-intro text-secondary">At Tutorexel, we're on a mission to redefine online tutoring for school students by combining academic rigour with personalised care. If you're passionate about education and want the freedom to work from anywhere, join our growing team of expert educators.</p>
             </Col>
         </Container>
