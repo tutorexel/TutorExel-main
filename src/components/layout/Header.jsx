@@ -194,7 +194,7 @@ const Header = () => {
                       className="w-100 mobile-cta-button"
                       onClick={handleCloseMobileMenu}
                     >
-                      Free Trial
+                      Login
                     </Button>
                   </a>
                 </div>
