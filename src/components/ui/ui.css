@@ -950,9 +950,24 @@
     padding-right: 0.75rem !important;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  /* Allow hyphenation on headings by default, but not on explicit no-hyphens/section-heading */
+  h1:not(.no-hyphens):not(.section-heading),
+  h2:not(.no-hyphens):not(.section-heading),
+  h3:not(.no-hyphens):not(.section-heading),
+  h4:not(.no-hyphens):not(.section-heading),
+  h5:not(.no-hyphens):not(.section-heading),
+  h6:not(.no-hyphens):not(.section-heading) {
     word-wrap: break-word !important;
     hyphens: auto !important;
+  }
+  /* Strong override to keep words intact for key headings on small screens */
+  .section-heading,
+  .no-hyphens {
+    -webkit-hyphens: none !important;
+    -ms-hyphens: none !important;
+    hyphens: none !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
   }
   
   .btn {
