@@ -115,7 +115,7 @@ const StudentForm = () => {
                         </Row>
                         <Row>
                             <Col md={6}><Form.Group className="mb-4"><Form.Control type="email" name="email" placeholder="Email Address *" required className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
-                            <Col md={6}><Form.Group className="mb-4"><Form.Control type="tel" name="whatsapp" placeholder="WhatsApp Number (with country code)*" required className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
+                            <Col md={6}><Form.Group className="mb-4"><Form.Control type="tel" name="whatsapp" placeholder="WhatsApp Number (With Country Code)*" required className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
                         </Row>
                         <Form.Group className="mb-4"><Form.Control type="text" name="cityCountry" placeholder="City & Country *" required className="form-control-custom" onChange={handleChange} /></Form.Group>
 

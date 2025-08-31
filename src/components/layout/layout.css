@@ -196,33 +196,42 @@
   cursor: pointer;
 }
 
+/*
+  Mobile Subjects list: make it clearly scrollable on phones.
+  - Force a vertical scrollbar so users notice there is more.
+  - Increase max height to use viewport space while keeping menu compact.
+*/
 .mobile-subjects-menu {
   padding-left: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  max-height: 300px;
-  overflow-y: auto;
+  max-height: 60vh;              /* show more items while contained */
+  overflow-y: scroll;            /* force scrollbar visibility */
+  scrollbar-gutter: stable;      /* keep layout stable when scrollbar shows */
   -webkit-overflow-scrolling: touch;
 }
 
 /* Custom scrollbar for mobile subjects menu */
 .mobile-subjects-menu::-webkit-scrollbar {
-  width: 4px;
+  width: 6px; /* make the bar more noticeable */
 }
 
 .mobile-subjects-menu::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 2px;
+  background: #e9ecef;
+  border-radius: 6px;
 }
 
 .mobile-subjects-menu::-webkit-scrollbar-thumb {
   background: var(--primary-blue);
-  border-radius: 2px;
+  border-radius: 6px;
 }
 
 .mobile-subjects-menu::-webkit-scrollbar-thumb:hover {
   background: var(--primary-orange);
 }
+
+/* Firefox scrollbar styling */
+.mobile-subjects-menu { scrollbar-width: thin; scrollbar-color: var(--primary-blue) #e9ecef; }
 
 .mobile-year-group {
   margin-bottom: 1rem;
