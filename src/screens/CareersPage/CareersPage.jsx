@@ -1,6 +1,6 @@
 // src/screens/CareersPage/CareersPage.jsx
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
 
@@ -51,6 +51,10 @@ const howToApplySteps = [
 
 
 const CareersPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main>
       {/* Section 1: Hero Banner */}
@@ -73,7 +77,7 @@ const CareersPage = () => {
           {/* Use a single container column for the section's content */}
           <Col lg={11} className="">
             <h2 className="section-heading mb-4">Current Openings</h2>
-            <h4 className="fw-bold">Online Tutors – All Subjects (Years 1-10)</h4>
+            <h4 className="fw-bold">Online Tutors – All Subjects (Years 2-10)</h4>
             <p className="text-secondary">We are currently hiring for:</p>
             
             {/* This Row is now the direct container for the two columns */}
@@ -103,7 +107,7 @@ const CareersPage = () => {
                   </div>
                   <div className="detail-item">
                     <dt>Time Zones:</dt>
-                    <dd>Classes follow Australian school timings</dd>
+                    <dd>Classes follow Australian time zone</dd>
                   </div>
                   <div className="detail-item">
                     <dt>Location:</dt>

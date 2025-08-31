@@ -1,6 +1,6 @@
 // src/screens/AboutUsPage/AboutUsPage.jsx
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 // 1. Import local CSS for this page
@@ -40,6 +40,10 @@ const ourApproachSteps = [
 
 
 const AboutUsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="about-page">
       <PageHero title="About Us" />

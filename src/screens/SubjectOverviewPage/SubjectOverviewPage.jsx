@@ -17,7 +17,7 @@ const SubjectOverviewPage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [subjectId]);
 
   const subjectKeyMap = {
     mathematics: 'maths',

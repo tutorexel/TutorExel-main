@@ -146,7 +146,7 @@ const Header = () => {
                   
                   {showSubjects && (
                     <div className="mobile-subjects-menu">
-                      {subjectsByYear.slice(0, 4).map((yearGroup) => (
+                      {subjectsByYear.map((yearGroup) => (
                         <div key={yearGroup.year} className="mobile-year-group">
                           <h6 className="mobile-year-title">{yearGroup.year}</h6>
                           {yearGroup.subjects.map((subject) => (

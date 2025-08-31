@@ -14,10 +14,11 @@ import PageHero from '../../components/ui/PageHero';
 import FeatureSection from '../../components/ui/FeatureSection';
 
 const SubjectPage = () => {
+  const { yearId, subjectId } = useParams();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
-  const { yearId, subjectId } = useParams();
+  }, [yearId, subjectId]);
   const subjectContent = subjectsData[yearId]?.[subjectId.toLowerCase()];
 
   if (!subjectContent) {

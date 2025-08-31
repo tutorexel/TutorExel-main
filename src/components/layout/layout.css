@@ -200,6 +200,28 @@
   padding-left: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom scrollbar for mobile subjects menu */
+.mobile-subjects-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.mobile-subjects-menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.mobile-subjects-menu::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 2px;
+}
+
+.mobile-subjects-menu::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-orange);
 }
 
 .mobile-year-group {

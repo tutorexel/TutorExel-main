@@ -107,3 +107,91 @@
 .file-action-link:hover {
   opacity: 0.8;
 }
+
+/* --- Mobile Responsive Fixes --- */
+@media (max-width: 767.98px) {
+  /* Reduce form container padding on mobile */
+  .form-container {
+    padding: 1.5rem 1rem !important;
+    margin: 0 0.5rem;
+  }
+  
+  /* Make all form inputs uniform on mobile */
+  .form-control.form-control-custom,
+  .form-select.form-control-custom {
+    width: 100%;
+    min-width: 0;
+    font-size: 14px;
+    padding: 0.875rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Ensure placeholder text fits properly on mobile */
+  .form-control.form-control-custom::placeholder {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Remove Bootstrap column gutters on mobile for better spacing */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .row > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Uniform spacing for form groups */
+  .mb-4 {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Better checkbox and radio button layout on mobile */
+  .d-flex.flex-wrap.gap-4 {
+    gap: 1rem !important;
+    justify-content: flex-start;
+  }
+  
+  .custom-form-check {
+    margin-bottom: 0.5rem;
+    flex: 0 0 auto;
+  }
+  
+  /* Adjust file upload area for mobile */
+  .file-upload-area,
+  .file-display-area {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Extra small screens - further adjustments */
+  .form-container {
+    padding: 1rem 0.75rem !important;
+    margin: 0 0.25rem;
+  }
+  
+  .form-control.form-control-custom,
+  .form-select.form-control-custom {
+    font-size: 13px;
+    padding: 0.8rem 0.875rem;
+  }
+  
+  .form-control.form-control-custom::placeholder {
+    font-size: 13px;
+  }
+  
+  /* Tighter spacing on very small screens */
+  .mb-4 {
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .file-upload-area,
+  .file-display-area {
+    padding: 1rem;
+  }
+}

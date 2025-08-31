@@ -1,6 +1,6 @@
 // src/screens/ContactPage/ThankYouPage.jsx
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 
@@ -12,6 +12,10 @@ import "./ThankYouPage.css";
 const ThankYouPage = () => {
   const location = useLocation();
   const isTeacherForm = location.state?.from === "teacher";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const message = isTeacherForm
     ? "Thank you! Our team has received your application and will connect with you via WhatsApp and email within 3-5 business days if you are shortlisted."
     : "Thank you! Our team will connect with you via WhatsApp and email within 24 hours to confirm your free trial and guide you through the next steps.";

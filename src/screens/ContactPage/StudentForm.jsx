@@ -11,7 +11,7 @@ import { submitToEndpoint, buildFormData } from '../../services/formSubmit';
 
 
 // Data for form options
-const subjectsOptions = ['Mathematics', 'Science', 'English', 'Hindi'];
+const subjectsOptions = ['Mathematics',  'English'];
 const yearGroupOptions = Array.from({ length: 9 }, (_, i) => `Year ${i + 2}`);
 
 const StudentForm = () => {
@@ -103,21 +103,21 @@ const StudentForm = () => {
       <section className="py-5 bg-light-gray">
         <Container>
           <Row className="justify-content-center">
-            <Col lg={12}>
+            <Col lg={10} xl={8}>
                 <Form onSubmit={handleSubmit}>
                     <div className="form-container">
                         <h2 className="section-heading">Book a Free Trial</h2>
                         <p className="subheading">Let's Get Started</p>
                         {/* --- Text Inputs --- */}
                         <Row>
-                            <Col md={6}><Form.Group className="mb-4"><Form.Control type="text" name="parentName" placeholder="Parent's Name (Required)" required className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
+                            <Col md={6}><Form.Group className="mb-4"><Form.Control type="text" name="parentName" placeholder="Parent's Name *" required className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
                             <Col md={6}><Form.Group className="mb-4"><Form.Control type="text" name="studentName" placeholder="Student's Name (Optional)" className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
                         </Row>
                         <Row>
-                            <Col md={6}><Form.Group className="mb-4"><Form.Control type="email" name="email" placeholder="Email Address (Required)" required className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
-                            <Col md={6}><Form.Group className="mb-4"><Form.Control type="tel" name="whatsapp" placeholder="WhatsApp Number (Required)" required className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
+                            <Col md={6}><Form.Group className="mb-4"><Form.Control type="email" name="email" placeholder="Email Address *" required className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
+                            <Col md={6}><Form.Group className="mb-4"><Form.Control type="tel" name="whatsapp" placeholder="WhatsApp Number (with country code)*" required className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
                         </Row>
-                        <Form.Group className="mb-4"><Form.Control type="text" name="cityCountry" placeholder="City & Country (Required)" required className="form-control-custom" onChange={handleChange} /></Form.Group>
+                        <Form.Group className="mb-4"><Form.Control type="text" name="cityCountry" placeholder="City & Country *" required className="form-control-custom" onChange={handleChange} /></Form.Group>
 
                         {/* --- Subjects Checkboxes --- */}
                         <Form.Group className="mb-4">

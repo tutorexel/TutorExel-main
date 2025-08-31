@@ -143,17 +143,17 @@ const TeacherForm = () => {
       <section className="py-5 bg-light-gray">
         <Container>
           <Row className="justify-content-center">
-            <Col lg={12}>
+            <Col lg={10} xl={8}>
               <Form onSubmit={handleSubmit}>
                 <div className="form-container">
                   <h2 className="section-heading">Apply to Join as a Tutor</h2>
                   <h4 className="form-section-heading">Basic Details</h4>
                   <Row>
-                    <Col md={6}><Form.Group className="mb-4"><Form.Control required className="form-control-custom" type="text" name="fullName" placeholder="Full Name (Required)" onChange={handleChange} /></Form.Group></Col>
-                    <Col md={6}><Form.Group className="mb-4"><Form.Control required className="form-control-custom" type="email" name="email" placeholder="Email Address (Required)" onChange={handleChange} /></Form.Group></Col>
+                    <Col md={6}><Form.Group className="mb-4"><Form.Control required className="form-control-custom" type="text" name="fullName" placeholder="Full Name *" onChange={handleChange} /></Form.Group></Col>
+                    <Col md={6}><Form.Group className="mb-4"><Form.Control required className="form-control-custom" type="email" name="email" placeholder="Email Address *" onChange={handleChange} /></Form.Group></Col>
                   </Row>
                   <Row>
-                    <Col md={6}><Form.Group className="mb-4"><Form.Control required className="form-control-custom" type="tel" name="whatsapp" placeholder="WhatsApp Number (Required)" onChange={handleChange} /></Form.Group></Col>
+                    <Col md={6}><Form.Group className="mb-4"><Form.Control required className="form-control-custom" type="tel" name="whatsapp" placeholder="WhatsApp Number *" onChange={handleChange} /></Form.Group></Col>
                     <Col md={6}><Form.Group className="mb-4"><Form.Control required className="form-control-custom" type="text" name="location" placeholder="Location (City, Country)" onChange={handleChange} /></Form.Group></Col>
                   </Row>
                   

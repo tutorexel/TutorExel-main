@@ -1,6 +1,6 @@
 // src/screens/PricingPage/PricingPage.jsx
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -30,6 +30,10 @@ const howItWorksData = [
 ];
 
 const PricingPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main>
       <PageHero title="Pricing" />
