@@ -186,7 +186,7 @@ const tutoringFeatures = [
     { text: 'Choose Your ', bold: 'Preferred Slot' },
     { text: 'Progress Reports Aligned With The ', bold: 'Australian Curriculum' },
     { text: 'Free Consultation ', bold: 'And Demo Class' },
-    { text: 'AUD 21/HOUR - ', bold: 'No Contracts' },
+    { text: 'AUD 21 / Hour  - ', bold: 'No Contracts' },
 ];
 
 const progressFeatures = [
