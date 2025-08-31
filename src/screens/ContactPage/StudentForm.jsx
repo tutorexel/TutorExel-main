@@ -7,6 +7,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 import PageHero from '../../components/ui/PageHero';
 import './StudentForm.css'; // Import this page's CSS
+import { submitToEndpoint, buildFormData } from '../../services/formSubmit';
 
 
 // Data for form options
@@ -58,20 +59,41 @@ const StudentForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // 3. Custom validation check for subjects
     const isAnySubjectSelected = Object.values(formData.subjects).some(isSelected => isSelected === true);
-
     if (!isAnySubjectSelected) {
       setSubjectsError('Please select at least one subject.');
-      return; // Stop the form submission
+      return;
     }
 
-    // If validation passes, proceed with submission
-    console.log("Form Data Submitted:", formData);
-    navigate('/contact/thank-you', { state: { from: 'student' } });
+    try {
+      setSubmitting(true);
+      const endpoint = import.meta.env.VITE_CONTACT_FORM_ENDPOINT;
+      const payload = {
+        form: 'contact',
+        submittedAt: new Date().toISOString(),
+        parentName: formData.parentName,
+        studentName: formData.studentName,
+        email: formData.email,
+        whatsapp: formData.whatsapp,
+        cityCountry: formData.cityCountry,
+        subjects: Object.keys(formData.subjects).filter((k) => formData.subjects[k]).join(', '),
+        yearGroup: formData.yearGroup,
+        classType: formData.classType,
+        message: formData.message,
+      };
+      const fd = buildFormData(payload);
+      await submitToEndpoint({ endpoint, formData: fd });
+      navigate('/contact/thank-you', { state: { from: 'student' } });
+    } catch (err) {
+      alert(err.message || 'Submission failed. Please try again later.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -135,7 +157,9 @@ const StudentForm = () => {
                         </Form.Group>
                     </div>
                     <div className="text-start mt-4">
-                        <Button type="submit" className="btn-submit-form"> Submit <FaArrowRight /></Button>
+                        <Button type="submit" className="btn-submit-form" disabled={submitting}>
+                          {submitting ? 'Submitting…' : 'Submit'} <FaArrowRight />
+                        </Button>
                     </div>
                 </Form>
             </Col>

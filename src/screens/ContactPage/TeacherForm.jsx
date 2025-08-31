@@ -8,6 +8,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import PageHero from '../../components/ui/PageHero';
 import logo from '../../assets/images/logo.svg';
 import './TeacherForm.css';
+import { submitToEndpoint, buildFormData } from '../../services/formSubmit';
 
 const subjectsOptions = ['Mathematics', 'Science', 'English', 'Hindi'];
 const yearGroupOptions = Array.from({ length: 9 }, (_, i) => `Year ${i + 2}`);
@@ -66,11 +67,38 @@ const TeacherForm = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log("Tutor Application Submitted:", formData);
+    if (!validateForm()) return;
+
+    try {
+      setSubmitting(true);
+      const endpoint = import.meta.env.VITE_TUTOR_FORM_ENDPOINT;
+      const payload = {
+        form: 'tutor-application',
+        submittedAt: new Date().toISOString(),
+        fullName: formData.fullName,
+        email: formData.email,
+        whatsapp: formData.whatsapp,
+        location: formData.location,
+        highestQualification: formData.highestQualification,
+        subjects: Object.keys(formData.subjects).filter((k) => formData.subjects[k]).join(', '),
+        yearGroups: Object.keys(formData.yearGroups).filter((k) => formData.yearGroups[k]).join(', '),
+        taughtBefore: formData.taughtBefore,
+        hasLaptop: formData.hasLaptop,
+        hasInternet: formData.hasInternet,
+        comfortableWithZoom: formData.comfortableWithZoom,
+      };
+      const fd = buildFormData(payload);
+      if (formData.cv) fd.append('cv', formData.cv, formData.cv.name);
+      await submitToEndpoint({ endpoint, formData: fd });
       navigate('/contact/thank-you', { state: { from: 'teacher' } });
+    } catch (err) {
+      alert(err.message || 'Submission failed. Please try again later.');
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -169,7 +197,9 @@ const TeacherForm = () => {
                 </div>
 
                 <div className="text-start mt-4">
-                  <Button type="submit" className="btn-submit-form">Submit Application <FaArrowRight /></Button>
+                  <Button type="submit" className="btn-submit-form" disabled={submitting}>
+                    {submitting ? 'Submitting…' : 'Submit Application'} <FaArrowRight />
+                  </Button>
                 </div>
               </Form>
             </Col>
