@@ -875,6 +875,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Ensure proper mobile viewport behavior */
 @media (max-width: 767.98px) {
+  /* Stronger override for hero titles on mobile: keep words intact */
+  .page-hero-banner h1 {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    white-space: normal !important;
+  }
   
   /* Prevent horizontal scrolling */
   * {
