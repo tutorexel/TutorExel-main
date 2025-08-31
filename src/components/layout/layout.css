@@ -161,7 +161,7 @@
 }
 .mobile-offcanvas-logo {
   display: block;
-  height: 36px !important;
+  height: 28px !important; /* Match mobile header (<= 992px) */
   width: auto;
 }
 
@@ -271,6 +271,8 @@
   .mobile-logo img.d-lg-none {
     height: 28px !important;
   }
+  /* Offcanvas logo matches mobile header */
+  .mobile-offcanvas-logo { height: 28px !important; }
 }
 
 @media (max-width: 767.98px) {
@@ -282,6 +284,8 @@
   .mobile-logo img.d-lg-none {
     height: 26px !important;
   }
+  /* Smaller phones: offcanvas logo matches header */
+  .mobile-offcanvas-logo { height: 26px !important; }
   
   .top-bar {
     height: 12px;
