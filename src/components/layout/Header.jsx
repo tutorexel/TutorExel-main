@@ -104,8 +104,10 @@ const Header = () => {
             className="mobile-offcanvas"
           >
             <Offcanvas.Header className="mobile-offcanvas-header">
-              <Offcanvas.Title>
-                <img src={logo} height="32" alt="TutorExel Logo" />
+              <Offcanvas.Title className="mobile-offcanvas-title">
+                <Link to="/" className="mobile-offcanvas-brand" onClick={handleCloseMobileMenu}>
+                  <img src={logo} alt="TutorExel Logo" className="mobile-offcanvas-logo" />
+                </Link>
               </Offcanvas.Title>
               <Button 
                 variant="link" 

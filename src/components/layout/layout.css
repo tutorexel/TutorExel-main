@@ -153,6 +153,18 @@
   padding: 1.5rem;
 }
 
+/* Ensure logo is always visible in the mobile drawer header */
+.mobile-offcanvas-title { margin: 0; }
+.mobile-offcanvas-brand {
+  display: inline-flex;
+  align-items: center;
+}
+.mobile-offcanvas-logo {
+  display: block;
+  height: 36px !important;
+  width: auto;
+}
+
 /* Mobile Navigation Links */
 .mobile-nav-link {
   display: flex;
