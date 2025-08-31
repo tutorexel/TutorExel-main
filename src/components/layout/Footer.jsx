@@ -226,7 +226,7 @@ const Footer = () => {
             {/* Quick Links */}
             <Col lg={2} md={4}>
               <h5 className="text-white fw-bold mb-4">Quick Links</h5>
-              <Link to="/about" className="text-white-50 text-decoration-none mb-2 d-block">About Us</Link>
+              <Link to="/about-us" className="text-white-50 text-decoration-none mb-2 d-block">About Us</Link>
               <Link to="/careers" className="text-white-50 text-decoration-none mb-2 d-block">Careers</Link>
               <Link to="/contact" className="text-white-50 text-decoration-none mb-2 d-block">Contact Us</Link>
             </Col>

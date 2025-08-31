@@ -76,6 +76,10 @@ const TeacherForm = () => {
     try {
       setSubmitting(true);
       const endpoint = import.meta.env.VITE_TUTOR_FORM_ENDPOINT;
+      
+      console.log('Submitting form to endpoint:', endpoint);
+      console.log('Form data CV file:', formData.cv);
+      
       const payload = {
         form: 'tutor-application',
         submittedAt: new Date().toISOString(),
@@ -91,11 +95,42 @@ const TeacherForm = () => {
         hasInternet: formData.hasInternet,
         comfortableWithZoom: formData.comfortableWithZoom,
       };
+      
+      // Add a base64 fallback for the CV so Apps Script can save it even if e.files is empty
+      if (formData.cv) {
+        console.log('Processing CV file:', formData.cv.name, formData.cv.size, 'bytes');
+        const file = formData.cv;
+        const asBase64 = await new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => {
+            const result = String(reader.result || '');
+            const comma = result.indexOf(',');
+            resolve(comma >= 0 ? result.slice(comma + 1) : result);
+          };
+          reader.onerror = () => reject(reader.error || new Error('File read error'));
+          reader.readAsDataURL(file);
+        });
+        payload.cvBase64 = asBase64;
+        payload.cvName = file.name;
+        payload.cvType = file.type || 'application/octet-stream';
+        console.log('Base64 conversion completed, length:', asBase64.length);
+      } else {
+        console.log('No CV file selected');
+      }
+      
       const fd = buildFormData(payload);
-      if (formData.cv) fd.append('cv', formData.cv, formData.cv.name);
-      await submitToEndpoint({ endpoint, formData: fd });
+      if (formData.cv) {
+        fd.append('cv', formData.cv, formData.cv.name);
+        console.log('CV file appended to FormData');
+      }
+      
+      console.log('Sending request...');
+      const response = await submitToEndpoint({ endpoint, formData: fd });
+      console.log('Response received:', response);
+      
       navigate('/contact/thank-you', { state: { from: 'teacher' } });
     } catch (err) {
+      console.error('Form submission error:', err);
       alert(err.message || 'Submission failed. Please try again later.');
     } finally {
       setSubmitting(false);
@@ -111,7 +146,7 @@ const TeacherForm = () => {
             <Col lg={12}>
               <Form onSubmit={handleSubmit}>
                 <div className="form-container">
-                  <h2 className="section-heading">Apply to Join <img src={logo} alt="TutorExel" style={{ height: '35px', verticalAlign: 'text-bottom' }} /> as a Tutor</h2>
+                  <h2 className="section-heading">Apply to Join as a Tutor</h2>
                   <h4 className="form-section-heading">Basic Details</h4>
                   <Row>
                     <Col md={6}><Form.Group className="mb-4"><Form.Control required className="form-control-custom" type="text" name="fullName" placeholder="Full Name (Required)" onChange={handleChange} /></Form.Group></Col>

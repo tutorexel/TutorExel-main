@@ -9,9 +9,14 @@
 }
 
 .form-container h2 {
-  color: white;
+  color: white !important;
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+/* Override global section-heading class for form container */
+.form-container .section-heading {
+  color: white !important;
 }
 
 .form-container .subheading {

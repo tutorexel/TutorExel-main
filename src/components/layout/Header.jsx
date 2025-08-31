@@ -45,7 +45,7 @@ const Header = () => {
           <Navbar.Collapse id="main-navbar-nav" className="d-none d-lg-flex">
             <Nav className="mx-auto nav-centered" onMouseLeave={() => setShowSubjects(false)}>
               <NavLink to="/" className="nav-link-base">Home</NavLink>
-              <NavLink to="/about" className="nav-link-base">About Us</NavLink>
+              <NavLink to="/about-us" className="nav-link-base">About Us</NavLink>
               
               {/* Custom Dropdown Implementation */}
               <div 
@@ -127,7 +127,7 @@ const Header = () => {
                   Home
                 </NavLink>
                 <NavLink 
-                  to="/about" 
+                  to="/about-us" 
                   className="mobile-nav-link"
                   onClick={handleCloseMobileMenu}
                 >

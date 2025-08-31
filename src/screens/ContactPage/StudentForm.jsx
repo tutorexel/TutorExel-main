@@ -145,7 +145,7 @@ const StudentForm = () => {
                             <Form.Label className="form-label">Preferred Class Type</Form.Label>
                             <div className="d-flex flex-wrap gap-4">
                             <Form.Check type="radio" name="classType" label="One-to-One Session" value="one-to-one" id="radio-one-to-one" className="custom-form-check" onChange={handleChange} required />
-                            <Form.Check type="radio" name="classType" label="Group Class (4:1)" value="group" id="radio-group" className="custom-form-check" onChange={handleChange} />
+                            <Form.Check type="radio" name="classType" label="Group Class " value="group" id="radio-group" className="custom-form-check" onChange={handleChange} />
                             <Form.Check type="radio" name="classType" label="Not Sure Yet" value="not-sure" id="radio-not-sure" className="custom-form-check" onChange={handleChange} />
                             </div>
                         </Form.Group>
