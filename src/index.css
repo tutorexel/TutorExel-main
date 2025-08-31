@@ -605,10 +605,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 90px 0;
   }
   
-  /* Ensure proper text wrapping */
+  /* Ensure proper text wrapping (avoid auto hyphenation in headings) */
   h1, h2, h3, h4, h5, h6 {
     word-wrap: break-word;
-    hyphens: auto;
+    hyphens: none;            /* prevent words like "Tutoring" splitting */
   }
   
   /* Adjust margins for better spacing */
