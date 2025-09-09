@@ -3,6 +3,7 @@
 import React, { useState , useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { FaArrowRight } from 'react-icons/fa';
 
 import PageHero from '../../components/ui/PageHero';
@@ -98,6 +99,14 @@ const StudentForm = () => {
 
   return (
     <main>
+    {/* SEO for contact-page */}
+      <Helmet>
+        <title>Contact TutorExel | Get Tutoring Help Across Australia</title>
+        <meta
+          name="description"
+          content="Need support? Contact TutorExel’s expert team today. We will answer questions on tutoring, pricing, or curriculum support across Australia. Reach us out today!"
+        />
+      </Helmet>
       <PageHero title="Contact Us" />
 
       <section className="py-5 bg-light-gray">

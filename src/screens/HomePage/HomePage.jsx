@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './HomePage.css';
 
 // --- Import all assets here ---
@@ -303,6 +304,15 @@ const HomePage = () => {
 
   return (
     <main>
+      {/* SEO for home-page */}
+      <Helmet>
+        <title>Online Tutoring Australia | TutorExel Personalised Learning</title>
+        <meta
+                name="description"
+                content="TutorExel offers expert online tutoring across Australia. We provide personalised learning & exam prep in all subjects, aligned with the Australian Curriculum."
+        />
+      </Helmet>
+
       <Hero />
         <FeatureSection
           imagePosition="left"
