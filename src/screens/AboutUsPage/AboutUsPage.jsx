@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 // 1. Import local CSS for this page
 import './AboutUsPage.css';
@@ -47,7 +47,7 @@ const AboutUsPage = () => {
 
   return (
     <main className="about-page">
-    {/* SEO for career-page */}
+    {/* SEO for about-page */}
       <Helmet>
         <title>About Us | TutorExel Online Tutoring Across Australia</title>
         <meta

@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import seoData from '../../seo/seoData';
 import { subjectsData } from '../../data/subjectsData';
 import { Container, Row, Col, Button } from 'react-bootstrap';

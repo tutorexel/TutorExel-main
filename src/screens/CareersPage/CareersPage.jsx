@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 // Import this page's specific CSS
 import './CareersPage.css';

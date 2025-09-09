@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
