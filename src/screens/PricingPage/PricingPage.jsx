@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -36,6 +37,14 @@ const PricingPage = () => {
 
   return (
     <main>
+    {/* SEO for pricing-page */}
+      <Helmet>
+        <title>TutorExel Pricing | Flexible Tutoring Packages for Students</title>
+        <meta
+          name="description"
+          content="Discover TutorExel’s flexible tutoring prices in Australia. We provide clear packages for all subjects, supporting primary & secondary learning needs. Visit now!"
+        />
+      </Helmet>
       <PageHero title="Pricing" />
       <section className="py-5 bg-white">
         <Container>

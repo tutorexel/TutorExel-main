@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 
 // Import this page's specific CSS
 import './CareersPage.css';
@@ -57,6 +58,15 @@ const CareersPage = () => {
 
   return (
     <main>
+      {/* SEO for career-page */}
+      <Helmet>
+        <title>Careers at TutorExel | Join Our Online Tutoring Team</title>
+        <meta
+          name="description"
+          content="Explore careers with TutorExel & join our online tutoring team. We’re hiring passionate educators across Australia to deliver curriculum-aligned learning support."
+        />
+      </Helmet>
+
       {/* Section 1: Hero Banner */}
       <PageHero title="Careers" />
 

@@ -2,6 +2,8 @@
 
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import seoData from '../../seo/seoData';
 import { subjectsData } from '../../data/subjectsData';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaArrowRight, FaPhoneAlt } from 'react-icons/fa';
@@ -32,6 +34,12 @@ const SubjectPage = () => {
     );
   }
 
+  const key = `${yearId}-${subjectId.toLowerCase()}`;
+  const meta = seoData[key] || {
+    title: `${subjectContent.pageTitle} | TutorExel`,
+    description: "Expert online tutoring with TutorExel."
+  };
+
   const formattedYear = yearId
     ? `Year ${yearId.replace('year-', '')}`
     : 'program';
@@ -45,6 +53,13 @@ const SubjectPage = () => {
 
   return (
     <main>
+
+      {/* SEO Helmet */}
+      <Helmet prioritizeSeoTags>
+        <title key="title">{meta.title}</title>
+        <meta name="description" content={meta.description} key="description" />
+      </Helmet>
+
       <PageHero title={subjectContent.pageTitle} titleSize="display-5"/>
 
       {/* --- Intro Section --- */}

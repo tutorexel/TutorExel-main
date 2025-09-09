@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 
 // 1. Import local CSS for this page
 import './AboutUsPage.css';
@@ -46,6 +47,14 @@ const AboutUsPage = () => {
 
   return (
     <main className="about-page">
+    {/* SEO for about-page */}
+      <Helmet>
+        <title>About Us | TutorExel Online Tutoring Across Australia</title>
+        <meta
+          name="description"
+          content="Discover TutorExel’s mission and values. We provide trusted online tutoring in Australia with qualified tutors, personalised learning & curriculum-aligned support."
+        />
+      </Helmet>      
       <PageHero title="About Us" />
 
       <section className="py-6 bg-white mt-5 about-intro">
