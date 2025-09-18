@@ -1,0 +1,13 @@
+.music-choose .why-trust-section{
+    background-color: #05ac90 !important;
+}
+.music-approach .hiw-step img{
+    width: auto;
+    height: auto;
+}
+.music_cta .bg-primary-orange-gradient{
+    background: url('../../assets/images/music_cta.png') center / cover no-repeat;
+}
+.music_cta .main-btn-b{
+    background-color: #FF9E10;
+}
