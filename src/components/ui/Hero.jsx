@@ -4,6 +4,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import heroBoy from '../../assets/images/hero-boy.png'; 
+import heroImg from '../../assets/images/home_1.png'; 
 import playIcon from '../../assets/icons/icon-play.svg';
 import { FaArrowRight } from 'react-icons/fa';
 
@@ -35,7 +36,7 @@ const Hero = () => {
           <Col lg={6} className="d-flex justify-content-center position-relative hero-image-col">
             <div className="hero-image-container">
               <img 
-                src={heroBoy} 
+                src={heroImg} 
                 alt="Student learning with headset" 
                 className="hero-image img-fluid position-relative" 
               />
