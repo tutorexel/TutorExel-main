@@ -15,13 +15,6 @@ import CareersPage from './screens/CareersPage/CareersPage';
 import PricingPage from './screens/PricingPage/PricingPage';
 import SubjectOverviewPage from './screens/SubjectOverviewPage/SubjectOverviewPage';
 import SubjectPage from './screens/SubjectPage/SubjectPage';
-import MusicPage from './screens/MusicPage/MusicalPage';
-import NaplanPage from './screens/ExamPrepPage/NaplanPage';
-import NaplanPrimary from './screens/ExamPrepPage/NaplanPrimary';
-import NaplanSecondary from './screens/ExamPrepPage/NaplanSecondary';
-import IcasPrimary from './screens/ExamPrepPage/IcasPrimary';
-import IcasSecondary from './screens/ExamPrepPage/IcasSecondary';
-import IcasPage from './screens/ExamPrepPage/IcasPage';
 import StudentForm from './screens/ContactPage/StudentForm';
 import TeacherForm from './screens/ContactPage/TeacherForm';
 import ThankYouPage from './screens/ContactPage/ThankYouPage';
@@ -38,13 +31,6 @@ function App() {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/subjects/:subjectId" element={<SubjectOverviewPage />} />
         <Route path="/subjects/:yearId/:subjectId" element={<SubjectPage />} />
-        <Route path="/musical-instrument" element={<MusicPage />} />
-        <Route path="/exam-prep/naplan" element={<NaplanPage />} />
-        <Route path="/exam-prep/naplan/primary" element={<NaplanPrimary />} />
-        <Route path="/exam-prep/naplan/secondary" element={<NaplanSecondary />} />
-        <Route path="/exam-prep/icas/primary" element={<IcasPrimary />} />
-        <Route path="/exam-prep/icas/secondary" element={<IcasSecondary />} />
-        <Route path="/exam-prep/icas" element={<IcasPage />} />
         <Route path="/contact" element={<StudentForm />} />
         <Route path="/contact/careers" element={<TeacherForm />} />
         <Route path="/contact/thank-you" element={<ThankYouPage />} />
