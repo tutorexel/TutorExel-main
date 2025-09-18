@@ -5,7 +5,7 @@ import { Navbar, Nav, Container, Button, Row, Col, Offcanvas } from 'react-boots
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.svg';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowDown } from 'react-icons/io';
 import './layout.css';
 
 const subjectsByYear = Array.from({ length: 9 }, (_, i) => ({
@@ -13,22 +13,8 @@ const subjectsByYear = Array.from({ length: 9 }, (_, i) => ({
   subjects: ['Maths',  'English'],
 }));
 
-// New Exam Prep Menu
-const examPrepMenu = [
-  {
-    name: 'NAPLAN',
-    submenus: ['Primary', 'Secondary'],
-  },
-  {
-    name: 'ICAS',
-    submenus: ['Primary', 'Secondary'],
-  },
-];
-
 const Header = () => {
   const [showSubjects, setShowSubjects] = useState(false);
-  const [showExamPrep, setShowExamPrep] = useState(false);
-  const [activeExam, setActiveExam] = useState(null);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const handleCloseMobileMenu = () => setShowMobileMenu(false);
@@ -92,68 +78,7 @@ const Header = () => {
                 )}
               </div>
 
-              <NavLink to="/musical-instrument" className="nav-link-base">Musical Instrument</NavLink>
-
               <NavLink to="/pricing" className="nav-link-base">Pricing</NavLink>
-
-              {/* Exam Prep Dropdown */}
-              <div
-                className="subjects-dropdown-container"
-                onMouseEnter={() => setShowExamPrep(true)}
-                onMouseLeave={() => {
-                                setShowExamPrep(false);
-                                setActiveExam(null);
-                              }}
-                onClick={() => setShowExamPrep(!showExamPrep)}
-              >
-                <div className="nav-link-base">
-                  Exam Prep
-                  <IoIosArrowDown
-                    className={`nav-arrow ${showExamPrep ? "open" : ""}`}
-                  />
-                </div>
-                {showExamPrep && (
-                  <div className="subjects-mega-menu exam-mega-menu">
-                    {/* <Container>
-                      <Row> */}
-                        {examPrepMenu.map((exam) => (
-                          <Col key={exam.name}>
-                            <div
-                              className="exam-parent"
-                              onMouseEnter={() => setActiveExam(exam.name)}
-                              onMouseLeave={() => setActiveExam(null)}
-                            >
-                              {/* First-level link (Naplan / Icas) */}
-                              <Link
-                                to={`/exam-prep/${exam.name.toLowerCase()}`}
-                                className="exam-main-link"
-                              >
-                                {exam.name}
-                                <IoIosArrowForward className="submenu-arrow" />
-                              </Link>
-
-                              {/* Second-level submenu */}
-                              {activeExam === exam.name && (
-                                <div className="nested-submenu">
-                                  {exam.submenus.map((sub) => (
-                                    <Link
-                                      key={sub}
-                                      to={`/exam-prep/${exam.name.toLowerCase()}/${sub.toLowerCase()}`}
-                                    >
-                                      {sub}
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
-                          </Col>
-                        ))}
-                      {/* </Row>
-                    </Container> */}
-                  </div>
-                )}
-              </div>
-
               <NavLink to="/contact" className="nav-link-base">Contact Us</NavLink>
               <NavLink to="/careers" className="nav-link-base">Careers</NavLink>
             </Nav>
@@ -254,67 +179,6 @@ const Header = () => {
                 >
                   Pricing
                 </NavLink>
-
-                {/* Mobile Exam Prep Section */}
-                <div className="mobile-subjects-section">
-                  <div
-                    className="mobile-nav-link mobile-subjects-toggle"
-                    onClick={() => setShowExamPrep(!showExamPrep)}
-                  >
-                    Exam Prep
-                    <IoIosArrowDown className={`nav-arrow ${showExamPrep ? "open" : ""}`} />
-                  </div>
-
-                  {showExamPrep && (
-                    <div className="mobile-subjects-menu">
-                      {examPrepMenu.map((exam) => (
-                        <div key={exam.name} className="mobile-exam-item">
-                          <div className="mobile-exam-header">
-                            {/* Main Naplan/Icas Link */}
-                            <Link
-                              to={`/exam-prep/${exam.name.toLowerCase()}`}
-                              className="mobile-subject-link"
-                              onClick={handleCloseMobileMenu}
-                            >
-                              {exam.name}
-                            </Link>
-
-                            {/* Arrow toggle (on right side) */}
-                            <button
-                              type="button"
-                              className="mobile-subject-toggle-btn"
-                              onClick={() =>
-                                setActiveExam(activeExam === exam.name ? null : exam.name)
-                              }
-                            >
-                              <IoIosArrowDown
-                                className={`nav-arrow ${activeExam === exam.name ? "open" : ""}`}
-                              />
-                            </button>
-                          </div>
-
-                          {/* SECOND-LEVEL SUBMENU (now positioned directly under this item) */}
-                          {activeExam === exam.name && (
-                            <div className="mobile-submenu">
-                              {exam.submenus.map((sub) => (
-                                <Link
-                                  key={sub}
-                                  to={`/exam-prep/${exam.name.toLowerCase()}/${sub.toLowerCase()}`}
-                                  className="mobile-submenu-link"
-                                  onClick={handleCloseMobileMenu}
-                                >
-                                  {sub}
-                                </Link>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-
-
                 <NavLink 
                   to="/contact" 
                   className="mobile-nav-link"

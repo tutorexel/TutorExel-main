@@ -4,10 +4,8 @@ import './ui.css';
 
 const TrustSection = ({
   headingText = 'Why Our Customers Trust Us',
-  description,
   cardsData = [],
   customStyles = {},
-  length = '3'
 }) => {
   return (
     // Ensure the className is set to "why-trust-section"
@@ -17,16 +15,11 @@ const TrustSection = ({
           <h2 className="section-heading text-white">
             {headingText}
           </h2>
-          {description && (
-            <p className="lead text-secondary mt-3">
-              {description}
-            </p>
-          )}
         </div>
         
         <Row className="mt-3 g-4">
           {cardsData.map((card, index) => (
-            <Col lg={length} md={6} key={index}>
+            <Col lg={3} md={6} key={index}>
               <Card 
                 className="h-100 border-0 shadow-sm py-3  text-center" 
                 style={{ 
