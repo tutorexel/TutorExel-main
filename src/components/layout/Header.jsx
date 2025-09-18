@@ -241,6 +241,13 @@ const Header = () => {
                 </div>
 
                 <NavLink 
+                  to="/musical-instrument" 
+                  className="mobile-nav-link"
+                  onClick={handleCloseMobileMenu}>
+                  Musical Instrument
+                </NavLink>
+
+                <NavLink 
                   to="/pricing" 
                   className="mobile-nav-link"
                   onClick={handleCloseMobileMenu}
