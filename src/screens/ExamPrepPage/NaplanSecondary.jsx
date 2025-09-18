@@ -79,10 +79,9 @@ const NaplanSecondary = () => {
       }, []);
     
     return(
-        <main>
+        <main className='naplan-s-page'>
             <ExamTitle 
-                title="Secondary NAPLAN Tutoring for Years 7 & 9" 
-                description="Sharpen literacy and numeracy skills while building strategies for test success." 
+                title="Secondary NAPLAN Tutoring for Years 7 & 9"
             />
 
             <WhatWeCover 
@@ -99,7 +98,7 @@ const NaplanSecondary = () => {
                 features={napSec}
             />
 
-            <section className="py-2 bg-white">
+            <section className="py-2 bg-white nap-sec-start">
                 <Container>
                     <Row className="justify-content-center list-bg">
                         <Col lg={12}>
@@ -121,7 +120,7 @@ const NaplanSecondary = () => {
             </div>
 
             {/* CTA */}
-            <div className="nap-p-cta py-5">
+            <div className="nap-p-cta">
                 <CTASection
                     headingText="Experience the change today."
                     image={""}

@@ -99,8 +99,8 @@ const NaplanPage = () => {
       }, []);
     
     return(
-        <main>
-            <ExamTitle title="NAPLAN Tutoring for Years 3, 5, 7 & 9" description="Personalised preparation in literacy and numeracy to help your child feel confident and ready for the test." />
+        <main className='naplan-page'>
+            <ExamTitle title="NAPLAN Tutoring for Years 3, 5, 7 & 9" />
             <FeatureSection
                 imagePosition="right"
                 image={naplan}

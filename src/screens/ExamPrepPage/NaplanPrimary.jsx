@@ -79,10 +79,9 @@ const NaplanPrimary = () => {
       }, []);
     
     return(
-        <main>
+        <main className='naplan-p-page'>
             <ExamTitle 
-                title="Primary NAPLAN Tutoring for Years 3 & 5" 
-                description="Support in English and Maths to help younger learners approach NAPLAN with confidence." 
+                title="Primary NAPLAN Tutoring for Years 3 & 5"
             />
 
             <WhatWeCover 
@@ -99,7 +98,7 @@ const NaplanPrimary = () => {
                 features={napPrim}
             />
 
-            <section className="py-2 bg-white">
+            <section className="py-2 bg-white when_start">
                 <Container>
                     <Row className="justify-content-center list-bg">
                         <Col lg={12}>
@@ -121,7 +120,7 @@ const NaplanPrimary = () => {
             </div>
 
             {/* CTA */}
-            <div className="nap-p-cta py-5">
+            <div className="nap-p-cta">
                 <CTASection
                     headingText="Experience the change today."
                     image={""}
