@@ -996,3 +996,14 @@
     padding: 1.25rem !important;
   }
 }
+
+/* Feature Item */
+section.feature-items {
+    padding: 30px 0;
+}
+@media all and (max-width: 992px){
+  
+  .feature-items .item-directn{
+    flex-direction: column;
+  }
+}
