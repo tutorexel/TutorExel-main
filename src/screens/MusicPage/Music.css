@@ -29,11 +29,14 @@
         font-size: 14px;
         max-width: 270px;
     }
-    .music-page .music-choose .text-secondary{text-align: center;}
+    .music-page .music-choose .text-secondary,
+    .naplan-page .hiw-step .text-secondary{
+        text-align: center;
+    }
     section.feature-items{ padding: 0; }
     .who_join .mt-5{margin-top: 1.5rem !important;}
     .who_join ul li{text-align: justify;}
-    .nap-approach .hiw-step{text-align: center !important;}
+    .nap-approach .hiw-step, .nap-approach .hiw-step p{text-align: center !important;}
     .music-page .text-secondary, .naplan-page .text-secondary, .naplan-p-page .text-secondary li,
     .naplan-s-page .text-secondary li, .icas-page .text-secondary, .icas-page .text-secondary li, 
     .icas-page .course-content-section, .icas-p-page .text-secondary li, .icas-s-page .text-secondary li {
