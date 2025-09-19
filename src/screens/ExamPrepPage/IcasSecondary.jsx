@@ -88,7 +88,12 @@ const IcasSecondary = () => {
         <main className='icas-s-page'>
 
             <ExamTitle 
-                title="ICAS Prep for Primary Students (Years 2–6)"
+                title="ICAS Prep for Secondary Students (Years 7–10)"
+                customClass = "desktopview"
+            />
+            <ExamTitle 
+                title="ICAS Prep for Secondary Students – (Years 7–10)" 
+                customClass = "mobileview"
             />
 
             <WhatWeCover 

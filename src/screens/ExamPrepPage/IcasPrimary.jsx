@@ -92,8 +92,14 @@ const IcasPrimary = () => {
     
     return(
         <main className='icas-p-page'>
+            
             <ExamTitle 
                 title="ICAS Prep for Primary Students (Years 2–6)"
+                customClass = "desktopview"
+            />
+            <ExamTitle 
+                title="ICAS Prep for Primary Students – (Years 2–6)" 
+                customClass = "mobileview"
             />
 
             <WhatWeCover 

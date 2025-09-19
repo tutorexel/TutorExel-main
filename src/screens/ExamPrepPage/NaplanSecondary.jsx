@@ -80,8 +80,14 @@ const NaplanSecondary = () => {
     
     return(
         <main className='naplan-s-page'>
+           
             <ExamTitle 
                 title="Secondary NAPLAN Tutoring for Years 7 & 9"
+                customClass = "desktopview"
+            />
+            <ExamTitle 
+                title="Secondary NAPLAN Tutoring for – (Years 7 & 9)" 
+                customClass = "mobileview"
             />
 
             <WhatWeCover 

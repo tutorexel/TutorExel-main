@@ -82,6 +82,11 @@ const NaplanPrimary = () => {
         <main className='naplan-p-page'>
             <ExamTitle 
                 title="Primary NAPLAN Tutoring for Years 3 & 5"
+                customClass = "desktopview"
+            />
+            <ExamTitle 
+                title="Primary NAPLAN Tutoring for – (Years 3 & 5)" 
+                customClass = "mobileview"
             />
 
             <WhatWeCover 

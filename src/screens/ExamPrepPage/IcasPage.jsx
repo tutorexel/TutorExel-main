@@ -89,6 +89,11 @@ const IcasPage = () => {
         <main className='icas-page'>
             <ExamTitle 
                 title="ICAS Preparation for Years 2–10"
+                customClass = "desktopview"
+            />
+            <ExamTitle 
+                title="ICAS Preparation for – (Years 2–10)" 
+                customClass = "mobileview"
             />
             <FeatureSection
                 imagePosition="right"

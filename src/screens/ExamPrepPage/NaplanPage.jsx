@@ -100,7 +100,14 @@ const NaplanPage = () => {
     
     return(
         <main className='naplan-page'>
-            <ExamTitle title="NAPLAN Tutoring for Years 3, 5, 7 & 9" />
+            <ExamTitle 
+                title="NAPLAN Tutoring for Years 3, 5, 7 & 9" 
+                customClass = "desktopview"
+            />
+            <ExamTitle 
+                title="NAPLAN Tutoring for – (Years 3, 5, 7 & 9)" 
+                customClass = "mobileview"
+            />
             <FeatureSection
                 imagePosition="right"
                 image={naplan}

@@ -1,5 +1,8 @@
-.naplan-s-page h1.display-3, .icas-p-page  h1.display-3, .icas-s-page h1.display-3{
+.naplan-s-page h1.display-3, .icas-p-page  h1.display-3{
     font-size: 3.8rem;
+}
+.icas-s-page h1.display-3{
+    font-size: 3.5rem;
 }
 .nap-matter h2, .nap-matter p.lead{
     color: #0F2A47 !important;
@@ -54,9 +57,21 @@
     color: #070709 !important;
 }
 
-
+.desktopview{
+    display: flex;
+}
+.mobileview{
+    display: none;
+}
 
 @media all and (max-width:992px) {
+    .desktopview{
+        display: none;
+    }
+    .mobileview{
+        display: flex;
+    }
+
     h1, .page-hero-banner h1{font-size: 1.5rem !important;}
     .what_cover{
         padding: 40px 0 0;
