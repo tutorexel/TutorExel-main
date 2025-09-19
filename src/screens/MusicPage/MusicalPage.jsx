@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './Music.css';
 
+import musicHero from '../../assets/images/music_hero.png';
 import music from '../../assets/images/Music.png';
 import musiclearn from '../../assets/images/music_learn.png';
 import card1 from '../../assets/images/music_card1.png';
@@ -144,12 +145,12 @@ const MusicPage = () => {
       }, []);
     
     return(
-        <main>
+        <main className='music-page'>
+            <div className='hero_image_music text-center'>
+                <img src={musicHero} alt="" />
+            </div>
             <ExamTitle 
-                title="Learn Piano Online with Tutorexel" 
-                description={
-                                <>Step-by-step piano lessons following the internationally recognised <strong>Trinity College London Piano syllabus.</strong></>
-                            }
+                title="Learn Piano Online with Tutorexel"
                 showButton = {true}
                 buttonText = "Book Your Free Trial Class"
             />
@@ -184,7 +185,7 @@ const MusicPage = () => {
                 itemData = {featureData}
             />
 
-            <section className="py-2 bg-white">
+            <section className="py-2 bg-white who_join">
                 <Container>
                     <Row className="justify-content-center list-bg">
                         <Col lg={12}>
@@ -206,7 +207,7 @@ const MusicPage = () => {
                 />
             </div>
 
-            <div className="nap-matter mb-5">
+            <div className="nap-matter">
                 <TrustSection
                     headingText = "Why Parents Love Tutorexel Piano"
                     cardsData = {whyParent}
@@ -215,7 +216,7 @@ const MusicPage = () => {
             </div>
 
             {/* CTA */}
-            <div className="nap-cta music_cta mb-5">
+            <div className="nap-cta music_cta">
                 <CTASection
                     headingText="Ready to Begin Your Musical Journey?"
                     image={""}

@@ -86,10 +86,14 @@ const IcasPage = () => {
       }, []);
     
     return(
-        <main>
+        <main className='icas-page'>
             <ExamTitle 
-                title="ICAS Preparation for Years 2–10" 
-                description="Personalised support in English, Mathematics, Science, Writing, Digital Technologies, and Spelling Bee." 
+                title="ICAS Preparation for Years 2–10"
+                customClass = "desktopview"
+            />
+            <ExamTitle 
+                title="ICAS Preparation for – (Years 2–10)" 
+                customClass = "mobileview"
             />
             <FeatureSection
                 imagePosition="right"

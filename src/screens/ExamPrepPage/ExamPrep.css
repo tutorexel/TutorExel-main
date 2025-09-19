@@ -1,9 +1,15 @@
+.naplan-s-page h1.display-3, .icas-p-page  h1.display-3{
+    font-size: 3.8rem;
+}
+.icas-s-page h1.display-3{
+    font-size: 3.5rem;
+}
 .nap-matter h2, .nap-matter p.lead{
     color: #0F2A47 !important;
 }
 
 .nap-approach .hiw-step, .nap-approach .hiw-step h4, .nap-approach .hiw-step p{
-    text-align: left !important;
+    /* text-align: left !important; */
 }
 
 .list-bg ul{
@@ -18,15 +24,20 @@
     background: #22a3d2;
 }
 .nap-p-cta .section-heading{
-    color: #fff !important;
+    /* color: #fff !important; */
 }
 .nap-p-cta .main-btn-b{
     background-color: #FF9E10;
+}
+.nap-sec-start .mt-5{margin-top: 1.5rem !important;}
+.what_cover{
+    padding: 54px 0 30px;
 }
 .what_cover .hiw-card{
     box-shadow: none;
     padding: 1rem;
 }
+.what_cover .mt-5{margin-top: 1.5rem !important;}
 .what_cover .hiw-card .align-items-center{
     align-items: start !important;
 }
@@ -34,15 +45,44 @@
     justify-content: flex-start !important;
 }
 .what_cover.icas_cover .hiw-card .hiw-step{
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+}
+.icas-p-page .feature-section, .icas-s-page .feature-section{
+    padding: 20px 0px 40px !important;
+}
+.when_start .mt-5{
+    margin-top: 1.5rem !important;
+}
+.icas-page .text-secondary{
+    color: #070709 !important;
 }
 
+.desktopview{
+    display: flex;
+}
+.mobileview{
+    display: none;
+}
 
-@media all and (max-width:768px) {
+@media all and (max-width:992px) {
+    .desktopview{
+        display: none;
+    }
+    .mobileview{
+        display: flex;
+    }
+
+    h1, .page-hero-banner h1{font-size: 1.5rem !important;}
     .what_cover{
         padding: 40px 0 0;
     }
+    .what_cover .hiw-card{padding-bottom: 0;}
     .what_cover .hiw-card .hiw-step{
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
+    }
+    .what_cover .hiw-card .hiw-step:last-of-type{margin-bottom: 0;}
+    .nap-sec-start .mt-5{margin-top: 1rem !important;}
+    .icas-p-page .feature-section, .icas-s-page .feature-section{
+        padding: 3rem 0 0.5rem !important;
     }
 }

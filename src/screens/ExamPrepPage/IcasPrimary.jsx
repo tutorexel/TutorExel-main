@@ -91,10 +91,15 @@ const IcasPrimary = () => {
       }, []);
     
     return(
-        <main>
+        <main className='icas-p-page'>
+            
             <ExamTitle 
-                title="ICAS Prep for Primary Students (Years 2–6)" 
-                description="Gently build confidence in English, Maths, and Science while preparing for annual ICAS challenges." 
+                title="ICAS Prep for Primary Students (Years 2–6)"
+                customClass = "desktopview"
+            />
+            <ExamTitle 
+                title="ICAS Prep for Primary Students – (Years 2–6)" 
+                customClass = "mobileview"
             />
 
             <WhatWeCover 
@@ -134,7 +139,7 @@ const IcasPrimary = () => {
             </div>
 
             {/* CTA */}
-            <div className="nap-p-cta py-5">
+            <div className="nap-p-cta">
                 <CTASection
                     headingText="Your journey to better starts here."
                     image={""}

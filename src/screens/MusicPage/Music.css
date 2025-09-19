@@ -1,13 +1,45 @@
+
+.hero_image_music {
+    background: url('../../assets/images/music_hero.png');
+    background-position: 2px 2px;
+}
 .music-choose .why-trust-section{
     background-color: #05ac90 !important;
+}
+.feature-items .pricing-feature-item .feature-text h5{
+    font-weight: 400;
+    /* text-align: justify; */
 }
 .music-approach .hiw-step img{
     width: auto;
     height: auto;
+}
+.music-approach .hiw-step h4{
+    font-weight: 400 !important;
 }
 .music_cta .bg-primary-orange-gradient{
     background: url('../../assets/images/music_cta.png') center / cover no-repeat;
 }
 .music_cta .main-btn-b{
     background-color: #FF9E10;
+}
+
+@media all and (max-width: 992px){
+    .music-page .main-btn1{
+        font-size: 14px;
+        max-width: 270px;
+    }
+    .music-page .music-choose .text-secondary,
+    .naplan-page .hiw-step .text-secondary{
+        text-align: center;
+    }
+    section.feature-items{ padding: 0; }
+    .who_join .mt-5{margin-top: 1.5rem !important;}
+    .who_join ul li{text-align: justify;}
+    .nap-approach .hiw-step, .nap-approach .hiw-step p{text-align: center !important;}
+    .music-page .text-secondary, .naplan-page .text-secondary, .naplan-p-page .text-secondary li,
+    .naplan-s-page .text-secondary li, .icas-page .text-secondary, .icas-page .text-secondary li, 
+    .icas-page .course-content-section, .icas-p-page .text-secondary li, .icas-s-page .text-secondary li {
+        text-align: justify;
+    }
 }

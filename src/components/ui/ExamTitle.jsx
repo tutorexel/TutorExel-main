@@ -19,6 +19,7 @@ const ExamTitle = ({
   description,
   showButton = false,
   buttonText = 'Learn More',
+  customClass
 }) => {
   // Create mobile-friendly title by breaking at natural points
   const createMobileFriendlyTitle = (title) => {
@@ -27,7 +28,7 @@ const ExamTitle = ({
       const parts = title.split(' – ');
       return (
         <>
-          {parts[0]} –<br className="d-md-none" />
+          {parts[0]} <br className="d-md-none" />
           <span className="d-none d-md-inline"> </span>
           {parts[1]}
         </>
@@ -38,7 +39,7 @@ const ExamTitle = ({
 
   return (
     // 2. Use the new hardcoded CSS class. No more props for styling.
-    <section className="page-hero-banner">
+    <section className={`page-hero-banner ${customClass}`}>
       <Container>
         <div className="">
           <h1 className={`${titleSize} fw-bolder text-dark-navy`}>
