@@ -80,6 +80,14 @@ const NaplanPrimary = () => {
     
     return(
         <main className='naplan-p-page'>
+            {/* SEO for Naplan Primary Page */}
+            <Helmet>
+                <title>NAPLAN Primary Tutoring Australia | Tutors For Years 3 & 5</title>
+                <meta
+                    name="description"
+                    content="Get expert NAPLAN primary tutoring online. TutorExel provides Year 3 & 5 tutors, primary tuition, and online tutor support aligned with the NAPLAN curriculum."
+                />
+            </Helmet>
             <ExamTitle 
                 title="Primary NAPLAN Tutoring for Years 3 & 5"
                 customClass = "desktopview"

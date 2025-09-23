@@ -86,7 +86,14 @@ const IcasSecondary = () => {
     
     return(
         <main className='icas-s-page'>
-
+            {/* SEO for Icas Secondary Page */}
+            <Helmet>
+                <title>Secondary ICAS Tutors Australia | Online Tuition Programs</title>
+                <meta
+                    name="description"
+                    content="Find ICAS tutors online for secondary students in Australia. Our tuition programs cover Years 7-10, with expert exam preparation & personalised support. Call now."
+                />
+            </Helmet>
             <ExamTitle 
                 title="ICAS Prep for Secondary Students (Years 7–10)"
                 customClass = "desktopview"
