@@ -87,6 +87,14 @@ const IcasPage = () => {
     
     return(
         <main className='icas-page'>
+            {/* SEO for Icas Page */}
+            <Helmet>
+                <title>Online ICAS Tutors Australia | Practice Tests & Exam Prep</title>
+                <meta
+                    name="description"
+                    content="Need ICAS exam preparation? TutorExel provides online ICAS tutoring, practice tests and expert tutors in Australia to help students excel in exams. Contact now!"
+                />
+            </Helmet>
             <ExamTitle 
                 title="ICAS Preparation for Years 2–10"
                 customClass = "desktopview"

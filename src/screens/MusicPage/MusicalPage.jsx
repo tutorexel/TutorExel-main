@@ -146,6 +146,14 @@ const MusicPage = () => {
     
     return(
         <main className='music-page'>
+            {/* SEO for Music Page */}
+            <Helmet>
+                <title>Learn Piano Online Australia | Beginner Music Lessons TutorExel</title>
+                <meta
+                    name="description"
+                    content="We provide online music lessons in Australia for beginners. Get a piano tutor online, personal online music tutoring, & beginner piano lessons online. Start now."
+                />
+            </Helmet>
             <div className='hero_image_music text-center'>
                 <img src={musicHero} alt="" />
             </div>

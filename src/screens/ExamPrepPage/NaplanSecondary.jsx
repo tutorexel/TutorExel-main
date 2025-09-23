@@ -80,7 +80,14 @@ const NaplanSecondary = () => {
     
     return(
         <main className='naplan-s-page'>
-           
+            {/* SEO for Naplan Secondary Page */}
+            <Helmet>
+                <title>Secondary NAPLAN Tutoring Australia | Tutors Year 7 & 9</title>
+                <meta
+                    name="description"
+                    content="Our NAPLAN secondary tutoring helps Year 7 & 9 students online with expert tutors. Join TutorExel’s tuition programs for secondary school support aligned to NAPLAN."
+                />
+            </Helmet>           
             <ExamTitle 
                 title="Secondary NAPLAN Tutoring for Years 7 & 9"
                 customClass = "desktopview"

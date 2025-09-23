@@ -92,7 +92,14 @@ const IcasPrimary = () => {
     
     return(
         <main className='icas-p-page'>
-            
+            {/* SEO for Icas Primary Page */}
+            <Helmet>
+                <title>Primary ICAS Tutoring Online | Exam Preparation Australia</title>
+                <meta
+                    name="description"
+                    content="Find ICAS primary tuition with TutorExel across Australia. We deliver primary-level ICAS tutoring & exam prep online with subject experts and practice tests."
+                />
+            </Helmet>            
             <ExamTitle 
                 title="ICAS Prep for Primary Students (Years 2–6)"
                 customClass = "desktopview"

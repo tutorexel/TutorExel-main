@@ -100,6 +100,14 @@ const NaplanPage = () => {
     
     return(
         <main className='naplan-page'>
+            {/* SEO for Naplan Page */}
+            <Helmet>
+                <title>Online NAPLAN Test Preparation AU | Tutors with TutorExel</title>
+                <meta
+                    name="description"
+                    content="Improve NAPLAN results with expert online NAPLAN tutors. We at Tutorexel provide test-prep, online tutoring, and preparation tests for Years 3-9 across Australia."
+                />
+            </Helmet>            
             <ExamTitle 
                 title="NAPLAN Tutoring for Years 3, 5, 7 & 9" 
                 customClass = "desktopview"
