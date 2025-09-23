@@ -23,7 +23,7 @@ import IcasPrimary from './screens/ExamPrepPage/IcasPrimary';
 import IcasSecondary from './screens/ExamPrepPage/IcasSecondary';
 import IcasPage from './screens/ExamPrepPage/IcasPage';
 import BlogPage from './screens/BlogPage/BlogPage';
-import SingleBlogPage from './screens/BlogPage/SingleBlogpage';
+import SingleBlogPage from './screens/BlogPage/SingleBlogPage';
 import StudentForm from './screens/ContactPage/StudentForm';
 import TeacherForm from './screens/ContactPage/TeacherForm';
 import ThankYouPage from './screens/ContactPage/ThankYouPage';
@@ -47,6 +47,8 @@ function App() {
         <Route path="/prep-zone/icas/primary" element={<IcasPrimary />} />
         <Route path="/prep-zone/icas/secondary" element={<IcasSecondary />} />
         <Route path="/prep-zone/icas" element={<IcasPage />} />
+        {/* <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:id" element={<SingleBlogPage />} /> */}
         <Route path="/contact" element={<StudentForm />} />
         <Route path="/contact/careers" element={<TeacherForm />} />
         <Route path="/contact/thank-you" element={<ThankYouPage />} />
