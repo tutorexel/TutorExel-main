@@ -47,8 +47,6 @@ function App() {
         <Route path="/prep-zone/icas/primary" element={<IcasPrimary />} />
         <Route path="/prep-zone/icas/secondary" element={<IcasSecondary />} />
         <Route path="/prep-zone/icas" element={<IcasPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:id" element={<SingleBlogPage />} />
         <Route path="/contact" element={<StudentForm />} />
         <Route path="/contact/careers" element={<TeacherForm />} />
         <Route path="/contact/thank-you" element={<ThankYouPage />} />
