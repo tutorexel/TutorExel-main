@@ -28,32 +28,32 @@ const whatWeCover = [
     { 
         icon: icover1, 
         title: 'English', 
-        description: "Reading comprehension, vocabulary, interpreting short texts." 
+        description: <>Reading comprehension, vocabulary,<br /> interpreting short texts.</>
     },
     { 
         icon: icover2, 
         title: 'Mathematics', 
-        description: "Number operations, fractions, measurement, geometry, graphs." 
+        description: <>Number operations, fractions,<br /> measurement, geometry, graphs.</> 
     },
     { 
         icon: icover3, 
         title: 'Science', 
-        description: 'Living things, materials, simple forces, Earth & space.' 
+        description: <>Living things, materials, simple forces,<br /> Earth & space.</> 
     },
     { 
         icon: icover4, 
         title: 'Writing', 
-        description: 'Planning and writing narrative or persuasive pieces.' 
+        description: <>Planning and writing narrative or<br /> persuasive pieces.</>
     },
     { 
         icon: icover5, 
         title: 'Spelling Bee', 
-        description: 'Word knowledge, spelling patterns (up to Year 6).' 
+        description: <>Word knowledge, spelling patterns<br /> (up to Year 6).</>
     },
     { 
         icon: icover6, 
         title: 'Digital Technologies', 
-        description: 'Basic coding, algorithms, safe online practices (Years 3+).' 
+        description: <>Basic coding, algorithms, safe online<br /> practices (Years 3+).</>
     }
 ];
 
@@ -73,15 +73,15 @@ const points = [
 const whyParent = [
     { 
         icon: icard1, 
-        title: 'Age-appropriate support that makes ICAS feel achievable, not intimidating.'
+        title: <>Age-appropriate support<br /> that makes ICAS feel<br /> achievable, not<br /> intimidating.</>
     },
     { 
         icon: icard2, 
-        title: 'Personalised attention with one-to-one or group classes.'
+        title: <>Personalised attention<br /> with one-to-one or group<br /> classes.</>
     },
     { 
         icon: icard3, 
-        title: 'Programs designed to help children aim for Distinction and High Distinction.' 
+        title: <>Programs designed to<br /> help children aim for<br /> Distinction and High<br /> Distinction.</>
     }
 ];
 
@@ -117,7 +117,7 @@ const IcasPrimary = () => {
                 features={icasP}
             />
 
-            <section className="py-2 bg-white">
+            <section className="py-2 bg-white when-to-start">
                 <Container>
                     <Row className="justify-content-center list-bg">
                         <Col lg={12}>

@@ -1,3 +1,278 @@
+
+/* ICAS CSS */
+.icas-page .desktopview .display-3{
+    font-size: 44.8px;
+}
+.icas-page .section-heading{
+    font-size: 37px !important;
+}
+.icas-page .nap-matter .row > *{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.icas-page .nap-matter .card-body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.icas-page .nap-matter .card-body h4{
+    font-size: 18px !important;
+}
+.icas-page .nap-matter .card-body p{
+    display: none;
+}
+.icas-page .text-secondary li{
+    line-height: 30px;
+}
+.icas-page .card-level .card-body h3{
+    font-size: 40px;
+}
+.icas-page .card-level .main-btn{
+    padding: 0.75rem 3rem;
+    font-size: 18px;
+}
+/* ICAS Primary */
+.icas-p-page .desktopview .display-3{
+    font-size: 44.8px;
+}
+.icas-p-page .section-heading{
+    font-size: 37px !important;
+}
+
+.icas-p-page .nap-matter .row > *{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.icas-p-page .nap-matter .card-body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.icas-p-page .nap-matter .card-body h4{
+    font-size: 18px !important;
+}
+.icas-p-page .nap-matter .card-body p{
+    display: none;
+}
+.icas-p-page .nap-p-cta section{
+    padding-top: 54px !important;
+}
+/* ICAS Secondary */
+.icas-s-page .desktopview .display-3{
+    font-size: 44.8px;
+}
+.icas-s-page .section-heading{
+    font-size: 37px !important;
+}
+
+.icas-s-page .nap-matter .row > *{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.icas-s-page .nap-matter .card-body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.icas-s-page .nap-matter .card-body h4{
+    font-size: 18px !important;
+}
+.icas-s-page .nap-matter .card-body p{
+    display: none;
+}
+.icas-s-page .nap-p-cta section{
+    padding-top: 54px !important;
+}
+/* NAPLAN */
+.naplan-page .desktopview .display-3{
+    font-size: 44.8px;
+}
+.naplan-page .section-heading{
+    font-size: 37px !important;
+}
+
+.naplan-page .nap-matter .row > *{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.naplan-page .nap-matter .card-body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.naplan-page .nap-matter .card-body h4{
+    font-size: 18px !important;
+}
+.naplan-page .nap-matter .card-body p{
+    display: none;
+}
+.naplan-page .nap-approach .hiw-card .align-items-center{
+    align-items: flex-start !important;
+}
+.naplan-page .nap-approach .hiw-step,
+.naplan-page .nap-approach .hiw-step h4,
+.naplan-page .nap-approach .hiw-step p{
+    text-align: left !important;
+}
+.naplan-page .nap-approach .hiw-step img{
+    width: auto;
+}
+.naplan-page .nap-approach .hiw-arrow{
+    margin-top: 110px;
+}
+.naplan-page .card-level .card-body h3{
+    font-size: 40px;
+}
+.naplan-page .card-level .main-btn{
+    padding: 0.75rem 3rem;
+    font-size: 18px;
+}
+.naplan-page .nap-p-cta section{
+    padding-top: 54px !important;
+}
+/* Naplan primary */
+.naplan-p-page .desktopview .display-3{
+    font-size: 44.8px;
+}
+.naplan-p-page .section-heading{
+    font-size: 37px !important;
+}
+
+.naplan-p-page .nap-matter .row > *{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.naplan-p-page .nap-matter .card-body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.naplan-p-page .nap-matter .card-body h4{
+    font-size: 18px !important;
+}
+.naplan-p-page .nap-matter .card-body p{
+    display: none;
+}
+.naplan-p-page .nap-p-cta section{
+    padding-top: 54px !important;
+}
+/* Naplan Secondary */
+.naplan-s-page .desktopview .display-3{
+    font-size: 40.8px;
+}
+.naplan-s-page .section-heading{
+    font-size: 37px !important;
+}
+
+.naplan-s-page .nap-matter .row > *{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.naplan-s-page .nap-matter .card-body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.naplan-s-page .nap-matter .card-body h4{
+    font-size: 18px !important;
+}
+.naplan-s-page .nap-matter .card-body p{
+    display: none;
+}
+.naplan-s-page .nap-p-cta section{
+    padding-top: 54px !important;
+}
+
+.hero-section-bg .hiw-card .align-items-center{
+    align-items: flex-start !important;
+}
+.hero-section-bg .hiw-step,
+.hero-section-bg .hiw-step h4,
+.hero-section-bg .hiw-step p{
+    text-align: left !important;
+}
+.hero-section-bg .hiw-step img{
+    width: auto;
+}
+.hero-section-bg .hiw-arrow{
+    margin-top: 110px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1399px){
+    .icas-page .card-level .card-body,
+    .naplan-page .card-level .card-body{
+        margin-top: -70px !important;
+    }
+}
+@media (max-width: 992px){
+    .naplan-page .section-heading,
+    .icas-page .section-heading,
+    .naplan-p-page .section-heading,
+    .naplan-s-page .section-heading,
+    .icas-p-page .section-heading,
+    .icas-s-page .section-heading{
+        font-size: 30px !important;
+    }
+    .icas-page .card-level .card-body,
+    .naplan-page .card-level .card-body{
+        margin-top: -70px !important;
+    }
+    .icas-page .card-level .card-body h3,
+    .naplan-page .card-level .card-body h3{
+       font-size: 30px !important; 
+    }
+    .naplan-page .nap-approach .hiw-card .align-items-center{
+        align-items: center !important;
+    }
+    .naplan-page .nap-approach .hiw-step,
+    .naplan-page .nap-approach .hiw-step h4,
+    .naplan-page .nap-approach .hiw-step p{
+        text-align: center !important;
+    }
+    .naplan-page .nap-approach .hiw-arrow{
+        margin-top: 1.5rem;
+    }
+    .naplan-page .nap-approach .hiw-arrow img{
+        width: 25px;
+    }
+
+    .hero-section-bg .hiw-card .align-items-center{
+        align-items: center !important;
+    }
+    .hero-section-bg .hiw-step,
+    .hero-section-bg .hiw-step h4,
+    .hero-section-bg .hiw-step p{
+        text-align: center !important;
+    }
+    .hero-section-bg .hiw-arrow{
+        margin-top: 1.5rem;
+    }
+    .hero-section-bg .hiw-arrow img{
+        width: 25px;
+    }
+}
+@media all and (max-width: 768px){
+    .icas-p-page .when-to-start h2, 
+    .icas-s-page .when-to-start h2,
+    .naplan-p-page .when-to-start h2,
+    .naplan-s-page .when-to-start h2 {
+        text-align: center;
+    }
+    .naplan-p-page .when-to-start .mt-5{
+        margin-top: 1.5rem !important;
+    }
+}
+
+
+/* Other */
+
 .naplan-s-page h1.display-3, .icas-p-page  h1.display-3{
     font-size: 3.8rem;
 }
@@ -8,9 +283,6 @@
     color: #0F2A47 !important;
 }
 
-.nap-approach .hiw-step, .nap-approach .hiw-step h4, .nap-approach .hiw-step p{
-    /* text-align: left !important; */
-}
 
 .list-bg ul{
     background-color: #F7F6EE;
@@ -22,9 +294,6 @@
 }
 .nap-p-cta .bg-primary-orange-gradient {
     background: #22a3d2;
-}
-.nap-p-cta .section-heading{
-    /* color: #fff !important; */
 }
 .nap-p-cta .main-btn-b{
     background-color: #FF9E10;
@@ -49,9 +318,6 @@
 }
 .icas-p-page .feature-section, .icas-s-page .feature-section{
     padding: 20px 0px 40px !important;
-}
-.when_start .mt-5{
-    margin-top: 1.5rem !important;
 }
 .icas-page .text-secondary{
     color: #070709 !important;
@@ -81,8 +347,14 @@
         margin-bottom: 2rem;
     }
     .what_cover .hiw-card .hiw-step:last-of-type{margin-bottom: 0;}
+    .nap-approach .hiw-step, .nap-approach .hiw-step p{text-align: center !important;}
     .nap-sec-start .mt-5{margin-top: 1rem !important;}
     .icas-p-page .feature-section, .icas-s-page .feature-section{
         padding: 3rem 0 0.5rem !important;
+    }
+    .naplan-page .text-secondary, .naplan-p-page .text-secondary li,
+    .naplan-s-page .text-secondary li, .icas-page .text-secondary, .icas-page .text-secondary li, 
+    .icas-page .course-content-section, .icas-p-page .text-secondary li, .icas-s-page .text-secondary li {
+        text-align: justify;
     }
 }

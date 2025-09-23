@@ -26,22 +26,22 @@ const whatWeCover = [
     { 
         icon: npcover1, 
         title: 'Reading', 
-        description: "Understand different text types, find main ideas, build vocabulary, answer comprehension questions clearly" 
+        description: <>Understand different text<br /> types, find main ideas, build<br /> vocabulary, answer<br /> comprehension questions<br /> clearly</> 
     },
     { 
         icon: npcover2, 
         title: 'Writing', 
-        description: "Plan and write effective short pieces in narrative and persuasive forms" 
+        description: <>Plan and write effective short<br /> pieces in narrative and<br /> persuasive forms</>
     },
     { 
         icon: npcover3, 
         title: 'Language Conventions', 
-        description: 'Practice spelling, punctuation, and grammar suitable for Year 3 and Year 5 levels' 
+        description: <>Practice spelling, punctuation,<br /> and grammar suitable for Year<br /> 3 and Year 5 levels</> 
     },
     { 
         icon: npcover4, 
         title: 'Numeracy', 
-        description: 'Strengthen number operations, problem solving, measurement, shapes, and graph interpretation' 
+        description: <>Strengthen number<br /> operations, problem solving,<br /> measurement, shapes, and<br /> graph interpretation</> 
     }
 ];
 
@@ -61,15 +61,15 @@ const points = [
 const whyParent = [
     { 
         icon: npcard1, 
-        title: 'Benchmarks students beyond school tests.'
+        title: <>Personalised attention<br /> through one-to-one or<br /> group classes.</>
     },
     { 
         icon: npcard2, 
-        title: 'Qualified tutors who understand the Australian Curriculum.'
+        title: <>Qualified tutors who<br /> understand the Australian<br /> Curriculum.</>
     },
     { 
         icon: npcard3, 
-        title: 'A supportive, encouraging environment that helps children feel capable, not pressured.' 
+        title: <>A supportive, encouraging<br /> environment that helps<br /> children feel capable, not<br /> pressured.</> 
     }
 ];
 
@@ -103,7 +103,7 @@ const NaplanPrimary = () => {
                 features={napPrim}
             />
 
-            <section className="py-2 bg-white when_start">
+            <section className="py-2 bg-white when-to-start">
                 <Container>
                     <Row className="justify-content-center list-bg">
                         <Col lg={12}>

@@ -35,19 +35,19 @@ const tutoringFeatures = [
 const whyPrepMatter = [
     { 
         icon: card1, 
-        title: 'Strengthen literacy and numeracy skills'
+        title: <>Strengthen literacy<br /> and numeracy<br /> skills</>
     },
     { 
         icon: card2, 
-        title: 'Become confident with NAPLAN-style questions'
+        title: <>Become confident<br /> with NAPLAN-<br />style questions</>
     },
     { 
         icon: card3, 
-        title: 'Learn simple strategies for managing time and exam pressure' 
+        title: <>Learn simple<br /> strategies for<br /> managing time and<br /> exam pressure</> 
     },
     { 
         icon: card4, 
-        title: 'Sit the test feeling calm and prepared'
+        title: <>Sit the test feeling<br /> calm and prepared</>
     },
 ];
 
@@ -55,22 +55,22 @@ const approach = [
     { 
         icon: napaprch1, 
         title: 'Initial Check', 
-        description: "We start with a skills assessment to see where your child stands." 
+        description: <>We start with a skills assessment to see where your child stands.</> 
     },
     { 
         icon: napaprch2, 
         title: 'Personalised Lessons', 
-        description: "Tailored tutoring in literacy and numeracy, either one-to-one or in small groups." 
+        description: <>Tailored tutoring in literacy and numeracy, either one-to-one or in small groups.</> 
     },
     { 
         icon: napaprch3, 
         title: 'Practice & Feedback', 
-        description: 'Guided practice tasks and mock tests with detailed review.' 
+        description: <>Guided practice tasks and mock tests with detailed review.</> 
     },
     { 
         icon: napaprch4, 
         title: 'Ongoing Support', 
-        description: 'Regular progress updates for parents.' 
+        description: <>Regular progress updates for parents.</> 
     }
 ];
 
@@ -80,16 +80,16 @@ const chooseLevel = [
         title: 'Primary',
         subTitle: '(Years 3 & 5)',
         bgcolor: '#05AC8F',
-        cardesc: 'Focus on building core literacy and numeracy foundations.',
-        btnlink: '/exam-prep/naplan/primary'
+        cardesc: <>Focus on building core literacy and<br /> numeracy foundations.</>,
+        btnlink: '/prep-zone/naplan/primary'
     },
     {
         icon: napseco,
         title: 'Secondary',
         subTitle: '(Years 7 & 9)',
         bgcolor: '#22A3D2',
-        cardesc: 'Focus on advanced skills, reasoning, and exam strategies.',
-        btnlink: '/exam-prep/naplan/secondary'
+        cardesc: <>Focus on advanced skills, reasoning, and<br /> exam strategies.</>,
+        btnlink: '/prep-zone/naplan/secondary'
     }
 ];
 

@@ -47,7 +47,7 @@ const whatWeCover = [
     { 
         icon: icover5, 
         title: 'Digital Technologies', 
-        description: 'Text-based coding, data representation, networks, algorithms.' 
+        description: <>Text-based coding, data representation,<br /> networks, algorithms.</> 
     }
 ];
 
@@ -67,15 +67,15 @@ const points = [
 const whyParent = [
     { 
         icon: icard1, 
-        title: 'Secondary students need more than just content — they need strategies.'
+        title: <>Secondary students need<br /> more than just content —<br /> they need strategies.</>
     },
     { 
         icon: icard2, 
-        title: 'Our tutors guide them through higher-order questions and reasoning challenges.'
+        title: <>Our tutors guide them<br /> through higher-order<br /> questions and reasoning<br /> challenges.</>
     },
     { 
         icon: icard3, 
-        title: 'Flexible learning options for busy secondary school schedules.' 
+        title: <>Flexible learning options<br /> for busy secondary school<br /> schedules.</>
     }
 ];
 
@@ -111,7 +111,7 @@ const IcasSecondary = () => {
                 features={icasP}
             />
 
-            <section className="py-2 bg-white">
+            <section className="py-2 bg-white when-to-start">
                 <Container>
                     <Row className="justify-content-center list-bg">
                         <Col lg={12}>
