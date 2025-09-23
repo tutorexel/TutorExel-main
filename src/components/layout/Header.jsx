@@ -89,25 +89,6 @@ const Header = () => {
                 </div>
                 
                 {showSubjects && (
-                  // <div className="subjects-mega-menu">
-                  //   <Container>
-                  //     <Row>
-                  //       {subjectsByYear.map((yearGroup) => (
-                  //         <Col key={yearGroup.year}>
-                  //           <h5>{yearGroup.year}</h5>
-                  //           {yearGroup.subjects.map((subject) => (
-                  //              <Link key={subject} to={`/subjects/${yearGroup.year.replace(' ', '-').toLowerCase()}/${subject.toLowerCase()}`}>
-                  //               {subject}
-                  //             </Link>
-                  //           ))}
-                  //         </Col>
-                  //       ))}
-                  //       <Col>
-                  //         <h5>Prep Zone</h5>
-                  //       </Col>
-                  //     </Row>
-                  //   </Container>
-                  // </div>
                   <div className="subjects-mega-menu">
                     <Container>
                       <Row>
@@ -127,7 +108,7 @@ const Header = () => {
                               <h5>Prep Zone</h5> 
                             </div>
                                     {examPrepMenu.map((exam) => (
-                                      <Col key={exam.name}>
+                                      <Col xs="auto" key={exam.name}>
                                         <div
                                           className="exam-parent"
                                           onMouseEnter={() => setActiveExam(exam.name)}
