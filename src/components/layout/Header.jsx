@@ -1,6 +1,6 @@
 // src/components/layout/Header.jsx
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Button, Row, Col, Offcanvas } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.svg';
@@ -34,10 +34,25 @@ const Header = () => {
   const handleCloseMobileMenu = () => setShowMobileMenu(false);
   const handleShowMobileMenu = () => setShowMobileMenu(true);
 
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => { 
+      if (window.scrollY >= 400) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
     
-      <Navbar bg="white" expand="lg" className="shadow-sm p-0 responsive-navbar">
+      <Navbar bg="white" expand="lg" className={`shadow-sm p-0 responsive-navbar ${isSticky ? 'fixed-navbar' : ''}`}>
         <Container>
           <Navbar.Brand as={Link} to="/" className="mobile-logo">
             <img src={logo} alt="TutorExel Logo" className="d-lg-none" />
@@ -65,6 +80,7 @@ const Header = () => {
               <div 
                 className="subjects-dropdown-container"
                 onMouseEnter={() => setShowSubjects(true)}
+                onMouseOut={() => setShowSubjects(showSubjects)}
                 onClick={() => setShowSubjects(!showSubjects)}
               >
                 <div className="nav-link-base">
@@ -77,7 +93,7 @@ const Header = () => {
                     <Container>
                       <Row>
                         {subjectsByYear.map((yearGroup) => (
-                          <Col key={yearGroup.year}>
+                          <Col xs="auto" key={yearGroup.year}>
                             <h5>{yearGroup.year}</h5>
                             {yearGroup.subjects.map((subject) => (
                                <Link key={subject} to={`/subjects/${yearGroup.year.replace(' ', '-').toLowerCase()}/${subject.toLowerCase()}`}>
@@ -86,76 +102,56 @@ const Header = () => {
                             ))}
                           </Col>
                         ))}
+                        <div className='col-auto'>
+                          <div className="subjects-dropdown-container">
+                            <div className="nav-link-basee">
+                              <h5>Prep Zone</h5> 
+                            </div>
+                                    {examPrepMenu.map((exam) => (
+                                      <Col xs="auto" key={exam.name}>
+                                        <div
+                                          className="exam-parent"
+                                          onMouseEnter={() => setActiveExam(exam.name)}
+                                          onMouseLeave={() => setActiveExam(null)}
+                                        >
+                                          {/* First-level link (Naplan / Icas) */}
+                                          <Link
+                                            to={`/prep-zone/${exam.name.toLowerCase()}`}
+                                            className="exam-main-link"
+                                          >
+                                            {exam.name}
+                                            <IoIosArrowForward className="submenu-arrow" />
+                                          </Link>
+
+                                          {/* Second-level submenu */}
+                                          {activeExam === exam.name && (
+                                            <div className="nested-submenu">
+                                              {exam.submenus.map((sub) => (
+                                                <Link
+                                                  key={sub}
+                                                  to={`/prep-zone/${exam.name.toLowerCase()}/${sub.toLowerCase()}`}
+                                                >
+                                                  {sub}
+                                                </Link>
+                                              ))}
+                                            </div>
+                                          )}
+                                        </div>
+                                      </Col>
+                                    ))}
+                          </div>
+                        </div>
                       </Row>
                     </Container>
                   </div>
                 )}
               </div>
 
-              <NavLink to="/musical-instrument" className="nav-link-base">Musical Instrument</NavLink>
-
+              <NavLink to="/play-music" className="nav-link-base">Play Music</NavLink>
               <NavLink to="/pricing" className="nav-link-base">Pricing</NavLink>
 
-              {/* Exam Prep Dropdown */}
-              <div
-                className="subjects-dropdown-container"
-                onMouseEnter={() => setShowExamPrep(true)}
-                onMouseLeave={() => {
-                                setShowExamPrep(false);
-                                setActiveExam(null);
-                              }}
-                onClick={() => setShowExamPrep(!showExamPrep)}
-              >
-                <div className="nav-link-base">
-                  Exam Prep
-                  <IoIosArrowDown
-                    className={`nav-arrow ${showExamPrep ? "open" : ""}`}
-                  />
-                </div>
-                {showExamPrep && (
-                  <div className="subjects-mega-menu exam-mega-menu">
-                    {/* <Container>
-                      <Row> */}
-                        {examPrepMenu.map((exam) => (
-                          <Col key={exam.name}>
-                            <div
-                              className="exam-parent"
-                              onMouseEnter={() => setActiveExam(exam.name)}
-                              onMouseLeave={() => setActiveExam(null)}
-                            >
-                              {/* First-level link (Naplan / Icas) */}
-                              <Link
-                                to={`/exam-prep/${exam.name.toLowerCase()}`}
-                                className="exam-main-link"
-                              >
-                                {exam.name}
-                                <IoIosArrowForward className="submenu-arrow" />
-                              </Link>
-
-                              {/* Second-level submenu */}
-                              {activeExam === exam.name && (
-                                <div className="nested-submenu">
-                                  {exam.submenus.map((sub) => (
-                                    <Link
-                                      key={sub}
-                                      to={`/exam-prep/${exam.name.toLowerCase()}/${sub.toLowerCase()}`}
-                                    >
-                                      {sub}
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
-                          </Col>
-                        ))}
-                      {/* </Row>
-                    </Container> */}
-                  </div>
-                )}
-              </div>
-
+              {/* <NavLink to="/blog" className="nav-link-base">Blog</NavLink> */}
               <NavLink to="/contact" className="nav-link-base">Contact Us</NavLink>
-              <NavLink to="/careers" className="nav-link-base">Careers</NavLink>
             </Nav>
 
             <Nav className="align-items-center justify-content-end desktop-nav-actions">
@@ -236,15 +232,63 @@ const Header = () => {
                           ))}
                         </div>
                       ))}
+                      <div className="mobile-year-group">
+                        <h6 className="mobile-year-title">Prep Zone</h6>
+                          <div className="mobile-subjects-menuu">
+                            {examPrepMenu.map((exam) => (
+                              <div key={exam.name} className="mobile-exam-item">
+                                <div className="mobile-exam-header">
+                                  {/* Main Naplan/Icas Link */}
+                                  <Link
+                                    to={`/prep-zone/${exam.name.toLowerCase()}`}
+                                    className="mobile-subject-link"
+                                    onClick={handleCloseMobileMenu}
+                                  >
+                                    {exam.name}
+                                  </Link>
+
+                                  {/* Arrow toggle (on right side) */}
+                                  <button
+                                    type="button"
+                                    className="mobile-subject-toggle-btn"
+                                    onClick={() =>
+                                      setActiveExam(activeExam === exam.name ? null : exam.name)
+                                    }
+                                  >
+                                    <IoIosArrowDown
+                                      className={`nav-arrow ${activeExam === exam.name ? "open" : ""}`}
+                                    />
+                                  </button>
+                                </div>
+
+                                {/* SECOND-LEVEL SUBMENU (now positioned directly under this item) */}
+                                {activeExam === exam.name && (
+                                  <div className="mobile-submenu">
+                                    {exam.submenus.map((sub) => (
+                                      <Link
+                                        key={sub}
+                                        to={`/prep-zone/${exam.name.toLowerCase()}/${sub.toLowerCase()}`}
+                                        className="mobile-submenu-link"
+                                        onClick={handleCloseMobileMenu}
+                                      >
+                                        {sub}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                      </div>
                     </div>
                   )}
                 </div>
 
                 <NavLink 
-                  to="/musical-instrument" 
+                  to="/play-music" 
                   className="mobile-nav-link"
                   onClick={handleCloseMobileMenu}>
-                  Musical Instrument
+                  Play Music
                 </NavLink>
 
                 <NavLink 
@@ -255,66 +299,13 @@ const Header = () => {
                   Pricing
                 </NavLink>
 
-                {/* Mobile Exam Prep Section */}
-                <div className="mobile-subjects-section">
-                  <div
-                    className="mobile-nav-link mobile-subjects-toggle"
-                    onClick={() => setShowExamPrep(!showExamPrep)}
-                  >
-                    Exam Prep
-                    <IoIosArrowDown className={`nav-arrow ${showExamPrep ? "open" : ""}`} />
-                  </div>
-
-                  {showExamPrep && (
-                    <div className="mobile-subjects-menu">
-                      {examPrepMenu.map((exam) => (
-                        <div key={exam.name} className="mobile-exam-item">
-                          <div className="mobile-exam-header">
-                            {/* Main Naplan/Icas Link */}
-                            <Link
-                              to={`/exam-prep/${exam.name.toLowerCase()}`}
-                              className="mobile-subject-link"
-                              onClick={handleCloseMobileMenu}
-                            >
-                              {exam.name}
-                            </Link>
-
-                            {/* Arrow toggle (on right side) */}
-                            <button
-                              type="button"
-                              className="mobile-subject-toggle-btn"
-                              onClick={() =>
-                                setActiveExam(activeExam === exam.name ? null : exam.name)
-                              }
-                            >
-                              <IoIosArrowDown
-                                className={`nav-arrow ${activeExam === exam.name ? "open" : ""}`}
-                              />
-                            </button>
-                          </div>
-
-                          {/* SECOND-LEVEL SUBMENU (now positioned directly under this item) */}
-                          {activeExam === exam.name && (
-                            <div className="mobile-submenu">
-                              {exam.submenus.map((sub) => (
-                                <Link
-                                  key={sub}
-                                  to={`/exam-prep/${exam.name.toLowerCase()}/${sub.toLowerCase()}`}
-                                  className="mobile-submenu-link"
-                                  onClick={handleCloseMobileMenu}
-                                >
-                                  {sub}
-                                </Link>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-
-
+                {/* <NavLink 
+                  to="/blog" 
+                  className="mobile-nav-link"
+                  onClick={handleCloseMobileMenu}
+                >
+                  Blog
+                </NavLink> */}
                 <NavLink 
                   to="/contact" 
                   className="mobile-nav-link"
@@ -322,14 +313,6 @@ const Header = () => {
                 >
                   Contact Us
                 </NavLink>
-                <NavLink 
-                  to="/careers" 
-                  className="mobile-nav-link"
-                  onClick={handleCloseMobileMenu}
-                >
-                  Careers
-                </NavLink>
-                
                 <div className="mobile-cta-section">
                   <a href="https://web.tutorexel.com/login" target="_blank" rel="noopener noreferrer" className="w-100 d-block">
                     <Button 
@@ -346,6 +329,7 @@ const Header = () => {
           </Offcanvas>
         </Container>
       </Navbar>
+      {isSticky && <div className="navbar-spacer" />}
     </>
   );
 };

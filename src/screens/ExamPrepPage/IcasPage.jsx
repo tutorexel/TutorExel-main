@@ -31,19 +31,19 @@ const tutoringFeatures = [
 const whyPrepMatter = [
     { 
         icon: card1, 
-        title: 'Benchmarks students beyond school tests.'
+        title: <>Benchmarks<br/> students beyond<br/> school tests.</>
     },
     { 
         icon: card2, 
-        title: 'Recognised by many schools for gifted programs and scholarships.'
+        title: <>Recognised by<br/> many schools for<br/> gifted programs<br/> and scholarships.</>
     },
     { 
         icon: card3, 
-        title: 'Motivates students to stretch themselves in a positive way.' 
+        title: <>Motivates students<br/> to stretch<br/> themselves in a<br/> positive way.</>
     },
     { 
         icon: card4, 
-        title: 'Certificates awarded from Participation to High Distinction (top 1%).'
+        title: <>Certificates<br/> awarded from<br/> Participation to<br/> High Distinction<br/> (top 1%).</>
     },
 ];
 
@@ -54,16 +54,16 @@ const chooseLevel = [
         title: 'Primary',
         subTitle: '(Years 2 - 6)',
         bgcolor: '#05AC8F',
-        cardesc: 'Build strong foundations and test familiarity.',
-        btnlink: '/exam-prep/icas/primary'
+        cardesc: <>Build strong foundations and test<br/> familiarity.</>,
+        btnlink: '/prep-zone/icas/primary'
     },
     {
         icon: icaseco,
         title: 'Secondary',
         subTitle: '(Years 7 - 10)',
         bgcolor: '#22A3D2',
-        cardesc: 'Sharpen reasoning, speed, and strategy for advanced challenges.',
-        btnlink: '/exam-prep/icas/secondary'
+        cardesc: <>Sharpen reasoning, speed, and strategy<br/> for advanced challenges.</>,
+        btnlink: '/prep-zone/icas/secondary'
     }
 ];
 

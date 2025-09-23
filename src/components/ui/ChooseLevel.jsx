@@ -39,14 +39,14 @@ const ChooseLevel = ({
                                     src={step.icon} 
                                     className="learning-style-image img-responsive"
                                     style={{ borderRadius: '16px 16px 0 0', 
-                                            height: '400px',
+                                            height: '350px',
                                             objectFit: 'cover',
-                                            objectPosition: top}} 
+                                            objectPosition: '0 -8px'}} 
                                 />
                                 <Card.Body className="p-4 text-center text-white" style={{backgroundColor: step.bgcolor, borderRadius: '16px', marginTop: '-16px'}}>
                                     <Card.Title as="h3" className="fw-bold">{step.title}</Card.Title>
-                                    <div style={{ fontSize: '1.1rem', marginBottom: '10px' }}>{step.subTitle}</div>
-                                    <p style={{ fontSize: '1rem', marginBottom: '20px' }}>
+                                    <div style={{ fontSize: '1.3rem', marginBottom: '10px', fontWeight: '700' }}>{step.subTitle}</div>
+                                    <p style={{ fontSize: '1.5rem', marginBottom: '20px', fontWeight: '700' }}>
                                         {step.cardesc}
                                     </p>
                                     

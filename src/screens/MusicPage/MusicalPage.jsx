@@ -75,19 +75,19 @@ const whyPrepMatter = [
 const whyParent = [
     { 
         icon: card5, 
-        title: 'Safe and supportive online learning environment'
+        title: <>Safe and<br /> supportive online<br /> learning<br /> environment</>
     },
     { 
         icon: card6, 
-        title: 'Clear practice goals that keep children motivated'
+        title: <>Clear practice<br /> goals that keep<br /> children motivated</>
     },
     { 
         icon: card7, 
-        title: 'Recognition through the Trinity exam system'
+        title: <>Recognition<br /> through the Trinity<br /> exam system</>
     },
     { 
         icon: card8, 
-        title: 'The joy of watching children grow musically and personally'
+        title: <>The joy of watching<br /> children grow<br /> musically and<br /> personally</>
     },
 ];
 
@@ -123,19 +123,19 @@ const approach = [
 const featureData = [
     {
         icon: iconscheduel,
-        title: <><b>Weekly one-to-one online lessons</b> (60 minutes)</>
+        title: <><b>Weekly one-to-one<br /> online lessons</b> (60<br /> minutes)</>
     },
     {
         icon: iconlib,
-        title: <>Guided home practice assignments <b>after each class</b></>
+        title: <>Guided home<br /> practice assignments <b>after<br /> each class</b></>
     },
     {
         icon: iconcomplete,
-        title: <>Optional mock performance sessions to prepare for <b>Trinity exams</b></>
+        title: <>Optional mock<br /> performance<br /> sessions to prepare<br /> for <b>Trinity exams</b></>
     },
     {
         icon: iconfeature,
-        title: <>Regular <b>progress feedback</b> to parents and students</>
+        title: <>Regular <b>progress<br /> feedback</b> to parents<br /> and students</>
     },
 ];
 

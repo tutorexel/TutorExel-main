@@ -61,15 +61,15 @@ const points = [
 const whyParent = [
     { 
         icon: npcard1, 
-        title: 'Tailored support for secondary students who need more advanced practice.'
+        title: <>Tailored support for<br /> secondary students who<br /> need more advanced<br /> practice.</>
     },
     { 
         icon: npcard2, 
-        title: 'Tutors experienced in bridging schoolwork with NAPLAN requirements.'
+        title: <>Tutors experienced in<br /> bridging schoolwork with<br /> NAPLAN requirements.</>
     },
     { 
         icon: npcard3, 
-        title: 'Flexible learning options: one-to-one or group classes.' 
+        title: <>Flexible learning options:<br /> one-to-one or group<br /> classes.</> 
     }
 ];
 
@@ -104,7 +104,7 @@ const NaplanSecondary = () => {
                 features={napSec}
             />
 
-            <section className="py-2 bg-white nap-sec-start">
+            <section className="py-2 bg-white nap-sec-start when-to-start">
                 <Container>
                     <Row className="justify-content-center list-bg">
                         <Col lg={12}>

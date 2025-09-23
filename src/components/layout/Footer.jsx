@@ -165,6 +165,9 @@ const Footer = () => {
     { name: 'English', link: '/subjects/english' },
     { name: 'Science (Coming Soon)', link: '/subjects/science' },
     { name: 'Hindi (Coming Soon)', link: '/subjects/hindi' },
+    { name: 'NAPLAN', link: '/prep-zone/naplan' },
+    { name: 'ICAS', link: '/prep-zone/icas' },
+    { name: 'Play Music', link: '/play-music' },
   ];
 
   const handleSubjectClick = (subject, e) => {
