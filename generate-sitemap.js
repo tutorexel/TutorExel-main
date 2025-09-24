@@ -5,7 +5,7 @@ import { SitemapStream, streamToPromise } from "sitemap";
 const BASE_URL = "https://www.tutorexel.com/"; // Change to your live domain
 
 // Define all routes in your site here (can be dynamically fetched from a JSON if needed)
-const routes = [
+const staticRoutes = [
   "/", 
   "/about-us",
   "/play-music",
