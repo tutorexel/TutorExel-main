@@ -1,7 +1,20 @@
 /* CSS code for BlogPage */
 
+.blog-page .list-group button.active{
+  background: var(--primary-orange);
+  border-color: inherit;
+}
+.blog-page .pagination li.active,
+.blog-page .pagination .active>.page-link, 
+.blog-page .pagination .page-link.active{
+  background-color: #22A3D2;
+  color: #fff;
+}
+.blog-page .pagination .page-link{
+  color: #22A3D2;
+}
 .bg-orange{
-    background: rgb(255, 158, 16);
+  background: var(--primary-orange);
 }
 .blog-card-img {
   height: 200px; /* fixed height for image */
@@ -60,6 +73,21 @@
 }
 .single-blog .blog-content ul li, .single-blog .blog-content ol li {
     line-height: 35px;
+}
+tbody, td, tfoot, th, thead, tr{
+  border-width: 1px !important;
+  padding: 5px;
+}
+.single-blog h5{
+  font-weight: 700;
+}
+.single-blog blockquote{
+  padding: 20px;
+  background-color: #e7e7e7;
+  font-size: 18px;
+  font-style: italic;
+  box-shadow: 0 0 9px #b7b7b7;
+  border-radius: 5px;
 }
 .blog-cta {
     margin: 20px 0;

@@ -5,8 +5,16 @@ import { blogs } from "../../data/blogs";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const SingleBlogPage = () => {
-  const { id } = useParams();
-  const blog = blogs.find((b) => b.id === parseInt(id));
+  const { slug } = useParams();
+  const slugify = (title) =>
+  title
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+
+const blog = blogs.find((b) => slugify(b.title) === slug);
 
   if (!blog) {
     return (
@@ -26,7 +34,7 @@ const SingleBlogPage = () => {
           <Col lg={12} className="mx-auto">
             <Card className="shadow-sm">
               <div className="blog-header">
-                <Card.Img variant="top" src={blog.image} alt={blog.title} />
+                {/* <Card.Img variant="top" src={blog.image} alt={blog.title} /> */}
                 <h2>{blog.title}</h2>
               </div>
               
@@ -34,7 +42,7 @@ const SingleBlogPage = () => {
                 <div className="blog-content">{blog.content}</div>
                 <small className="text-muted">Category: {blog.category}</small>
                 <div className="mt-4">
-                  <Link to="/">
+                  <Link to="/blog">
                     <Button variant="secondary">← Back to Blogs</Button>
                   </Link>
                 </div>

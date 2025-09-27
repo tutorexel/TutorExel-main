@@ -150,7 +150,7 @@ const Header = () => {
               <NavLink to="/play-music" className="nav-link-base">Play Music</NavLink>
               <NavLink to="/pricing" className="nav-link-base">Pricing</NavLink>
 
-              {/* <NavLink to="/blog" className="nav-link-base">Blog</NavLink> */}
+              <NavLink to="/blog" className="nav-link-base">Blog</NavLink>
               <NavLink to="/contact" className="nav-link-base">Contact Us</NavLink>
             </Nav>
 

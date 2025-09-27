@@ -3,6 +3,14 @@ import React from "react";
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
+const slugify = (title) =>
+  title
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, '')     // remove invalid characters
+    .replace(/\s+/g, '-')             // collapse whitespace and replace with -
+    .replace(/-+/g, '-');             // collapse multiple hyphens
+
 const BlogCard = ({ blog }) => {
   const shortContent =
     typeof blog.excerpt === 'string'
@@ -38,7 +46,7 @@ const BlogCard = ({ blog }) => {
       {/* Content Below Image */}
       <Card.Body className="pb-3">
         <div>{shortContent}</div>
-        <Link to={`/blog/${blog.id}`} className="stretched-link"></Link>
+        <Link to={`/blog/${slugify(blog.title)}`} className="stretched-link"></Link>
       </Card.Body>
     </Card>
   );
