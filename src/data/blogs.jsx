@@ -142,7 +142,7 @@ export const blogs = [
     ) },
   { id: 2, title: "How TutorExel Works: From Free Diagnostic Test to Tailored Learning Plan", 
     category: "Mathematics", 
-    image: "/src/assets/images/blog/blog2.webp",
+    image: "../../assets/images/blog/blog2.webp",
     excerpt: "At TutorExel, we know that no two children learn in exactly the same way. Some need more time to understand concepts,",
     content: (
       <>
