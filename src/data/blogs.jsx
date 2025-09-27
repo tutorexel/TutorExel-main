@@ -3,7 +3,7 @@
 export const blogs = [
   { id: 1, title: "Introducing TutorExel: Personalised Online Tutoring for Australian Students", 
     category: "General", 
-    image: "/src/assets/images/blog/blog1.webp",
+    image: "/assets/images/blog/blog1.webp",
     excerpt: "Welcome to TutorExel, your go-to platform for personalised online tutoring!",
     content: (
       <>
@@ -142,7 +142,7 @@ export const blogs = [
     ) },
   { id: 2, title: "How TutorExel Works: From Free Diagnostic Test to Tailored Learning Plan", 
     category: "Mathematics", 
-    image: "../../assets/images/blog/blog2.webp",
+    image: "/assets/images/blog/blog2.webp",
     excerpt: "At TutorExel, we know that no two children learn in exactly the same way. Some need more time to understand concepts,",
     content: (
       <>
@@ -263,7 +263,7 @@ export const blogs = [
     ) },
   { id: 3, title: "Why Australian Students Need More Than School Support in 2025", 
     category: "English", 
-    image: "/src/assets/images/blog/blog3.webp",
+    image: "/assets/images/blog/blog3.webp",
     excerpt: "From national assessments like NAPLAN and ICAS to rapidly changing digital skills and higher academic competition, students need more than just classroom lessons to thrive",
     content: (
       <>
@@ -406,7 +406,7 @@ export const blogs = [
     ) },
   { id: 4, title: "Why National Assessments Matter (NAPLAN and ICAS)", 
     category: "Exam Prep", 
-    image: "/src/assets/images/blog/blog4.webp",
+    image: "/assets/images/blog/blog4.webp",
     excerpt: "For many families across Australia, NAPLAN and ICAS are more than just school tests. They are benchmarks that measure how well a student is performing compared to their peers and highlight",
     content: (
       <>
@@ -503,7 +503,7 @@ export const blogs = [
     )},
   { id: 5, title: "The TutorExel Approach: Structured Lessons, Worksheets, and Personal Guidance", 
     category: "Health", 
-    image: "/src/assets/images/blog/blog5.webp",
+    image: "/assets/images/blog/blog5.webp",
     excerpt: "Tutoring is not new, but the way it is delivered makes all the difference. Some students attend traditional coaching centres where classes are large and general.",
     content: (
       <>
@@ -625,7 +625,7 @@ export const blogs = [
     ) },
   { id: 6, title: "Why Personalised Tutoring Builds Confidence, Not Just Grades", 
     category: "English", 
-    image: "/src/assets/images/blog/blog6.webp",
+    image: "/assets/images/blog/blog6.webp",
     excerpt: "When parents look for tutoring, the first thought is often: “I want my child’s marks to improve.” And while grades are important, they are only one part of the bigger picture.",
     content: (
       <>
@@ -737,7 +737,7 @@ export const blogs = [
     ) },
   { id: 7, title: "How Our Monthly Report Cards Help Parents Track Real Progress", 
     category: "Mathematics", 
-    image: "/src/assets/images/blog/blog7.webp",
+    image: "/assets/images/blog/blog7.webp",
     excerpt: "Many tutoring services provide worksheets, tests, and classes, but very few offer clear, consistent feedback. ",
     content: (
       <>
@@ -852,7 +852,7 @@ export const blogs = [
     ) },
   { id: 8, title: "A Parent’s Guide: Choosing the Right Online Tutor for Your Child", 
     category: "Health", 
-    image: "/src/assets/images/blog/blog8.webp",
+    image: "/assets/images/blog/blog8.webp",
     excerpt: "Every parent wants the best for their child’s education. Whether it’s catching up on missed concepts, preparing for NAPLAN or ICAS, or extending beyond the classroom, tutoring can make a big difference.",
     content: (
       <>
@@ -969,7 +969,7 @@ export const blogs = [
     ) },
   { id: 9, title: "Online Tutoring vs Traditional Tutoring: Which Works Best for Today’s Students?", 
     category: "English", 
-    image: "/src/assets/images/blog/blog9.webp",
+    image: "/assets/images/blog/blog9.webp",
     excerpt: "Tutoring has always played an important role in helping students catch up, stay on track, or excel beyond the classroom. Traditionally, tutoring meant sitting across the table from a teacher,",
     content: (<>
         <h4>A New Era of Learning</h4>
@@ -1122,7 +1122,7 @@ export const blogs = [
     </>) },
   { id: 10, title: "The Benefits of Group Classes and Collaborative Learning", 
     category: "Mathematics", 
-    image: "/src/assets/images/blog/blog10.webp",
+    image: "/assets/images/blog/blog10.webp",
     excerpt: "At TutorExel, we offer both one-to-one and group classes, because we know that every child benefits differently depending on their learning style and personality. ",
     content: (<>
         <h4>Rethinking Tutoring: Beyond One-to-One</h4>
@@ -1246,7 +1246,7 @@ export const blogs = [
     </>) },
   { id: 11, title: "Inside TutorExel’s Online Methodology: How Our LMS Makes Learning Interactive", 
     category: "General", 
-    image: "/src/assets/images/blog/blog11.webp",
+    image: "/assets/images/blog/blog11.webp",
     excerpt: "At TutorExel, we’ve built something different. Our Learning Management System (LMS) is at the heart of how we deliver lessons, practice, and feedback.",
     content: (<>
         <h4>Moving Beyond Traditional Tutoring</h4>
@@ -1371,7 +1371,7 @@ export const blogs = [
     </>) },
   { id: 12, title: "Keeping Tutoring Stress-Free: Balancing Health, Learning, and Screen Time", 
     category: "General", 
-    image: "/src/assets/images/blog/blog12.webp",
+    image: "/assets/images/blog/blog12.webp",
     excerpt: "We believe tutoring should never be a burden. Our model is designed to be structured yet flexible, ensuring children get the academic support they need without sacrificing health, ",
     content: (
     <>
