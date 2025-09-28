@@ -1,10 +1,14 @@
 // src/pages/SingleBlogPage.js
-import React from "react";
+import React, { useEffect } from 'react';
 import { useParams, Link } from "react-router-dom";
 import { blogs } from "../../data/blogs";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const SingleBlogPage = () => {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   const { slug } = useParams();
   const slugify = (title) =>
   title
@@ -14,7 +18,7 @@ const SingleBlogPage = () => {
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-');
 
-const blog = blogs.find((b) => slugify(b.title) === slug);
+  const blog = blogs.find((b) => slugify(b.title) === slug);
 
   if (!blog) {
     return (
