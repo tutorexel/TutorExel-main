@@ -669,9 +669,9 @@ export const blogs = [
         <p>When a student moves from easy to medium worksheets, or solves a question they previously struggled with, teachers acknowledge the achievement. These small wins gradually reshape how children see themselves as learners.</p>
         <p><b>3. Building Understanding, Not Just Answers</b></p>
         <p>Teachers focus on making sure concepts are clear before moving to practice. A confident student is one who knows why an answer is correct, not just what the answer is.</p>
-        <p>4. Encouraging Independence</p>
+        <p><b>4. Encouraging Independence</b></p>
         <p>Through interactive classes, students learn to answer questions without constant prompting. Teachers use polls, quizzes, and a <b>bank of practice questions</b> to encourage students to think independently during class.</p>
-        <p>5. Regular Feedback</p>
+        <p><b>5. Regular Feedback</b></p>
         <p>Parents receive monthly report cards that not only track academic progress but also highlight improvements in participation and confidence. Knowing that growth is being noticed motivates students to keep building on their progress.</p>
 
         <hr />
