@@ -34,6 +34,7 @@ const BlogPage = () => {
   const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setCurrentPage(1);
   }, [searchTerm, selectedCategory]);
 
