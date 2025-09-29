@@ -8,6 +8,7 @@ const BASE_URL = "https://www.tutorexel.com/"; // Change to your live domain
 const staticRoutes = [
   "/", 
   "/about-us",
+  "/blog",
   "/play-music",
   "/pricing",
   "/contact",
@@ -32,9 +33,17 @@ years.forEach((year) => {
   });
 });
 
+// const slugify = (title) =>
+//   title
+//     .toLowerCase()
+//     .trim()
+//     .replace(/[^a-z0-9\s-]/g, '')     // remove invalid characters
+//     .replace(/\s+/g, '-')             // collapse whitespace and replace with -
+//     .replace(/-+/g, '-');             // collapse multiple hyphens
+
 //Dynamic blog routes – Example
-// import blogData from "./src/data/blogs.jsx" assert { type: "json" };
-// const blogRoutes = blogData.map(blog => `/blog/${blog.id}`);
+// import blogData from "./src/data/blogs.js" assert { type: "json" };
+// const blogRoutes = blogData.map(blog => `/blog/${slugify(blog.title)}`);
 
 const allRoutes = [...staticRoutes, ...dynamicSubjectRoutes /*, ...blogRoutes*/];
 
