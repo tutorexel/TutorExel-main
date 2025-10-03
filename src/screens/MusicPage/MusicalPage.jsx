@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './Music.css';
 
+import logo from '../../assets/images/logo.svg';
 import musicHero from '../../assets/images/music_hero.png';
 import music from '../../assets/images/Music.png';
 import musiclearn from '../../assets/images/music_learn.png';
@@ -153,6 +154,28 @@ const MusicPage = () => {
                     name="description"
                     content="We provide online music lessons in Australia for beginners. Get a piano tutor online, personal online music tutoring, & beginner piano lessons online. Start now."
                 />
+
+                {/* Open Graph Tags */}
+                <meta property="og:title" content="Learn Piano Online Australia | Beginner Music Lessons TutorExel" />
+                <meta property="og:description" content="We provide online music lessons in Australia for beginners. Get a piano tutor online, personal online music tutoring, & beginner piano lessons online. Start now." />
+                <meta property="og:image" content={logo} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.tutorexel.com/play-music" />
+
+                {/* Organization Schema */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "TutorExel",
+                        "url": "https://www.tutorexel.com",
+                        "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+                        "sameAs": [
+                        "https://www.facebook.com/share/1Za9NLXEqM/",  
+                        "https://www.instagram.com/tutorexellearning", 
+                        ]
+                    })}
+                </script>
             </Helmet>
             <div className='hero_image_music text-center'>
                 <img src={musicHero} alt="" />

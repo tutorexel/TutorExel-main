@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './ExamPrep.css';
 
+import logo from '../../assets/images/logo.svg';
 import naplan from '../../assets/images/naplan.png';
 import card1 from '../../assets/images/nap_card1.png';
 import card2 from '../../assets/images/nap_card2.png';
@@ -107,6 +108,28 @@ const NaplanPage = () => {
                     name="description"
                     content="Improve NAPLAN results with expert online NAPLAN tutors. We at Tutorexel provide test-prep, online tutoring, and preparation tests for Years 3-9 across Australia."
                 />
+
+                {/* Open Graph Tags */}
+                <meta property="og:title" content="Online NAPLAN Test Preparation AU | Tutors with TutorExel" />
+                <meta property="og:description" content="Improve NAPLAN results with expert online NAPLAN tutors. We at Tutorexel provide test-prep, online tutoring, and preparation tests for Years 3-9 across Australia." />
+                <meta property="og:image" content={logo} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.tutorexel.com/prep-zone/naplan" />
+
+                {/* Organization Schema */}
+                <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "TutorExel",
+                    "url": "https://www.tutorexel.com",
+                    "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+                    "sameAs": [
+                    "https://www.facebook.com/share/1Za9NLXEqM/",  
+                    "https://www.instagram.com/tutorexellearning", 
+                    ]
+                })}
+                </script>
             </Helmet>            
             <ExamTitle 
                 title="NAPLAN Tutoring for Years 3, 5, 7 & 9" 

@@ -317,7 +317,32 @@ const HomePage = () => {
         <meta property="og:description" content="TutorExel offers expert online tutoring across Australia. We provide personalised learning & exam prep in all subjects, aligned with the Australian Curriculum." />
         <meta property="og:image" content={logo} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/" />
+        <meta property="og:url" content="https://www.tutorexel.com/" />
+
+        {/* Organization Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "TutorExel",
+            "url": "https://www.tutorexel.com",
+            "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+            "sameAs": [
+              "https://www.facebook.com/share/1Za9NLXEqM/",  
+              "https://www.instagram.com/tutorexellearning", 
+            ]
+          })}
+        </script>
+
+        {/* Website Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "TutorExel",
+            "url": "https://www.tutorexel.com",
+          })}
+        </script>
       </Helmet>
 
       <Hero />

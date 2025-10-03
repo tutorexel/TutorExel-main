@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { FaArrowRight } from 'react-icons/fa';
 
+import logo from '../../assets/images/logo.svg';
 import PageHero from '../../components/ui/PageHero';
 import './StudentForm.css'; // Import this page's CSS
 import { submitToEndpoint, buildFormData } from '../../services/formSubmit';
@@ -106,6 +107,28 @@ const StudentForm = () => {
           name="description"
           content="Need support? Contact TutorExel’s expert team today. We will answer questions on tutoring, pricing, or curriculum support across Australia. Reach us out today!"
         />
+
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Contact TutorExel | Get Tutoring Help Across Australia" />
+        <meta property="og:description" content="Need support? Contact TutorExel’s expert team today. We will answer questions on tutoring, pricing, or curriculum support across Australia. Reach us out today!" />
+        <meta property="og:image" content={logo} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.tutorexel.com/contact" />
+
+        {/* Organization Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "TutorExel",
+            "url": "https://www.tutorexel.com",
+            "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+            "sameAs": [
+              "https://www.facebook.com/share/1Za9NLXEqM/",  
+              "https://www.instagram.com/tutorexellearning", 
+            ]
+          })}
+        </script>
       </Helmet>
       <PageHero title="Contact Us" />
 

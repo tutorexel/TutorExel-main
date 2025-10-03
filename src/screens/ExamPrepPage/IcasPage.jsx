@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './ExamPrep.css';
 
+import logo from '../../assets/images/logo.svg';
 import icas from '../../assets/images/icas.png';
 import card1 from '../../assets/images/icas_card1.png';
 import card2 from '../../assets/images/icas_card2.png';
@@ -94,7 +95,30 @@ const IcasPage = () => {
                     name="description"
                     content="Need ICAS exam preparation? TutorExel provides online ICAS tutoring, practice tests and expert tutors in Australia to help students excel in exams. Contact now!"
                 />
+
+                {/* Open Graph Tags */}
+                <meta property="og:title" content="Online ICAS Tutors Australia | Practice Tests & Exam Prep" />
+                <meta property="og:description" content="Need ICAS exam preparation? TutorExel provides online ICAS tutoring, practice tests and expert tutors in Australia to help students excel in exams. Contact now!" />
+                <meta property="og:image" content={logo} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.tutorexel.com/prep-zone/icas" />
+
+                {/* Organization Schema */}
+                <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "TutorExel",
+                    "url": "https://www.tutorexel.com",
+                    "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+                    "sameAs": [
+                    "https://www.facebook.com/share/1Za9NLXEqM/",  
+                    "https://www.instagram.com/tutorexellearning", 
+                    ]
+                })}
+                </script>
             </Helmet>
+
             <ExamTitle 
                 title="ICAS Preparation for Years 2–10"
                 customClass = "desktopview"

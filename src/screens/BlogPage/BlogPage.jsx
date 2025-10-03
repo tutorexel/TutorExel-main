@@ -5,6 +5,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
 
+import logo from '../../assets/images/logo.svg';
 import { blogs } from '../../data/blogs';
 import BlogCard from '../../components/ui/BlogCard';
 import Sidebar from '../../components/ui/Sidebar';

@@ -54,6 +54,27 @@ const AboutUsPage = () => {
           name="description"
           content="Discover TutorExel’s mission and values. We provide trusted online tutoring in Australia with qualified tutors, personalised learning & curriculum-aligned support."
         />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="About Us | TutorExel Online Tutoring Across Australia" />
+        <meta property="og:description" content="Discover TutorExel’s mission and values. We provide trusted online tutoring in Australia with qualified tutors, personalised learning & curriculum-aligned support." />
+        <meta property="og:image" content={logo} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.tutorexel.com/about-us" />
+
+        {/* Organization Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "TutorExel",
+            "url": "https://www.tutorexel.com",
+            "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+            "sameAs": [
+              "https://www.facebook.com/share/1Za9NLXEqM/",  
+              "https://www.instagram.com/tutorexellearning", 
+            ]
+          })}
+        </script>
       </Helmet>      
       <PageHero title="About Us" />
 
