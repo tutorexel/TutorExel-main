@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './ExamPrep.css';
 
+import logo from '../../assets/images/logo.svg';
 import icasTecher from '../../assets/images/icas_secondary_teacher.png';
 import icard1 from '../../assets/images/ns_card1.png';
 import icard2 from '../../assets/images/np_card1.png';
@@ -93,6 +94,28 @@ const IcasSecondary = () => {
                     name="description"
                     content="Find ICAS tutors online for secondary students in Australia. Our tuition programs cover Years 7-10, with expert exam preparation & personalised support. Call now."
                 />
+
+                {/* Open Graph Tags */}
+                <meta property="og:title" content="Secondary ICAS Tutors Australia | Online Tuition Programs" />
+                <meta property="og:description" content="Find ICAS tutors online for secondary students in Australia. Our tuition programs cover Years 7-10, with expert exam preparation & personalised support. Call now." />
+                <meta property="og:image" content={logo} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.tutorexel.com/prep-zone/icas/secondary" />
+
+                {/* Organization Schema */}
+                <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "TutorExel",
+                    "url": "https://www.tutorexel.com",
+                    "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+                    "sameAs": [
+                    "https://www.facebook.com/share/1Za9NLXEqM/",  
+                    "https://www.instagram.com/tutorexellearning", 
+                    ]
+                })}
+                </script>
             </Helmet>
             <ExamTitle 
                 title="ICAS Prep for Secondary Students (Years 7–10)"

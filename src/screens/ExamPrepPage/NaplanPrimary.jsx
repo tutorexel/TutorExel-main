@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './ExamPrep.css';
 
+import logo from '../../assets/images/logo.svg';
 import napTecher from '../../assets/images/naplan_primary_teacher.png';
 import npcard1 from '../../assets/images/np_card1.png';
 import npcard2 from '../../assets/images/np_card2.png';
@@ -87,6 +88,28 @@ const NaplanPrimary = () => {
                     name="description"
                     content="Get expert NAPLAN primary tutoring online. TutorExel provides Year 3 & 5 tutors, primary tuition, and online tutor support aligned with the NAPLAN curriculum."
                 />
+
+                {/* Open Graph Tags */}
+                <meta property="og:title" content="NAPLAN Primary Tutoring Australia | Tutors For Years 3 & 5" />
+                <meta property="og:description" content="Get expert NAPLAN primary tutoring online. TutorExel provides Year 3 & 5 tutors, primary tuition, and online tutor support aligned with the NAPLAN curriculum." />
+                <meta property="og:image" content={logo} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.tutorexel.com/prep-zone/naplan/primary" />
+
+                {/* Organization Schema */}
+                <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "TutorExel",
+                    "url": "https://www.tutorexel.com",
+                    "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+                    "sameAs": [
+                    "https://www.facebook.com/share/1Za9NLXEqM/",  
+                    "https://www.instagram.com/tutorexellearning", 
+                    ]
+                })}
+                </script>
             </Helmet>
             <ExamTitle 
                 title="Primary NAPLAN Tutoring for Years 3 & 5"

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './ExamPrep.css';
 
+import logo from '../../assets/images/logo.svg';
 import icasTecher from '../../assets/images/icas_primary_teacher.png';
 import icard1 from '../../assets/images/np_card2.png';
 import icard2 from '../../assets/images/np_card1.png';
@@ -99,6 +100,28 @@ const IcasPrimary = () => {
                     name="description"
                     content="Find ICAS primary tuition with TutorExel across Australia. We deliver primary-level ICAS tutoring & exam prep online with subject experts and practice tests."
                 />
+
+                {/* Open Graph Tags */}
+                <meta property="og:title" content="Primary ICAS Tutoring Online | Exam Preparation Australia" />
+                <meta property="og:description" content="Find ICAS primary tuition with TutorExel across Australia. We deliver primary-level ICAS tutoring & exam prep online with subject experts and practice tests." />
+                <meta property="og:image" content={logo} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.tutorexel.com/prep-zone/icas/primary" />
+
+                {/* Organization Schema */}
+                <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "TutorExel",
+                    "url": "https://www.tutorexel.com",
+                    "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+                    "sameAs": [
+                    "https://www.facebook.com/share/1Za9NLXEqM/",  
+                    "https://www.instagram.com/tutorexellearning", 
+                    ]
+                })}
+                </script>
             </Helmet>            
             <ExamTitle 
                 title="ICAS Prep for Primary Students (Years 2–6)"

@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import seoData from '../../seo/seoData';
+import logo from '../../assets/images/logo.svg';
 import { subjectsData } from '../../data/subjectsData';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaArrowRight, FaPhoneAlt } from 'react-icons/fa';
@@ -58,6 +59,27 @@ const SubjectPage = () => {
       <Helmet prioritizeSeoTags>
         <title key="title">{meta.title}</title>
         <meta name="description" content={meta.description} key="description" />
+
+        {/* Open Graph Tags */}
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:image" content={logo} />
+        <meta property="og:type" content="website" />
+
+        {/* Organization Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "TutorExel",
+            "url": "https://www.tutorexel.com",
+            "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+            "sameAs": [
+              "https://www.facebook.com/share/1Za9NLXEqM/",  
+              "https://www.instagram.com/tutorexellearning", 
+            ]
+          })}
+        </script>
       </Helmet>
 
       <PageHero title={subjectContent.pageTitle} titleSize="display-5"/>

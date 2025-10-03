@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import './PricingPage.css';
 
 // Import all necessary assets
+import logo from '../../assets/images/logo.svg';
 import iconSchedule from '../../assets/icons/icon-schedule.svg';
 import iconBilling from '../../assets/icons/icon-billing.svg';
 // Reuse icons from "Our Approach" for the new "How It Works"
@@ -44,6 +45,28 @@ const PricingPage = () => {
           name="description"
           content="Discover TutorExel’s flexible tutoring prices in Australia. We provide clear packages for all subjects, supporting primary & secondary learning needs. Visit now!"
         />
+
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="TutorExel Pricing | Flexible Tutoring Packages for Students" />
+        <meta property="og:description" content="Discover TutorExel’s flexible tutoring prices in Australia. We provide clear packages for all subjects, supporting primary & secondary learning needs. Visit now!" />
+        <meta property="og:image" content={logo} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.tutorexel.com/pricing" />
+
+        {/* Organization Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "TutorExel",
+            "url": "https://www.tutorexel.com",
+            "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+            "sameAs": [
+              "https://www.facebook.com/share/1Za9NLXEqM/",  
+              "https://www.instagram.com/tutorexellearning", 
+            ]
+          })}
+        </script>
       </Helmet>
       <PageHero title="Pricing" />
       <section className="py-5 bg-white">

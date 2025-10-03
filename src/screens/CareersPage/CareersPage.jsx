@@ -65,6 +65,28 @@ const CareersPage = () => {
           name="description"
           content="Explore careers with TutorExel & join our online tutoring team. We’re hiring passionate educators across Australia to deliver curriculum-aligned learning support."
         />
+
+        {/* Open Graph Tags */}
+        <meta property="og:title" content="Careers at TutorExel | Join Our Online Tutoring Team" />
+        <meta property="og:description" content="Explore careers with TutorExel & join our online tutoring team. We’re hiring passionate educators across Australia to deliver curriculum-aligned learning support." />
+        <meta property="og:image" content={logo} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.tutorexel.com/careers" />
+
+        {/* Organization Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "TutorExel",
+            "url": "https://www.tutorexel.com",
+            "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+            "sameAs": [
+              "https://www.facebook.com/share/1Za9NLXEqM/",  
+              "https://www.instagram.com/tutorexellearning", 
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Section 1: Hero Banner */}

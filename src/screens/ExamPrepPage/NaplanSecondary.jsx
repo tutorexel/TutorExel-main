@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './ExamPrep.css';
 
+import logo from '../../assets/images/logo.svg';
 import napTecher from '../../assets/images/naplan_secondary_teacher.png';
 import npcard1 from '../../assets/images/ns_card1.png';
 import npcard2 from '../../assets/images/np_card2.png';
@@ -87,6 +88,28 @@ const NaplanSecondary = () => {
                     name="description"
                     content="Our NAPLAN secondary tutoring helps Year 7 & 9 students online with expert tutors. Join TutorExel’s tuition programs for secondary school support aligned to NAPLAN."
                 />
+
+                {/* Open Graph Tags */}
+                <meta property="og:title" content="Secondary NAPLAN Tutoring Australia | Tutors Year 7 & 9" />
+                <meta property="og:description" content="Our NAPLAN secondary tutoring helps Year 7 & 9 students online with expert tutors. Join TutorExel’s tuition programs for secondary school support aligned to NAPLAN." />
+                <meta property="og:image" content={logo} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.tutorexel.com/prep-zone/naplan/secondary" />
+                
+                {/* Organization Schema */}
+                <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "TutorExel",
+                    "url": "https://www.tutorexel.com",
+                    "logo": "https://www.tutorexel.com/assets/images/logo.svg",
+                    "sameAs": [
+                    "https://www.facebook.com/share/1Za9NLXEqM/",  
+                    "https://www.instagram.com/tutorexellearning", 
+                    ]
+                })}
+                </script>
             </Helmet>           
             <ExamTitle 
                 title="Secondary NAPLAN Tutoring for Years 7 & 9"
