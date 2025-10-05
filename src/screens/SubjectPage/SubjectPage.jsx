@@ -236,7 +236,7 @@ const SubjectPage = () => {
         <section className="faq">
             <Container className="my-5">
                 <row className="mt-3">
-                    <h2 className="section-heading text-white">FAQs</h2>
+                    <h2 className="section-heading text-center mb-5">FAQs</h2>
                     <Accordion>
                         {subjectContent.faqData.map((faq, index) => (
                         <Accordion.Item eventKey={index.toString()} key={index}>
