@@ -30,22 +30,23 @@ export const subjectsData = {
     "maths": {
       pageTitle: "Year 2 Mathematics – Personalised Online Tutoring",
       introHeading: "We've Got the Curriculum Covered",
-      introP1: "At TutorExel, our Year 2 Maths program builds a strong foundation in number skills, operations, early fractions, and patterns. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
-      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
+      introP1: "At TutorExel, our Year 2 Maths program builds a strong foundation in number skills, operations, early fractions, and patterns. Lessons are tailored to your child’s pace and aligned with the Australian Curriculum Year 2 Maths.",
+      introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert Year 2 maths tutors who focus on real progress.",
       learningHeading: "What Your Child Will Learn in Year 2 Maths",
-      learningP1: "Year 2 builds confidence with three‑digit numbers, equal sharing and skip‑counting patterns.",
+      learningP1: "Year 2 builds confidence with three-digit numbers, equal sharing and skip-counting patterns—fully mapped to Year 2 Australian Curriculum Maths outcomes. Families can choose dedicated maths tutoring Year 2 or a flexible year 2 maths online tutor.",
       sidebar: {
         title: "Year 2 Mathematics",
-        subtitle: "Personalised Online Tutoring",
+        subtitle: "Personalised Online Tutoring by trained teachers familiar with the Australian curriculum Year 2 maths, trusted by parents looking for the best Year 2 Maths tutor Australia wide.",
         buttonText: "Book Your Free Trial Class",
-          buttonLink: "/contact",
+        buttonLink: "/contact",
          "keyAreas": [
-        "Number Sense and Operations",
-        "Fractions, Money & Algebraic Thinking",
-        "Measurement & Time",
-        "Geometry: Shapes, Position & Movement",
-        "Data and Chance"
-      ]
+                      "Number Sense and Operations",
+                      "Fractions, Money & Algebraic Thinking",
+                      "Measurement & Time",
+                      "Geometry: Shapes, Position & Movement",
+                      "Data and Chance"
+                    ],
+        description: "All topics align with Australian Curriculum Maths Year 2 and are taught by experienced Year 2 maths tutors."
     },
 
       courseContent: {
@@ -59,6 +60,7 @@ export const subjectsData = {
     "Partition numbers into hundreds, tens, & ones.",
     "Solve addition, subtraction, multiplication, & division.",
   ],
+  description: "Supported by targeted year 2 maths worksheets Australian Curriculum and guided by your maths tutor Year 2."
 },
 {
   title: "Fractions, Money & Algebraic Thinking",
@@ -68,6 +70,7 @@ export const subjectsData = {
     "Describe patterns & identify missing numbers.",
     "Use number sentences for problem solving.",
   ],
+  description: "Delivered through structured Year 2 maths tutoring with real-world examples."
 },
 {
   title: "Measurement & Time",
@@ -77,6 +80,7 @@ export const subjectsData = {
     "Tell time to the quarter-hour correctly.",
     "Identify months, seasons & days in months.",
   ],
+  description: "Directly aligned to the year 2 maths Australian curriculum."
 },
 {
   title: "Geometry: Shapes, Position & Movement",
@@ -86,6 +90,7 @@ export const subjectsData = {
     "Investigate slides, flips & simple turns.",
     "Explore orientation using digital or physical tools.",
   ],
+  description: "Clear, hands-on teaching from qualified Year 2 maths tutors."
 },
 {
   title: "Data & Chance",
@@ -95,11 +100,78 @@ export const subjectsData = {
     "Collect & group data into categories.",
     "Display & interpret data using simple graphs.",
   ],
+  description: "Includes printable Year 2 Maths worksheets Australian Curriculum style tasks."
 },
 
 
         ]
-      }
+      },
+      faqData: [
+        {
+          title: "Will we get Year 2 Maths worksheets?",
+          content: "Yes. We provide topic-wise year 2 maths worksheets Australian Curriculum and monthly revision tests."
+        },
+        {
+          title: "Do you cover all strands?",
+          content: "Yes—Number, Fractions & Money, Measurement & Time, Geometry, and Data & Chance are all taught in line with Australian Curriculum Year 2 Maths."
+        },
+        {
+          title: "Is your Year 2 Maths tutoring aligned to the Australian Curriculum?",
+          content: "Yes. Every lesson and assessment is mapped to Australian Curriculum Year 2 Maths outcomes."
+        },
+        {
+          title: "Do you offer a Year 2 Maths online tutor for 1-on-1 support?",
+          content: "Yes—choose 1-on-1 with a specialist Year 2 maths tutor or join a small group for collaborative learning."
+        },
+        {
+          title: "How long are the Year 2 Maths tutoring sessions and how often?",
+          content: "Most families choose 45–60 minute sessions, 1–2 times per week, depending on the learner’s goals."
+        },
+        {
+          title: "What’s included—worksheets, revision tests, or homework?",
+          content: "You’ll receive topic-wise Year 2 Maths worksheets (Australian Curriculum), monthly revision tests, and optional practice homework."
+        },
+        {
+          title: "How do you track progress in Year 2 Australian Curriculum Maths?",
+          content: "We begin with a short diagnostic, then provide 4-weekly progress reports, and adjust the plan using data from classwork and quizzes."
+        },
+        {
+          title: "What qualifications do your Year 2 maths tutors have?",
+          content: "Tutors are trained in Australian Curriculum Maths Year 2, with primary teaching experience and child-safe practices."
+        },
+        {
+          title: "Is Year 2 Maths tutoring suitable for both catch-up and extension?",
+          content: "Yes—programs are personalised for support, consolidation, or enrichment (including problem-solving and reasoning tasks)."
+        },
+        {
+          title: "Can you help with school assessments or report comments?",
+          content: "We align lesson goals with classroom topics and can prepare students for school tasks and teacher assessments."
+        },
+        {
+          title: "Do you cover money, time, and early fractions in Year 2?",
+          content: "Yes—Fractions, Money & Algebraic Thinking and Measurement & Time are core strands in our program."
+        },
+        {
+          title: "How do small groups work for Year 2 Maths online tutoring?",
+          content: "Small groups (2–4 learners) follow the same curriculum map with targeted breakout activities and shared practice."
+        },
+        {
+          title: "What tech do we need for online tutoring?",
+          content: "A computer or tablet, stable internet, Zoom/Google Meet, and a quiet space. We share materials digitally."
+        },
+        {
+          title: "Do you prepare Year 2 students for NAPLAN-style skills later on?",
+          content: "Yes. In Year 2 we build core skills aligned to Australian Curriculum Year 2 Maths—number fluency, time, data, and problem-solving—and introduce light NAPLAN-style questions. This sets students up confidently for NAPLAN in Year 3."
+        },
+        {
+          title: "Do you help with ICAS for Year 2?",
+          content: "Yes. We support ICAS (Year 2) with extension-style reasoning, timed practice, and targeted feedback—aligned with the Australian Curriculum Year 2 Maths so students strengthen fundamentals while preparing for ICAS question types."
+        },
+        {
+          title: "Do you teach Australia-wide?",
+          content: "Yes—our Year 2 Maths tutoring online serves families across Australia with time-zone friendly slots."
+        },
+      ]
     },
     "english": {
       pageTitle: "Year 2 English – Personalised Online Tutoring",

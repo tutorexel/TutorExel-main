@@ -27,6 +27,7 @@ const FeatureSection = ({
   headingText,
   descriptionText,
   features = [],
+  beforeButton,
   showButton = true,
   buttonText = 'Learn More',
   customStyles = {},
@@ -66,6 +67,10 @@ const FeatureSection = ({
         ))}
       </div>
       
+      {beforeButton && (
+        <p className='text-secondary mt-3'>{beforeButton}</p>
+      )}
+
       {showButton && (
         <Link to="/contact" variant="primary-orange" size="sm" className="mt-4 d-inline-flex align-items-center main-btn1 mx-lg-0 mx-auto">
           {buttonText} <FaArrowRight className="ms-2" />
