@@ -264,7 +264,7 @@ const Footer = () => {
           <hr className="my-5" />
           
           <p className="text-center text-white-50 small">
-            © {new Date().getFullYear()} HEXATRAIL LLP. TutorExel is a brand owned and operated by HEXATRAIL LLP.
+            © {new Date().getFullYear()} HEXATRAIL LLP. TutorExel is a brand owned and operated by HEXATRAIL LLP. All rights reserved.
           </p>
         </Container>
       </footer>
