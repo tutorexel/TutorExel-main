@@ -232,6 +232,8 @@ const Footer = () => {
               <Link to="/about-us" className="text-white-50 text-decoration-none mb-2 d-block">About Us</Link>
               <Link to="/careers" className="text-white-50 text-decoration-none mb-2 d-block">Careers</Link>
               <Link to="/contact" className="text-white-50 text-decoration-none mb-2 d-block">Contact Us</Link>
+              <Link to="/term-condition" className="text-white-50 text-decoration-none mb-2 d-block">Terms and Conditions</Link>
+              <Link to="/privacy-policy" className="text-white-50 text-decoration-none mb-2 d-block">Privacy Policy</Link>
             </Col>
 
             {/* Contact */}
@@ -262,7 +264,7 @@ const Footer = () => {
           <hr className="my-5" />
           
           <p className="text-center text-white-50 small">
-            Copyright © {new Date().getFullYear()} TutorExel. All Rights Reserved.
+            © {new Date().getFullYear()} HEXATRAIL LLP. TutorExel is a brand owned and operated by HEXATRAIL LLP.
           </p>
         </Container>
       </footer>

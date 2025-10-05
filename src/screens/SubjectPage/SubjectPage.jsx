@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 import seoData from '../../seo/seoData';
 import logo from '../../assets/images/logo.svg';
 import { subjectsData } from '../../data/subjectsData';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Accordion } from 'react-bootstrap';
 import { FaArrowRight, FaPhoneAlt } from 'react-icons/fa';
 
 import './SubjectPage.css'; // Import this page's CSS
@@ -46,11 +46,33 @@ const SubjectPage = () => {
     : 'program';
 
   const deliveryFeatures = [
-      { text: "Live sessions on zoom/google meet with  ", bold: "Guidance" },
+      { text: "Live sessions on Zoom/Google Meet with ", bold: "Guidance (1-on-1 or group)" },
       { text: "Shared content plan visible to  ", bold: "Parents and Tutors" },
       { text: "Practice worksheets and revision tests  ", bold: "Every Month" },
       { text: "Detailed progress reports  ", bold: "Every 4 Weeks" },
   ];
+
+  const featureSectionTitle = {
+    "year-2-maths" : "How Learning Is Delivered – Year 2 Maths Tutoring Online",
+    "default" : "How Learning is Delivered"
+  };
+  const featureSectionDesc = {
+    "year-2-maths" : "In our Year 2 maths tutoring program aligned with the Australian Curriculum, every 4 weeks you’ll receive a clear progress report outlining:",
+    "default" : "Every 4 weeks, you’ll receive a clear progress report outlining:"
+  };
+  const featureSectionDesc2 = {
+    "year-2-maths" : "A convenient option for families seeking a reliable year 2 maths online tutor.",
+    "default" : ""
+  };
+  const designResults = {
+    "year-2-maths" : "Whether your child needs help catching up or wants to move ahead, our Year 2 program is structured to support every learning goal. Parents often find us when searching for year 2 maths tutoring and the best year 2 maths tutor Australia, because our teaching stays tightly aligned to Australian Curriculum Maths Year 2.",
+    "default" : <>Whether your child needs help catching up or wants to move ahead, our {formattedYear} program is structured to support every learning goal.</>
+  };
+
+  const headingText = featureSectionTitle[key] || featureSectionTitle["default"];
+  const descText = featureSectionDesc[key] || featureSectionDesc["default"];
+  const beforeBtnText = featureSectionDesc2[key] || featureSectionDesc2["default"];
+  const designDesc = designResults[key] || designResults["default"];
 
   return (
     <main>
@@ -103,7 +125,7 @@ const SubjectPage = () => {
             <Col lg={4}>
               <div className="sidebar-card">
                 <h4>{subjectContent.sidebar.title}</h4>
-                <p className="">{subjectContent.sidebar.subtitle}</p>
+                <p className="text-secondary">{subjectContent.sidebar.subtitle}</p>
                 <Button as={Link} to={subjectContent.sidebar.buttonLink || "/contact"} variant="primary-orange" className="btn-primary-orange w-100">
                   {subjectContent.sidebar.buttonText} <FaArrowRight />
                 </Button>
@@ -112,6 +134,9 @@ const SubjectPage = () => {
                 <ul className="">
                   {subjectContent.sidebar.keyAreas.map(area => <li key={area}>{area}</li>)}
                 </ul>
+                {subjectContent.sidebar.description && (
+                  <p className='text-secondary'>{subjectContent.sidebar.description}</p>
+                )}
               </div>
             </Col>
           </Row>
@@ -134,6 +159,9 @@ const SubjectPage = () => {
                         <ul className="text-secondary">
                           {topic.points.map(point => <li key={point}>{point}</li>)}
                         </ul>
+                        {topic.description && (
+                          <p className='text-secondary'>{topic.description}</p>
+                        )}
                       </div>
                     </Col>
                   ))}
@@ -149,9 +177,10 @@ const SubjectPage = () => {
         imagePosition="right"
         image={progressBoy}
         imageAlt="Happy student showing progress"
-        headingText="How Learning is Delivered"
-        descriptionText="Every 4 weeks, you’ll receive a clear progress report outlining:"
+        headingText={headingText}
+        descriptionText={descText}
         features={deliveryFeatures}
+        beforeButton = {beforeBtnText}
         buttonText="Contact Us"
         customStyles={{ backgroundColor: '#FFFFFF' }} // Ensure background is white
       />
@@ -165,7 +194,7 @@ const SubjectPage = () => {
                 <h2 className="section-heading">Designed for Results</h2>
                 {/* The year is now dynamically inserted into the hardcoded text */}
                 <p className="fs-5 mt-3 fw-normal">
-                  Whether your child needs help catching up or wants to move ahead, our {formattedYear} program is structured to support every learning goal.
+                  {designDesc}
                 </p>
                 
                 {/* Vertically stacked CTAs */}
@@ -202,6 +231,24 @@ const SubjectPage = () => {
           </div>
         </Container>
       </section>
+
+      {subjectContent.faqData && (
+        <section className="faq">
+            <Container className="my-5">
+                <row className="mt-3">
+                    <h2 className="section-heading text-white">FAQs</h2>
+                    <Accordion>
+                        {subjectContent.faqData.map((faq, index) => (
+                        <Accordion.Item eventKey={index.toString()} key={index}>
+                            <Accordion.Header>{faq.title}</Accordion.Header>
+                            <Accordion.Body>{faq.content}</Accordion.Body>
+                        </Accordion.Item>
+                        ))}
+                    </Accordion>
+                </row>
+            </Container>
+        </section>
+      )}
 
     </main>
   );

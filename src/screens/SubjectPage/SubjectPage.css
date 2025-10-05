@@ -115,3 +115,15 @@
   font-size: 0.9rem;
   margin-top: -0.5rem; /* Pull it a bit closer to the link above */
 }
+
+/* FAQ */
+.accordion-button{
+  font-weight: 700;
+}
+.accordion-button:not(.collapsed){
+  background-color: var(--primary-orange) !important;
+}
+.accordion-body{
+  background-color: #e1e1e1;
+  font-size: 14px;
+}

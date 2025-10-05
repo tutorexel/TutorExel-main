@@ -61,6 +61,7 @@
   border-bottom: 5px double #ff9e10;
   padding: 20px;
 }
+
 .single-blog .blog-content h4 {
     font-weight: 600;
     margin-bottom: 1.6rem;
@@ -102,5 +103,10 @@ tbody, td, tfoot, th, thead, tr{
   }
   .blog-header h2{
     font-size: 30px;
+  }
+  .single-blog .blog-content p, 
+  .single-blog .blog-content ul li, 
+  .single-blog .blog-content ol li {
+      text-align: justify;
   }
 }
