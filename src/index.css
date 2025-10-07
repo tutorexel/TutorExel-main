@@ -745,7 +745,7 @@ h1, h2, h3, h4, h5, h6 {
   
   /* Ensure hero image scales nicely on small screens */
   .hero-image-container {
-    max-width: 260px !important;
+    max-width: 300px !important;
   }
   .hero-image {
     display: block;
