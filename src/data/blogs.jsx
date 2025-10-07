@@ -1481,4 +1481,746 @@ export const blogs = [
     
     </>
     ) },
+  { id: 13, title: "A Parent’s Guide to Clarity — How TutorExel Keeps You Informed About Your Child’s Learning", 
+    category: "Exam Prep", 
+    image: "/assets/images/blog/blog13.webp",
+    excerpt: "This is not because parents don’t care — but because communication often comes in fragments. Schools are stretched, and the real details of curriculum progress are rarely shared consistently",
+    content: (
+    <>
+        <h4>Why Parents Often Feel Uninformed</h4>
+        <p>Many Australian parents say the same things when it comes to their child’s learning:</p>
+        <ul>
+          <li>“I’m not sure what my child is covering at school right now.”</li>
+          <li>“The report card comes too late.”</li>
+          <li>“By the time I realise my child is struggling, they’ve already lost confidence.”</li>
+        </ul>
+        <p>This is not because parents don’t care — but because communication often comes in fragments. Schools are stretched, and the real details of curriculum progress are rarely shared consistently.</p>
+
+        <hr />
+
+        <h4>The Cost of Guesswork</h4>
+        <p>When parents are left guessing:</p>
+        <ul>
+          <li>Children miss support at home. Parents don’t know which topics to revise or reinforce.</li>
+          <li>Small gaps grow. A tricky concept in Term 1 turns into a major weakness by Term 3.</li>
+          <li>Stress builds. Both parents and children feel uncertain about progress.</li>
+        </ul>
+        <p>Clarity isn’t a luxury — it’s essential. Families need to know exactly where their child stands.</p>
+
+        <hr />
+
+        <h4>The Clarity Parents Deserve</h4>
+        <p>At TutorExel, we make transparency a cornerstone. Parents always know:</p>
+        <ul>
+          <li>What their child is learning this week.</li>
+          <li>How they are progressing, not just in marks but in confidence.</li>
+          <li>What’s coming next on the roadmap.</li>
+        </ul>
+        <p>This isn’t extra work for parents. It’s information, delivered simply and clearly, so families can support learning without stress.</p>
+
+        <hr />
+
+        <h4>Three Ways We Keep Parents in the Loop</h4>
+        <h5>1. A Roadmap from the Start</h5>
+        <p>At the beginning of each term, we share a week-by-week learning plan. Parents see the exact order of topics, so there are no surprises.</p>
+        <h5>2. Frequent Updates</h5>
+        <p>Every fourth class has a mini-test, and every month parents receive a progress summary with clear strengths, challenges, and next steps. No waiting until the end of term.</p>
+        <h5>3. Access to Resources</h5>
+        <p>Slides, worksheets, and practice material aren’t hidden — they’re available to parents. You can see how topics are taught and help children revise when needed.</p>
+
+        <hr />
+
+        <h4>Why This Matters for Families</h4>
+        <p>When parents understand the journey:</p>
+        <ul>
+          <li>Home revision becomes easier.</li>
+          <li>Children feel supported, not pressured.</li>
+          <li>Parents can celebrate small wins rather than just waiting for exam marks.</li>
+        </ul>
+
+        <hr />
+
+        <h4>A Parent’s Story</h4>
+        <blockquote>“When my daughter joined TutorExel, I finally felt like I wasn’t in the dark anymore. I could check her worksheets, track her progress, and even follow along with the lesson slides. It made me feel like a real partner in her learning.”</blockquote>
+        <p>— Parent of Year 5 student, Sydney</p>
+
+        <hr />
+
+        <h4>TutorExel vs. Traditional Tutoring</h4>
+        <ul>
+          <li>Traditional tutoring: vague reports, parents left out.</li>
+          <li>TutorExel: open access, regular updates, and a clear roadmap.</li>
+        </ul>
+        <p>We don’t believe in keeping families in the dark. We believe in partnership.</p>
+
+        <hr />
+
+        <h4>Ready to See the Difference?</h4>
+        <p>Take the guesswork out of your child’s learning. With TutorExel, you’ll always know what’s being taught, how your child is doing, and where they’re heading next.</p>
+        <p>👉 Book your Free Trial Class today and experience tutoring with true clarity.</p>
+        <p>📩 info@tutorexel.com | 📱 +91 9872550572</p>   
+    </>
+    ) },
+  { id: 14, title: "Every 4th Class Counts — Why Regular Tests Make Learning Stick", 
+    category: "Mathematics", 
+    image: "/assets/images/blog/blog14.webp",
+    excerpt: "A single “big test” approach may measure performance, but it doesn’t always support learning.",
+    content: (
+    <>
+        <h4>The Problem with Traditional Testing</h4>
+        <p>Schools often test students at the end of a term or semester. These assessments:</p>
+        <ul>
+          <li>Cover large amounts of content at once.</li>
+          <li>Arrive too late to correct small misunderstandings.</li>
+          <li>Leave parents shocked by results they never saw coming.</li>
+        </ul>
+        <p>A single “big test” approach may measure performance, but it doesn’t always support learning.</p>
+
+        <hr />
+
+        <h4>What Research Shows</h4>
+        <p>Educational studies highlight a principle called retrieval practice — the idea that learning sticks when knowledge is recalled regularly.</p>
+        <p>Benefits of frequent, low-stakes testing:</p>
+        <ul>
+          <li>Memory Strengthening — recalling knowledge makes it easier to remember long-term.</li>
+          <li>Reduced Anxiety — when testing becomes routine, exams feel less scary.</li>
+          <li>Better Retention — children don’t just cram for one big test; they remember concepts across the year.</li>
+        </ul>
+
+        <hr />
+
+        <h4>TutorExel’s Approach: The Every 4th Class Rule</h4>
+        <p>We apply this research with a simple rhythm: every 4th class includes a mini-test.</p>
+        <ul>
+          <li>Short, focused assessments.</li>
+          <li>Covers only recent lessons.</li>
+          <li>Gives immediate feedback to both student and parent.</li>
+        </ul>
+        <p>This structure ensures steady, visible progress.</p>
+
+        <hr />
+
+        <h4>Benefits for Students</h4>
+        <ul>
+          <li>Confidence → Frequent practice makes assessments normal, not stressful.</li>
+          <li>Clarity → Mistakes are corrected quickly, before gaps grow.</li>
+          <li>Preparation → By the time NAPLAN or ICAS arrives, students are test-ready.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Benefits for Parents</h4>
+        <ul>
+          <li>Early Insights → Parents see results every fortnight.</li>
+          <li>Evidence of Growth → Reports show real progress, not vague feedback.</li>
+          <li>Peace of Mind → You know problems are caught and fixed early.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Why “Every 4th Class” is the Sweet Spot</h4>
+        <p>Too frequent = overwhelming. Too rare = ineffective. <br />
+        Every 4th class balances both, giving space for learning and time for review.
+        </p>
+
+        <hr />
+
+        <h4>Parent Story</h4>
+        <blockquote>“My son used to panic before big exams. With small, regular tests, he started treating them like normal practice. By NAPLAN, he was calm and confident.”</blockquote>
+        <p>— Parent of Year 4 student, Brisbane</p>
+
+        <hr />
+
+        <h4>From Stress to Skill-Building</h4>
+        <p>Regular tests don’t just check learning — they build it. Students learn time management, resilience, and how to use mistakes as stepping stones.</p>
+
+        <hr />
+
+        <h4>Ready to See Steady Progress?</h4>
+        <p>Give your child the benefit of regular, stress-free assessments.</p>
+        <p>👉 Book your Free Trial Class today and discover how structured testing supports growth.</p>
+        <p>📩 info@tutorexel.com | 📱 +91 9872550572</p>
+    </>
+    ) },
+  { id: 15, title: "Open Books, Open Learning — Why Transparency Matters at TutorExel", 
+    category: "Health", 
+    image: "/assets/images/blog/blog15.webp",
+    excerpt: "TutorExel takes a different stand: education should be transparent. Lesson slides are always shared.",
+    content: (
+    <>
+        <h4>The Hidden Side of Tutoring</h4>
+        <p>Many tutoring services operate like a closed box:</p>
+        <ul>
+          <li>Parents don’t know what’s being taught.</li>
+          <li>Worksheets stay with the tutor.</li>
+          <li>Progress is summarised in vague comments.</li>
+        </ul>
+        <p>This leaves families dependent on blind trust.</p>
+
+        <hr />
+
+        <h4>Our Stand: No Secrets</h4>
+        <p>TutorExel takes a different stand: education should be transparent.</p>
+        <p>We call it our Open Books Philosophy:</p>
+        <ul>
+          <li>Lesson slides are always shared.</li>
+          <li>Worksheets are available anytime.</li>
+          <li>Term plans are clear before classes begin.</li>
+        </ul>
+
+        <hr />
+
+        <h4>What Transparency Looks Like</h4>
+        <ol>
+          <li>Lesson Access → Parents and students can revisit class explanations.</li>
+          <li>Practice Resources → Worksheets organised by topic and difficulty.</li>
+          <li>Curriculum Roadmap → Families know week by week what’s ahead.</li>
+        </ol>
+
+        <hr />
+
+        <h4>Why It Matters for Parents</h4>
+        <ul>
+          <li>Confidence replaces doubt.</li>
+          <li>Parents can revise with children using the same material.</li>
+          <li>Families know the tutoring they pay for is concrete and structured.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Parent Testimonial</h4>
+        <blockquote>“I can see exactly what my son is working on. I don’t have to ask the tutor every week — I just log in and check. It makes tutoring feel collaborative.”</blockquote>
+        <p>— Parent of Year 5 student, Adelaide</p>
+
+        <hr />
+
+        <h4>Education Without Barriers</h4>
+        <p>We believe withholding resources creates dependency. Sharing them creates empowerment. Families should never feel locked out of their own child’s education.</p>
+
+        <hr />
+
+        <h4>A New Standard for Tutoring</h4>
+        <p>Transparency is more than a feature. It’s our standard. And it’s what makes TutorExel different.</p>
+
+        <hr />
+
+        <h4>Ready for Open Learning?</h4>
+        <p>Choose a tutoring partner that shares everything, not one that hides behind closed doors.</p>
+        <p>👉 Book your Free Trial Class today.</p>
+        <p>📩 info@tutorexel.com | 📱 +91 9872550572</p>
+    
+    
+    </>
+    ) },
+  { id: 16, title: "Beyond Class Hours — How Extra Practice Builds Independent Learners", 
+    category: "English", 
+    image: "/assets/images/blog/blog16.webp",
+    excerpt: "At TutorExel, each session includes: In-class worksheets for reinforcement. Take-home worksheets to apply concepts.",
+    content: (
+    <>
+        <h4>Aarav’s Story</h4>
+        <p>Aarav, a Year 6 student, enjoyed classes but froze when doing homework alone. He relied on teachers for guidance and lacked confidence in independent study.</p>
+        <p>What changed? The structured practice materials that came with every class.</p>
+
+        <hr />
+
+        <h4>Practice Beyond Class</h4>
+        <p>At TutorExel, each session includes:</p>
+        <ul>
+          <li>In-class worksheets for reinforcement.</li>
+          <li>Take-home worksheets to apply concepts.</li>
+          <li>Extra practice banks for revision and challenge.</li>
+        </ul>
+        <p>This rhythm helped Aarav build independence — starting with guided tasks, then moving to harder problems by choice.</p>
+
+        <hr />
+
+        <h4>Why Practice Matters</h4>
+        <ul>
+          <li>Learning fades without reinforcement.</li>
+          <li>Practice strengthens retention.</li>
+          <li>Independent tasks build problem-solving skills.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Aarav’s Transformation</h4>
+        <p>Within weeks, Aarav went from needing reminders to saying, “I’ll try the hard worksheet.” His parents noticed him taking initiative for the first time.</p>
+        <blockquote>“I don’t have to sit with him anymore. He picks up the worksheet himself. That independence is priceless.”</blockquote>
+        <p>— Aarav’s mother</p>
+
+        <hr />
+
+        <h4>More Than Marks</h4>
+        <p>Practice builds:</p>
+        <ul>
+          <li>Self-discipline.</li>
+          <li>Resilience after mistakes.</li>
+          <li>Confidence in exams.</li>
+        </ul>
+
+        <hr />
+
+        <h4>TutorExel’s Edge</h4>
+        <p>Our materials aren’t random homework. They are curriculum-aligned, levelled, and purposeful. They help children practise smarter, not just longer.</p>
+
+        <hr />
+
+        <h4>The Bigger Picture</h4>
+        <p>Independent learners don’t just succeed in exams — they succeed in life. Structured practice turns dependence into confidence.</p>
+        
+        <hr />
+
+        <h4>Ready to Build Independence?</h4>
+        <p>Help your child grow beyond tutoring hours.</p>
+        <p>👉 Book your Free Trial Class today.</p>
+        <p>📩 info@tutorexel.com | 📱 +91 9872550572</p>
+    
+    
+    </>
+    ) },
+  { id: 17, title: "Strong Foundations First — Why We Don’t Rush Learning at TutorExel", 
+    category: "General", 
+    image: "/assets/images/blog/blog17.webp",
+    excerpt: "Memorisation without understanding. Gaps that grow into major obstacles.",
+    content: (
+    <>
+        <h4>Emma’s Story</h4>
+        <p>Emma, a Year 5 student, excelled in multiplication but faltered when fractions arrived. Her shaky base made new topics feel impossible.</p>
+        <p>This is common. Schools push ahead, leaving gaps unaddressed.</p>
+
+        <hr />
+
+        <h4>The Trap of Speed</h4>
+        <p>Rushing through topics creates:</p>
+        <ul>
+          <li>Memorisation without understanding.</li>
+          <li>Gaps that grow into major obstacles.</li>
+          <li>Children who believe they are “bad at maths” or “weak at English.”</li>
+        </ul>
+
+        <hr />
+
+        <h4>Our Approach: Master Before Move On</h4>
+        <p>TutorExel ensures foundations are strong through:</p>
+        <ul>
+          <li>Diagnostics to identify gaps.</li>
+          <li>Gradual progression.</li>
+          <li>Layered worksheets (easy → medium → hard).</li>
+          <li>Reinforcement cycles before extension.</li>
+        </ul>
+
+        <hr />
+
+        <h4>The Benefits of Strong Foundations</h4>
+        <ul>
+          <li>New topics feel like natural extensions.</li>
+          <li>Confidence grows.</li>
+          <li>Long-term resilience builds.</li>
+        </ul>
+        <p>Emma’s confidence returned after rebuilding basics. Within months, she went from fearing maths to enjoying it.</p>
+
+        <hr />
+
+        <h4>Long-Term Payoff</h4>
+        <p>Solid foundations mean smoother transitions into higher years, less exam stress, and stronger performance.</p>
+
+        <hr />
+
+        <h4>Our Promise</h4>
+        <p>We don’t measure success by racing through a syllabus. We measure it by depth of understanding.</p>
+        <p>No rush. No shortcuts. Just lasting growth.</p>
+
+        <hr />
+
+        <h4>Ready to Strengthen the Base?</h4>
+        <p>👉 Book your Free Trial Class today.</p>
+        <p>📩 info@tutorexel.com | 📱 +91 9872550572</p>
+
+    </>
+    ) },
+  { id: 18, title: "From Stress to Strategy — How Built-In NAPLAN & ICAS Prep Saves Parents Time", 
+    category: "Mathematics", 
+    image: "/assets/images/blog/blog18.webp",
+    excerpt: "The stress is real. Children feel pressured, parents feel helpless, and the cycle repeats every year.",
+    content: (
+    <>
+        <h4>Exam Season Panic</h4>
+        <p>Families often dread NAPLAN and ICAS:</p>
+        <ul>
+          <li>Buying practice books.</li>
+          <li>Enrolling in crash courses.</li>
+          <li>Last-minute cramming at home.</li>
+        </ul>
+        <p>The stress is real. Children feel pressured, parents feel helpless, and the cycle repeats every year.</p>
+
+        <hr />
+
+        <h4>TutorExel’s Built-In Approach</h4>
+        <p>We weave NAPLAN and ICAS practice into daily learning. That means:</p>
+        <ul>
+          <li>Regular exposure to exam-style questions.</li>
+          <li>Practice tests spaced throughout the year.</li>
+          <li>Familiarity with formats long before the exam.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Why Parents Feel Relief</h4>
+        <ul>
+          <li>No need for separate courses.</li>
+          <li>No frantic cramming.</li>
+          <li>No guessing progress — it’s visible in regular reports.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Why Students Thrive</h4>
+        <ul>
+          <li>Tests feel normal, not terrifying.</li>
+          <li>Confidence replaces nerves.</li>
+          <li>Core skills improve along with exam techniques.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Parent Testimonial</h4>
+        <blockquote>“My daughter used to panic hearing the word NAPLAN. Now, after months of built-in practice, she walked into the exam calm and confident.”</blockquote>
+        <p>— Parent of Year 5 student</p>
+
+        <hr />
+
+        <h4>Strategy Over Stress</h4>
+        <p>Instead of adding pressure, our approach saves families time and worry. Exams become milestones, not mountains.</p>
+
+        <hr />
+
+        <h4>Ready for Stress-Free Prep?</h4>
+        <p>Let your child prepare without the panic.</p>
+        <p>👉 Book your Free Trial Class today.</p>
+        <p>📩 info@tutorexel.com | 📱 +91 9872550572</p>
+
+    </>
+    ) },
+  { id: 19, title: "One-on-One vs. Small Group Tutoring — Helping Parents Choose What’s Best", 
+    category: "General", 
+    image: "/assets/images/blog/blog19.webp",
+    excerpt: "One-on-One Tutoring Strengths: personalised attention, flexible pace, gap-filling. Considerations: less peer interaction, can feel intense.",
+    content: (
+    <>
+        <h4>The Choice Parents Face</h4>
+        <p>One-on-one or group tutoring? Both have benefits. Both work. But which is right for your child?</p>
+
+        <hr />
+
+        <h4>One-on-One Tutoring</h4>
+        <p>Strengths: personalised attention, flexible pace, gap-filling. <br />
+        Considerations: less peer interaction, can feel intense.
+        </p>
+
+        <hr />
+
+        <h4>Small Group Tutoring</h4>
+        <p>Strengths: peer motivation, collaborative learning, confidence building. <br />
+        Considerations: shared attention, may take adjustment for shy children.
+        </p>
+
+        <hr />
+
+        <h4>Comparison Guide</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Learning Style</th>
+              <th>Best Fit</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Needs gap-filling</td>
+              <td>One-on-One</td>
+              <td>Focused attention.</td>
+            </tr>
+            <tr>
+              <td>Easily distracted</td>
+              <td>One-on-One</td>
+              <td>No peer diversions.</td>
+            </tr>
+            <tr>
+              <td>Motivated by peers</td>
+              <td>Group</td>
+              <td>Healthy competition.</td>
+            </tr>
+            <tr>
+              <td>Already confident</td>
+              <td>Group</td>
+              <td>Builds teamwork.</td>
+            </tr>
+            <tr>
+              <td>Very shy</td>
+              <td>Start 1:1, move to group</td>
+              <td>Build confidence first.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr />
+
+        <h4>Parent Experience</h4>
+        <blockquote>“My son needed one-on-one to rebuild basics. Once confident, he thrived in a group of three. The flexibility made all the difference.”</blockquote>
+
+        <hr />
+
+        <h4>Why TutorExel Offers Both</h4>
+        <p>Children change. Needs evolve. That’s why we allow families to choose and even switch formats without hassle.</p>
+
+        <hr />
+
+        <h4>Ready to Choose?</h4>
+        <p>Book your Free Trial Class today and find the best format for your child.</p>
+        <p>📩 info@tutorexel.com | 📱 +91 9872550572</p>
+
+    </>
+    ) },
+  { id: 20, title: "Affordable, Flexible, and From Home — Why Parents Love TutorExel", 
+    category: "Health", 
+    image: "/assets/images/blog/blog20.webp",
+    excerpt: "Affordable pricing without lowering quality. Learn from home — safe, comfortable, no wasted travel.",
+    content: (
+    <>
+        <h4>The Struggle with Traditional Tutoring</h4>
+        <p>For many families, tutoring is effective but inconvenient.</p>
+        <ul>
+          <li>Travel eats up evenings.</li>
+          <li>Fees are high.</li>
+          <li>Schedules are rigid.</li>
+        </ul>
+        <p>Parents often end up exhausted, paying too much, and juggling routines around tutoring.</p>
+
+        <hr />
+
+        <h4>TutorExel’s Model: Designed for Families</h4>
+        <p>We asked: <i>“What would make tutoring easier for parents?”</i> The answers became our pillars:</p>
+        <ul>
+          <li>Affordable pricing without lowering quality.</li>
+          <li>Learn from home — safe, comfortable, no wasted travel.</li>
+          <li>Flexible scheduling with make-up options.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Cost That Works for Families</h4>
+        <p>Our pricing is set so families don’t have to choose between affordability and results. Tutoring should be sustainable — not a luxury.</p>
+
+        <hr />
+
+        <h4>Convenience of Home Learning</h4>
+        <ul>
+          <li>No driving after school.</li>
+          <li>Children learn in familiar environments.</li>
+          <li>More time for family, hobbies, and rest.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Flexibility in Action</h4>
+        <p>Life happens — sports matches, family trips, unexpected illness. With TutorExel, parents can reschedule without stress.</p>
+
+        <hr />
+
+        <h4>Parent Perspective</h4>
+        <blockquote>“I used to spend two hours a week driving to tutoring centres. Now my son logs in from home, and we save that time for dinner together. It’s made our lives calmer.”</blockquote>
+        <p>— Parent of Year 4 student</p>
+
+        <hr />
+
+        <h4>Why This Matters for Students</h4>
+        <p>Convenience means:</p>
+        <ul>
+          <li>Arriving calm, not rushed.</li>
+          <li>Balancing academics with activities.</li>
+          <li>Staying consistent without burnout.</li>
+        </ul>
+
+        <hr />
+
+        <h4>A Smarter Way Forward</h4>
+        <p>Affordable, flexible, home-based tutoring isn’t just convenient — it’s sustainable. Families can focus on progress, not logistics.</p>
+
+    </>
+    ) },
+  { id: 21, title: "One Login, Zero Hassle — Why Parents Love Our All-in-One Portal", 
+    category: "Exam Prep", 
+    image: "/assets/images/blog/blog21.webp",
+    excerpt: "If you’ve ever tried to keep track of your child’s learning across multiple platforms, you know how exhausting it can be",
+    content: (
+    <>
+        <h4>The Modern Parent’s Struggle with Learning Tools</h4>
+        <p>If you’ve ever tried to keep track of your child’s learning across multiple platforms, you know how exhausting it can be:</p>
+        <ul>
+          <li>The Zoom link in one email.</li>
+          <li>Worksheets sent separately through WhatsApp.</li>
+          <li>Test results buried in a PDF.</li>
+          <li>Class schedules texted at the last minute.</li>
+        </ul>
+        <p>Instead of helping, tutoring becomes another layer of admin for already busy families. Parents juggle between tabs, links, and folders, just trying to keep their child organised.</p>
+
+        <hr />
+
+        <h4>The Case for Simplicity</h4>
+        <p>Learning should be about understanding concepts and building skills — not chasing down files or links. That’s why TutorExel decided to solve this problem at its root.</p>
+        <p>Our solution: a single, all-in-one portal that holds everything your child and you need. One login. Zero hassle.</p>
+        
+        <hr />
+
+        <h4>What the All-in-One Portal Includes</h4>
+        <h5>1. Class Links</h5>
+        <p>No more last-minute scrambling through WhatsApp chats to find today’s link. Every class link is stored neatly in the portal and updated automatically.</p>
+        <h5>2. Lesson Material</h5>
+        <p>Slides, notes, and class resources are saved after each session, so students can revise independently and parents can review what was taught.</p>
+        <h5>3. Worksheets and Practice Banks</h5>
+        <p>Every worksheet — in-class, homework, or extra practice — is available online. Children never lose them, and parents always know what practice has been assigned.</p>
+        <h5>4. Reports and Test Results</h5>
+        <p>Mini-tests, term reports, and progress updates are organised in the same place. Parents can log in anytime to see growth.</p>
+        <h5>5. Schedule Management</h5>
+        <p>Families can see upcoming classes, request reschedules, and avoid overlaps. Busy schedules become easier to manage.</p>
+    
+        <hr />
+
+        <h4>Why Parents Appreciate It</h4>
+        <p>Parents often tell us that before TutorExel, tutoring felt like “a second job.” Now, with everything in one place, the stress is gone.</p>
+        <ul>
+          <li>Clarity → No more wondering what’s being taught.</li>
+          <li>Time-saving → Fewer emails, fewer calls, fewer confusions.</li>
+          <li>Peace of Mind → Parents always feel in control, not left out.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Why Students Benefit Too</h4>
+        <ul>
+          <li>Organisation → No lost worksheets or forgotten links.</li>
+          <li>Independence → Students can log in themselves and find what they need.</li>
+          <li>Consistency → Lessons and practice flow smoothly, without interruptions.</li>
+        </ul>
+
+        <hr />
+
+        <h4>A Parent’s Story</h4>
+        <blockquote>“Before TutorExel, I had to keep a folder for tutoring notes, another for homework, and search through my inbox for test reports. It was a nightmare. Now it’s all in one place. I feel like I finally have a clear picture of my son’s learning.”</blockquote>
+        <p>— Parent of Year 6 student, Melbourne</p>
+
+        <hr />
+
+        <h4>The Bigger Picture: Less Admin, More Learning</h4>
+        <p>Families today are already stretched with work, school, and extracurriculars. Adding tutoring shouldn’t make life harder.</p>
+        <p>By removing the “clutter,” TutorExel frees up energy for what really matters — learning and progress.</p>
+
+        <hr />
+
+        <h4>Why This Sets TutorExel Apart</h4>
+        <p>Many tutoring providers still rely on scattered communication. Our integrated system is different because it’s built for the whole family experience — student, parent, and tutor.</p>
+
+        <hr />
+
+        <h4>One Login, Endless Clarity</h4>
+        <p>No more juggling apps. No more lost worksheets. Just one place to learn, practise, track, and grow.</p>
+
+        <hr />
+
+        <h4>Ready for Simpler Learning?</h4>
+        <p>Experience tutoring that’s as organised as it is effective.</p>
+        <p>👉 Book your Free Trial Class today and discover the ease of our all-in-one portal.</p>
+        <p>📩 info@tutorexel.com | 📱 +91 9872550572</p>
+
+    </>
+    ) },
+  { id: 22, title: "Risk-Free Tutoring — How Our Free Trial and Refund Policy Build Parent Trust", 
+    category: "General", 
+    image: "/assets/images/blog/blog22.webp",
+    excerpt: "Traditional tutoring often demands upfront payments, locking parents in before they even know if it’s the right fit. No wonder families feel nervous",
+    content: (
+    <>
+        <h4>The Risk Parents Feel with Tutoring</h4>
+        <p>Choosing a tutor is a big decision. Parents ask themselves:</p>
+        <ul>
+          <li>“Will my child actually connect with this tutor?”</li>
+          <li>“Is the teaching style right for us?”</li>
+          <li>“What if we invest money and it doesn’t work out?”</li>
+        </ul>
+        <p>Traditional tutoring often demands upfront payments, locking parents in before they even know if it’s the right fit. No wonder families feel nervous.</p>
+
+        <hr />
+
+        <h4>Why We Do It Differently</h4>
+        <p>At TutorExel, we want families to feel confident, not cautious. That’s why we built a risk-free promise:</p>
+        <ul>
+          <li>A Free Trial Class for every new student.</li>
+          <li>A Money-Back Guarantee if parents aren’t satisfied after the first test.</li>
+          <li>Flexible, commitment-free packages.</li>
+        </ul>
+        <p>We don’t just say “trust us” — we show it through action.</p>
+        
+        <hr />
+
+        <h4>How the Free Trial Works</h4>
+        <p>Every student begins with a diagnostic test and a free class. Parents and children can:</p>
+        <ul>
+          <li>Experience the teaching style.</li>
+          <li>Review how materials and reports are shared.</li>
+          <li>Decide if the approach feels right.</li>
+        </ul>
+        <p>There’s no pressure, no obligation. Families choose only if they’re happy.</p>
+    
+        <hr />
+
+        <h4>The Refund Promise</h4>
+        <p>If, after the first test, parents feel the fit isn’t right, they can request a refund for the next three classes. No questions asked. No hidden conditions.</p>
+        <p>This policy is rare in tutoring because most providers fear losing money. But we believe earning trust matters more than short-term gains.</p>
+
+        <hr />
+
+        <h4>Why Parents Value This Approach</h4>
+        <ul>
+          <li><b>Confidence</b> → You only pay when you’re sure.</li>
+          <li><b>Control</b> → You decide if the program continues.</li>
+          <li><b>Peace of Mind</b> → Families know they’re not locked into a bad fit.</li>
+        </ul>
+
+        <hr />
+
+        <h4>Student Perspective</h4>
+        <p>For children, the free trial reduces anxiety. They don’t feel forced into tutoring. Instead, they “test the waters” and build comfort naturally.</p>
+
+        <hr />
+
+        <h4>A Parent’s Story</h4>
+        <blockquote>“I was hesitant to spend hundreds upfront without knowing if tutoring would work. TutorExel’s free trial and refund policy gave us confidence. Within two weeks, we knew it was the right choice — and my daughter loved it.”</blockquote>
+        <p>— Parent of Year 4 student, Sydney</p>
+
+        <hr />
+
+        <h4>Why This Matters Beyond Money</h4>
+        <p>Risk-free tutoring isn’t just about refunds. It’s about respect. It tells parents: <i>“We value your trust more than your payment.”</i></p>
+        <p>And for students, it creates a positive start — tutoring feels like a choice, not a chore.</p>
+
+        <hr />
+
+        <h4>Setting a New Standard in Tutoring</h4>
+        <p>Other providers might ask for term-long payments upfront. We believe the future of education is flexible, transparent, and parent-first.</p>
+
+        <hr />
+
+        <h4>Trust That Lasts</h4>
+        <p>When families start without fear, they’re more likely to stay long-term. That’s why many TutorExel parents continue for months and years — not because they’re locked in, but because they’re satisfied.</p>
+
+        <hr />
+
+        <h4>Ready to Try Without Risk?</h4>
+        <p>Book your Free Trial Class today and see the TutorExel difference. With our money-back promise, there’s nothing to lose — and everything to gain.</p>
+
+    </>
+    ) },
+  
 ];
