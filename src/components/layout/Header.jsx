@@ -156,7 +156,7 @@ const Header = () => {
 
             <Nav className="align-items-center justify-content-end desktop-nav-actions">
               
-              <a href="https://web.tutorexel.com/login" target="_blank" rel="noopener noreferrer">
+              <a href="https://learn.tutorexel.com/login" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="secondary-blue"
                   className="d-inline-flex align-items-center"
@@ -314,7 +314,7 @@ const Header = () => {
                   Contact Us
                 </NavLink>
                 <div className="mobile-cta-section">
-                  <a href="https://web.tutorexel.com/login" target="_blank" rel="noopener noreferrer" className="w-100 d-block">
+                  <a href="https://learn.tutorexel.com/login" target="_blank" rel="noopener noreferrer" className="w-100 d-block">
                     <Button 
                       variant="secondary-blue" 
                       className="w-100 mobile-cta-button"
