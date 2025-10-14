@@ -22,6 +22,7 @@ const SubjectPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [yearId, subjectId]);
+
   const subjectContent = subjectsData[yearId]?.[subjectId.toLowerCase()];
 
   if (!subjectContent) {
@@ -74,6 +75,20 @@ const SubjectPage = () => {
   const beforeBtnText = featureSectionDesc2[key] || featureSectionDesc2["default"];
   const designDesc = designResults[key] || designResults["default"];
 
+  // FAQ Schema
+  const faqSchema = subjectContent.faqData && {
+    "@context": "https://schema.org",
+    "@type": "SubjectsPage",
+    "mainEntity": subjectContent.faqData.map(faq => ({
+      "@type": "Question",
+      "name": faq.title,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.content
+      }
+    }))
+  };
+
   return (
     <main>
 
@@ -102,6 +117,12 @@ const SubjectPage = () => {
             ]
           })}
         </script>
+        {faqSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
+        )}
       </Helmet>
 
       <PageHero title={subjectContent.pageTitle} titleSize="display-5"/>
@@ -193,13 +214,13 @@ const SubjectPage = () => {
               <Col lg={7}>
                 <h2 className="section-heading">Designed for Results</h2>
                 {/* The year is now dynamically inserted into the hardcoded text */}
-                <p className="fs-5 mt-3 fw-normal">
+                <p className="fs-8 mt-3 fw-normal">
                   {designDesc}
                 </p>
                 
                 {/* Vertically stacked CTAs */}
                 <div className="d-flex flex-column align-items-start gap-3 mt-4">
-                  <Button as={Link} to="/contact" className="btn-white-custom" style={{ color: 'black' }}>
+                  <Button as={Link} to="/contact" className="btn-white-custom" style={{ color: 'black',fontSize: '1.2rem' }}>
                     Book Your Free Trial Class <FaArrowRight />
                   </Button>
 
