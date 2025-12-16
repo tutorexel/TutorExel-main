@@ -32,6 +32,40 @@ export const subjectsData = {
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 2 Maths program builds a strong foundation in number skills, operations, early fractions, and patterns. Lessons are tailored to your child’s pace and aligned with the Australian Curriculum Year 2 Maths.",
       introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert Year 2 maths tutors who focus on real progress.",
+      term1:{
+                title: "Foundations in Maths",
+                topics: [
+                    {
+                        name: "Purpose & Main Idea",
+                        description: "Learn to identify why a text is written and find its main idea."
+                    },
+                    {
+                        name: "Order of Events",
+                        description: "Identify the correct sequence of events in informational texts."
+                    },
+                    {
+                        name: "Story Elements",
+                        description: "Recognise characters, setting, problem and solution in stories."
+                    },
+                ]
+            },
+      term2:{
+                title: "Vocabulary & Grammar Extension",
+                topics: [
+                    {
+                        name: "Synonyms",
+                        description: "Learn to identify why a text is written and find its main idea."
+                    },
+                    {
+                        name: "Antonyms",
+                        description: "Identify the correct sequence of events in informational texts."
+                    },
+                    {
+                        name: "Similes & Metaphors",
+                        description: "Recognise characters, setting, problem and solution in stories."
+                    },
+                ]
+            },
       learningHeading: "What Your Child Will Learn in Year 2 Maths",
       learningP1: "Year 2 builds confidence with three-digit numbers, equal sharing and skip-counting patterns—fully mapped to Year 2 Australian Curriculum Maths outcomes. Families can choose dedicated maths tutoring Year 2 or a flexible year 2 maths online tutor.",
       sidebar: {
@@ -178,6 +212,40 @@ export const subjectsData = {
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 2 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
       introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
+      term1:{
+                title: "Foundations English",
+                topics: [
+                    {
+                        name: "Purpose & Main Idea",
+                        description: "Learn to identify why a text is written and find its main idea."
+                    },
+                    {
+                        name: "Order of Events",
+                        description: "Identify the correct sequence of events in informational texts."
+                    },
+                    {
+                        name: "Story Elements",
+                        description: "Recognise characters, setting, problem and solution in stories."
+                    },
+                ]
+            },
+      term2:{
+                title: "Vocabulary & Grammar Extension",
+                topics: [
+                    {
+                        name: "Synonyms",
+                        description: "Learn to identify why a text is written and find its main idea."
+                    },
+                    {
+                        name: "Antonyms",
+                        description: "Identify the correct sequence of events in informational texts."
+                    },
+                    {
+                        name: "Similes & Metaphors",
+                        description: "Recognise characters, setting, problem and solution in stories."
+                    },
+                ]
+            },
       learningHeading: "What Your Child Will Learn in Year 2 English",
       learningP1: "Year 2 strengthens spelling patterns, builds reading stamina and develops coherent paragraphs.",
       sidebar: {
@@ -370,6 +438,40 @@ export const subjectsData = {
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 3 Mathematics program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
       introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
+      term1:{
+                title: "Foundations in Maths 3",
+                topics: [
+                    {
+                        name: "Purpose & Main Idea",
+                        description: "Learn to identify why a text is written and find its main idea."
+                    },
+                    {
+                        name: "Order of Events",
+                        description: "Identify the correct sequence of events in informational texts."
+                    },
+                    {
+                        name: "Story Elements",
+                        description: "Recognise characters, setting, problem and solution in stories."
+                    },
+                ]
+            },
+      term2:{
+                title: "Vocabulary & Grammar Extension",
+                topics: [
+                    {
+                        name: "Synonyms",
+                        description: "Learn to identify why a text is written and find its main idea."
+                    },
+                    {
+                        name: "Antonyms",
+                        description: "Identify the correct sequence of events in informational texts."
+                    },
+                    {
+                        name: "Similes & Metaphors",
+                        description: "Recognise characters, setting, problem and solution in stories."
+                    },
+                ]
+            },
       learningHeading: "What Your Child Will Learn in Year 3 Mathematics",
       learningP1: "Students master times‑tables, explore equivalent fractions and measure area, perimeter and data in real contexts.",
       sidebar: {
@@ -441,6 +543,40 @@ export const subjectsData = {
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 3 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
       introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
+      term1:{
+                title: "Foundations English 3",
+                topics: [
+                    {
+                        name: "Purpose & Main Idea",
+                        description: "Learn to identify why a text is written and find its main idea."
+                    },
+                    {
+                        name: "Order of Events",
+                        description: "Identify the correct sequence of events in informational texts."
+                    },
+                    {
+                        name: "Story Elements",
+                        description: "Recognise characters, setting, problem and solution in stories."
+                    },
+                ]
+            },
+      term2:{
+                title: "Vocabulary & Grammar Extension",
+                topics: [
+                    {
+                        name: "Synonyms",
+                        description: "Learn to identify why a text is written and find its main idea."
+                    },
+                    {
+                        name: "Antonyms",
+                        description: "Identify the correct sequence of events in informational texts."
+                    },
+                    {
+                        name: "Similes & Metaphors",
+                        description: "Recognise characters, setting, problem and solution in stories."
+                    },
+                ]
+            },
       learningHeading: "What Your Child Will Learn in Year 3 English",
       learningP1: "Students master multisyllabic decoding, apply comprehension strategies and craft cohesive paragraphs for different purposes.",
       sidebar: {

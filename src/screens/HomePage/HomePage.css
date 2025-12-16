@@ -1,4 +1,25 @@
-/* src/screens/HomePage/HomePage.css */
+
+
+.trust-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* ensures it wraps nicely on smaller screens */
+  padding: 20px;
+  gap: 10px; /* space between spans */
+}
+
+.trust-strip span {
+  flex: 1; /* each span takes equal width */
+  text-align: center;
+  background-color: white;
+  padding: 15px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 120px; /* optional: prevent shrinking too small */
+}
 
 
 @media (max-width: 768px) {

@@ -4,13 +4,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import './ui.css'; // 1. Ensure the component's stylesheet is imported
 
-/**
- * A reusable hero banner for page titles.
- *
- * @param {object} props The component props.
- * @param {string} props.title The main title to display on the banner.
- * @param {string} [props.titleSize='display-3'] The Bootstrap display class for the title's font size.
- */
+
 const PageHero = ({
   title,
   titleSize = 'display-3', // Default to the larger size

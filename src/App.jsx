@@ -15,6 +15,7 @@ import CareersPage from './screens/CareersPage/CareersPage';
 import PricingPage from './screens/PricingPage/PricingPage';
 import SubjectOverviewPage from './screens/SubjectOverviewPage/SubjectOverviewPage';
 import SubjectPage from './screens/SubjectPage/SubjectPage';
+import ExamPage from './screens/SubjectPage/ExamPage';
 import MusicPage from './screens/MusicPage/MusicalPage';
 import NaplanPage from './screens/ExamPrepPage/NaplanPage';
 import NaplanPrimary from './screens/ExamPrepPage/NaplanPrimary';
@@ -42,6 +43,7 @@ function App() {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/subjects/:subjectId" element={<SubjectOverviewPage />} />
         <Route path="/subjects/:yearId/:subjectId" element={<SubjectPage />} />
+        <Route path="/subjects/:yearId/:subjectId/:termId/:topicId" element={<ExamPage />} />
         <Route path="/play-music" element={<MusicPage />} />
         <Route path="/prep-zone/naplan" element={<NaplanPage />} />
         <Route path="/prep-zone/naplan/primary" element={<NaplanPrimary />} />

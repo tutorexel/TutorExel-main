@@ -4,7 +4,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import defaultImage from '../../assets/images/placeholder.jpg';
+import CTA from '../../assets/images/CTAHome.svg';
 
 /**
  * A reusable Call-to-Action section with an overflowing image.
@@ -13,9 +13,9 @@ import defaultImage from '../../assets/images/placeholder.jpg';
  * @param {string} [props.primaryButtonTextColor] The text color for the primary (white) button.
  * @param {string} [props.secondaryButtonTextColor] The text color for the secondary (blue) button.
  */
-const CTASection = ({
+const CTAHome = ({
   headingText = 'Ready to Get Started?',
-  image = defaultImage,
+  image = CTA,
   imageAlt = '',
   primaryButtonText = 'Primary Action',
   secondaryButtonText = 'Secondary Action',
@@ -26,16 +26,16 @@ const CTASection = ({
   customStyles = {},
 }) => {
   return (
-    <section className="bg-white" style={{ paddingTop: '10px', paddingBottom: '10px', ...customStyles }}>
+    <section className="bg-white cta-section" style={{ paddingTop: '10px', paddingBottom: '10px', ...customStyles }}>
       <Container>
         <div className="position-relative">
           <div className="bg-primary-orange-gradient p-5 rounded-4 overflow-hidden" style={{ minHeight: '230px'}}>
             <Row className="align-items-center text-align-center">
-              <Col lg={12}>
-                <h2 className="section-heading text-white text-center">
+              <Col lg={6}>
+                <h2 className="section-heading text-white">
                   {headingText}
                 </h2>
-                <div className="d-flex flex-column flex-sm-row gap-3 mt-4 text-center justify-content-center">
+                <div className="d-flex flex-column flex-sm-row gap-3 mt-4 ">
                   <Link to="/contact" 
                     className="main-btn" 
                     style={{ color: primaryButtonTextColor }}
@@ -51,23 +51,25 @@ const CTASection = ({
                   </Link>
                 </div>
               </Col>
-              {/* <Col lg={5} className="d-none d-lg-block"></Col> */}
+              <Col lg={6}>
+                {CTA && (
+                  <div className="cta-img">
+                    <img 
+                      src={CTA} 
+                      alt={imageAlt} 
+                      style={{ maxWidth: '580px' }} 
+                    />
+                  </div>
+                )}
+              </Col>
             </Row>
           </div>
           
-          {image && (
-            <div className="d-none d-lg-block position-absolute" style={{ bottom: 5, right: '0px', zIndex: 1 }}>
-              <img 
-                src={image} 
-                alt={imageAlt} 
-                style={{ width: '100%', maxWidth: '580px' }} 
-              />
-            </div>
-          )}
+          
         </div>
       </Container>
     </section>
   );
 };
 
-export default CTASection;
+export default CTAHome;

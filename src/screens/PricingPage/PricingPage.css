@@ -1,69 +1,87 @@
-/* src/screens/PricingPage/PricingPage.css */
+.coaching-card {
+  border-radius: 10px !important;
+  padding: 25px;
+  border: none !important;
+}
 
-/* --- Main Pricing Card Styles --- */
-.pricing-card {
-  padding: 2rem;
-  border-radius: 20px;
-  color: white;
+/* Title */
+.title-wrapper {
+  min-height: 60px;   /* ensures 1-line and 2-line titles align */
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  align-items: flex-start;
 }
-
-/* Specific background colors for each card */
-.pricing-card.one-to-one {
-  background-color: var(--teal-green);
-}
-
-.pricing-card.group-classes {
-  background-color: var(--primary-blue);
-}
-
-.pricing-card h3 {
-  color: white;
+.coaching-card .card-title {
   font-weight: 700;
+  /* font-size: 1.4rem; */
+  margin: 0;
+  line-height: 1.2;
 }
 
-.pricing-card .price-amount {
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1;
-  margin: 1.5rem 0 0.5rem 0;
+/* Feature List */
+.feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.pricing-card .price-per-class {
-  opacity: 0.8;
-}
-
-.pricing-card .btn {
-  margin-top: auto; /* Pushes the button to the bottom of the card */
-  background-color: white;
-  color: var(--dark-navy);
-  font-weight: 600;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.pricing-card .btn:hover {
-  transform: scale(1.05);
-}
-
-/* --- Pricing Feature List on the left --- */
-.pricing-feature-item {
+.feature-list li {
+  margin-bottom: 12px;
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.feature-icon {
+  width: 20px;     /* adjust to your PNG size */
+  height: 20px;
+  object-fit: contain;
 }
 
-.pricing-feature-item img {
-  width: 50px;
-  height: 50px;
+.feature-list li::before {
+  /* content: "✔";
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.1rem; */
 }
 
-.pricing-feature-item .feature-text h5 {
-  margin-bottom: 0.25rem;
-  font-weight: 700;
+/* Select Button */
+.select-btn {
+  width: 100%;          /* Full width */
+  background: #ffffff !important;   /* White background */
+  color: #070709 !important;        /* Black text */
+  border: none !important;          
+  border-radius: 20px !important;   /* Rounded 20px */
+  padding: 12px 0;       /* Vertical padding */
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: 0.2s ease;
 }
+
+.select-btn:hover {
+  background: #f4f4f4 !important;
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 576px) {
+  .coaching-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .coaching-card .card-title {
+    font-size: 1.5rem;
+  }
+
+  .select-btn {
+    width: 100%;
+    padding: 12px;
+  }
+  .pricing-footer .row .col{
+    flex-basis: 100%;
+  }
+}
+
+
+
