@@ -38,76 +38,6 @@ const heroButton = [
     {link:'/contact', label:'Talk to a Career Advisor'}
 ];
 
-const stripContent = [
-    {text: 'ChatGPT'},
-    {text: 'WIPO AI'},
-    {text: 'Power BI'},
-    {text: 'GA4'},
-    {text: 'HRIS Automation'},
-    {text: 'Excel Copilot'}
-];
-
-const whyChoose = [
-    { text: 'Focused on your first job', bold: '' },
-    { text: 'Placement-driven training', bold: '' },
-    { text: 'Courses redesigned for the AI-driven workplace', bold: '' },
-    { text: 'Interview preparation and resume support', bold: '' },
-];
-
-const whyTrustCards = [
-    { 
-        icon: iconEducators, 
-        title: 'AI-Aligned Curriculum', 
-        description: "Reflects how automation and AI are changing roles." 
-    },
-    { 
-        icon: iconLessons, 
-        title: 'Learn by Doing', 
-        description: "Hands-on projects and real tools, not theory.",
-    },
-    { 
-        icon: iconFlexible, 
-        title: 'Mentor Guidance', 
-        description: 'Professionals guide you through real assignments.' 
-    },
-    { 
-        icon: iconPricing, 
-        title: 'Placement Support', 
-        description: 'Resume polishing, mock interviews, and recruiter connects.' 
-    },
-];
-
-const coursesData = [
-    {
-        icon: iconScience,
-        title: 'Patent & IP Analyst Program',
-        description: 'Learn how AI is transforming innovation research.',
-        link: '/',
-        isComingSoon: false
-    },
-    {
-        icon: iconEnglish,
-        title: 'HR Operations & Automation',
-        description: 'Build your HR career with digital workflows and AI-based processes.',
-        link: '/',
-        isComingSoon: false
-    },
-    {
-        icon: iconScience,
-        title: 'Digital Marketing with AI',
-        description: 'Run, track, and optimize campaigns using intelligent marketing tools.',
-        link: '/',
-        isComingSoon: false
-    },
-    {
-        icon: iconEnglish,
-        title: 'Interview Preparation & Soft Skills',
-        description: 'Get ready for your interviews — build confidence, clarity, and presence.',
-        link: '/',
-        isComingSoon: false
-    }
-];
-
 const howItWorksSteps = [
     { 
         icon: iconAssess, 
@@ -131,43 +61,6 @@ const howItWorksSteps = [
     }
 ];
 
-const outcomePoint = [
-    {heading:'Land your first offer', text:'Patent Analyst, HR Associate, Data Analyst, or Digital Marketer.', icon:iconEducators},
-    {heading:'Think with AI', text:'Combine domain skills with AI tools.', icon:iconLessons},
-    {heading:'Communicate with Impact', text:'Present ideas and interview confidently.', icon:iconFlexible},
-    {heading:'Accelerate Faster', text:'Stand out in your first six months on the job.', icon:iconPricing},
-    {heading:'Be Industry-Ready', text:'Graduate with a portfolio, not just a certificate.', icon:iconEducators},
-];
-
-const whoCanApply = [
-    { text: 'Final-year college students ', bold: '(any stream)' },
-    { text: 'Recent graduates ', bold: '(0 – 2 years experience)' },
-    { text: 'Strong learning attitude ', bold: '· Comfortable with digital tools' }
-];
-
-const faqContent = [
-    {
-        title: 'Is this for beginners?',
-        content: 'Yes.'
-    },
-    {
-        title: 'Are classes live?',
-        content: 'Live sessions + recordings + labs.'
-    },
-    {
-        title: 'Do you guarantee placement?',
-        content: 'Placement support, not guarantees.'
-    },
-    {
-        title: 'How much time per week?',
-        content: '8 – 12 hours.'
-    },
-    {
-        title: 'Are AI tools taught from scratch?',
-        content: 'Yes.'
-    },
-];
-
 const Home = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -186,7 +79,7 @@ const Home = () => {
             showButton={true}
             buttonText="Take your assessment test"
             buttonIcon={<FaArrowRight />}
-            buttonLink="/contact"
+            buttonLink="https://learn.tutorexel.com/d2q1kr392kq4gu3vn2ig/join/JjJCwO6.r9GqgrpkB8KYV6BP6RXVj4rYXvovQrWOf53qVGCwyC15HxAKs8yNNt3BXQHRugQowSh_xG6kTWlSqcDVKwBUZwMF"
             />
 
             <Testimonials />

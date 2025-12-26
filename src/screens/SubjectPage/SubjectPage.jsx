@@ -31,6 +31,10 @@ const SubjectPage = () => {
 
     const colorCodes = ["#22A3D2", "#FF9E10", "#05AC8F", "#0F2A47"];
 
+    const terms = Object.keys(subjectContent || {})
+                .filter(key => key.startsWith("term"))
+                .map(key => subjectContent[key]);
+
     if (!subjectContent) {
         return (
         <main>
@@ -73,7 +77,7 @@ const SubjectPage = () => {
                     </Row>
                 </Container>
             </section>
-            <section className="py-5 bg-white">
+            <section className="pt-5 bg-white">
                 <Container>
                     <Row className="">
                         <h1 className="section-heading">{formattedYear}</h1>
@@ -83,35 +87,31 @@ const SubjectPage = () => {
                             className="text-secondary page-intro" 
                             dangerouslySetInnerHTML={{ __html: subjectContent.introP2 }} 
                         />
-                        <h3><i><b>To Practice click on Topic Name</b></i></h3>
+                        {/* <h3><i><b>To Practice click on Topic Name</b></i></h3> */}
                     </Row>
                 </Container>
             </section>
             <section className="py-5 bg-white">
                 <Container>
                     <Row>
-                        {subjectContent.term1 && subjectContent.term2 ? (
-    <>
-                            <TermBox
-                                year={yearId}
-                                subject={subjectId}
-                                termNumber={1}
-                                title={subjectContent.term1.title}
-                                topics={subjectContent.term1.topics}
-                                bgColor={colorCodes[0]}
-                            />
-                            <TermBox
-                                year={yearId}
-                                subject={subjectId}
-                                termNumber={2}
-                                title={subjectContent.term2.title}
-                                topics={subjectContent.term2.topics}
-                                bgColor={colorCodes[1]}
-                            />
+                        {terms.length > 0 ? (
+                            <>
+                                {terms.map((term, index) => (
+                                <TermBox
+                                    key={index}
+                                    year={yearId}
+                                    subject={subjectId}
+                                    termNumber={index + 1}
+                                    title={term.title}
+                                    topics={term.topics}
+                                    bgColor={colorCodes[index % colorCodes.length]}
+                                />
+                                ))}
                             </>
-  ) : (
-    <p className="lead">Sorry, we couldn't find content for this subject yet.</p>
-  )}
+                            ) : (
+                            <p className="lead">Sorry, we couldn't find content for this subject yet.</p>
+                            )}
+
                     </Row>
                 </Container>
             </section>

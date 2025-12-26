@@ -88,7 +88,7 @@ const Pricing = () => {
             <section className="bg-white">
                 <Container className="my-5">
                     <Row className="g-4">
-                        <Col xs={12} sm={6} lg={3} className="d-flex">
+                        <Col xs={12} sm={6} lg={4} className="d-flex">
                             <PricingCard 
                             bgColor= '#05AC8F'
                             title = 'Live Online Coaching'
@@ -97,7 +97,7 @@ const Pricing = () => {
                             onSelect={() => setActiveLayout(1)}
                             />
                         </Col>
-                        <Col xs={12} sm={6} lg={3} className="d-flex">
+                        {/* <Col xs={12} sm={6} lg={3} className="d-flex">
                             <PricingCard 
                             bgColor= '#22A3D2'
                             title = 'Self Learning'
@@ -105,8 +105,8 @@ const Pricing = () => {
                             listIcon = {icon2}
                             onSelect={() => setActiveLayout(2)}
                             />
-                        </Col>
-                        <Col xs={12} sm={6} lg={3} className="d-flex">
+                        </Col> */}
+                        <Col xs={12} sm={6} lg={4} className="d-flex">
                             <PricingCard 
                             bgColor= '#FF9E10'
                             title = 'Co-Curricular'
@@ -115,7 +115,7 @@ const Pricing = () => {
                             onSelect={() => setActiveLayout(3)}
                             />
                         </Col>
-                        <Col xs={12} sm={6} lg={3} className="d-flex">
+                        <Col xs={12} sm={6} lg={4} className="d-flex">
                             <PricingCard 
                             bgColor= '#0F2A47'
                             title = 'NAPLAN Bootcamp'

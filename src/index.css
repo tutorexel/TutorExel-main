@@ -106,18 +106,56 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     position: relative;
 }
-.cloudnew-img a.hotspot {
-    display: block;
+
+.cloudnew-img .cloud-text {
     position: absolute;
+    left: 0;
+    right: 0;
+    top: 37%;
 }
-.cloudnew-img a.hotspot1 {
-    bottom: 13%;
-    left: 36%;
+.cloudnew-img .cloud-text h2{
+  font-weight: 700;
+  font-size: 27px;
 }
+.cloud-text p {
+    font-size: 14px;
+}
+
+
 .heronew-section {
     height: 400px;
     display: flex;
     align-items: center;
+}
+@media (max-width: 1400px){
+  .cloudnew-img .cloud-text h2{
+    font-size: 23px;
+  }
+}
+@media (max-width: 1200px){
+  .cloudnew-img .cloud-text h2{
+    font-size: 19px;
+  }
+  .cloudnew-img .cloud-text p{
+    margin-bottom: 2px;
+  }
+}
+@media (max-width: 992px){
+  .cloudnew-section{
+    flex-wrap: wrap;
+  }
+  .cloudnew-section .cloudnew-part{
+    flex: 0 0 calc(50% - 16px);
+  }
+  .cloudnew-section .cloudnew-part:last-child{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heronew-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
 }
 @media (max-width: 767.98px){
   .heronew-section {
@@ -128,15 +166,13 @@ h1, h2, h3, h4, h5, h6 {
   .cloudnew-section {
     flex-direction: column;
   }
+  .cloudnew-section .cloudnew-part{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .cloudnew-img a.hotspot1{
     bottom: 13%;
     left: 44%;
-  }
-}
-@media (max-width: 767.98px){
-  .cloudnew-img a.hotspot1{
-    bottom: 15%;
-    left: 40%;
   }
 }
 
@@ -368,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Custom styles for the footer */
 .footer-section {
   padding-top: 80px; /* Use a larger padding for better aesthetics */
-  /* padding-bottom: 30px; */
+  padding-bottom: 30px;
 }
 
 /* Footer logo size */
