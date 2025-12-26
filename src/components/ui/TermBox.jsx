@@ -10,7 +10,7 @@ const TermBox = ({ year, subject, termNumber, title, topics, bgColor }) => {
             
             <div className="term-content-wrapper">
                 <Row className="term-header gx-0">
-                    <Col xs={1} className="th">Skill</Col>
+                    <Col xs={1} className="th">S.No</Col>
                     <Col xs={4} className="th">Topic Name</Col>
                     <Col xs={7} className="th">What We Cover</Col>
                 </Row>
