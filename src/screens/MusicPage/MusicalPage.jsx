@@ -25,6 +25,7 @@ import maprch1 from '../../assets/images/nap_aprch1.png';
 import maprch2 from '../../assets/images/nap_aprch2.png';
 import maprch3 from '../../assets/images/music_check.png';
 import maprch4 from '../../assets/images/music_price.png';
+import offering from '../../assets/images/offerings.png';
 
 // Import reusable components
 import ExamTitle from '../../components/ui/ExamTitle';
@@ -258,6 +259,11 @@ const MusicPage = () => {
                     secondaryButtonIcon={<FaArrowRight />}
                     secondaryButtonTextColor="#FFFFFF"
                 />
+            </div>
+            <div className="offer-img">
+                <Link to="/pricing">
+                    <img src={offering} alt="Select our Offerings" />
+                </Link>
             </div>
         </main>
     );

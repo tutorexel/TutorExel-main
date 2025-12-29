@@ -16,6 +16,7 @@ import PricingPage from './screens/PricingPage/PricingPage';
 import SubjectOverviewPage from './screens/SubjectOverviewPage/SubjectOverviewPage';
 import SubjectPage from './screens/SubjectPage/SubjectPage';
 import ExamPage from './screens/SubjectPage/ExamPage';
+import NaplanDataPage from './screens/NaplanDataPage/NaplanDataPage';
 import MusicPage from './screens/MusicPage/MusicalPage';
 import NaplanPage from './screens/ExamPrepPage/NaplanPage';
 import NaplanPrimary from './screens/ExamPrepPage/NaplanPrimary';
@@ -45,12 +46,13 @@ function App() {
         <Route path="/subjects/:yearId/:subjectId" element={<SubjectPage />} />
         <Route path="/subjects/:yearId/:subjectId/:termId/:topicId" element={<ExamPage />} />
         <Route path="/play-music" element={<MusicPage />} />
+        <Route path="/naplan/:yearId/:subjectId" element={<NaplanDataPage />} />
         <Route path="/prep-zone/naplan" element={<NaplanPage />} />
-        <Route path="/prep-zone/naplan/primary" element={<NaplanPrimary />} />
-        <Route path="/prep-zone/naplan/secondary" element={<NaplanSecondary />} />
-        <Route path="/prep-zone/icas/primary" element={<IcasPrimary />} />
-        <Route path="/prep-zone/icas/secondary" element={<IcasSecondary />} />
-        <Route path="/prep-zone/icas" element={<IcasPage />} />
+        {/* <Route path="/prep-zone/naplan/primary" element={<NaplanPrimary />} />
+        <Route path="/prep-zone/naplan/secondary" element={<NaplanSecondary />} /> */}
+        {/* <Route path="/prep-zone/icas/primary" element={<IcasPrimary />} />
+        <Route path="/prep-zone/icas/secondary" element={<IcasSecondary />} /> */}
+        {/* <Route path="/prep-zone/icas" element={<IcasPage />} /> */}
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<SingleBlogPage />} />
         <Route path="/contact" element={<StudentForm />} />

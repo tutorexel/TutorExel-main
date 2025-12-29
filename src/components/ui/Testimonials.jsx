@@ -13,15 +13,22 @@ const testimonialsData = [
     id: 1,
     name: 'Priya S.', 
     text: 'Tutorexel has been a wonderful experience for my son. The teachers are professional, and he looks forward to every class!', 
-    avatar: avatarRohit,
-    role: 'B.Tech Student'
+    avatar: avatarPriya,
+    role: 'Parent'
   },
   { 
     id: 2,
     name: 'Rohit K.', 
-    text: 'We love the flexibility and the personalised approach. Highly recommended', 
-    avatar: avatarPriya,
-    role: 'MBA Student'
+    text: 'We love the flexibility and the personalised approach. Highly recommended for any parent looking for quality education.', 
+    avatar: avatarRohit,
+    role: 'Parent'
+  },
+  { 
+    id: 3,
+    name: 'Sarah M.', 
+    text: 'My daughter\'s confidence in mathematics has improved dramatically. The one-on-one attention makes all the difference.', 
+    avatar: avatarPriya, // Using existing avatar
+    role: 'Parent'
   }
 ];
 
@@ -67,8 +74,29 @@ const Testimonials = () => {
 
   return (
     <>
-      <style jsx>{`
+      <style>{`
+        .testimonial-container {
+          position: relative;
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 0 60px;
+        }
+        .testimonial-slider {
+          position: relative;
+          overflow: hidden;
+          border-radius: 24px;
+        }
 
+        .testimonial-track {
+          display: flex;
+          transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+          transform: translateX(-${currentIndex * 100}%);
+        }
+
+        .testimonial-slide {
+          min-width: 100%;
+          padding: 0 20px;
+        }
         .testimonial-wrapper {
           position: relative;
           padding-bottom: 70px; /* space for profile */
@@ -139,6 +167,76 @@ const Testimonials = () => {
           color: #000;
         }
 
+        .navigation-buttons {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: white;
+          border: 2px solid rgba(255, 107, 0, 0.2);
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          z-index: 10;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .navigation-buttons:hover {
+          background: var(--primary-orange, #ff6b00);
+          color: white;
+          transform: translateY(-50%) scale(1.1);
+          border-color: var(--primary-orange, #ff6b00);
+        }
+
+        .nav-prev {
+          left: 0;
+        }
+
+        .nav-next {
+          right: 0;
+        }
+
+        .dots-indicator {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          margin-top: 3rem;
+        }
+
+        .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #e0e0e0;
+          cursor: pointer;
+          transition: all 0.4s ease;
+          border: none;
+          outline: none;
+          position: relative;
+        }
+
+        .dot:hover {
+          background: rgba(255, 107, 0, 0.6);
+          transform: scale(1.1);
+        }
+
+        .dot.active {
+          background: var(--primary-orange, #ff6b00);
+          width: 24px;
+          border-radius: 12px;
+          transform: scale(1);
+        }
+
+        .dot:focus {
+          outline: none;
+          box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.3);
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
           .testimonial-cardd {
@@ -154,6 +252,20 @@ const Testimonials = () => {
             border-right-width: 30px;
             border-top-width: 40px;
             transform: skewX(60deg) translateX(-65px);
+            margin-left: 111px;
+          }
+
+          .navigation-buttons {
+            width: 40px;
+            height: 40px;
+          }
+          
+          .nav-prev {
+            left: -10px;
+          }
+          
+          .nav-next {
+            right: -10px;
           }
         }
 
@@ -167,10 +279,11 @@ const Testimonials = () => {
           </div>
           
           <div className="testimonial-container">
-
-              <div className="row g-5">
+            <div className="testimonial-slider">
+              <div className="testimonial-track">
+              {/* <div className="row g-5"> */}
                 {testimonialsData.map((testimonial, index) => (
-                  <div className="col-lg-6" key={testimonial.id}>
+                  <div className="col-lg-12 px-3 testimonial-slide" xs={12} sm={12} key={testimonial.id}>
                     <div className="testimonial-wrapper">
                       <div className="testimonial-cardd">
                         <div className="stars"><img src={stars5} alt="Stars" className="profile-imgg" /></div>
@@ -190,19 +303,20 @@ const Testimonials = () => {
                     </div>
                   </div>
                 ))}
-              </div>
-
+              {/* </div> */}
+                </div>
+                </div>
             
-            {/* <button className="navigation-buttons nav-prev" onClick={prevSlide}>
+            <button className="navigation-buttons nav-prev" onClick={prevSlide}>
               <FaChevronLeft />
             </button>
             
             <button className="navigation-buttons nav-next" onClick={nextSlide}>
               <FaChevronRight />
-            </button> */}
+            </button>
           </div>
           
-          {/* <div className="dots-indicator">
+          <div className="dots-indicator">
             {testimonialsData.map((_, index) => (
               <button
                 key={index}
@@ -210,7 +324,7 @@ const Testimonials = () => {
                 onClick={() => goToSlide(index)}
               />
             ))}
-          </div> */}
+          </div>
         </Container>
       </section>
     </>

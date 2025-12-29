@@ -113,12 +113,12 @@ const PriceCoaching = ({ title, price1, price2 }) => {
 
       <Card.Footer className="pricing-footer">
         <Row className="g-3">
-          <Col>
+          {/* <Col>
             <Button className="demo-btn" block>
               Book a Demo Class
             </Button>
-          </Col>
-          <Col>
+          </Col> */}
+          <Col lg={6}>
             <Button className="join-btn" block>
               Join
             </Button>

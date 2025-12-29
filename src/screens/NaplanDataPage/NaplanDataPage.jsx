@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { subjectsData } from "../../data/subjectsData";
+import { naplanData } from "../../data/naplanData";
 import TermBox from "../../components/ui/TermBox";
 import PageHero from "../../components/ui/PageHero";
 import offering from '../../assets/images/offerings.png';
-import './SubjectPage.css';
+import './NaplanDataPage.css';
 
-const SubjectPage = () => {
+const NaplanDataPage = () => {
     const { yearId, subjectId } = useParams();
 
     useEffect(() => {
@@ -16,13 +16,14 @@ const SubjectPage = () => {
     }, [yearId, subjectId]);
 
 
-    const subjectsByYear = Array.from({ length: 9 }, (_, i) => ({
-        year: `Year ${i + 2}`,
-        yearLink: `year-${i + 2}`,
-        subjects: ['Maths',  'English'],
-    }));
+    const years = [3, 5, 7, 9];
+    const subjectsByYear = years.map(y => ({
+            year: `Year ${y}`,
+            yearLink: `year-${y}`,
+            subjects: ['Maths', 'English'],
+        }));
 
-    const subjectContent = subjectsData[yearId]?.[subjectId.toLowerCase()];
+    const subjectContent = naplanData[yearId]?.[subjectId.toLowerCase()];
     const key = `${yearId}-${subjectId.toLowerCase()}`;
     const formattedYear = yearId
     ? `Year ${yearId.replace('year-', '')}`
@@ -58,7 +59,7 @@ const SubjectPage = () => {
                             const isActive = yearNumber === activeYearNumber;
 
                             return (
-                                <span key={y.year}><Link to={`/subjects/year-${yearNumber}/${subjectId}`}>
+                                <span key={y.year}><Link to={`/naplan/year-${yearNumber}/${subjectId}`}>
                                 {isActive ? <strong>{y.year}</strong> : y.year}
                                 {index < subjectsByYear.length - 1 && " / "}
                                 </Link></span>
@@ -72,8 +73,8 @@ const SubjectPage = () => {
                 <Container>
                     <Row>
                         <p className="mb-0">
-                            <span className={subjectId === "maths" ? "highlight p-3" : "p-3"}><Link to={`/subjects/${yearId}/maths`}>Maths</Link></span>
-                            <span className={subjectId === "english" ? "highlight p-3" : "p-3"}><Link to={`/subjects/${yearId}/english`}>English</Link></span>
+                            <span className={subjectId === "maths" ? "highlight p-3" : "p-3"}><Link to={`/naplan/${yearId}/maths`}>Maths</Link></span>
+                            <span className={subjectId === "english" ? "highlight p-3" : "p-3"}><Link to={`/naplan/${yearId}/english`}>English</Link></span>
                         </p>
                     </Row>
                 </Container>
@@ -97,17 +98,28 @@ const SubjectPage = () => {
                     <Row>
                         {terms.length > 0 ? (
                             <>
-                                {terms.map((term, index) => (
-                                <TermBox
-                                    key={index}
-                                    year={yearId}
-                                    subject={subjectId}
-                                    termNumber={index + 1}
-                                    title={term.title}
-                                    topics={term.topics}
-                                    bgColor={colorCodes[index % colorCodes.length]}
-                                />
-                                ))}
+                                {/* {terms.map((termm, index) => (
+                                    <> */}
+                                        <div className="term-box" style={{ backgroundColor: colorCodes[0] }}>
+                                            
+                                            <div className="term-content-wrapper">
+                                                <Row className="term-header gx-0">
+                                                    <Col xs={1} className="th">S.No</Col>
+                                                    <Col xs={4} className="th">Topic</Col>
+                                                    <Col xs={7} className="th">What We Cover</Col>
+                                                </Row>
+                                
+                                                {subjectContent.term.topics.map((item, index) => (
+                                                    <Row key={index} className="term-row gx-0">
+                                                        <Col xs={1} className="td index">{index + 1}</Col>
+                                                        <Col xs={4} className="td name">{item.name}</Col>
+                                                        <Col xs={7} className="td description">{item.description}</Col>
+                                                    </Row>
+                                                ))}
+                                            </div>
+                                        </div>
+                                        {/* </>
+                                ))} */}
                             </>
                             ) : (
                             <p className="lead">Sorry, we couldn't find content for this subject yet.</p>
@@ -126,4 +138,4 @@ const SubjectPage = () => {
 
 }
 
-export default SubjectPage;
+export default NaplanDataPage;

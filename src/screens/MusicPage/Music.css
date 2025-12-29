@@ -61,6 +61,18 @@
     padding-top: 54px !important;
 }
 
+.offer-img {
+    position: fixed;
+    z-index: 1000;
+    bottom: 100px;
+    right: 25px;
+    animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: scale(1) translateY(0);
+}
+.offer-img img {
+    width: 60px;
+}
+
 
 @media all and (max-width: 992px){
     .music-page .main-btn1{
@@ -78,4 +90,21 @@
         text-align: justify;
     }
     
+}
+
+@media all and (max-width: 768px){
+    .offer-img {
+        right: 20px;
+    }
+    .offer-img img{
+        width: 55px;
+    }
+}
+@media all and (max-width: 480px){
+    .offer-img {
+        right: 15px;
+    }
+    .offer-img img{
+        width: 50px;
+    }
 }

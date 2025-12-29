@@ -17,12 +17,12 @@ const subjectsByYear = Array.from({ length: 9 }, (_, i) => ({
 const examPrepMenu = [
   {
     name: 'NAPLAN',
-    submenus: ['Primary', 'Secondary'],
+    submenus: ['Maths', 'English'],
   },
-  {
-    name: 'ICAS',
-    submenus: ['Primary', 'Secondary'],
-  },
+  // {
+  //   name: 'ICAS',
+  //   submenus: ['Primary', 'Secondary'],
+  // },
 ];
 
 const Header = () => {
@@ -30,6 +30,7 @@ const Header = () => {
   const [showExamPrep, setShowExamPrep] = useState(false);
   const [activeExam, setActiveExam] = useState(null);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showCoCurricular, setShowCoCurricular] = useState(false);
 
   const handleCloseMobileMenu = () => setShowMobileMenu(false);
   const handleShowMobileMenu = () => setShowMobileMenu(true);
@@ -129,7 +130,7 @@ const Header = () => {
                                               {exam.submenus.map((sub) => (
                                                 <Link
                                                   key={sub}
-                                                  to={`/prep-zone/${exam.name.toLowerCase()}/${sub.toLowerCase()}`}
+                                                  to={`/naplan/year-3/${sub.toLowerCase()}`}
                                                 >
                                                   {sub}
                                                 </Link>
@@ -147,15 +148,40 @@ const Header = () => {
                 )}
               </div>
 
-              <NavLink to="/play-music" className="nav-link-base">Play Music</NavLink>
+              <div
+                className="nav-item-cc"
+                onMouseEnter={() => setShowCoCurricular(true)}
+                onMouseLeave={() => setShowCoCurricular(false)}
+              >
+                <div className="nav-link-base">Co-Curricular<IoIosArrowDown className={`nav-arrow ${showCoCurricular ? 'open' : ''}`} /></div>
+                {showCoCurricular && (
+                  <div className="dropdown-cc">
+                    <NavLink to="/play-music" className="dropdown-link">
+                      Piano
+                    </NavLink>
+                    <NavLink to="#" className="dropdown-link">
+                      Guitar
+                    </NavLink>
+                    <NavLink to="#" className="dropdown-link">
+                      Yoga
+                    </NavLink>
+                  </div>
+                )}
+              </div>
               <NavLink to="/pricing" className="nav-link-base">Pricing</NavLink>
-
-              <NavLink to="/blog" className="nav-link-base">Blogs</NavLink>
               <NavLink to="/contact" className="nav-link-base">Contact Us</NavLink>
             </Nav>
 
             <Nav className="align-items-center justify-content-end desktop-nav-actions">
               
+              <a href="https://learn.tutorexel.com/d2q1kr392kq4gu3vn2ig/join/JjJCwO6.r9GqgrpkB8KYV6BP6RXVj4rYXvovQrWOf53qVGCwyC15HxAKs8yNNt3BXQHRugQowSh_xG6kTWlSqcDVKwBUZwMF" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="primary-orange"
+                  className="d-inline-flex align-items-center"
+                >
+                  Free Assessment Test
+                </Button>
+              </a>
               <a href="https://learn.tutorexel.com/login" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="secondary-blue"
@@ -284,12 +310,50 @@ const Header = () => {
                   )}
                 </div>
 
-                <NavLink 
+                {/* <NavLink 
                   to="/play-music" 
                   className="mobile-nav-link"
                   onClick={handleCloseMobileMenu}>
-                  Play Music
-                </NavLink>
+                  Co-Curricular
+                </NavLink> */}
+                
+                <div className="mobile-subjects-section">
+                  <div 
+                    className="mobile-nav-link mobile-subjects-toggle"
+                    onClick={() => setShowCoCurricular(!showCoCurricular)}
+                  >
+                    Co-Curricular
+                    <IoIosArrowDown className={`nav-arrow ${showCoCurricular ? 'open' : ''}`} />
+                  </div>
+                  {showCoCurricular && (
+                      <div className="mobile-subjects-menu">
+                                  {/* Main Naplan/Icas Link */}
+                                  <Link
+                                    to="/play-music"
+                                    className="mobile-subject-link"
+                                    onClick={handleCloseMobileMenu}
+                                  >
+                                    Piano
+                                  </Link>
+                                  <Link
+                                    to="/#"
+                                    className="mobile-subject-link"
+                                    onClick={handleCloseMobileMenu}
+                                  >
+                                    Guitar
+                                  </Link>
+                                  <Link
+                                    to="/play-music"
+                                    className="mobile-subject-link"
+                                    onClick={handleCloseMobileMenu}
+                                  >
+                                    Yoga
+                                  </Link>
+
+                                </div>
+                  )}
+                    
+                </div>
 
                 <NavLink 
                   to="/pricing" 
@@ -300,13 +364,6 @@ const Header = () => {
                 </NavLink>
 
                 <NavLink 
-                  to="/blog" 
-                  className="mobile-nav-link"
-                  onClick={handleCloseMobileMenu}
-                >
-                  Blogs
-                </NavLink>
-                <NavLink 
                   to="/contact" 
                   className="mobile-nav-link"
                   onClick={handleCloseMobileMenu}
@@ -314,6 +371,15 @@ const Header = () => {
                   Contact Us
                 </NavLink>
                 <div className="mobile-cta-section">
+                  <a href="https://learn.tutorexel.com/d2q1kr392kq4gu3vn2ig/join/JjJCwO6.r9GqgrpkB8KYV6BP6RXVj4rYXvovQrWOf53qVGCwyC15HxAKs8yNNt3BXQHRugQowSh_xG6kTWlSqcDVKwBUZwMF" target="_blank" rel="noopener noreferrer" className="w-100 d-block">
+                    <Button 
+                      variant="primary-orange" 
+                      className="w-100 mobile-cta-button mb-2"
+                      onClick={handleCloseMobileMenu}
+                    >
+                      Free Assessment Test
+                    </Button>
+                  </a>
                   <a href="https://learn.tutorexel.com/login" target="_blank" rel="noopener noreferrer" className="w-100 d-block">
                     <Button 
                       variant="secondary-blue" 

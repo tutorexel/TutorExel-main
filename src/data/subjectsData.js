@@ -1072,43 +1072,43 @@ export const subjectsData = {
                 topics: [
                     {
                         name: "Decimals – Place Value & Ordering (Part 1)",
-                        description: "Introduction + concrete decimal models."
+                        description: "Students explore decimal place value up to thousandths using concrete models such as place-value charts and base-ten representations. Focus is on understanding tenths, hundredths, and thousandths and how decimals relate to whole numbers."
                     },
                     {
                         name: "Decimals – Ordering & Representation (Part 2)",
-                        description: "Compare > order > place on number lines (split from #1 for load)."
+                        description: "Builds on Session 1 by comparing, ordering, and representing decimals on number lines. Students justify which decimal is greater or smaller using place-value reasoning and visual models."
                     },
                     {
                         name: "Factors & Multiples – Concept & Lists",
-                        description: "Hands-on building of factors & multiples; rules 2, 5, 10."
+                        description: "Introduces factors and multiples through grouping, arrays, and skip counting. Students learn to list factors and multiples of numbers and recognise basic divisibility rules for 2, 5, and 10."
                     },
                     {
                         name: "Divisibility & LCM/HCF",
-                        description: "Extend #3; reasoning & pattern discovery."
+                        description: "Extends factor knowledge to common factors and common multiples. Students determine highest common factor (HCF) and lowest common multiple (LCM) using listing and reasoning strategies."
                     },
                     {
                         name: "Fractions – Equivalent & Comparison",
-                        description: "Fraction wall + number line + visual compare."
+                        description: "Students identify and generate equivalent fractions using fraction walls, visual models, and number lines. Emphasis is placed on understanding fraction size rather than rote rules."
                     },
                     {
-                        name: "Mixed & Improper Fractions + Ordering",
-                        description: "Mixed & Improper Fractions + Ordering"
+                        name: "Comparing & Ordering Fractions (Part 2)",
+                        description: "Students compare and order fractions with related denominators and numerators. Strategies include visual comparison, conversion to equivalent forms, and reasoning without calculators."
                     },
                     {
                         name: "Percentages – Concept + Links to Fractions",
-                        description: "10×10 grids + fraction-decimal connections."
+                        description: "Introduces percentages as “parts per hundred” using grids and visual models. Students connect percentages to familiar fractions such as halves, quarters, and tenths."
                     },
                     {
                         name: "Percentages – Applications & Problems",
-                        description: "Discounts + complementary %; shifted some content from heavy #6."
+                        description: "Applies percentage understanding to real-life contexts such as discounts, increase/decrease, and complementary percentages. Emphasis on reasoning rather than formulas."
                     },
                     {
                         name: "Add & Subtract Fractions",
-                        description: "Now leaner – related denominators only."
+                        description: "Students add and subtract fractions with related denominators using visual and numerical strategies. Real-world word problems are used to reinforce understanding."
                     },
                     {
                         name: "Problem Solving & Review",
-                        description: "Integrates decimals + fractions + percentages (revision)."
+                        description: "Consolidation of decimals, fractions, and percentages through multi-step problem solving. Students explain strategies and check solutions for reasonableness."
                     },
                     
                 ]
@@ -1118,43 +1118,43 @@ export const subjectsData = {
                 topics: [
                     {
                         name: "Multiplication Strategies (2-digit×1-digit)",
-                        description: "Core concept + arrays → no overload."
+                        description: "Students use arrays, partitioning, and mental strategies to multiply 2-digit numbers by 1-digit numbers. Focus is on conceptual understanding before algorithms."
                     },
                     {
                         name: "Multiplication with 2-digit×2-digit & Algorithms",
-                        description: "Split from #11 for depth."
+                        description: "Introduces standard written multiplication methods. Students connect algorithms to place-value understanding and check results using estimation."
                     },
                     {
                         name: "Division Basics + Remainders",
-                        description: "Practical word problems."
+                        description: "Students explore division as sharing and grouping, including remainders. Word problems are used to interpret remainders meaningfully."
                     },
                     {
                         name: "Estimation & Reasonableness",
-                        description: "Now a full practice-rich session (merged light bits from old #13)."
+                        description: "Students estimate results for all four operations and judge whether answers are reasonable. Focus on rounding, front-end estimation, and real-world decision making."
                     },
                     {
                         name: "Algebraic Patterns & Inverse Relations",
-                        description: "Merged old inverse concept with patterns for balance."
+                        description: "Students identify number patterns, describe rules, and explore inverse relationships between addition–subtraction and multiplication–division."
                     },
                     {
                         name: "Simple Equations – Find Unknown Values",
-                        description: "More guided tasks; standalone hour."
+                        description: "Introduces simple algebraic equations with missing values. Students solve using balance and inverse reasoning rather than guesswork."
                     },
                     {
                         name: "Algorithmic Thinking & Digital Patterns",
-                        description: "Spreadsheet demo + pattern creation."
+                        description: "Students create and follow step-by-step instructions using patterns and simple digital tools such as spreadsheets or tables."
                     },
                     {
                         name: "Two-Step Word Problems (Mixed Ops)",
-                        description: "Moderated from old heavy #14; realistic load."
+                        description: "Students solve multi-step problems involving combinations of operations. Emphasis on selecting the correct strategy and explaining reasoning."
                     },
                     {
                         name: "Integrated Reasoning Challenge",
-                        description: "Balanced puzzle + group discussion."
+                        description: "Collaborative problem-solving session combining number and algebra concepts. Students analyse, plan, and justify solutions."
                     },
                     {
                         name: "Assessment & Review",
-                        description: "Standard recap."
+                        description: "Review of Term 2 concepts followed by a structured assessment focusing on reasoning, accuracy, and problem-solving skills."
                     },
                     
                 ]
@@ -1164,43 +1164,43 @@ export const subjectsData = {
                 topics: [
                     {
                         name: "Metric Units & Conversions",
-                        description: "Expanded with conversion chain tasks."
+                        description: "Students revise metric units and convert between millimetres, centimetres, metres, and kilometres using practical examples."
                     },
                     {
                         name: "Perimeter of Shapes",
-                        description: "Separate from area; added real examples."
+                        description: "Students calculate perimeter of regular and irregular shapes and apply understanding to real-life contexts such as fencing and boundaries."
                     },
                     {
                         name: "Area of Regular Shapes",
-                        description: "Kept simple to allow mastery."
+                        description: "Focuses on area of rectangles and squares using grid models and formulas. Students connect area to multiplication concepts."
                     },
                     {
                         name: "Area of Irregular & Composite Shapes",
-                        description: "Reduced to 2-shape composites only – now fits 1 hour."
+                        description: "Students find areas of composite shapes by splitting them into simpler rectangles. Emphasis on logical breakdown rather than complexity."
                     },
                     {
                         name: "Time – 12/24 hr Conversions",
-                        description: "Added elapsed-time activities."
+                        description: "Students convert between 12-hour and 24-hour time and calculate elapsed time in everyday scenarios."
                     },
                     {
                         name: "Measuring Angles",
-                        description: "Standalone measurement session."
+                        description: "Students identify and measure angles using protractors and classify angles as acute, obtuse, right, straight, or reflex."
                     },
                     {
                         name: "Constructing Triangles & Angle Types",
-                        description: "Simplified 2 constructions only; fits 1 hour."
+                        description: "Students construct triangles using given measurements and explore angle relationships within triangles."
                     },
                     {
                         name: "Nets of 3D Shapes",
-                        description: "Build 2 nets + relate to packaging – balanced."
+                        description: "Students identify and build nets of 3D shapes, linking nets to real-world packaging and design."
                     },
                     {
                         name: "Coordinates & Transformations",
-                        description: "Merged two light lessons → one solid session."
+                        description: "Introduces coordinate grids and simple transformations such as translations and reflections."
                     },
                     {
                         name: "Assessment & Review",
-                        description: "Practical tasks."
+                        description: "Practical assessment covering measurement and geometry concepts learned during the term."
                     },
                     
                 ]
@@ -1210,43 +1210,43 @@ export const subjectsData = {
                 topics: [
                     {
                         name: "Data Collection & Tables",
-                        description: "Split old combo; only data capture."
+                        description: "Students collect data, organise it into tables, and understand different types of data."
                     },
                     {
                         name: "Graphing & Interpreting (Line/Bar)",
-                        description: "Graph work + inference – fits 1 hour."
+                        description: "Students represent data using bar and line graphs and interpret trends and comparisons."
                     },
                     {
                         name: "Designing Surveys & Analysing Responses",
-                        description: "Added short digital form demo."
+                        description: "Students design simple surveys, collect responses, and analyse results using tables and graphs."
                     },
                     {
                         name: "Chance & Equally Likely Events",
-                        description: "Now fuller with simulations; no overload."
+                        description: "Introduces probability language and equally likely events through experiments and simulations."
                     },
                     {
                         name: "Repeated Experiments & Frequency",
-                        description: "Hands-on data recording."
+                        description: "Students conduct repeated chance experiments and record frequencies to identify patterns."
                     },
                     {
                         name: "Probability in Games",
-                        description: "Focused on 1–2 games only."
+                        description: "Students analyse probability in simple games, predicting outcomes and testing fairness."
                     },
                     {
                         name: "Integrating Data & Probability",
-                        description: "Kept single integrated project; scope reduced."
+                        description: "Students combine data handling and probability in a small integrated investigation."
                     },
                     {
                         name: "Data Modelling Mini-Project",
-                        description: "Trimmed to 1 question investigation."
+                        description: "Students complete a guided mini-project involving one investigation question from start to finish."
                     },
                     {
                         name: "Comprehensive Revision",
-                        description: "Review + practice tasks."
+                        description: "Whole-year revision using mixed problem sets and reasoning tasks."
                     },
                     {
                         name: "Final Assessment",
-                        description: "Cumulative test."
+                        description: "Cumulative assessment covering all Year 5 mathematics strands."
                     },
                     
                 ]

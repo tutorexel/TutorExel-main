@@ -97,9 +97,9 @@ const PriceNaplan = ({ title, price1, price2 }) => {
 
           {/* BUTTONS */}
                   <Row className="text-center">
-                    <Col xs={12} md={6} className="mb-3 text-end">
+                    {/* <Col xs={12} md={6} className="mb-3 text-end">
                       <Button className="action-btn" size="lg">Book a Demo Class</Button>
-                    </Col>
+                    </Col> */}
                     <Col xs={12} md={6} className=" text-start">
                       <Button className="action-btn" size="lg">Join</Button>
                     </Col>
