@@ -63,8 +63,8 @@ const Curriculum = () => {
           </p>
 
           <div className="btn-row">
-            <Button className="subject-btn white-btn">English</Button>
-            <Button className="subject-btn white-btn">Maths</Button>
+            <Link to="/naplan/year-3/english"><Button className="subject-btn white-btn">English</Button></Link>
+            <Link to="/naplan/year-3/maths"><Button className="subject-btn white-btn">Maths</Button></Link>
           </div>
         </div>
       </Container>

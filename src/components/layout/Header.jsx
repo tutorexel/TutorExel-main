@@ -92,7 +92,7 @@ const Header = () => {
                 {showSubjects && (
                   <div className="subjects-mega-menu">
                     <Container>
-                      <Row>
+                      <Row className='justify-content-around'>
                         {subjectsByYear.map((yearGroup) => (
                           <Col xs="auto" key={yearGroup.year}>
                             <h5>{yearGroup.year}</h5>
@@ -293,7 +293,7 @@ const Header = () => {
                                     {exam.submenus.map((sub) => (
                                       <Link
                                         key={sub}
-                                        to={`/prep-zone/${exam.name.toLowerCase()}/${sub.toLowerCase()}`}
+                                        to={`/naplan/year-3/${sub.toLowerCase()}`}
                                         className="mobile-submenu-link"
                                         onClick={handleCloseMobileMenu}
                                       >

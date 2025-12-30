@@ -1,6 +1,7 @@
-import React, {useEffect} from "react";
-import { FaArrowRight } from 'react-icons/fa';
-import { Container,Row, Button } from "react-bootstrap";
+import React, {useEffect, useState} from "react";
+import { FaArrowRight} from 'react-icons/fa';
+import { Container,Row, Button} from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import placeholder from '../../assets/images/placeholder.jpg'
 import iconEducators from '../../assets/icons/icon-educators.svg';
@@ -13,6 +14,7 @@ import iconAssess from '../../assets/icons/icon-assess.svg';
 import iconPlan from '../../assets/icons/icon-plan.svg';
 import iconExperience from '../../assets/icons/icon-experience.svg';
 import iconLearnGrow from '../../assets/icons/icon-learn-grow.svg';
+import bookdemo from '../../assets/images/book-demo.png';
 
 import cloud1 from '../../assets/images/cloud1.png';
 import cloud2 from '../../assets/images/cloud2.png';
@@ -65,11 +67,20 @@ const Home = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    // For calendly Popup
+    
+    const [showPopup, setShowPopup] = useState(false);
+      
+    const openPopup = () => setShowPopup(true);
+    const closePopup = () => setShowPopup(false);
+
+    const [show, setShow] = useState(true); // visible by default
     
     return(
         <main>
 
-            <HeroNew />
+            <HeroNew openPopup={openPopup} />
 
             <Curriculum />
 
@@ -84,8 +95,6 @@ const Home = () => {
 
             <Testimonials />
 
-            
-
             <CTAHome
             headingText="Ready to Help Your Child Succeed?"
             image={""}
@@ -95,9 +104,53 @@ const Home = () => {
             secondaryButtonText="Contact Us to Learn More"
             secondaryButtonIcon={<FaArrowRight />}
             secondaryButtonTextColor="#FFFFFF"
+            openPopup={openPopup}
             />
 
-            
+            <div className="offer-img">
+                <div className="offer-data tooltip-wrapper">
+                    
+                    {/* Tooltip */}
+                    {show && (
+                        <div className="custom-tooltip">
+                            <span>Book Your Free Trial Class</span>
+                            <button
+                                className="tooltip-close"
+                                onClick={() => setShow(false)}
+                            >
+                                ×
+                            </button>
+                        </div>
+                    )}
+
+                    <Button onClick={openPopup}>
+                        <img
+                            src={bookdemo}
+                            alt="Book Demo"
+                            className="demo-icon"
+                        />
+                    </Button>
+
+                </div>
+            </div>
+
+            {/* Popup Overlay */}
+            {showPopup && (
+                <div className="popup-overlay" onClick={closePopup}>
+                    <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+                        <iframe
+                        src="https://calendly.com/tutorexel-info/democlass"
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                        }}
+                        title="Book a meeting"
+                        ></iframe>
+                    </div>
+                </div>
+            )}
+      
         </main>
     );
 };

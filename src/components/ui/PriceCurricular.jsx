@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 
 const PriceCurricular = ({ title, price1, price2 }) => {
@@ -118,16 +119,18 @@ const PriceCurricular = ({ title, price1, price2 }) => {
       </Card.Body>
 
       <Card.Footer className="pricing-footer">
-        <Row className="g-3">
+        <Row className="g-3 justify-content-center">
           {/* <Col>
             <Button className="demo-btn" block>
               Book a Demo Class
             </Button>
           </Col> */}
           <Col lg={6}>
-            <Button className="join-btn" block>
-              Join
-            </Button>
+            <Link to="/contact">
+              <Button className="join-btn" block>
+                Join
+              </Button>
+            </Link>
           </Col>
         </Row>
       </Card.Footer>

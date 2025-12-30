@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Tooltip, OverlayTrigger, Overlay } from "react-bootstrap";
 
 import { subjectsData } from "../../data/subjectsData";
 import TermBox from "../../components/ui/TermBox";
@@ -35,6 +35,9 @@ const SubjectPage = () => {
     const terms = Object.keys(subjectContent || {})
                 .filter(key => key.startsWith("term"))
                 .map(key => subjectContent[key]);
+
+    const [show, setShow] = useState(true); // visible by default
+
 
     if (!subjectContent) {
         return (
@@ -116,11 +119,34 @@ const SubjectPage = () => {
                     </Row>
                 </Container>
             </section>
+
+            {/* Offerings ICON with Tooltip */}
             <div className="offer-img">
-                            <Link to="/pricing">
-                                <img src={offering} alt="Select our Offerings" />
-                            </Link>
+                <div className="offer-data tooltip-wrapper">
+                    
+                    {/* Tooltip */}
+                    {show && (
+                        <div className="custom-tooltip">
+                            <span>View our Pricing & Offerings</span>
+                            <button
+                                className="tooltip-close"
+                                onClick={() => setShow(false)}
+                            >
+                                ×
+                            </button>
                         </div>
+                    )}
+
+                    <Link to="/pricing">
+                        <img
+                            src={offering}
+                            alt="Select our Offerings"
+                            className="offer-icon"
+                        />
+                    </Link>
+
+                </div>
+            </div>
         </main>
     )
 

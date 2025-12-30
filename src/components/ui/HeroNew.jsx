@@ -50,26 +50,13 @@ const clouds = [cloud1, cloud3, cloud4];
 
   
 
-const HeroNew = () => {
-  // For calendly Popup
+const HeroNew = ({openPopup}) => {
 
-  
-
-    const [showPopup, setShowPopup] = useState(false);
-  
-    const handleButtonClick = (e) => {
-      e.preventDefault();
-      setShowPopup(true);
-    };
-  
-    const handleClosePopup = () => {
-      setShowPopup(false);
-    };
   return (
     <>
     <section>
       <div className="heronew-section" style={{backgroundImage: `url(${heroImg})`}}>
-        <Container className="py-5">
+        <Container className="py-3">
           <div className="cloudnew-section">
             {cards.map((card, index) => (
             <div className="cloudnew-part" key={index}>
@@ -82,10 +69,10 @@ const HeroNew = () => {
                 </div>
                 
               </div>
-              <div className="cloud-buttons">
+              {/* <div className="cloud-buttons">
                 {card.btn1text &&(
                   <Link to={card.btn1link} onClick={handleButtonClick}>
-                    <Button style={{ background: card.color, border: "none" }}>
+                    <Button style={{ background: card.color, border: "none" }} onClick={openPopup}>
                       {card.btn1text}
                     </Button>
                   </Link>
@@ -97,12 +84,12 @@ const HeroNew = () => {
                     </Button>
                   </Link>
                 )}
-              </div>
+              </div> */}
             </div>
             ))}
           </div>
           <div className="pricebtn">
-              <div className="text-center mt-5">
+              <div className="text-center mt-3">
                 <Link to={"/pricing"}>
                   <Button variant="secondary-blue" size="lg" className="main-btn-b d-inline-flex align-items-center">
                         Select Our Offerings
@@ -115,22 +102,7 @@ const HeroNew = () => {
       </div>
     </section>
 
-     {/* Popup Overlay */}
-      {showPopup && (
-        <div className="popup-overlay" onClick={handleClosePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <iframe
-              src="https://calendly.com/tutorexel-info/democlass"
-              style={{
-                width: "100%",
-                height: "100%",
-                border: "none",
-              }}
-              title="Book a meeting"
-            ></iframe>
-          </div>
-        </div>
-        )}
+     
 </>
     // <section>
     //   <div className="heronew-section" style={{backgroundImage: `url(${heroImg})`}}>

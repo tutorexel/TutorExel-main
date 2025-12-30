@@ -37,6 +37,8 @@ const NaplanDataPage = () => {
                 .filter(key => key.startsWith("term"))
                 .map(key => subjectContent[key]);
 
+    const [show, setShow] = useState(true); // visible by default
+
     if (!subjectContent) {
         return (
         <main>
@@ -128,10 +130,32 @@ const NaplanDataPage = () => {
                     </Row>
                 </Container>
             </section>
-            <div className="offer-img">
-                            <Link to="/pricing">
-                                <img src={offering} alt="Select our Offerings" />
-                            </Link>
+            {/* Offerings ICON with Tooltip */}
+                        <div className="offer-img">
+                            <div className="offer-data tooltip-wrapper">
+                                
+                                {/* Tooltip */}
+                                {show && (
+                                    <div className="custom-tooltip">
+                                        <span>View our Pricing & Offerings</span>
+                                        <button
+                                            className="tooltip-close"
+                                            onClick={() => setShow(false)}
+                                        >
+                                            ×
+                                        </button>
+                                    </div>
+                                )}
+            
+                                <Link to="/pricing">
+                                    <img
+                                        src={offering}
+                                        alt="Select our Offerings"
+                                        className="offer-icon"
+                                    />
+                                </Link>
+            
+                            </div>
                         </div>
         </main>
     )
