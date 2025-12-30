@@ -125,7 +125,7 @@
 }
 .offer-data .btn-primary, .offer-data .btn-primary:hover{
     background: none;
-    padding: 0;
+    padding: 0 !important;
     border: none;
 }
 
@@ -155,6 +155,10 @@
     }
     .offer-img img{
         width: 55px;
+    }
+    .custom-tooltip{
+        right: 110%;
+        max-width: 200px;
     }
 }
 @media all and (max-width: 480px){
