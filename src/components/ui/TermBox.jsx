@@ -10,9 +10,9 @@ const TermBox = ({ year, subject, termNumber, title, topics, bgColor }) => {
             
             <div className="term-content-wrapper">
                 <Row className="term-header gx-0">
-                    <Col xs={1} className="th">S.No</Col>
-                    <Col xs={4} className="th">Topic</Col>
-                    <Col xs={7} className="th">What We Cover</Col>
+                    <Col lg={1} xs={2} className="th">S.No</Col>
+                    <Col lg={4} xs={3} className="th">Topic</Col>
+                    <Col lg={7} xs={7} className="th">What We Cover</Col>
                 </Row>
 
                 {topics.map((item, index) => (
