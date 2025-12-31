@@ -178,6 +178,7 @@ const Header = () => {
                 <Button
                   variant="primary-orange"
                   className="d-inline-flex align-items-center"
+                  style={{minWidth: '200px'}}
                 >
                   Free Assessment Test
                 </Button>

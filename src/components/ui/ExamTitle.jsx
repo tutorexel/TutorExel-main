@@ -1,7 +1,7 @@
 // src/components/ui/PageHero.jsx
 
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 import './ui.css'; // 1. Ensure the component's stylesheet is imported
@@ -19,7 +19,8 @@ const ExamTitle = ({
   description,
   showButton = false,
   buttonText = 'Learn More',
-  customClass
+  customClass,
+  openPopup
 }) => {
   // Create mobile-friendly title by breaking at natural points
   const createMobileFriendlyTitle = (title) => {
@@ -51,9 +52,9 @@ const ExamTitle = ({
             </p>
           )}
           {showButton && (
-            <Link to="/contact" variant="primary-orange" size="sm" className="mt-4 d-inline-flex align-items-center main-btn1 mx-lg-0 mx-auto">
+            <Button onClick={openPopup} variant="primary-orange" size="sm" className="mt-4 d-inline-flex align-items-center main-btn1 mx-lg-0 mx-auto">
               {buttonText} <FaArrowRight className="ms-2" />
-            </Link>
+            </Button>
           )}
         </div>
       </Container>

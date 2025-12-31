@@ -107,10 +107,10 @@ const Home = () => {
             openPopup={openPopup}
             />
 
-            <div className="offer-img">
+            {/* <div className="offer-img">
                 <div className="offer-data tooltip-wrapper">
                     
-                    {/* Tooltip */}
+                    
                     {show && (
                         <div className="custom-tooltip">
                             <span>Book Your Free Trial Class</span>
@@ -131,6 +131,20 @@ const Home = () => {
                         />
                     </Button>
 
+                </div>
+            </div> */}
+
+            <div className="fixed-div">
+                <div className="inner-fixed-div">
+                    <h6>Hurry up. Book your demo class</h6>
+                    <div className="inner-btn">
+                        <Button onClick={openPopup}
+                        className="d-inline-flex align-items-center btn btn-primary-orange"
+                        
+                        >
+                            Book Here
+                        </Button>
+                    </div>
                 </div>
             </div>
 

@@ -669,6 +669,20 @@
   }
 }
 
+/* === HEADER SPECIFIC FIXES FOR 992px-1120px BREAKPOINT === */
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .nav-link-base{
+    padding: 0 1rem !important;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1399px) {
+  .subjects-mega-menu{
+    left: 190%;
+  }
+}
+
 /* Ensure smooth hover transitions */
 @media (min-width: 992px) and (max-width: 1120px) {
   
@@ -724,4 +738,64 @@
     opacity: 1;
     transform: scale(1);
   }
+}
+
+/* Demo class Popup */
+@media (min-width: 0px) {
+    .inner-fixed-div {
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .inner-fixed-div h6 {
+        text-align: left;
+        /* display: none; */
+    }
+}
+.fixed-div{
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+}
+.inner-fixed-div {
+  border-radius: 1.5rem;
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 1400;
+    background-color: rgb(253, 238, 232);
+    box-shadow: rgb(153, 153, 153) 2px 2px 7px 0px;
+}
+.inner-fixed-div h6 {
+    margin: 0px;
+    color: rgb(83, 76, 68);
+    font-weight: 700 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.75rem !important;
+    font-family: "Quicksand Variable", Roboto, Arial, sans-serif !important;
+}
+
+@media (min-width: 900px) {
+    .inner-fixed-div {
+        max-width: 31rem;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   .inner-fixed-div h6{
+        text-align: center;
+        display: block;
+    }
+}
+@media (min-width: 600px) {
+    .inner-fixed-div h6 {
+        font-size: 1rem !important;
+        line-height: 1.5rem !important;
+    }
 }
