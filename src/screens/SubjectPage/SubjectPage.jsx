@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col, Tooltip, OverlayTrigger, Overlay } from "react-bootstrap";
+import { FaArrowRight} from 'react-icons/fa';
 
 import { subjectsData } from "../../data/subjectsData";
 import TermBox from "../../components/ui/TermBox";
 import PageHero from "../../components/ui/PageHero";
+import CTAHome from "../../components/ui/CTAHome";
 import offering from '../../assets/images/offerings.png';
 import './SubjectPage.css';
 
@@ -35,6 +37,13 @@ const SubjectPage = () => {
     const terms = Object.keys(subjectContent || {})
                 .filter(key => key.startsWith("term"))
                 .map(key => subjectContent[key]);
+
+    // For calendly Popup
+        
+        const [showPopup, setShowPopup] = useState(false);
+          
+        const openPopup = () => setShowPopup(true);
+        const closePopup = () => setShowPopup(false);
 
     const [show, setShow] = useState(true); // visible by default
 
@@ -121,33 +130,49 @@ const SubjectPage = () => {
                 </Container>
             </section>
 
+            <CTAHome
+            headingText="Ready to Help Your Child Succeed?"
+            image={""}
+            primaryButtonText="Book Your Free Trial Class"
+            primaryButtonIcon={<FaArrowRight />}
+            primaryButtonTextColor="black"
+            secondaryButtonText="Contact Us to Learn More"
+            secondaryButtonIcon={<FaArrowRight />}
+            secondaryButtonTextColor="#FFFFFF"
+            openPopup={openPopup}
+            />
+
             {/* Offerings ICON with Tooltip */}
-            <div className="offer-img">
-                <div className="offer-data tooltip-wrapper">
-                    
-                    {/* Tooltip */}
-                    {show && (
-                        <div className="custom-tooltip">
-                            <span>View our Pricing & Offerings</span>
-                            <button
-                                className="tooltip-close"
-                                onClick={() => setShow(false)}
-                            >
-                                ×
-                            </button>
+            <div className="fixed-div">
+                            <div className="inner-fixed-div">
+                                <h6>View our Pricing & Offerings</h6>
+                                <div className="inner-btn">
+                                    <Link to="/pricing"
+                                    className="d-inline-flex align-items-center btn btn-primary-orange"
+                                    
+                                    >
+                                        View Here
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
-                    )}
 
-                    <Link to="/pricing">
-                        <img
-                            src={offering}
-                            alt="Select our Offerings"
-                            className="offer-icon"
-                        />
-                    </Link>
-
+            {/* Popup Overlay */}
+            {showPopup && (
+                <div className="popup-overlay" onClick={closePopup}>
+                    <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+                        <iframe
+                        src="https://calendly.com/tutorexel-info/democlass"
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                        }}
+                        title="Book a meeting"
+                        ></iframe>
+                    </div>
                 </div>
-            </div>
+            )}
         </main>
     )
 
