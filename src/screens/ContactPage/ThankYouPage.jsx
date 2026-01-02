@@ -20,7 +20,7 @@ const ThankYouPage = () => {
   }, []);
   const message = isTeacherForm
     ? "Thank you! Our team has received your application and will connect with you via WhatsApp and email within 3-5 business days if you are shortlisted."
-    : `Your details have been received. Please complete payment of $${price} to confirm enrolment and activate the programme.`;
+    : (<>Your details have been received. Please complete payment of <span className="primary-orange" style={{fontWeight: '700', fontSize: '30px'}}>${price}</span> to confirm enrolment and activate the programme.</>);
   return (
     <main>
       <PageHero title="Enroll Now" />
