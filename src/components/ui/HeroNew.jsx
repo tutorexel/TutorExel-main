@@ -87,6 +87,9 @@ const HeroNew = ({openPopup}) => {
               </div> */}
             </div>
             ))}
+            {/* <div className="batch-glow mt-3">
+  🚀 Batch Starting 12th Jan | Limited Seats
+</div> */}
           </div>
           <div className="pricebtn">
               <div className="text-center mt-3">

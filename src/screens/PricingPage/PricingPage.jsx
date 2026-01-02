@@ -164,15 +164,15 @@ const Pricing = () => {
                             <Col className="d-flex" md={6}>
                                 <PriceCoaching 
                                 title="1:1 Coaching"
-                                price1="84"
-                                price2="149"
+                                price1="99"
+                                price2="169"
                                 />
                             </Col>
                             <Col className="d-flex" md={6}>
                                 <PriceCoaching 
                                 title={<>Group<br/> Coaching (3:1)</>}
-                                price1="39"
-                                price2="69"
+                                price1="49"
+                                price2="79"
                                 />
                             </Col>
                             </>

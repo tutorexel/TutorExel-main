@@ -233,8 +233,8 @@ const StudentForm = () => {
             <Col lg={10} xl={8}>
               <Form onSubmit={handleSubmit}>
                     <div className="form-container">
-                        <h2 className="section-heading">Book a Free Trial</h2>
-                        <p className="subheading">Let's Get Started</p>
+                        <h2 className="section-heading">Let's Get Started</h2>
+                        <p className="subheading"></p>
                         {/* --- Text Inputs --- */}
                         <Row>
                             <Col md={6}><Form.Group className="mb-4"><Form.Control type="text" name="parentName" placeholder="Parent's Name *" required className="form-control-custom" onChange={handleChange} /></Form.Group></Col>

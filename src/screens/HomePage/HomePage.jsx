@@ -64,8 +64,11 @@ const howItWorksSteps = [
 ];
 
 const Home = () => {
+    
+    const [showNaplanPopup, setShowNaplanPopup] = useState(false);
     useEffect(() => {
         window.scrollTo(0, 0);
+        setShowNaplanPopup(true);
     }, []);
 
     // For calendly Popup
@@ -164,6 +167,40 @@ const Home = () => {
                     </div>
                 </div>
             )}
+
+            {showNaplanPopup && (
+                <div className="nap-popup-overlay" onClick={() => setShowNaplanPopup(false)}>
+                    <div
+                        className="nap-popup-content naplan-popup"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button
+                            className="nap-popup-close"
+                            onClick={() => setShowNaplanPopup(false)}
+                        >
+                            ×
+                        </button>
+
+                        <h3><strong>NAPLAN Bootcamp</strong></h3>
+                        <p>
+                            <strong>Starting on 12th Jan</strong>
+                        </p>
+
+                        <p>
+                            Click below to know more and enroll now!
+                        </p>
+
+                        <Button
+                            as={Link}
+                            to="/pricing"   // change to your actual page
+                            className="btn btn-primary-orange"
+                        >
+                            Enroll Now
+                        </Button>
+                    </div>
+                </div>
+            )}
+
       
         </main>
     );
