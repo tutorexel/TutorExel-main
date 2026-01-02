@@ -20,7 +20,7 @@ const ThankYouPage = () => {
   }, []);
   const message = isTeacherForm
     ? "Thank you! Our team has received your application and will connect with you via WhatsApp and email within 3-5 business days if you are shortlisted."
-    : "Your details have been received. Please complete payment to confirm enrolment and activate the programme.";
+    : `Your details have been received. Please complete payment of $${price} to confirm enrolment and activate the programme.`;
   return (
     <main>
       <PageHero title="Enroll Now" />
@@ -34,11 +34,6 @@ const ThankYouPage = () => {
             />
             <h2 className="title mb-5" style={{color: '#FFF'}}>Enrolment Submitted</h2>
             <p className="thank-you-message mb-3">{message}</p>
-            {price > 0 && (
-              <div className="m-3 p-3 border rounded">
-                <strong>Total Amount:</strong> ${price}
-              </div>
-            )}
             
               <Link 
               to="https://rzp.io/rzp/tutorexelpayment"
