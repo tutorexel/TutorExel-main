@@ -189,9 +189,9 @@ const GuitarPage = () => {
                     })}
                 </script>
             </Helmet>
-            <div className='hero_image_music text-center'>
+            {/* <div className='hero_image_music text-center'>
                 <img src={musicHero} alt="" />
-            </div>
+            </div> */}
             <ExamTitle 
                 title="Learn Guitar Online with Tutorexel"
                 showButton = {true}
