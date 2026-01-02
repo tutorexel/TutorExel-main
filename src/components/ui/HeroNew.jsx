@@ -37,7 +37,17 @@ const cards = [
       lmlink: "/pricing"
     },
     {
-      title: (<>NAPLAN Bootcamp</>),
+      title: (<>NAPLAN Bootcamp<div className="sun-wrapper">
+  <div className="sun-rays"></div>
+
+  <div className="sun-core">
+    <span className="sun-text">
+      Batch Starting<br />
+      <strong>12th Jan</strong><br />
+      Limited Seats
+    </span>
+  </div>
+</div></>),
       subtitle: "Year 3, 5, 7, 9",
       color: "#0A2740",
       // btn1text: "Book a Demo Class",
@@ -87,9 +97,20 @@ const HeroNew = ({openPopup}) => {
               </div> */}
             </div>
             ))}
-            {/* <div className="batch-glow mt-3">
-  🚀 Batch Starting 12th Jan | Limited Seats
+            {/* <div className="sun-wrapper">
+  <div className="sun-rays"></div>
+
+  <div className="sun-core">
+    <span className="sun-text">
+      Batch Starting<br />
+      <strong>12th Jan</strong><br />
+      Limited Seats
+    </span>
+  </div>
 </div> */}
+
+
+
           </div>
           <div className="pricebtn">
               <div className="text-center mt-3">

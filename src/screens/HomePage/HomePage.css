@@ -93,20 +93,49 @@
 }
 
 /* Glow badge in third cloud */
-.batch-glow {
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: 20px;
-  background: #fff3cd;
-  color: #856404;
-  font-weight: 600;
-  box-shadow: 0 0 10px rgba(255,193,7,0.6);
-  animation: glow 1.8s infinite alternate;
+.sun-wrapper {
   position: absolute;
-  bottom: 50%;
-  right: 0;
+  width: 100px;
+  height: 100px;
+  margin: 1.2rem auto;
+  left: 75%;
+    bottom: 75%;
 }
 
+/* 🌞 Rotating Rays */
+.sun-rays {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  height: 160px;
+  background: repeating-conic-gradient(
+    from 0deg,
+    #ffc107 0deg 10deg,
+    transparent 10deg 20deg
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateRays 28s linear infinite;
+}
+
+/* ☀️ Sun core (text stays still) */
+.sun-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110px;
+  height: 110px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff3cd 35%, #ffc107 75%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 0 18px rgba(255, 193, 7, 0.9); */
+  animation: glow 1.8s infinite alternate;
+}
 @keyframes glow {
   from {
     box-shadow: 0 0 6px rgba(255,193,7,0.5);
@@ -115,5 +144,30 @@
     box-shadow: 0 0 14px rgba(255,193,7,0.9);
   }
 }
+
+/* Text */
+.sun-text {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #212529;
+  line-height: 1.2;
+}
+
+.sun-text strong {
+  font-size: 0.95rem;
+  color: #dc3545;
+}
+
+/* Animation */
+@keyframes rotateRays {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 
 
