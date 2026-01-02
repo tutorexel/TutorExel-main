@@ -22,11 +22,14 @@ const activityoptions = ['Piano', 'Guitar'];
 
 const pricingRules = {
   'Live online': {
-    'one-to-one': { 1: 84, 2: 149 },
-    'group': { 1: 39, 2: 69 },
+    'one-to-one': { 1: 99, 2: 169 },
+    'group': { 1: 49, 2: 79 },
   },
   'Naplan Bootcamp': {
-    'live-coaching': { 1: 199, 2: 349 },
+    'live-coaching': { 
+      'one-to-one': {1: 199, 2: 349},
+      'group' : {1: 119, 2: 199}
+    },
     'self-learning': { 1: 29, 2: 39 },
   },
   'Co-Curricular': {
@@ -48,7 +51,8 @@ const StudentForm = () => {
     whatsapp: '',
     subjects: {},
     yearGroup: '',
-    classType: '',
+    classType: '',        // Live online OR Naplan type
+    preferredType: '',    // one-to-one | group (Naplan live coaching)
   });
 
   const [offering, setOffering] = useState('');
@@ -77,6 +81,27 @@ const StudentForm = () => {
       return;
     }
 
+    /* ---------------- NAPLAN BOOTCAMP ---------------- */
+    if (offering === 'Naplan Bootcamp') {
+      if (formData.classType === 'self-learning') {
+        setPrice(
+          pricingRules['Naplan Bootcamp']['self-learning'][selectedCount] || 0
+        );
+        return;
+      }
+
+      if (!formData.preferredType) {
+        setPrice(0);
+        return;
+      }
+
+      setPrice(
+        pricingRules['Naplan Bootcamp']['live-coaching']?.[formData.preferredType]?.[selectedCount] || 0
+      );
+      return;
+    }
+
+    /* ---------------- LIVE ONLINE ---------------- */
     if (!formData.classType || selectedCount > 2) {
       setPrice(0);
       return;
@@ -100,6 +125,7 @@ const StudentForm = () => {
         ...prev,
         subjects: {},
         classType: '',
+        preferredType: '',
       }));
       setSubjectsError('');
       setPrice(0);
@@ -169,6 +195,7 @@ const StudentForm = () => {
           .join(', '),
         yearGroup: formData.yearGroup,
         classType: formData.classType,
+        preferredType: formData.preferredType,
         offering,
         price,
       };
@@ -288,8 +315,8 @@ const StudentForm = () => {
                           <Form.Group className="mb-4">
                               <Form.Label className="form-label">Preferred Class Type</Form.Label>
                               <div className="d-flex flex-wrap gap-4">
-                              <Form.Check type="radio" name="classType" label="One-to-One Session" value="one-to-one" id="radio-one-to-one" className="custom-form-check" onChange={handleChange} required />
-                              <Form.Check type="radio" name="classType" label="Group Class " value="group" id="radio-group" className="custom-form-check" onChange={handleChange} />
+                                <Form.Check type="radio" name="classType" label="One-to-One Session" value="one-to-one" id="radio-one-to-one" className="custom-form-check" onChange={handleChange} required />
+                                <Form.Check type="radio" name="classType" label="Group Class " value="group" id="radio-group" className="custom-form-check" onChange={handleChange} />
                               </div>
                           </Form.Group>
 
@@ -349,12 +376,22 @@ const StudentForm = () => {
 
                           {/* --- Class Type Radios --- */}
                           <Form.Group className="mb-4">
-                              <Form.Label className="form-label">Preferred Class Type</Form.Label>
+                              <Form.Label className="form-label">Naplan Package Type</Form.Label>
                               <div className="d-flex flex-wrap gap-4">
                               <Form.Check type="radio" name="classType" label="Live Coaching and Material" value="live-coaching" id="radio-live-coaching" className="custom-form-check" onChange={handleChange} required />
                               <Form.Check type="radio" name="classType" label="Self Learning Material" value="self-learning" id="radio-self-learning" className="custom-form-check" onChange={handleChange} />
                               </div>
                           </Form.Group>
+
+                          {formData.classType === 'live-coaching' && (
+                            <Form.Group className="mb-4">
+                                <Form.Label className="form-label">Preferred Class Type</Form.Label>
+                                <div className="d-flex flex-wrap gap-4">
+                                  <Form.Check type="radio" name="preferredType" label="One-to-One Session" value="one-to-one" id="radioNap-one-to-one" className="custom-form-check" onChange={handleChange} required />
+                                  <Form.Check type="radio" name="preferredType" label="Group Class (3:1)" value="group" id="radioNap-group" className="custom-form-check" onChange={handleChange} />
+                                </div>
+                            </Form.Group>
+                          )}
 
                           {/* --- Subjects Checkboxes --- */}
                           <Form.Group className="mb-4">
@@ -375,9 +412,11 @@ const StudentForm = () => {
       onChange={handleChange}
       checked={isChecked}
       disabled={
-        !formData.classType || 
-        (!isChecked && selectedCount >= 2)
-      }
+                (!formData.classType) ||
+                (formData.classType === 'live-coaching' &&
+                  (!formData.preferredType || (!isChecked && selectedCount >= 2))) ||
+                (formData.classType === 'self-learning' && !isChecked && selectedCount >= 2)
+              }
     />
   );
 })}

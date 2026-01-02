@@ -79,7 +79,7 @@ const Pricing = () => {
 
     return(
         <main>
-            <PageHero title="Pricing" />
+            <PageHero title="Offerings" />
             <section className="pt-5 bg-white">
                 <Container>
                     <Row className="">
@@ -129,14 +129,14 @@ const Pricing = () => {
                                             <div className="title-wrapper">
                                                 <h3 className="card-title mb-3">NAPLAN Bootcamp</h3>
                                             </div>
-                            <h5 style={{color: `#FFF`}}><u>NAPLAN Bootcamp (Live Classes)</u></h5>
+                            <h5 className="mb-3" style={{color: `#FFF`}}><u>NAPLAN Bootcamp (Live Classes)</u></h5>
                                             <ul className="feature-list flex-grow-1">
                                                 {fourthCard.map((item,index)=>(
                                                     <li key={index}><img src={icon4} className="feature-icon" alt="icon" />{item.title}</li>
                                                 ))}
                                                
                                             </ul>
-                            <h5 style={{color: `#FFF`}}><u>NAPLAN Bootcamp (Self Study)</u></h5>
+                            <h5 className="mb-3 mt-4" style={{color: `#FFF`}}><u>NAPLAN Bootcamp (Self Study)</u></h5>
                                             <ul className="feature-list flex-grow-1">
                                                 {fourthCard1.map((item,index)=>(
                                                     <li key={index}><img src={icon4} className="feature-icon" alt="icon" />{item.title}</li>
@@ -144,7 +144,7 @@ const Pricing = () => {
                                                
                                             </ul>
                             
-                                            <div className="mt-auto text-center">
+                                            <div className="mt-4 text-center">
                                                 <Button className="select-btn" onClick={() => setActiveLayout(4)}>Select</Button>
                                             </div>
                                 </Card.Body>
@@ -193,7 +193,7 @@ const Pricing = () => {
                         )}
 
                         {activeLayout === 4 && (
-                            <Col className="naplan-card" md={8} lg={6} sm={12}>
+                            <Col className="naplan-card" md={8} lg={8} sm={12}>
                                 <PriceNaplan />
                             </Col>
                         )}

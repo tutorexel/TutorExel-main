@@ -38,7 +38,7 @@ const cards = [
     },
     {
       title: (<>NAPLAN Bootcamp</>),
-      subtitle: "3, 5, 7, 9",
+      subtitle: "Year 3, 5, 7, 9",
       color: "#0A2740",
       // btn1text: "Book a Demo Class",
       // btn2text: "Sign Up",
@@ -92,7 +92,7 @@ const HeroNew = ({openPopup}) => {
               <div className="text-center mt-3">
                 <Link to={"/pricing"}>
                   <Button variant="secondary-blue" size="lg" className="main-btn-b d-inline-flex align-items-center">
-                        Select Our Offerings
+                        Join Now
                   </Button>
                   
                 </Link>

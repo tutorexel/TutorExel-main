@@ -44,22 +44,22 @@ const howItWorksSteps = [
     { 
         icon: iconAssess, 
         title: 'Assess', 
-        description: "Upload your child’s recent assessment scores—or take a free assessment with us to understand their current level." 
+        description: "Take a free assessment to understand your child’s current level." 
     },
     { 
         icon: iconPlan, 
-        title: 'Plan', 
-        description: "We create a customised learning plan tailored to your child’s needs and curriculum." 
+        title: 'Review', 
+        description: "Receive a detailed performance report with clear insights and recommendations." 
     },
     { 
         icon: iconExperience, 
         title: 'Experience', 
-        description: 'Start with a free trial class to see how engaging and effective online learning can be.' 
+        description: 'Start with a free trial class to experience how engaging, interactive, and effective our online learning is.' 
     },
     { 
         icon: iconLearnGrow, 
-        title: 'Learn & Grow', 
-        description: 'Select a plan, set your schedule, and watch your child’s skills and confidence grow.' 
+        title: 'Enroll', 
+        description: 'Enroll with a tailored learning plan designed specifically for your child—and watch them grow.' 
     }
 ];
 
