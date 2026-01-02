@@ -1,6 +1,6 @@
 // src/screens/AboutUsPage/AboutUsPage.jsx
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
@@ -44,6 +44,14 @@ const AboutUsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+
+  // For calendly Popup
+      
+      const [showPopup, setShowPopup] = useState(false);
+        
+      const openPopup = () => setShowPopup(true);
+      const closePopup = () => setShowPopup(false);
 
   return (
     <main className="about-page">
@@ -125,7 +133,25 @@ const AboutUsPage = () => {
         primaryButtonTextColor="black"
         secondaryButtonText="Contact Us to Learn More"
         secondaryButtonIcon={<FaArrowRight />}
+        openPopup={openPopup}
       />
+
+      {/* Popup Overlay */}
+            {showPopup && (
+                <div className="popup-overlay" onClick={closePopup}>
+                    <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+                        <iframe
+                        src="https://calendly.com/tutorexel-info/democlass"
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                        }}
+                        title="Book a meeting"
+                        ></iframe>
+                    </div>
+                </div>
+            )}
     </main>
   );
 };

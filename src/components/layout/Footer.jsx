@@ -5,7 +5,8 @@ import logo from '../../assets/images/logo.svg';
 import iconFacebook from '../../assets/icons/icon-facebook.svg';
 import iconInstagram from '../../assets/icons/icon-instagram.svg';
 import { MdEmail } from 'react-icons/md';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp, FaDollarSign } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 // Reuse the same Coming Soon modal design as HomePage
 const ComingSoonModal = ({ isOpen, onClose, title = "Coming Soon!" }) => {
@@ -199,7 +200,7 @@ const Footer = () => {
             </Col>
 
             {/* Subjects Column */}
-            <Col lg={3} md={4}>
+            {/* <Col lg={3} md={4}>
               <h5 className="text-white fw-bold mb-4">Subjects</h5>
               <ul className="footer-subjects-list d-grid gap-2">
                 {subjects.map((subject) => (
@@ -224,14 +225,15 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </Col>
+            </Col> */}
 
             {/* Quick Links */}
             <Col lg={2} md={4}>
               <h5 className="text-white fw-bold mb-4">Quick Links</h5>
               <Link to="/about-us" className="text-white-50 text-decoration-none mb-2 d-block">About Us</Link>
               <Link to="/careers" className="text-white-50 text-decoration-none mb-2 d-block">Careers</Link>
-              <Link to="/contact" className="text-white-50 text-decoration-none mb-2 d-block">Contact Us</Link>
+              <Link to="/blog" className="text-white-50 text-decoration-none mb-2 d-block">Blogs</Link>
+              <Link to="/contact" className="text-white-50 text-decoration-none mb-2 d-block">Enroll Now</Link>
               <Link to="/term-condition" className="text-white-50 text-decoration-none mb-2 d-block">Terms and Conditions</Link>
               <Link to="/privacy-policy" className="text-white-50 text-decoration-none mb-2 d-block">Privacy Policy</Link>
             </Col>
@@ -271,6 +273,7 @@ const Footer = () => {
 
       {/* Coming Soon Modal (same as HomePage) */}
       <ComingSoonModal isOpen={showModal} onClose={handleCloseModal} title="Coming Soon!" />
+
     </>
   );
 };

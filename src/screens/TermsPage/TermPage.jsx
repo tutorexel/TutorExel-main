@@ -75,28 +75,45 @@ const TermPage = () => {
 
         <hr />
 
-        <h4>6. Code of Conduct</h4>
+        <h4>6. Shipping / Service Delivery Policy</h4>
+        <p>TutorExel does not ship any physical goods.</p>
+        <p>All services provided by TutorExel are digital and online in nature, including:</p>
+        <ul>
+            <li>Online live tuition classes</li>
+            <li>Virtual learning sessions</li>
+            <li>Academic support delivered through online platforms</li>
+        </ul>
+        <h5>Service Delivery Method</h5>
+        <ul>
+            <li>Access details (class schedule, links, or communication) are shared via email, WhatsApp, or other official TutorExel communication channels.</li>
+            <li>Services commence as per the agreed schedule after successful payment.</li>
+            <li>Since no physical products are involved, shipping is not applicable.</li>
+        </ul>
+
+        <hr />
+
+        <h4>7. Code of Conduct</h4>
         <p>All students and parents are expected to maintain respectful communication with tutors and staff.
         Any abusive, disruptive, or inappropriate behaviour may result in <b>immediate termination of service without refund.</b>
         </p>
 
         <hr />
 
-        <h4>7. Intellectual Property</h4>
+        <h4>8. Intellectual Property</h4>
         <p>All course content, lesson materials, slides, worksheets, recordings, reports, and designs are the <b>exclusive intellectual property</b> of TutorExel / HEXATRAIL LLP. <br />
         You may use materials only for personal learning purposes. Copying, redistribution, or resale is strictly prohibited.
         </p>
 
         <hr />
 
-        <h4>8. Performance Disclaimer</h4>
+        <h4>9. Performance Disclaimer</h4>
         <p>TutorExel strives to deliver high-quality instruction; however, learning outcomes vary based on individual student effort, attendance, and engagement. <br />
         TutorExel does <b>not guarantee specific grades, marks, or results.</b>
         </p>
 
         <hr />
 
-        <h4>9. Limitation of Liability</h4>
+        <h4>10. Limitation of Liability</h4>
         <ul>
             <li>TutorExel shall not be liable for indirect, incidental, or consequential damages arising from the use of our services.</li>
             <li>Total liability, under any claim, shall not exceed the total amount paid for the current billing period.</li>
@@ -105,7 +122,7 @@ const TermPage = () => {
 
         <hr />
 
-        <h4>10. Termination</h4>
+        <h4>11. Termination</h4>
         <ul>
             <li>TutorExel may suspend or terminate services for policy violations, non-payment, or misconduct.</li>
             <li>Any unused sessions upon termination are automatically forfeited.</li>
@@ -114,25 +131,25 @@ const TermPage = () => {
 
         <hr />
 
-        <h4>11. Privacy & Data Protection</h4>
+        <h4>12. Privacy & Data Protection</h4>
         <p>Your data is handled according to our Privacy Policy, available at <a href="https://www.tutorexel.com">www.tutorexel.com</a>. <br />
         By using our services, you consent to the collection and use of your information as outlined there.
         </p>
 
         <hr />
 
-        <h4>12. Governing Law & Jurisdiction</h4>
+        <h4>13. Governing Law & Jurisdiction</h4>
         <p>These Terms shall be governed by and construed under the laws of <b>India</b>.</p>
         <p>Any dispute arising under these Terms shall fall within the <b>exclusive jurisdiction of courts at Chandigarh, Chandigarh</b>.</p>
         
         <hr />
 
-        <h4>13. Changes to Terms</h4>
+        <h4>14. Changes to Terms</h4>
         <p>TutorExel may revise these Terms at any time. The updated version will be posted on the website with a new effective date. Continued use of services indicates acceptance of the changes.</p>
         
         <hr />
 
-        <h4>14. Contact Information</h4>
+        <h4>15. Contact Information</h4>
         <p>For any questions, clarifications, or complaints, please contact:</p>
         <p>📧 <a href="mailto:info@tutorexel.com">info@tutorexel.com</a></p>
         <p>🌐 <a href="https://www.tutorexel.com">www.tutorexel.com</a></p>

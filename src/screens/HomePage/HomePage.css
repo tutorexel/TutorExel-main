@@ -1,4 +1,25 @@
-/* src/screens/HomePage/HomePage.css */
+
+
+.trust-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* ensures it wraps nicely on smaller screens */
+  padding: 20px;
+  gap: 10px; /* space between spans */
+}
+
+.trust-strip span {
+  flex: 1; /* each span takes equal width */
+  text-align: center;
+  background-color: white;
+  padding: 15px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 120px; /* optional: prevent shrinking too small */
+}
 
 
 @media (max-width: 768px) {
@@ -19,3 +40,134 @@
   font-size: 24px !important;
   font-weight: 700 !important;
 }
+
+/* Popup load on homepage at  first */
+.nap-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.nap-popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.nap-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.naplan-popup h3 {
+    margin-bottom: 10px;
+    color: #ff6a00;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Glow badge in third cloud */
+.sun-wrapper {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 1.2rem auto;
+  left: 70%;
+    top: 18%;
+}
+
+/* 🌞 Rotating Rays */
+.sun-rays {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  height: 160px;
+  background: repeating-conic-gradient(
+    from 0deg,
+    #ffc107 0deg 10deg,
+    transparent 10deg 20deg
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateRays 28s linear infinite;
+}
+
+/* ☀️ Sun core (text stays still) */
+.sun-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110px;
+  height: 110px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff3cd 35%, #ffc107 75%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 0 18px rgba(255, 193, 7, 0.9); */
+  animation: glow 1.8s infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 6px rgba(255,193,7,0.5);
+  }
+  to {
+    box-shadow: 0 0 14px rgba(255,193,7,0.9);
+  }
+}
+
+/* Text */
+.sun-text {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #212529;
+  line-height: 1.2;
+}
+
+.sun-text strong {
+  font-size: 0.95rem;
+  color: #dc3545;
+}
+
+/* Animation */
+@keyframes rotateRays {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+

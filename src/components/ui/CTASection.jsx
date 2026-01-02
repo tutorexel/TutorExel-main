@@ -4,7 +4,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import defaultImage from '../../assets/images/ct-family.png';
+import defaultImage from '../../assets/images/placeholder.jpg';
 
 /**
  * A reusable Call-to-Action section with an overflowing image.
@@ -24,6 +24,7 @@ const CTASection = ({
   primaryButtonTextColor,
   secondaryButtonTextColor,
   customStyles = {},
+  openPopup,
 }) => {
   return (
     <section className="bg-white" style={{ paddingTop: '10px', paddingBottom: '10px', ...customStyles }}>
@@ -36,12 +37,12 @@ const CTASection = ({
                   {headingText}
                 </h2>
                 <div className="d-flex flex-column flex-sm-row gap-3 mt-4 text-center justify-content-center">
-                  <Link to="/contact" 
+                  <Button onClick={openPopup} 
                     className="main-btn" 
                     style={{ color: primaryButtonTextColor }}
                   >
                     {primaryButtonText} {primaryButtonIcon && <span className="ms-2">{primaryButtonIcon}</span>}
-                  </Link>
+                  </Button>
                   
                   <Link to="/contact" className="main-btn-b"
                     variant="secondary-blue"

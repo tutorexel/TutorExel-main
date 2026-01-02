@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import avatarPriya from '../../assets/images/avatar-priya.png';
 import avatarRohit from '../../assets/images/avatar-rohit.png';
 import stars5 from '../../assets/icons/stars-5.svg';
+import blockqote from '../../assets/icons/blockqote.png';
 import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const testimonialsData = [
@@ -73,51 +74,13 @@ const Testimonials = () => {
 
   return (
     <>
-      <style jsx>{`
-        .testimonials-section {
-          background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-          position: relative;
-          overflow: hidden;
-        }
-
-        .testimonials-section::before {
-          content: '';
-          position: absolute;
-          top: -50%;
-          left: -50%;
-          width: 200%;
-          height: 200%;
-          background: radial-gradient(circle, rgba(255, 107, 0, 0.03) 0%, transparent 70%);
-          animation: rotate 20s linear infinite;
-        }
-
-        @keyframes rotate {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-
-        .section-title {
-          font-size: 2.5rem;
-          font-weight: 500;
-          color: #2c3e50;
-          margin-bottom: 1rem;
-          position: relative;
-        }
-
-        .section-subtitle {
-          font-size: 1.2rem;
-          color: #6c757d;
-          margin-bottom: 4rem;
-          font-weight: 400;
-        }
-
+      <style>{`
         .testimonial-container {
           position: relative;
           max-width: 900px;
           margin: 0 auto;
           padding: 0 60px;
         }
-
         .testimonial-slider {
           position: relative;
           overflow: hidden;
@@ -134,96 +97,74 @@ const Testimonials = () => {
           min-width: 100%;
           padding: 0 20px;
         }
-
-        .testimonial-card {
-          background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
-          border-radius: 24px;
-          padding: 3rem;
-          text-align: center;
+        .testimonial-wrapper {
           position: relative;
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-          border: 1px solid rgba(255, 107, 0, 0.1);
-          backdrop-filter: blur(10px);
-          transition: all 0.3s ease;
+          padding-bottom: 70px; /* space for profile */
         }
 
-        .testimonial-card::before {
-          content: '';
+        .testimonial-cardd {
+          background: #23a7d4;
+          color: white;
+          padding: 35px;
+          border-radius: 22px;
+          position: relative;
+        }
+
+        .stars {
+          font-size: 20px;
+          letter-spacing: 3px;
+          color: #FFBB57;
+        }
+
+        .message {
+          margin-top: 15px;
+          font-size: 1.2rem;
+          line-height: 1.7;
+          margin-bottom: 10px;
+        }
+
+        .quotes {
           position: absolute;
-          top: -2px;
-          left: -2px;
-          right: -2px;
-          bottom: -2px;
-          background: linear-gradient(135deg, rgba(255, 107, 0, 0.3), transparent, rgba(255, 107, 0, 0.1));
-          border-radius: 26px;
-          z-index: -1;
-          opacity: 0;
-          transition: opacity 0.3s ease;
+          right: 20px;
+          top: 0;
+          font-size: 42px;
+          font-weight: bold;
+          /* opacity: 0.4; */
+          width: 30px;
         }
 
-        .testimonial-card:hover::before {
-          opacity: 1;
+        /* ▼ Speech bubble pointer */
+        .speech-arrow {
+          width: 0;
+          height: 0;
+          border-left: 18px solid transparent;
+          border-right: 36px solid transparent;
+          border-top: 55px solid #23a7d4;
+          margin: -2px auto 0; /* center under bubble */
+          transform: skewX(55deg) translateX(-125px);
         }
 
-        .quote-icon {
-          color: var(--primary-orange, #ff6b00);
-          margin-bottom: 1.5rem;
-          opacity: 0.7;
-        }
-
-        .testimonial-text {
-          font-size: 1.3rem;
-          line-height: 1.8;
-          color: #2c3e50;
-          margin-bottom: 2rem;
-          font-weight: 400;
-          font-style: italic;
-          position: relative;
-        }
-
-        .stars-rating {
-          width: 140px;
-          margin: 0 auto 2rem auto;
-          filter: drop-shadow(0 2px 4px rgba(255, 107, 0, 0.2));
-        }
-
-        .reviewer-info {
+        /* Profile section */
+        .profile {
           display: flex;
           align-items: center;
+          gap: 10px;
           justify-content: center;
-          gap: 1rem;
         }
 
-        .reviewer-avatar {
-          width: 70px;
-          height: 70px;
-          border-radius: 50%;
-          border: 4px solid transparent;
-          background: linear-gradient(135deg, var(--primary-orange, #ff6b00), #ff8533);
-          padding: 3px;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .reviewer-avatar img {
-          width: 100%;
-          height: 100%;
+        .profile-img {
+          width: 65px;
+          height: 65px;
           border-radius: 50%;
           object-fit: cover;
-          border: 3px solid white;
+          border: 1px dashed #070709;
+          padding: 4px;
         }
 
-        .reviewer-details h4 {
-          font-size: 1.2rem;
-          font-weight: 700;
-          color: #2c3e50;
-          margin: 0;
-        }
-
-        .reviewer-role {
-          font-size: 0.9rem;
-          color: var(--primary-orange, #ff6b00);
+        .profile-name {
           font-weight: 600;
+          font-size: 1.1rem;
+          color: #000;
         }
 
         .navigation-buttons {
@@ -296,23 +237,24 @@ const Testimonials = () => {
           box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.3);
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
-          .section-title {
-            font-size: 2.2rem;
+          .testimonial-cardd {
+            padding: 25px;
           }
-          
-          .testimonial-container {
-            padding: 0 20px;
+
+          .message {
+            font-size: 1rem;
           }
-          
-          .testimonial-card {
-            padding: 2rem;
+
+          .speech-arrow {
+            border-left-width: 30px;
+            border-right-width: 30px;
+            border-top-width: 40px;
+            transform: skewX(60deg) translateX(-65px);
+            margin-left: 111px;
           }
-          
-          .testimonial-text {
-            font-size: 1.1rem;
-          }
-          
+
           .navigation-buttons {
             width: 40px;
             height: 40px;
@@ -326,50 +268,44 @@ const Testimonials = () => {
             right: -10px;
           }
         }
+
       `}</style>
 
       <section className="testimonials-section py-5">
         <Container>
           <div className="text-center mb-5">
             <h2 className="section-heading">What parents and students are saying</h2>
-            <p className="section-subtitle">Real feedback from our learning community</p>
+            {/* <p className="section-subtitle">Real feedback from our learning community</p> */}
           </div>
           
           <div className="testimonial-container">
             <div className="testimonial-slider">
               <div className="testimonial-track">
+              {/* <div className="row g-5"> */}
                 {testimonialsData.map((testimonial, index) => (
-                  <div key={testimonial.id} className="testimonial-slide">
-                    <div className="testimonial-card">
-                      <FaQuoteLeft size={30} className="quote-icon" />
-                      
-                      <img 
-                        src={stars5} 
-                        alt="5-star rating" 
-                        className="stars-rating"
-                      />
-                      
-                      <p className="testimonial-text">
-                        "{testimonial.text}"
-                      </p>
-                      
-                      <div className="reviewer-info">
-                        <div className="reviewer-avatar">
-                          <img 
-                            src={testimonial.avatar} 
-                            alt={testimonial.name}
-                          />
-                        </div>
-                        <div className="reviewer-details">
-                          <h4>{testimonial.name}</h4>
-                          <p className="reviewer-role">{testimonial.role}</p>
-                        </div>
+                  <div className="col-lg-12 px-3 testimonial-slide" xs={12} sm={12} key={testimonial.id}>
+                    <div className="testimonial-wrapper">
+                      <div className="testimonial-cardd">
+                        <div className="stars"><img src={stars5} alt="Stars" className="profile-imgg" /></div>
+                        <p className="message">
+                          {testimonial.text}
+                        </p>
+
+                        <div className="quotes"><img src={blockqote} alt="Stars" className="profile-imgg" /></div>
+                      </div>
+
+                      <div className="speech-arrow"></div>
+
+                      <div className="profile">
+                        <img src={testimonial.avatar} alt="Person" className="profile-img" />
+                        <span className="profile-name">{testimonial.name}</span>
                       </div>
                     </div>
                   </div>
                 ))}
-              </div>
-            </div>
+              {/* </div> */}
+                </div>
+                </div>
             
             <button className="navigation-buttons nav-prev" onClick={prevSlide}>
               <FaChevronLeft />

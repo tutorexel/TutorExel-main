@@ -6,7 +6,7 @@ export async function submitToEndpoint({ endpoint, formData }) {
     throw new Error('Form endpoint is not configured. Set VITE_*_FORM_ENDPOINT in .env');
   }
   
-  console.log('Submitting to endpoint:', endpoint);
+  // console.log('Submitting to endpoint:', endpoint);
   console.log('FormData entries:');
   for (let [key, value] of formData.entries()) {
     if (value instanceof File) {

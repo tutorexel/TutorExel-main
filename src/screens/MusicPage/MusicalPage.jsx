@@ -25,6 +25,7 @@ import maprch1 from '../../assets/images/nap_aprch1.png';
 import maprch2 from '../../assets/images/nap_aprch2.png';
 import maprch3 from '../../assets/images/music_check.png';
 import maprch4 from '../../assets/images/music_price.png';
+import offering from '../../assets/images/offerings.png';
 
 // Import reusable components
 import ExamTitle from '../../components/ui/ExamTitle';
@@ -144,6 +145,16 @@ const MusicPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
+
+   
+    // For calendly Popup
+          
+          const [showPopup, setShowPopup] = useState(false);
+            
+          const openPopup = () => setShowPopup(true);
+          const closePopup = () => setShowPopup(false);
+      
+          const [show, setShow] = useState(true); // visible by default
     
     return(
         <main className='music-page'>
@@ -184,6 +195,7 @@ const MusicPage = () => {
                 title="Learn Piano Online with Tutorexel"
                 showButton = {true}
                 buttonText = "Book Your Free Trial Class"
+                openPopup={openPopup}
             />
             <FeatureSection
                 imagePosition="left"
@@ -257,8 +269,68 @@ const MusicPage = () => {
                     secondaryButtonText="Contact Us to Learn More"
                     secondaryButtonIcon={<FaArrowRight />}
                     secondaryButtonTextColor="#FFFFFF"
+                    openPopup={openPopup}
                 />
             </div>
+
+            {/* Offerings ICON with Tooltip */}
+                        {/* <div className="offer-img">
+                            <div className="offer-data tooltip-wrapper">
+                                
+                                
+                                {show && (
+                                    <div className="custom-tooltip">
+                                        <span>View our Pricing & Offerings</span>
+                                        <button
+                                            className="tooltip-close"
+                                            onClick={() => setShow(false)}
+                                        >
+                                            ×
+                                        </button>
+                                    </div>
+                                )}
+            
+                                <Link to="/pricing">
+                                    <img
+                                        src={offering}
+                                        alt="Select our Offerings"
+                                        className="offer-icon"
+                                    />
+                                </Link>
+            
+                            </div>
+                        </div> */}
+
+            <div className="fixed-div">
+                <div className="inner-fixed-div">
+                    <h6>View our Offerings</h6>
+                    <div className="inner-btn">
+                        <Link to="/pricing"
+                        className="d-inline-flex align-items-center btn btn-primary-orange"
+                        
+                        >
+                            View Here
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
+            {/* Popup Overlay */}
+            {showPopup && (
+                <div className="popup-overlay" onClick={closePopup}>
+                    <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+                        <iframe
+                        src="https://calendly.com/tutorexel-info/democlass"
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                        }}
+                        title="Book a meeting"
+                        ></iframe>
+                    </div>
+                </div>
+            )}
         </main>
     );
 }

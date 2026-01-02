@@ -1,147 +1,208 @@
-// src/screens/PricingPage/PricingPage.jsx
 
-import React, { useEffect } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Helmet } from 'react-helmet';
+import React, { useState, useEffect, useRef } from 'react';
+import { Container, Row, Col, Image, Card, Button } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
-// Import this page's specific CSS
+import PageHero from '../../components/ui/PageHero';
+import PricingCard from '../../components/ui/PricingCard';
+import PriceCoaching from '../../components/ui/PriceCoaching';
+import PriceLearning from '../../components/ui/PriceLearning';
+import PriceCurricular from '../../components/ui/PriceCurricular';
+import PriceNaplan from '../../components/ui/PriceNaplan';
+import icon1 from '../../assets/icons/icon-price-list1.png';
+import icon2 from '../../assets/icons/icon-price-list2.png';
+import icon3 from '../../assets/icons/icon-price-list3.png';
+import icon4 from '../../assets/icons/icon-price-list4.png';
 import './PricingPage.css';
 
-// Import all necessary assets
-import logo from '../../assets/images/logo.svg';
-import iconSchedule from '../../assets/icons/icon-schedule.svg';
-import iconBilling from '../../assets/icons/icon-billing.svg';
-// Reuse icons from "Our Approach" for the new "How It Works"
-import approachAssessment from '../../assets/icons/icon-assess.svg';
-import approachPlans from '../../assets/icons/icon-plans.svg';
-import approachQuality from '../../assets/icons/icon-quality.svg';
-import approachFlexibility from '../../assets/icons/icon-flexibility.svg';
-import arrowSeparator from '../../assets/icons/arrow-separator.svg';
 
-// Import reusable components
-import PageHero from '../../components/ui/PageHero';
-import HowItWorksSection from '../../components/ui/HowItWorksSection';
-
-const howItWorksData = [
-    { icon: approachAssessment, title: 'Free Trial', description: <>Your first class is <strong>free</strong>.</> },
-    { icon: approachPlans, title: 'Select Your Schedule', description: <><strong>Choose</strong> the number of classes per week.</> },
-    { icon: approachQuality, title: 'Monthly Payment', description: <>Pay in <strong>advance</strong> each month.</> },
-    { icon: approachFlexibility, title: 'Cancellation', description: <>Cancel <strong>anytime</strong> with 2 weeks' notice.</> },
+const firstCard = [
+    {title: '1:1 or 3:1 classes'},
+    {title: 'Transparent learning structure'},
+    {title:'Comprehensive course content'},
+    {title:'Weekly practice worksheets'},
+    {title:'Free assessment & report'},
+    {title:'Regular term tests'},
+    {title:'Biannual mega exams'},
+    {title:'Flexible scheduling & make-ups'},
+    {title:'All-in-one learning platform'},
 ];
 
-const PricingPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+const secondCard = [
+    {title: 'Curriculum transparency & skills'},
+    {title: 'Term-wise structured catalogue'},
+    {title:'Comprehensive course content'},
+    {title:'Weekly practice worksheets'},
+    {title:'Term & mega exams'},  
+];
 
-  return (
-    <main>
-    {/* SEO for pricing-page */}
-      <Helmet>
-        <title>TutorExel Pricing | Flexible Tutoring Packages for Students</title>
-        <meta
-          name="description"
-          content="Discover TutorExel’s flexible tutoring prices in Australia. We provide clear packages for all subjects, supporting primary & secondary learning needs. Visit now!"
-        />
+const thirdCard = [
+    {title: '1:1 or 3:1 classes'},
+    {title: 'Transparent learning structure'},
+    {title:'Comprehensive course content'},
+    {title:'Weekly practice worksheets'},
+    {title:'Free assessment & report'},
+    {title:'Regular term tests'},
+    {title:'Biannual mega exams'},
+    {title:'Flexible scheduling & make-ups'},
+    {title:'All-in-one learning platform'},
+];
 
-        {/* Open Graph Tags */}
-        <meta property="og:title" content="TutorExel Pricing | Flexible Tutoring Packages for Students" />
-        <meta property="og:description" content="Discover TutorExel’s flexible tutoring prices in Australia. We provide clear packages for all subjects, supporting primary & secondary learning needs. Visit now!" />
-        <meta property="og:image" content={logo} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.tutorexel.com/pricing" />
+const fourthCard = [
+    {title: '10 NAPLAN coaching sessions'},
+    {title: 'NAPLAN practice worksheets'},
+    {title:'2 full mock exams'},
+    {title:'Structured NAPLAN material'},
+    {title:'Self-practice NAPLAN tests'},  
+];
+const fourthCard1 = [
+    {title: 'Structured NAPLAN eBooks'},
+    {title: 'Self-practice quizzes & topic-wise tests'},
+    {title:'2 full-length mock exams'},
+    {title:'Previous year NAPLAN papers'},
+    {title:'1 free monthly doubt-solving session'},  
+];
 
-        {/* Organization Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "TutorExel",
-            "url": "https://www.tutorexel.com",
-            "logo": "https://www.tutorexel.com/assets/images/logo.svg",
-            "sameAs": [
-              "https://www.facebook.com/share/1Za9NLXEqM/",  
-              "https://www.instagram.com/tutorexellearning", 
-            ]
-          })}
-        </script>
-      </Helmet>
-      <PageHero title="Pricing" />
-      <section className="py-5 bg-white">
-        <Container>
-          <Row className="">
-            <Col lg={11}>
-              <h2 className="section-heading"></h2>
-              <p className="page-intro mt-3 text-secondary">
-                Every family begins with a free trial class so you can experience Tutorexel with no commitment. After your trial, you can choose either One-to-One Tutoring or Group Classes. All sessions are 1 hour. Payments are billed monthly in advance. Cancel anytime with 2 weeks' notice.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+const Pricing = () => {
 
-      {/* Section 3: Main Pricing Block */}
-      <section className="pb-5">
-        <Container>
-          <Row className="g-4 align-items-stretch">
-            <Col lg={4} className="d-flex flex-column">
-              <h3 className="section-heading mb-4">Simple, Transparent Pricing</h3>
-              <div className="d-flex flex-column justify-content-center flex-grow-1">
-                <div className="pricing-feature-item">
-                  <img src={iconSchedule} alt="Schedule Icon" />
-                  <div className="feature-text">
-                    <h5>Schedule</h5>
-                    <p className="text-secondary mb-0">Flexible - select your preferred number of sessions per week</p>
-                  </div>
-                </div>
-                <div className="pricing-feature-item">
-                  <img src={iconBilling} alt="Billing Icon" />
-                  <div className="feature-text">
-                    <h5>Billing</h5>
-                    <p className="text-secondary mb-0">Monthly in advance</p>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col lg={8}>
-              <Row className="g-4 h-100">
-                <Col md={6}>
-                  <div className="pricing-card one-to-one">
-                    <h3>One-to-One Tutoring</h3>
-                    <p>Personalised, dedicated support.</p>
-                    <div className="price-amount">$21 AUD</div>
-                    <p className="price-per-class">per class</p>
-                    <Link to="/contact" className="btn btn-main"><FaArrowRight /> Get Started</Link>
-                  </div>
-                </Col>
-                <Col md={6}>
-                  <div className="pricing-card group-classes">
-                    <h3>Group Classes</h3>
-                    <p>Collaborative small-group learning.</p>
-                    <div className="price-amount">$12 AUD</div>
-                    <p className="price-per-class">per class</p>
-                     <Link to="/contact" className="btn "><FaArrowRight /> Get Started</Link>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <div className='pt-5'>
-        <HowItWorksSection
-          headingText="How It Works"
-          stepsData={howItWorksData}
-          arrowIcon={arrowSeparator}
-          showButton={true}
-          buttonText="Book Your Free Trial Class"
-          buttonIcon={<FaArrowRight />}
-        />
-      </div>
-    </main>
-  );
+    const [activeLayout, setActiveLayout] = useState(null);
+    const layoutRef = useRef(null);
+
+    useEffect(() => {
+        if (activeLayout && layoutRef.current) {
+            layoutRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }, [activeLayout]);
+
+    return(
+        <main>
+            <PageHero title="Offerings" />
+            <section className="pt-5 bg-white">
+                <Container>
+                    <Row className="">
+                        <Col lg={11}>
+                        <h2 className="section-heading">Our Offerings</h2>
+                        <p className="page-intro mt-3 text-secondary">
+                            Every family begins with a free trial class so you can experience Tutorexel with no commitment. After your trial, you can choose either One-to-One Tutoring or Group Classes. All sessions are 1 hour. Payments are billed monthly in advance. Cancel anytime with 2 weeks’ notice.
+                        </p>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <section className="bg-white">
+                <Container className="my-5">
+                    <Row className="g-4">
+                        <Col xs={12} sm={6} lg={4} className="d-flex">
+                            <PricingCard 
+                            bgColor= '#05AC8F'
+                            title = 'Live Online Coaching'
+                            points = {firstCard}
+                            listIcon = {icon1}
+                            onSelect={() => setActiveLayout(1)}
+                            />
+                        </Col>
+                        {/* <Col xs={12} sm={6} lg={3} className="d-flex">
+                            <PricingCard 
+                            bgColor= '#22A3D2'
+                            title = 'Self Learning'
+                            points = {secondCard}
+                            listIcon = {icon2}
+                            onSelect={() => setActiveLayout(2)}
+                            />
+                        </Col> */}
+                        <Col xs={12} sm={6} lg={4} className="d-flex">
+                            <PricingCard 
+                            bgColor= '#FF9E10'
+                            title = 'Co-Curricular'
+                            points = {thirdCard}
+                            listIcon = {icon3}
+                            onSelect={() => setActiveLayout(3)}
+                            />
+                        </Col>
+                        <Col xs={12} sm={6} lg={4} className="d-flex">
+                            
+                            <Card className="coaching-card flex-fill d-flex flex-column text-white" style={{backgroundColor: '#0F2A47'}}>
+                                <Card.Body className="d-flex flex-column">
+                                            <div className="title-wrapper">
+                                                <h3 className="card-title mb-3">NAPLAN Bootcamp</h3>
+                                            </div>
+                            <h5 className="mb-3" style={{color: `#FFF`}}><u>NAPLAN Bootcamp (Live Classes)</u></h5>
+                                            <ul className="feature-list flex-grow-1">
+                                                {fourthCard.map((item,index)=>(
+                                                    <li key={index}><img src={icon4} className="feature-icon" alt="icon" />{item.title}</li>
+                                                ))}
+                                               
+                                            </ul>
+                            <h5 className="mb-3 mt-4" style={{color: `#FFF`}}><u>NAPLAN Bootcamp (Self Study)</u></h5>
+                                            <ul className="feature-list flex-grow-1">
+                                                {fourthCard1.map((item,index)=>(
+                                                    <li key={index}><img src={icon4} className="feature-icon" alt="icon" />{item.title}</li>
+                                                ))}
+                                               
+                                            </ul>
+                            
+                                            <div className="mt-4 text-center">
+                                                <Button className="select-btn" onClick={() => setActiveLayout(4)}>Select</Button>
+                                            </div>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+                {/* Layout below cards */}
+            <section className="mt-5">
+                <Container className="my-5">
+                    <Row ref={layoutRef} className="g-4">
+                        {/* <div ref={layoutRef} style={{ width: '100%' }}> */}
+                        {activeLayout === 1 && (
+                            <>
+                            <Col className="d-flex" md={6}>
+                                <PriceCoaching 
+                                title="1:1 Coaching"
+                                price1="99"
+                                price2="169"
+                                />
+                            </Col>
+                            <Col className="d-flex" md={6}>
+                                <PriceCoaching 
+                                title={<>Group<br/> Coaching (3:1)</>}
+                                price1="49"
+                                price2="79"
+                                />
+                            </Col>
+                            </>
+                        )}
+
+                        {activeLayout === 2 && (
+                            <PriceLearning />
+                        )}
+
+                        {activeLayout === 3 && (
+                            <Col className="curricular-card" md={8} lg={6} sm={12}>
+                                <PriceCurricular 
+                                title="Co-Curricular"
+                                price1="60"
+                                price2="60"
+                                />
+                            </Col>
+                        )}
+
+                        {activeLayout === 4 && (
+                            <Col className="naplan-card" md={8} lg={8} sm={12}>
+                                <PriceNaplan />
+                            </Col>
+                        )}
+                        {/* </div> */}
+                    </Row>
+                </Container>
+            </section>
+        </main>
+    )
 };
 
-export default PricingPage;
+export default Pricing;

@@ -13,28 +13,6 @@
   min-height: 90px; /* Taller */
 }
 
-.fixed-navbar {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1050;
-  background: white;
-  transform: translateY(-100%);
-  animation: slideDown 0.3s forwards;
-}
-
-@keyframes slideDown {
-  to {
-    transform: translateY(0);
-  }
-}
-
-#main-navbar-nav .subjects-mega-menu .row{
-  justify-content: space-between;
-}
-
-
 /* --- Centered Nav Group --- */
 .nav-centered {
   display: flex;
@@ -108,6 +86,32 @@
 }
 
 .subjects-mega-menu a:hover {
+  color: var(--primary-orange);
+}
+
+/* Co-Curricular Menu */
+.nav-item-cc{
+  position: relative;
+}
+.dropdown-cc {
+  position: absolute !important;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.dropdown-link {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-link:hover {
   color: var(--primary-orange);
 }
 
@@ -665,6 +669,20 @@
   }
 }
 
+/* === HEADER SPECIFIC FIXES FOR 992px-1120px BREAKPOINT === */
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .nav-link-base{
+    padding: 0 1rem !important;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1399px) {
+  .subjects-mega-menu{
+    left: 190%;
+  }
+}
+
 /* Ensure smooth hover transitions */
 @media (min-width: 992px) and (max-width: 1120px) {
   
@@ -681,4 +699,103 @@
   .subjects-dropdown-container:hover .nav-arrow {
     transform: rotate(180deg);
   }
+}
+
+/* FOOTER CSS */
+.footer-section .subscribe-form input, .footer-section .subscribe-form button{
+  border-radius: 20px;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup container for Calendly */
+.popup-content {
+  width: 90%;
+  max-width: 700px;
+  height: 80%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Demo class Popup */
+@media (min-width: 0px) {
+    .inner-fixed-div {
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .inner-fixed-div h6 {
+        text-align: left;
+        /* display: none; */
+    }
+}
+.fixed-div{
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+}
+.inner-fixed-div {
+  border-radius: 1.5rem;
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 1400;
+    background-color: rgb(253, 238, 232);
+    box-shadow: rgb(153, 153, 153) 2px 2px 7px 0px;
+}
+.inner-fixed-div h6 {
+    margin: 0px;
+    color: rgb(83, 76, 68);
+    font-weight: 700 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.75rem !important;
+    font-family: "Quicksand Variable", Roboto, Arial, sans-serif !important;
+}
+
+@media (min-width: 900px) {
+    .inner-fixed-div {
+        max-width: 25rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   .inner-fixed-div h6{
+        text-align: center;
+        display: block;
+    }
+}
+@media (min-width: 600px) {
+    .inner-fixed-div h6 {
+        font-size: 1rem !important;
+        line-height: 1.5rem !important;
+    }
 }
