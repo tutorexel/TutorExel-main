@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, Card, Button } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
 
 import PageHero from '../../components/ui/PageHero';
@@ -55,6 +55,13 @@ const fourthCard = [
     {title:'Structured NAPLAN material'},
     {title:'Self-practice NAPLAN tests'},  
 ];
+const fourthCard1 = [
+    {title: 'Structured NAPLAN eBooks'},
+    {title: 'Self-practice quizzes & topic-wise tests'},
+    {title:'2 full-length mock exams'},
+    {title:'Previous year NAPLAN papers'},
+    {title:'1 free monthly doubt-solving session'},  
+];
 
 const Pricing = () => {
 
@@ -62,13 +69,13 @@ const Pricing = () => {
     const layoutRef = useRef(null);
 
     useEffect(() => {
-    if (activeLayout && layoutRef.current) {
-        layoutRef.current.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
-    }
-}, [activeLayout]);
+        if (activeLayout && layoutRef.current) {
+            layoutRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }, [activeLayout]);
 
     return(
         <main>
@@ -116,13 +123,32 @@ const Pricing = () => {
                             />
                         </Col>
                         <Col xs={12} sm={6} lg={4} className="d-flex">
-                            <PricingCard 
-                            bgColor= '#0F2A47'
-                            title = 'NAPLAN Bootcamp'
-                            points = {fourthCard}
-                            listIcon = {icon4}
-                            onSelect={() => setActiveLayout(4)}
-                            />
+                            
+                            <Card className="coaching-card flex-fill d-flex flex-column text-white" style={{backgroundColor: '#0F2A47'}}>
+                                <Card.Body className="d-flex flex-column">
+                                            <div className="title-wrapper">
+                                                <h3 className="card-title mb-3">NAPLAN Bootcamp</h3>
+                                            </div>
+                            <h5 style={{color: `#FFF`}}><u>NAPLAN Bootcamp (Live Classes)</u></h5>
+                                            <ul className="feature-list flex-grow-1">
+                                                {fourthCard.map((item,index)=>(
+                                                    <li key={index}><img src={icon4} className="feature-icon" alt="icon" />{item.title}</li>
+                                                ))}
+                                               
+                                            </ul>
+                            <h5 style={{color: `#FFF`}}><u>NAPLAN Bootcamp (Self Study)</u></h5>
+                                            <ul className="feature-list flex-grow-1">
+                                                {fourthCard1.map((item,index)=>(
+                                                    <li key={index}><img src={icon4} className="feature-icon" alt="icon" />{item.title}</li>
+                                                ))}
+                                               
+                                            </ul>
+                            
+                                            <div className="mt-auto text-center">
+                                                <Button className="select-btn" onClick={() => setActiveLayout(4)}>Select</Button>
+                                            </div>
+                                </Card.Body>
+                            </Card>
                         </Col>
                     </Row>
                 </Container>

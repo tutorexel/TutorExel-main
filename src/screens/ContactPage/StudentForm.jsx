@@ -1,6 +1,6 @@
 // src/screens/ContactPage/StudentForm.jsx
 
-import React, { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -8,78 +8,75 @@ import { FaArrowRight } from 'react-icons/fa';
 
 import logo from '../../assets/images/logo.svg';
 import PageHero from '../../components/ui/PageHero';
-import './StudentForm.css'; // Import this page's CSS
+import './StudentForm.css';
 import { submitToEndpoint, buildFormData } from '../../services/formSubmit';
 
-// WhatsApp imports
 import PhoneInput from 'react-phone-input-2';
 import '../../../node_modules/react-phone-input-2/lib/style.css';
 import { isValidPhoneNumber } from 'libphonenumber-js';
 
-// Data for form options
-const subjectsOptions = ['Mathematics',  'English'];
+const subjectsOptions = ['Mathematics', 'English'];
 const yearGroupOptions = Array.from({ length: 9 }, (_, i) => `Year ${i + 2}`);
-const offeringOptions = ["Live online", "Co-Curricular", "Naplan Bootcamp"];
-const activityoptions = ["Piano", "Guitar"];
-const naplantype = ["Live Coaching and Material", "Self Learning Material"];
+const offeringOptions = ['Live online', 'Co-Curricular', 'Naplan Bootcamp'];
+const activityoptions = ['Piano', 'Guitar'];
+
+const pricingRules = {
+  'Live online': {
+    'one-to-one': { 1: 84, 2: 149 },
+    'group': { 1: 39, 2: 69 },
+  },
+  'Naplan Bootcamp': {
+    'live-coaching': { 1: 199, 2: 349 },
+    'self-learning': { 1: 29, 2: 39 },
+  },
+  'Co-Curricular': {
+    checkboxOnly: { 1: 60, 2: 100 },
+  },
+};
 
 const StudentForm = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-  window.scrollTo(0, 0);
-},[]);
-  // State to hold all form data
+    window.scrollTo(0, 0);
+  }, []);
+
   const [formData, setFormData] = useState({
     parentName: '',
     studentName: '',
     email: '',
     whatsapp: '',
-    // cityCountry: '',
-    subjects: {}, // Use an object for multi-select checkboxes
+    subjects: {},
     yearGroup: '',
     classType: '',
-    // message: '',
   });
 
-  // Handler to update state on input change
-  const [subjectsError, setSubjectsError] = useState('');
-  const [offering, setOffering] = useState("");
+  const [offering, setOffering] = useState('');
   const [price, setPrice] = useState(0);
+  const [subjectsError, setSubjectsError] = useState('');
+  const [submitting, setSubmitting] = useState(false);
 
-  const pricingRules = {
-    "Live online": {
-      "one-to-one": { 1: 84, 2: 149 },
-      "group": { 1: 39, 2: 69 },
-    },
-    "Naplan Bootcamp": {
-      "live-coaching": { 1: 199, 2: 350 },
-      "self-learning": { 1: 39, 2: 69 },
-    },
-    "Co-Curricular": {
-      checkboxOnly: { 1: 60, 2: 100 },
-    },
-  };
+  const [errors, setErrors] = useState({
+    whatsapp: '',
+  });
+
+  /* ---------------- PRICE CALCULATION (SINGLE SOURCE) ---------------- */
 
   useEffect(() => {
-    const selectedCount =
-      Object.values(formData.subjects).filter(Boolean).length;
+    const selectedCount = Object.values(formData.subjects).filter(Boolean).length;
 
-    // No offering or no selection
     if (!offering || selectedCount === 0) {
       setPrice(0);
       return;
     }
 
-    // Co-Curricular (checkbox only)
-    if (offering === "Co-Curricular") {
+    if (offering === 'Co-Curricular') {
       setPrice(
-        pricingRules["Co-Curricular"].checkboxOnly[selectedCount] || 0
+        pricingRules['Co-Curricular'].checkboxOnly[selectedCount] || 0
       );
       return;
     }
 
-    // Live Online & Naplan
     if (!formData.classType || selectedCount > 2) {
       setPrice(0);
       return;
@@ -91,101 +88,75 @@ const StudentForm = () => {
     setPrice(newPrice);
   }, [offering, formData.classType, formData.subjects]);
 
-
+  /* ---------------- HANDLERS ---------------- */
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    
-    let updatedSubjects = formData.subjects;
-    let updatedClassType = formData.classType;
-    let updatedOffering = offering;
 
+    // Offering change
+    if (name === 'offerings') {
+      setOffering(value);
+      setFormData((prev) => ({
+        ...prev,
+        subjects: {},
+        classType: '',
+      }));
+      setSubjectsError('');
+      setPrice(0);
+      return;
+    }
+
+    // Checkbox (subjects / activities)
     if (type === 'checkbox') {
       const updatedSubjects = {
         ...formData.subjects,
         [name]: checked,
       };
 
-      // 2. Clear the error message as soon as the user selects at least one subject
-      if (Object.values(updatedSubjects).some(isSelected => isSelected)) {
+      if (Object.values(updatedSubjects).some(Boolean)) {
         setSubjectsError('');
       }
-      
-      setFormData(prev => ({
+
+      setFormData((prev) => ({
         ...prev,
         subjects: updatedSubjects,
       }));
-    } 
-    else if (name === "classType") {
-      updatedClassType = value;
-      setFormData(prev => ({ ...prev, classType: value }));
-    } 
-    else {
-      setFormData(prev => ({ ...prev, [name]: value }));
-    }
-
-    // Offering dropdown
-    if (name === "offerings") {
-      updatedOffering = value;
-      setOffering(value);
-      setFormData(prev => ({ ...prev, subjects: {}, classType: "" }));
-      setPrice(0);
       return;
     }
 
-    // Calculate price
-    const newPrice = calculatePrice(
-      updatedOffering,
-      updatedClassType,
-      updatedSubjects
-    );
-
-    setPrice(newPrice);
-
-    // On option choose in Offering Dropdown
-    // setOffering(e.target.value);
+    // Radio / text inputs
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
-
-// Phone number validation testing
-  const [errors, setErrors] = useState({
-    whatsapp: ''
-  });
 
   const validateWhatsapp = (number) => {
-    if (!number || number.length < 5) {
-      return 'WhatsApp number is required';
-    }
-
-    if (!isValidPhoneNumber(number)) {
-      return 'Please enter a valid WhatsApp number';
-    }
-
+    if (!number || number.length < 5) return 'WhatsApp number is required';
+    if (!isValidPhoneNumber(number)) return 'Please enter a valid WhatsApp number';
     return '';
   };
-  // Ends
-
-  const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const isAnySubjectSelected = Object.values(formData.subjects).some(isSelected => isSelected === true);
-    if (!isAnySubjectSelected) {
-      setSubjectsError('Please select at least one subject.');
+    const hasSelection = Object.values(formData.subjects).some(Boolean);
+    if (!hasSelection) {
+      setSubjectsError('Please select at least one option.');
       return;
     }
 
-    // Whatsapp validation on submit
     const whatsappError = validateWhatsapp(formData.whatsapp);
     if (whatsappError) {
       setErrors({ whatsapp: whatsappError });
       return;
     }
-    // Ends
 
     try {
       setSubmitting(true);
+
       const endpoint = import.meta.env.VITE_CONTACT_FORM_ENDPOINT;
+
       const payload = {
         form: 'contact',
         submittedAt: new Date().toISOString(),
@@ -193,16 +164,18 @@ const StudentForm = () => {
         studentName: formData.studentName,
         email: formData.email,
         whatsapp: formData.whatsapp,
-        // cityCountry: formData.cityCountry,
-        subjects: Object.keys(formData.subjects).filter((k) => formData.subjects[k]).join(', '),
+        subjects: Object.keys(formData.subjects)
+          .filter((k) => formData.subjects[k])
+          .join(', '),
         yearGroup: formData.yearGroup,
         classType: formData.classType,
         offering,
         price,
-        // message: formData.message,
       };
+
       const fd = buildFormData(payload);
       await submitToEndpoint({ endpoint, formData: fd });
+
       navigate('/contact/thank-you', { state: { from: 'student' } });
     } catch (err) {
       alert(err.message || 'Submission failed. Please try again later.');
@@ -211,45 +184,27 @@ const StudentForm = () => {
     }
   };
 
+  /* ---------------- JSX ---------------- */
+
   return (
     <main>
-    {/* SEO for contact-page */}
       <Helmet>
         <title>Contact TutorExel | Get Tutoring Help Across Australia</title>
         <meta
           name="description"
-          content="Need support? Contact TutorExel’s expert team today. We will answer questions on tutoring, pricing, or curriculum support across Australia. Reach us out today!"
+          content="Need support? Contact TutorExel’s expert team today."
         />
-
-        {/* Open Graph Tags */}
-        <meta property="og:title" content="Contact TutorExel | Get Tutoring Help Across Australia" />
-        <meta property="og:description" content="Need support? Contact TutorExel’s expert team today. We will answer questions on tutoring, pricing, or curriculum support across Australia. Reach us out today!" />
+        <meta property="og:title" content="Contact TutorExel" />
         <meta property="og:image" content={logo} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.tutorexel.com/contact" />
-
-        {/* Organization Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "TutorExel",
-            "url": "https://www.tutorexel.com",
-            "logo": "https://www.tutorexel.com/assets/images/logo.svg",
-            "sameAs": [
-              "https://www.facebook.com/share/1Za9NLXEqM/",  
-              "https://www.instagram.com/tutorexellearning", 
-            ]
-          })}
-        </script>
       </Helmet>
+
       <PageHero title="Enroll Now" />
 
       <section className="py-5 bg-light-gray">
         <Container>
           <Row className="justify-content-center">
             <Col lg={10} xl={8}>
-                <Form onSubmit={handleSubmit}>
+              <Form onSubmit={handleSubmit}>
                     <div className="form-container">
                         <h2 className="section-heading">Book a Free Trial</h2>
                         <p className="subheading">Let's Get Started</p>
@@ -343,26 +298,26 @@ const StudentForm = () => {
                             <Form.Label className="form-label">Subject(s) You're Interested In</Form.Label>
                             <div className="d-flex flex-wrap gap-4">
                               {subjectsOptions.map(subject => {
-  const selectedCount = Object.values(formData.subjects).filter(Boolean).length;
-  const isChecked = formData.subjects[subject] || false;
+                                const selectedCount = Object.values(formData.subjects).filter(Boolean).length;
+                                const isChecked = formData.subjects[subject] || false;
 
-  return (
-    <Form.Check
-      key={subject}
-      type="checkbox"
-      name={subject}
-      label={subject}
-      id={`check-${subject}`}
-      className="custom-form-check"
-      onChange={handleChange}
-      checked={isChecked}
-      disabled={
-        !formData.classType || 
-        (!isChecked && selectedCount >= 2)
-      }
-    />
-  );
-})}
+                                return (
+                                  <Form.Check
+                                    key={subject}
+                                    type="checkbox"
+                                    name={subject}
+                                    label={subject}
+                                    id={`check-${subject}`}
+                                    className="custom-form-check"
+                                    onChange={handleChange}
+                                    checked={isChecked}
+                                    disabled={
+                                      !formData.classType || 
+                                      (!isChecked && selectedCount >= 2)
+                                    }
+                                  />
+                                );
+                              })}
                             </div>
                             {/* 4. Display the error message if it exists */}
                             {subjectsError && <div className="text-danger mt-2">{subjectsError}</div>}
@@ -434,24 +389,19 @@ const StudentForm = () => {
                         )}
                         
                         {price > 0 && (
-  <div className="mt-3 p-3 border rounded fw-bold">
-    Total Amount: ${price}
-  </div>
-)}
-                        
+                  <div className="mt-3 p-3 border rounded fw-bold">
+                    Total Amount: ${price}
+                  </div>
+                )}
 
-                        {/* --- Message Textarea --- */}
-                        {/* <Form.Group className="mb-4">
-                            <Form.Label className="form-label">Message or Notes (Optional)</Form.Label>
-                            <Form.Control as="textarea" rows={4} name="message" placeholder="e.g., preferred time slots, learning goals, concerns, etc." className="form-control-custom" onChange={handleChange} />
-                        </Form.Group> */}
-                    </div>
-                    <div className="text-start mt-4">
-                        <Button type="submit" className="btn-submit-form" disabled={submitting}>
-                          {submitting ? 'Submitting…' : 'Submit'} <FaArrowRight />
-                        </Button>
-                    </div>
-                </Form>
+                <div className="text-start mt-4">
+                  <Button type="submit" className="btn-submit-form"
+                  disabled={submitting}>
+                    {submitting ? 'Submitting…' : 'Submit'} <FaArrowRight />
+                  </Button>
+                </div>
+                </div>
+              </Form>
             </Col>
           </Row>
         </Container>
