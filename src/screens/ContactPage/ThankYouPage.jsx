@@ -1,8 +1,8 @@
 // src/screens/ContactPage/ThankYouPage.jsx
 
 import React, { useEffect } from "react";
-import { Container } from "react-bootstrap";
-import { useLocation } from "react-router-dom";
+import { Container, Button } from "react-bootstrap";
+import { useLocation, Link } from "react-router-dom";
 
 // 1. Import the new assets and styles
 import PageHero from "../../components/ui/PageHero";
@@ -18,10 +18,10 @@ const ThankYouPage = () => {
   }, []);
   const message = isTeacherForm
     ? "Thank you! Our team has received your application and will connect with you via WhatsApp and email within 3-5 business days if you are shortlisted."
-    : "Thank you! Our team will connect with you via WhatsApp and email within 24 hours to confirm your free trial and guide you through the next steps.";
+    : "Your details have been received. Please complete payment to confirm enrolment and activate the programme.";
   return (
     <main>
-      <PageHero title="Contact Us" />
+      <PageHero title="Enroll Now" />
       <section className="py-5">
         <Container>
           <div className="thank-you-container">
@@ -30,7 +30,16 @@ const ThankYouPage = () => {
               alt="Success"
               className="success-icon"
             />
-            <p className="thank-you-message">{message}</p>
+            <h2 className="title mb-5" style={{color: '#FFF'}}>Enrolment Submitted</h2>
+            <p className="thank-you-message mb-3">{message}</p>
+            <Link 
+            to="https://rzp.io/rzp/tutorexelpayment"
+            target="_blank"
+            >
+              <Button className="btn btn-primary-orange">
+                Proceed to Payment
+              </Button>
+            </Link>
           </div>
         </Container>
       </section>
