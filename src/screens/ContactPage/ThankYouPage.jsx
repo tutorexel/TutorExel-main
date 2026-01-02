@@ -1,7 +1,7 @@
 // src/screens/ContactPage/ThankYouPage.jsx
 
 import React, { useEffect } from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { useLocation, Link } from "react-router-dom";
 
 // 1. Import the new assets and styles
@@ -11,7 +11,9 @@ import "./ThankYouPage.css";
 
 const ThankYouPage = () => {
   const location = useLocation();
-  const isTeacherForm = location.state?.from === "teacher";
+  // const isTeacherForm = location.state?.from === "teacher";
+  const { from, price} = location.state || {};
+  const isTeacherForm = from === "teacher";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,14 +34,30 @@ const ThankYouPage = () => {
             />
             <h2 className="title mb-5" style={{color: '#FFF'}}>Enrolment Submitted</h2>
             <p className="thank-you-message mb-3">{message}</p>
-            <Link 
-            to="https://rzp.io/rzp/tutorexelpayment"
-            target="_blank"
-            >
-              <Button className="btn btn-primary-orange">
-                Proceed to Payment
-              </Button>
-            </Link>
+            {price > 0 && (
+              <div className="m-3 p-3 border rounded">
+                <strong>Total Amount:</strong> ${price}
+              </div>
+            )}
+            
+              <Link 
+              to="https://rzp.io/rzp/tutorexelpayment"
+              target="_blank"
+              >
+                <Button className="btn btn-primary-orange">
+                  Proceed to Payment
+                </Button>
+              </Link>
+              <Link 
+              to="/"
+              target="_blank"
+              style={{marginLeft: '10px'}}
+              >
+                <Button className="btn btn-primary-orange">
+                  Go to Home
+                </Button>
+              </Link>
+            
           </div>
         </Container>
       </section>

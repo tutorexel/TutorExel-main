@@ -203,7 +203,7 @@ const StudentForm = () => {
       const fd = buildFormData(payload);
       await submitToEndpoint({ endpoint, formData: fd });
 
-      navigate('/contact/thank-you', { state: { from: 'student' } });
+      navigate('/contact/thank-you', { state: { from: 'student', price } });
     } catch (err) {
       alert(err.message || 'Submission failed. Please try again later.');
     } finally {
@@ -283,7 +283,7 @@ const StudentForm = () => {
                                 )}
                               </Form.Group>
                             </Col>
-                            <Col md={6}><Form.Group className="mb-4"><Form.Control type="text" name="studentName" placeholder="Student's Name (Optional)" className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
+                            <Col md={6}><Form.Group className="mb-4"><Form.Control type="text" name="studentName" placeholder="Student's Name" className="form-control-custom" onChange={handleChange} /></Form.Group></Col>
                         </Row>
                         {/* <Form.Group className="mb-4"><Form.Control type="text" name="cityCountry" placeholder="City & Country *" required className="form-control-custom" onChange={handleChange} /></Form.Group> */}
 
