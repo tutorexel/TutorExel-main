@@ -155,7 +155,7 @@ const NaplanDataPage = () => {
             {/* Offerings ICON with Tooltip */}
             <div className="fixed-div">
                             <div className="inner-fixed-div">
-                                <h6>View our Pricing & Offerings</h6>
+                                <h6>View our Offerings</h6>
                                 <div className="inner-btn">
                                     <Link to="/pricing"
                                     className="d-inline-flex align-items-center btn btn-primary-orange"

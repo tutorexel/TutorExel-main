@@ -80,6 +80,50 @@ export const naplanData = {
             introHeading: "We've Got the Curriculum Covered",
             introP1: "At TutorExel, our Year 3 NAPLAN English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
             introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
+            term:{
+                    topics: [
+                        {
+                            name: "Persuasive Purpose, Audience & Opinions",
+                            description: "Identify text purpose and audience; distinguish fact and opinion; state and support opinions with reasons; use modal verbs and evaluative language; apply basic persuasive structure and paragraphing; locate literal information; identify main ideas; use simple and compound sentences with correct sentence punctuation and subject–verb agreement."
+                        },
+                        {
+                            name: "Imaginative Texts: Character, Setting & Events",
+                            description: "Identify characters, settings and events; make text-to-self connections; answer literal and simple inferential questions; write short narrative paragraphs; adapt settings or endings; use doing, saying and sensing verbs; apply correct past and present tense."
+                        },
+                        {
+                            name: "Text Types, Structure & Paragraphing",
+                            description: "Compare imaginative, informative and persuasive texts; recognise text structures and paragraph roles; write informative paragraphs with topic sentences; group ideas logically; locate information; identify clauses; reinforce subject–verb agreement."
+                        },
+                        {
+                            name: "Vocabulary, Evaluation & Meaning in Context",
+                            description: "Build topic-specific, technical and evaluative vocabulary; expand noun groups; interpret word meaning in context; identify multiple-meaning and technical words; apply prefixes, suffixes and word families to spelling and meaning."
+                        },
+                        {
+                            name: "Inferential Comprehension & Cause–Effect",
+                            description: "Use textual and visual clues to make inferences; explain answers using evidence; identify cause–effect relationships; write justified responses using because; use adverbs and adverbial phrases; maintain verb tense accuracy."
+                        },
+                        {
+                            name: "Visual & Multimodal Texts",
+                            description: "Interpret images and layout features to support meaning; identify visual cues such as gaze and positioning; navigate headings, subheadings and hyperlinks; create captions and short multimodal texts; use prepositions and commas in lists accurately."
+                        },
+                        {
+                            name: "Spelling Patterns & Word Knowledge (NAPLAN-Critical)",
+                            description: "Apply phonics-based spelling patterns including digraphs, blends and complex letter patterns; spell multisyllabic and high-frequency words; distinguish homophones; decode unfamiliar words; edit spelling in context using NAPLAN-style tasks."
+                        },
+                        {
+                            name: "Accuracy, Editing & NAPLAN Simulation",
+                            description: "Edit and revise writing for clarity, spelling and punctuation; produce persuasive and narrative responses; answer mixed reading comprehension questions; identify main ideas and cause–effect; apply apostrophes, capital letters, commas and sentence boundary punctuation in NAPLAN-style questions."
+                        },
+                        {
+                            name: "Practice Session – Reading & Language Conventions",
+                            description: "Intensive practice of reading comprehension and language conventions using mixed NAPLAN-style MCQs; focus on literal and inferential questions, main idea, vocabulary in context, sentence structure, punctuation and spelling accuracy with guided feedback."
+                        },
+                        {
+                            name: "Practice Session – Writing & Full-Length Practice",
+                            description: "Timed practice of persuasive and narrative writing tasks; apply structure, paragraphing, vocabulary and sentence accuracy; edit responses independently; complete a short full-length NAPLAN-style practice with reflection and improvement strategies."
+                        },
+                    ]
+                },
             sidebar: {
                 title: "Year 3 NAPLAN English",
                 subtitle: "Personalised Online Tutoring",
@@ -175,6 +219,50 @@ export const naplanData = {
             introHeading: "We've Got the Curriculum Covered",
             introP1: "At TutorExel, our Year 5 NAPLAN English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
             introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
+            term:{
+                    topics: [
+                        {
+                            name: "Text Purpose, Audience & Inclusive Language",
+                            description: "Students practise identifying text purpose and audience, distinguishing opinion from fact, adapting language for inclusive and formal contexts, and writing clear opinions suited to a specific reader."
+                        },
+                        {
+                            name: "Text Structure & Organisation Across Genres",
+                            description: "Students practise recognising and using correct text structures (narrative, persuasive, informative), organising ideas into paragraphs, sequencing ideas logically, and identifying structure-based questions in NAPLAN reading."
+                        },
+                        {
+                            name: "Reasons, Evidence & Discussion Texts",
+                            description: "Students practise developing reasons, linking causes and effects, comparing viewpoints, and writing balanced responses that acknowledge other opinions rather than making unsupported claims."
+                        },
+                        {
+                            name: "Narrative Writing, Characters & Dialogue",
+                            description: "Students practise narrative planning, showing character motivation through action and speech, interpreting character behaviour in reading, and using correct dialogue punctuation in writing."
+                        },
+                        {
+                            name: "Vocabulary, Idioms & Spelling Patterns",
+                            description: "Students practise interpreting and using precise vocabulary, understanding idioms in context, analysing figurative language, spelling multisyllabic words, recognising word families, origins, irregular plurals, homophones and high-frequency words."
+                        },
+                        {
+                            name: "Cohesion, Editing & Punctuation",
+                            description: "Students practise editing writing for clarity, removing off-topic sentences, improving cohesion, applying apostrophes (contractions and possession), commas, pronoun reference, and sentence boundary punctuation in NAPLAN-style items."
+                        },
+                        {
+                            name: "Visual & Multimodal Language",
+                            description: "Students practise interpreting headings, subheadings, hyperlinks, images and captions; analysing how image placement and sequence affect meaning; and linking visual information with written text in multimodal NAPLAN tasks."
+                        },
+                        {
+                            name: "Poetry, Drama & Integrated Exam Practice",
+                            description: "Students practise reading and responding to poetry and drama, analysing imagery and sound devices, evaluating author intent and bias, and completing integrated NAPLAN-style reading, writing and language conventions tasks."
+                        },
+                        {
+                            name: "Practice Session – Reading & Language Conventions",
+                            description: "Students practise mixed NAPLAN-style reading and language conventions questions, focusing on literal and inferential comprehension, vocabulary in context, sentence structure, punctuation and spelling accuracy with targeted feedback."
+                        },
+                        {
+                            name: "Practice Session – Writing & Full NAPLAN Simulation",
+                            description: "Students practise timed persuasive and narrative writing tasks, applying structure, paragraphing, vocabulary and sentence accuracy; editing responses independently; and completing a short full NAPLAN-style writing simulation with reflection."
+                        },
+                    ]
+                },
             sidebar: {
                 title: "Year 5 NAPLAN English",
                 subtitle: "Personalised Online Tutoring",
@@ -270,6 +358,50 @@ export const naplanData = {
             introHeading: "We've Got the Curriculum Covered",
             introP1: "At TutorExel, our Year 7 NAPLAN English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
             introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
+            term:{
+                    topics: [
+                        {
+                            name: "Text Purpose, Audience & Clear Opinions",
+                            description: "Identifying imaginative, informative and persuasive purposes; identifying intended audience; using inclusive and formal language; writing clear opinions (no likes/dislikes); using modal verbs (should, must, could); literal comprehension; identifying main idea; simple and compound sentences; sentence boundaries; subject–verb agreement."
+                        },
+                        {
+                            name: "Persuasive Structure & Paragraphing",
+                            description: "Persuasive structure (introduction, reasons, conclusion); paragraphing; supporting opinions with reasons and examples; identifying author opinion and supporting reasons; cause–effect; coordinating and subordinating conjunctions; compound and complex sentences."
+                        },
+                        {
+                            name: "Narrative Writing & Inference",
+                            description: "Narrative structure; character, setting and plot; writing and interpreting dialogue; inferential comprehension; understanding character motivation; identifying themes; tense consistency; pronoun reference; correcting sentence fragments and run-ons."
+                        },
+                        {
+                            name: "Informative & Explanatory Texts",
+                            description: "Writing informative and explanatory paragraphs; topic sentences and supporting details; skimming and scanning; identifying main idea versus detail; problem–solution and cause–effect structures; independent and dependent clauses; commas in clauses."
+                        },
+                        {
+                            name: "Vocabulary, Idioms & Figurative Language",
+                            description: "Precise vocabulary and strong verbs; figurative language (simile, metaphor, personification); idioms and context-based meaning; word families; prefixes and suffixes; word origins; irregular plurals; homophones."
+                        },
+                        {
+                            name: "Visual & Multimodal Texts",
+                            description: "Interpreting layout features (headings, subheadings, menus, hyperlinks); image framing, placement and salience; sequencing images; linking visual and written information; multimodal texts (print, digital, film); capitalisation and punctuation in visuals."
+                        },
+                        {
+                            name: "Sentence Variety, Cohesion & Editing",
+                            description: "Sentence variety for effect; cohesion across sentences and paragraphs; editing for clarity; apostrophes (contractions, singular and plural possession); dialogue punctuation; commas; correcting run-ons and fragments."
+                        },
+                        {
+                            name: "NAPLAN Integration & Review",
+                            description: "Integrated persuasive or narrative writing; literal, inferential and evaluative reading; skimming and scanning; multimodal interpretation; spelling patterns; sound–letter patterns (digraphs, blends, dge/tch/kn); sentence correctness; punctuation accuracy."
+                        },
+                        {
+                            name: "Practice Session – Reading & Language Conventions",
+                            description: "Intensive practice of NAPLAN-style reading and language conventions questions, including literal and inferential comprehension, main idea, vocabulary in context, sentence structure, punctuation and spelling, with guided review and feedback."
+                        },
+                        {
+                            name: "Practice Session – Writing & Full NAPLAN Simulation",
+                            description: "Timed persuasive and narrative writing practice; applying structure, paragraphing, vocabulary and sentence control; independent editing; completion of a short full NAPLAN-style literacy simulation with reflection and improvement strategies."
+                        },
+                    ]
+                },
             sidebar: {
                 title: "Year 7 NAPLAN English",
                 subtitle: "Personalised Online Tutoring",
@@ -365,6 +497,50 @@ export const naplanData = {
             introHeading: "We've Got the Curriculum Covered",
             introP1: "At TutorExel, our Year 9 NAPLAN English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
             introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
+            term:{
+                    topics: [
+                        {
+                            name: "Text Purpose, Context & Literal Meaning",
+                            description: "Identify writing purposes (imaginative, persuasive, informative, analytical); adapt writing for audience and context; state clear propositions; practise literal comprehension by locating stated information; understand how context shapes meaning; apply correct sentence boundaries; identify main and dependent clauses; maintain subject–verb agreement."
+                        },
+                        {
+                            name: "Argument Structure & Paragraph Control",
+                            description: "Write persuasive arguments using clear contention, sequenced points and conclusion; build cohesive paragraphs using examples, quotations and substantiated claims; identify contention, support, main ideas and details in texts; analyse how authors organise ideas to shape meaning; understand paragraph sequencing and development; use text connectives (cause, contrast, condition, conclusion) to link ideas."
+                        },
+                        {
+                            name: "Inference, Bias & Evaluative Reading",
+                            description: "Use evaluative language (direct and indirect) in writing; apply modal verbs to express authority and judgement; write reflective and critical responses; practise inferential and evaluative comprehension; identify bias, perspective and implied viewpoints; analyse evocative vocabulary and language that implies evaluation indirectly."
+                        },
+                        {
+                            name: "Sentence Craft for Tone & Effect",
+                            description: "Manipulate sentence variety for effect; experiment with creative sentence patterning; use active and passive voice purposefully; analyse tone and reader positioning through sentence choices; understand juxtaposition and exaggeration; identify and correct sentence fragments and run-ons; use embedded and interrupting clauses accurately."
+                        },
+                        {
+                            name: "Figurative, Symbolic & Rhetorical Meaning",
+                            description: "Use imagery, simile, metaphor and extended metaphor in writing; apply allegory, symbolism and metonymy for deeper meaning; interpret figurative and symbolic meaning in texts; analyse reader response to imagery; recognise and use irony, parody, understatement, hyperbole and allusion."
+                        },
+                        {
+                            name: "Cohesion, Nominalisation & Academic Style",
+                            description: "Write informative and analytical texts with formal tone; use nominalisation to condense and abstract ideas; select precise and abstract nouns; analyse cohesion across paragraphs and extended texts; follow and evaluate argument flow; understand expansion and compression of time; use nominalisation and abstract nouns as cohesive devices."
+                        },
+                        {
+                            name: "Multimodal, Visual & Intertextual Texts",
+                            description: "Create and edit multimodal and hybrid texts; transform texts across modes (print, digital, visual); analyse visual and multimodal texts for meaning; interpret symbolism in images; identify intertextual references; understand visual sequencing; analyse interaction between words and images."
+                        },
+                        {
+                            name: "Editing, Spelling & Exam Mastery",
+                            description: "Edit writing for clarity, cohesion, purpose and audience positioning; refine and publish polished texts; compare and contrast texts; analyse evidence and reasoning; apply punctuation accurately (semicolons, dashes, quotations, referencing); use morphemic spelling strategies; recognise neologisms; use spelling for stylistic, humorous and voice effects."
+                        },
+                        {
+                            name: "Practice Session – Reading & Language Conventions",
+                            description: "Apply literal, inferential and evaluative comprehension strategies to mixed NAPLAN-style texts; analyse bias, perspective, evidence and multimodal features; practise high-level grammar, cohesion, punctuation and spelling through targeted MCQs and short-response tasks with feedback."
+                        },
+                        {
+                            name: "Practice Session – Writing & Full NAPLAN Simulation",
+                            description: "Complete timed analytical or persuasive writing under exam conditions; plan, draft and edit independently; integrate reading stimulus material; apply advanced sentence control, vocabulary, cohesion, punctuation and spelling accuracy in a full NAPLAN-style literacy simulation."
+                        },
+                    ]
+                },
             sidebar: {
                 title: "Year 9 NAPLAN English",
                 subtitle: "Personalised Online Tutoring",

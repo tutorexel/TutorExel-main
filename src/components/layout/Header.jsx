@@ -159,17 +159,15 @@ const Header = () => {
                     <NavLink to="/play-music" className="dropdown-link">
                       Piano
                     </NavLink>
-                    <NavLink to="#" className="dropdown-link">
+                    <NavLink to="/guitar" className="dropdown-link">
                       Guitar
                     </NavLink>
-                    <NavLink to="#" className="dropdown-link">
-                      Yoga
-                    </NavLink>
+                    
                   </div>
                 )}
               </div>
-              <NavLink to="/pricing" className="nav-link-base">Pricing</NavLink>
-              <NavLink to="/contact" className="nav-link-base">Contact Us</NavLink>
+              <NavLink to="/pricing" className="nav-link-base">Offerings</NavLink>
+              <NavLink to="/contact" className="nav-link-base">Enroll Now</NavLink>
             </Nav>
 
             <Nav className="align-items-center justify-content-end desktop-nav-actions">
@@ -337,20 +335,13 @@ const Header = () => {
                                     Piano
                                   </Link>
                                   <Link
-                                    to="/#"
+                                    to="/guitar"
                                     className="mobile-subject-link"
                                     onClick={handleCloseMobileMenu}
                                   >
                                     Guitar
                                   </Link>
-                                  <Link
-                                    to="/play-music"
-                                    className="mobile-subject-link"
-                                    onClick={handleCloseMobileMenu}
-                                  >
-                                    Yoga
-                                  </Link>
-
+                      
                                 </div>
                   )}
                     
@@ -361,7 +352,7 @@ const Header = () => {
                   className="mobile-nav-link"
                   onClick={handleCloseMobileMenu}
                 >
-                  Pricing
+                  Offerings
                 </NavLink>
 
                 <NavLink 
@@ -369,7 +360,7 @@ const Header = () => {
                   className="mobile-nav-link"
                   onClick={handleCloseMobileMenu}
                 >
-                  Contact Us
+                  Enroll Now
                 </NavLink>
                 <div className="mobile-cta-section">
                   <a href="https://learn.tutorexel.com/d2q1kr392kq4gu3vn2ig/join/JjJCwO6.r9GqgrpkB8KYV6BP6RXVj4rYXvovQrWOf53qVGCwyC15HxAKs8yNNt3BXQHRugQowSh_xG6kTWlSqcDVKwBUZwMF" target="_blank" rel="noopener noreferrer" className="w-100 d-block">

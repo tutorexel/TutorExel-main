@@ -120,6 +120,9 @@ h1, h2, h3, h4, h5, h6 {
 .cloud-text p {
     font-size: 14px;
 }
+.cloudnew-part:first-child .cloud-text h2, .cloudnew-part:first-child .cloud-text p{
+  margin-bottom: 0;
+}
 
 
 .heronew-section {
@@ -174,6 +177,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 13%;
     left: 44%;
   }
+  
 }
 
 

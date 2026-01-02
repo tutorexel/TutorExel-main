@@ -18,6 +18,7 @@ import SubjectPage from './screens/SubjectPage/SubjectPage';
 import ExamPage from './screens/SubjectPage/ExamPage';
 import NaplanDataPage from './screens/NaplanDataPage/NaplanDataPage';
 import MusicPage from './screens/MusicPage/MusicalPage';
+import GuitarPage from './screens/MusicPage/GuitarPage';
 import NaplanPage from './screens/ExamPrepPage/NaplanPage';
 import NaplanPrimary from './screens/ExamPrepPage/NaplanPrimary';
 import NaplanSecondary from './screens/ExamPrepPage/NaplanSecondary';
@@ -46,6 +47,7 @@ function App() {
         <Route path="/subjects/:yearId/:subjectId" element={<SubjectPage />} />
         <Route path="/subjects/:yearId/:subjectId/:termId/:topicId" element={<ExamPage />} />
         <Route path="/play-music" element={<MusicPage />} />
+        <Route path="/guitar" element={<GuitarPage />} />
         <Route path="/naplan/:yearId/:subjectId" element={<NaplanDataPage />} />
         <Route path="/prep-zone/naplan" element={<NaplanPage />} />
         {/* <Route path="/prep-zone/naplan/primary" element={<NaplanPrimary />} />

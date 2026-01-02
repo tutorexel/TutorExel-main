@@ -31,7 +31,7 @@ const Curriculum = () => {
   return (
     <section id="curriculum-section" className="curriculum-section">
       <Container>
-        <h2 className="curriculum-title">Course Curriculum</h2>
+        <h2 className="curriculum-title">Australian Aligned Curriculum</h2>
         <p className="curriculum-subtitle">
           Click on the subject to know our 40 Sessions syllabus
         </p>

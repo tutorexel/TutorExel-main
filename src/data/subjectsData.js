@@ -1479,185 +1479,189 @@ export const subjectsData = {
       introP1: "At TutorExel, our Year 6 Mathematics program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
       introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
       term1:{
-                title: "",
+                title: "Number & Fractions Foundations",
                 topics: [
                     {
                         name: "Understanding Integers",
-                        description: "Represent & locate integers on number lines & Cartesian plane"
+                        description: "Extend number line to negatives; compare −2 < 0 < 2; recognise positions around zero."
                     },
                     {
-                        name: "Coordinates in Four Quadrants",
-                        description: "Locate points & describe coordinate changes"
+                        name: "Integers in Everyday Contexts",
+                        description: "Apply integers to profit/loss, temperatures, elevations and distances above/below sea level."
                     },
                     {
-                        name: "Prime, Composite & Square Numbers",
-                        description: "Identify prime, composite & square numbers "
+                        name: "Coordinates and Directions",
+                        description: "Locate integers as coordinates in four quadrants; interpret sign and direction."
                     },
                     {
-                        name: "Factors, Multiples & Prime Factorisation",
-                        description: "Use factors/multiples to simplify calculations"
+                        name: "Prime & Composite Numbers",
+                        description: "Distinguish prime, composite and square numbers; understand why 1 is not prime."
                     },
                     {
-                        name: "Equivalent Fractions",
-                        description: "Compare, order & represent fractions "
+                        name: "Factorisation & Squares",
+                        description: "Express numbers as products of factors and prime factors; simplify calculations; identify squares."
                     },
                     {
-                        name: "Ordering Fractions on Number Lines",
-                        description: "Represent fractions on same number line "
+                        name: "Fraction Equivalence",
+                        description: "Use factors/multiples to find equivalent fractions; compare halves, thirds, quarters on a number line."
                     },
                     {
-                        name: "Adding & Subtracting Fractions",
-                        description: "Solve problems using equivalent fractions "
+                        name: "Ordering Fractions on a Number Line",
+                        description: "Represent fractions together; justify order using benchmark fractions."
                     },
                     {
-                        name: "Fraction & Decimal Estimation",
-                        description: "Estimate solutions in rational contexts "
+                        name: "Adding & Subtracting Fractions (Concepts)",
+                        description: "Understand common denominators using prime/composite knowledge; model on number lines."
                     },
                     {
-                        name: "Decimal Place Value & Operations",
-                        description: "Add/subtract decimals using place value "
+                        name: "Adding & Subtracting Fractions (Application)",
+                        description: "Apply to recipes and measurement problems; develop methods for unrelated denominators."
                     },
                     {
-                        name: "Multiplying & Dividing by Powers of 10",
-                        description: "Multiply/divide decimals by powers of 10 "
+                        name: "Term 1 Review & Assessment",
+                        description: "Integrate integers, primes and fractions; diagnostic tasks and group problems."
                     },
                     
                 ]
             },
       term2:{
-                title: "",
+                title: "Decimals, Percentages & Financial Modelling",
                 topics: [
                     {
-                        name: "Percentage of Quantities",
-                        description: "Find fractions/decimals/% of quantities"
+                        name: "Place Value in Decimals",
+                        description: "Extend place value to thousandths; represent with money and measurements."
                     },
                     {
-                        name: "Percentage Discounts & Financial Maths",
-                        description: "Solve discount problems using % "
+                        name: "Adding & Subtracting Decimals",
+                        description: "Use estimation, rounding and alignment of decimal places to check answers."
                     },
                     {
-                        name: "Rational Number Modelling",
-                        description: "Approximate rational solutions in contexts "
+                        name: "Decimals in Measurement",
+                        description: "Apply decimal addition/subtraction to lengths and distances in real-life contexts."
                     },
                     {
-                        name: "Approximate rational solutions in contexts ",
-                        description: "Recognise rules for visually growing patterns "
+                        name: "Multiplying & Dividing by 10, 100, 1000",
+                        description: "Use place value concepts to multiply/divide decimals by powers of 10 without a calculator."
                     },
                     {
-                        name: "Number Pattern Rules",
-                        description: "Create additive/multiplicative patterns "
+                        name: "Connecting Fractions, Decimals and Percentages",
+                        description: "Convert between forms; explain equivalence (½ = 0.5 = 50%)."
                     },
                     {
-                        name: "Algebraic Thinking Foundations",
-                        description: "Write & solve equations with unknowns "
+                        name: "Finding Fractions & Percentages of Quantities",
+                        description: "Calculate common fractions and % of amounts using mental and digital methods."
                     },
                     {
-                        name: "Order of Operations & Brackets",
-                        description: "Evaluate expressions with brackets & rules "
+                        name: "Discounts & Financial Applications",
+                        description: "Investigate sales discounts, savings and profit/loss through modelling."
                     },
                     {
-                        name: "Function Machines & Input-Output Rules",
-                        description: "Create algorithms generating numbers "
+                        name: "Estimation & Reasonableness with %",
+                        description: "Approximate using 10%, 25%, 50% benchmarks; justify estimates."
                     },
                     {
-                        name: "Cartesian Algorithms",
-                        description: "Design step-by-step coordinate algorithms "
+                        name: "Mathematical Modelling Projects",
+                        description: "Create budgets or trip plans using spreadsheets and percentage calculations."
                     },
                     {
-                        name: "Metric Unit Conversions",
-                        description: "Convert units of length, mass, capacity "
+                        name: "Term 2 Review & Assessment",
+                        description: "Summative project combining fractions, decimals and financial decision-making."
                     },
                     
                 ]
             },
       term3:{
-                title: "",
+                title: "Algebra & Measurement",
                 topics: [
                     {
-                        name: "Using Decimal Measurements",
-                        description: "Apply decimals in measurement contexts "
+                        name: "Visual and Number Patterns",
+                        description: "Explore growing geometric and number patterns; describe rules in words and numbers."
                     },
                     {
-                        name: "Area of Rectangles",
-                        description: "Derive formula for area of rectangles "
+                        name: "Creating Rules and Sequences",
+                        description: "Generate additive and multiplicative patterns using rational numbers and digital tools."
                     },
                     {
-                        name: "Area Comparison Problems",
-                        description: "Compare shapes using area & perimeter "
+                        name: "Brackets & Order of Operations",
+                        description: "Apply BODMAS; evaluate and construct expressions with brackets."
                     },
                     {
-                        name: "PuTimetables & Durationrpose",
-                        description: "Interpret timetables & calculate duration "
+                        name: "Solving for Unknown Values",
+                        description: "Use inverse operations to find missing numbers in equations."
                     },
                     {
-                        name: "Angle Types & Properties",
-                        description: "Identify complementary, supplementary & opposite angles "
+                        name: "Algorithms & Input–Output Machines",
+                        description: "Design algorithms and function machines; identify emerging patterns and relationships."
                     },
                     {
-                        name: "Angle Problem Solving",
-                        description: "Use angle relationships to find unknown angles "
+                        name: "Designing & Interpreting Number Algorithms",
+                        description: "We will design algorithms to model number patterns and explain emerging relationships."
                     },
                     {
-                        name: "Volume Foundations",
-                        description: "Understand right prisms via cross-sections "
+                        name: "Metric Conversions",
+                        description: "Convert between length, mass and capacity units; recognise metric prefixes."
                     },
                     {
-                        name: "Nets & 3D Representations",
-                        description: "Compare cross-sections & nets "
+                        name: "Discovering Area of Rectangles",
+                        description: "Derive A = l × w from array models and grids; record data in tables."
                     },
                     {
-                        name: "Transformations (Basic)",
-                        description: "Tessellations & transformations "
+                        name: "Solving Area & Perimeter Problems",
+                        description: "Compare rectangles with same/different area and perimeter; apply formulas."
                     },
                     {
-                        name: "Symmetry & Patterning",
-                        description: "Explore symmetry & tiling in geometry "
+                        name: "Angles and Relationships",
+                        description: "Identify and measure angles; use supplementary, complementary, and vertically opposite relationships."
+                    },
+                    {
+                        name: "Interpreting Timetables & Itineraries",
+                        description: "Read and construct timetables; determine durations and plan journeys."
                     },
                     
                 ]
             },
       term4:{
-                title: "",
+                title: "Space,Statistics & Probability",
                 topics: [
                     {
-                        name: "Drawing Polygons on Grids",
-                        description: "Use coordinates to draw polygons "
+                        name: "Exploring 3D Objects & Cross-Sections",
+                        description: "Slice objects to observe cross-sections; connect to right prisms and real structures."
                     },
                     {
-                        name: "Understanding Data Types",
-                        description: "Interpret & compare data sets "
+                        name: "Plotting on the Cartesian Plane",
+                        description: "Locate points in 4 quadrants; describe movement and coordinate changes."
                     },
                     {
-                        name: "Comparative Displays",
-                        description: "Create comparative graphs & dot plots "
+                        name: "Transformations & Tessellations",
+                        description: "Combine translations, rotations and reflections to create patterns; use digital tools."
                     },
                     {
-                        name: "Critiquing Media Data",
-                        description: "Critique statistical arguments in media "
+                        name: "Introducing Data & Variables",
+                        description: "Distinguish nominal, ordinal and numerical data; collect simple class data."
                     },
                     {
-                        name: "Conducting Data Investigations",
-                        description: "Plan & conduct investigations "
+                        name: "Comparing Data Sets",
+                        description: "Use side-by-side column graphs and dot plots; interpret mode and range."
                     },
                     {
-                        name: "Probability Foundations",
-                        description: "Understand 0–1 scale & assign probabilities "
+                        name: "Analysing Media Statistics",
+                        description: "Identify misleading data representations in media and discuss bias."
                     },
                     {
-                        name: "Chance Experiments",
-                        description: "Run repeated experiments & compare frequencies "
+                        name: "Conducting a Statistical Investigation (I)",
+                        description: "Pose a question, collect data using surveys or spreadsheets."
                     },
                     {
-                        name: "Probability in Real Contexts",
-                        description: "Apply chance reasoning to real-world situations "
+                        name: "Conducting a Statistical Investigation (II)",
+                        description: "Analyse and interpret collected data; present graphs and findings."
                     },
                     {
-                        name: "Mixed Revision: Number & Algebra",
-                        description: "Mixed Revision: Measurement, Geometry, Stats, Probability"
+                        name: "Understanding Probability Scales",
+                        description: "Represent probabilities on 0–1 or 0–100% scales using fractions, decimals and percentages."
                     },
                     {
-                        name: "Mixed Revision: Measurement, Geometry, Stats, Probability",
-                        description: "Consolidate Y6 core + integrated Y7 extensions"
+                        name: "Chance Experiments & Simulations",
+                        description: "Conduct and simulate coin/dice experiments; compare observed vs expected results; term review."
                     },
                     
                 ]

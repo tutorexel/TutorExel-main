@@ -233,7 +233,7 @@ const Footer = () => {
               <Link to="/about-us" className="text-white-50 text-decoration-none mb-2 d-block">About Us</Link>
               <Link to="/careers" className="text-white-50 text-decoration-none mb-2 d-block">Careers</Link>
               <Link to="/blog" className="text-white-50 text-decoration-none mb-2 d-block">Blogs</Link>
-              <Link to="/contact" className="text-white-50 text-decoration-none mb-2 d-block">Contact Us</Link>
+              <Link to="/contact" className="text-white-50 text-decoration-none mb-2 d-block">Enroll Now</Link>
               <Link to="/term-condition" className="text-white-50 text-decoration-none mb-2 d-block">Terms and Conditions</Link>
               <Link to="/privacy-policy" className="text-white-50 text-decoration-none mb-2 d-block">Privacy Policy</Link>
             </Col>

@@ -11,11 +11,11 @@ import heroImg from '../../assets/images/herobg.svg';
 const cards = [
     {
       title: (<> Live Online Coaching</>),
-      subtitle: "Mathematics, English",
+      subtitle: (<>Mathematics, English<br/>Year 2 to 10</>),
       color: "#00AF79",
       btn1text: "Book a Demo Class",
       btn1link: "#",
-      lmlink: "#curriculum-section"
+      lmlink: "/pricing"
     },
     // {
     //   title: "Self Learning",
@@ -29,20 +29,20 @@ const cards = [
     // },
     {
       title: "Co-Curricular",
-      subtitle: "Piano, Guitar, Yoga",
+      subtitle: "Piano, Guitar",
       color: "#FFA300",
       btn1text: "Book a Demo Class",
       btn1link: "#",
       // btn2text: "Sign Up",
-      lmlink: "/play-music"
+      lmlink: "/pricing"
     },
     {
       title: (<>NAPLAN Bootcamp</>),
-      subtitle: "Year 3, Year 5, Year 7, Year 9",
+      subtitle: "3, 5, 7, 9",
       color: "#0A2740",
       // btn1text: "Book a Demo Class",
       // btn2text: "Sign Up",
-      lmlink: "#naplan-box"
+      lmlink: "/pricing"
     }
   ];
 

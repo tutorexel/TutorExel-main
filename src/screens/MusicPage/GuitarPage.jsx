@@ -7,8 +7,9 @@ import './Music.css';
 
 import logo from '../../assets/images/logo.svg';
 import musicHero from '../../assets/images/music_hero.png';
-import music from '../../assets/images/Music.png';
-import musiclearn from '../../assets/images/music_learn.png';
+import guitar from '../../assets/images/guitar.jpg';
+import guitarlearn from '../../assets/images/learn-guitar.jpg';
+// import musiclearn from '../../assets/images/music_learn.png';
 import card1 from '../../assets/images/music_card1.png';
 import card2 from '../../assets/images/music_card2.png';
 import card3 from '../../assets/images/music_card3.png';
@@ -44,23 +45,23 @@ const tutoringFeatures = [
 ];
 
 const learnFeatures = [
-    { text: <><b>Technique:</b> Hand position, scales, arpeggios, exercises.</>},
-    { text: <><b>Repertoire:</b> Performance pieces set by the Trinity syllabus.</>, bold: '' },
-    { text: <><b>Theory & Musicianship:</b> Reading sheet music, rhythm, dynamics.</>, bold: '' },
-    { text: <><b>Creativity:</b> Improvisation and simple composition for interested learners.</>, bold: '' },
-    { text: <><b>Performance Skills:</b> Building confidence to play in front of others or at exam recitals.</>, bold: '' }
+    { text: <><b>Technique:</b> Finger placement, chord shapes, scales, strumming techniques.</>},
+    { text: <><b>Repertoire:</b> Performance pieces set by the Trinity guitar syllabus.</>, bold: '' },
+    { text: <><b>Theory & Musicianship:</b> Reading notation and tabs, rhythm, dynamics.</>, bold: '' },
+    { text: <><b>Creativity:</b> Improvisation, chord progressions, and simple songwriting.</>, bold: '' },
+    { text: <><b>Performance Skills:</b> Building confidence to perform songs and exam pieces.</>, bold: '' }
 ];
 
 const whyPrepMatter = [
     { 
         icon: card1, 
         title: 'Qualified Tutors',
-        description: 'Experienced musicians with a passion for teaching.'
+        description: 'Experienced guitarists with a passion for teaching.'
     },
     { 
         icon: card2, 
         title: 'Structured Progression',
-        description: 'Clear milestones through Trinity grades.'
+        description: 'Clear milestones through Trinity guitar grades.'
     },
     { 
         icon: card3, 
@@ -70,7 +71,7 @@ const whyPrepMatter = [
     { 
         icon: card4, 
         title: 'Globally Recognised',
-        description: 'Option to sit official Trinity music exams for international certificates.'
+        description: 'Option to sit official Trinity guitar exams for international certificates.'
     },
 ];
 
@@ -94,9 +95,9 @@ const whyParent = [
 ];
 
 const points = [
-    <><b>Children (6+)</b> starting music for the first time.</>,
-    <>Students already learning piano who want to move into the <b>Trinity pathway.</b></>,
-    <><b>Adults</b> looking to learn piano as a hobby or work towards graded exams.</>
+    <><b>Children (6+)</b> starting guitar for the first time.</>,
+    <>Students already learning guitar who want to move into the <b>Trinity pathway.</b></>,
+    <><b>Adults</b> looking to learn guitar as a hobby or work towards graded exams.</>
 ];
 
 const approach = [
@@ -112,7 +113,7 @@ const approach = [
     },
     { 
         icon: maprch3, 
-        title: <>Optional <b>Trinity Piano Exams</b> online</>,  
+        title: <>Optional <b>Trinity Guitar Exams</b> online</>,  
         description: '' 
     },
     { 
@@ -141,7 +142,7 @@ const featureData = [
     },
 ];
 
-const MusicPage = () => {
+const GuitarPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
@@ -160,18 +161,18 @@ const MusicPage = () => {
         <main className='music-page'>
             {/* SEO for Music Page */}
             <Helmet>
-                <title>Learn Piano Online Australia | Beginner Music Lessons TutorExel</title>
+                <title>Learn Guitar Online Australia | Beginner Music Lessons TutorExel</title>
                 <meta
                     name="description"
-                    content="We provide online music lessons in Australia for beginners. Get a piano tutor online, personal online music tutoring, & beginner piano lessons online. Start now."
+                    content="We provide online music lessons in Australia for beginners. Get a guitar tutor online, personal online music tutoring, & beginner piano lessons online. Start now."
                 />
 
                 {/* Open Graph Tags */}
-                <meta property="og:title" content="Learn Piano Online Australia | Beginner Music Lessons TutorExel" />
-                <meta property="og:description" content="We provide online music lessons in Australia for beginners. Get a piano tutor online, personal online music tutoring, & beginner piano lessons online. Start now." />
+                <meta property="og:title" content="Learn Guitar Online Australia | Beginner Music Lessons TutorExel" />
+                <meta property="og:description" content="We provide online music lessons in Australia for beginners. Get a guitar tutor online, personal online music tutoring, & beginner piano lessons online. Start now." />
                 <meta property="og:image" content={logo} />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.tutorexel.com/play-music" />
+                <meta property="og:url" content="https://www.tutorexel.com/guitar" />
 
                 {/* Organization Schema */}
                 <script type="application/ld+json">
@@ -192,16 +193,16 @@ const MusicPage = () => {
                 <img src={musicHero} alt="" />
             </div>
             <ExamTitle 
-                title="Learn Piano Online with Tutorexel"
+                title="Learn Guitar Online with Tutorexel"
                 showButton = {true}
                 buttonText = "Book Your Free Trial Class"
                 openPopup={openPopup}
             />
             <FeatureSection
                 imagePosition="left"
-                image={music}
-                headingText="About Our Piano Classes"
-                descriptionText="At Tutorexel, we make learning piano enjoyable, structured, and rewarding."
+                image={guitar}
+                headingText="About Our Guitar Classes"
+                descriptionText="At Tutorexel, we make learning guitar enjoyable, structured, and rewarding."
                 showButton={false}
                 features={tutoringFeatures}
             />
@@ -209,14 +210,14 @@ const MusicPage = () => {
             {/* Preparation matter section */}
             <div className="music-choose">
                 <TrustSection
-                    headingText="Why Choose Tutorexel Piano Lessons?"
+                    headingText="Why Choose Tutorexel Guitar Lessons?"
                     cardsData={whyPrepMatter}
                 />
             </div>
 
             <FeatureSection
                 imagePosition="right"
-                image={musiclearn}
+                image={guitarlearn}
                 headingText="What You’ll Learn"
                 descriptionText={<>Our lessons are designed to balance <b>fun with rigour,</b> ensuring steady progress.</>}
                 showButton={false}
@@ -252,7 +253,7 @@ const MusicPage = () => {
 
             <div className="nap-matter">
                 <TrustSection
-                    headingText = "Why Parents Love Tutorexel Piano"
+                    headingText = "Why Parents Love Tutorexel Guitar"
                     cardsData = {whyParent}
                     length = {3}
                 />
@@ -307,7 +308,6 @@ const MusicPage = () => {
                     <div className="inner-btn">
                         <Link to="/pricing"
                         className="d-inline-flex align-items-center btn btn-primary-orange"
-                        
                         >
                             View Here
                         </Link>
@@ -335,4 +335,4 @@ const MusicPage = () => {
     );
 }
 
-export default MusicPage;
+export default GuitarPage;
