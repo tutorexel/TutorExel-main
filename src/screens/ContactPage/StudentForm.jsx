@@ -17,11 +17,11 @@ import { isValidPhoneNumber } from 'libphonenumber-js';
 
 const subjectsOptions = ['Mathematics', 'English'];
 const yearGroupOptions = Array.from({ length: 9 }, (_, i) => `Year ${i + 2}`);
-const offeringOptions = ['Live online', 'Co-Curricular', 'Naplan Bootcamp'];
+const offeringOptions = ['Live Online Coaching', 'Co-Curricular', 'Naplan Bootcamp'];
 const activityoptions = ['Piano', 'Guitar'];
 
 const pricingRules = {
-  'Live online': {
+  'Live Online Coaching': {
     'one-to-one': { 1: 99, 2: 169 },
     'group': { 1: 49, 2: 79 },
   },
@@ -51,7 +51,7 @@ const StudentForm = () => {
     whatsapp: '',
     subjects: {},
     yearGroup: '',
-    classType: '',        // Live online OR Naplan type
+    classType: '',        // Live Online Coaching OR Naplan type
     preferredType: '',    // one-to-one | group (Naplan live coaching)
   });
 
@@ -101,7 +101,7 @@ const StudentForm = () => {
       return;
     }
 
-    /* ---------------- LIVE ONLINE ---------------- */
+    /* ---------------- Live Online Coaching ---------------- */
     if (!formData.classType || selectedCount > 2) {
       setPrice(0);
       return;
@@ -309,7 +309,7 @@ const StudentForm = () => {
                             </Col>
                         </Row>
 
-                        {offering === 'Live online' && (
+                        {offering === 'Live Online Coaching' && (
                           <>
                           {/* --- Class Type Radios --- */}
                           <Form.Group className="mb-4">
