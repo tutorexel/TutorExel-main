@@ -142,6 +142,18 @@ h2.section-heading{
   text-decoration: underline;
 }
 
+@media all and (max-width: 467px){
+  .term-row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media (max-width: 360px){
+  .term-row {
+    display: -webkit-box !important;
+  } 
+}
+
 /* TEXT */
 .index { font-weight: 700; }
 .name { font-weight: 600; }
