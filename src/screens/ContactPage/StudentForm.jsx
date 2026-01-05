@@ -30,7 +30,7 @@ const pricingRules = {
       'one-to-one': {1: 199, 2: 349},
       'group' : {1: 119, 2: 199}
     },
-    'self-learning': { 1: 29, 2: 39 },
+    'self-learning': { 1: 29, 2: 49 },
   },
   'Co-Curricular': {
     checkboxOnly: { 1: 60, 2: 100 },
