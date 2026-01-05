@@ -2,16 +2,16 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { questionData } from "../../data/questionData";
+import { questionDataNap } from "../../data/naplanExam";
 import completion from '../../assets/images/well-done.svg'
 import PageHero from "../../components/ui/PageHero";
 
-const ExamPage = () => {
-    const { yearId, subjectId, termId, topicId } = useParams();
+const ExamPageNaplan = () => {
+    const { yearId, subjectId, topicId } = useParams();
     // Fix year format (year-2 → year2)
     const yearKey = yearId.replace("-", "");
 
-    const topicData = questionData[yearKey][subjectId][termId][topicId];
+    const topicData = questionDataNap[yearKey][subjectId][topicId];
 
     const questions = topicData.questions;
 
@@ -29,7 +29,7 @@ const ExamPage = () => {
     // Check if all questions are answered
     const allAnswered = Object.keys(userAnswers).length === questions.length;
 
-    // const questionContent = questionData[yearId]?.[subjectId.toLowerCase()];
+    // const questionContent = questionDataNap[yearId]?.[subjectId.toLowerCase()];
     if (questions.length === 0) {
         return (
         <main>
@@ -145,4 +145,4 @@ const ExamPage = () => {
 
 }
 
-export default ExamPage;
+export default ExamPageNaplan;

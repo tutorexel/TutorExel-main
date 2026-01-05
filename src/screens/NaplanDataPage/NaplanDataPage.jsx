@@ -123,7 +123,7 @@ const NaplanDataPage = () => {
                                                 {subjectContent.term.topics.map((item, index) => (
                                                     <Row key={index} className="term-row gx-0">
                                                         <Col xs={1} className="td index">{index + 1}</Col>
-                                                        <Col xs={4} className="td name">{item.name}</Col>
+                                                        <Col xs={4} className="td name"><Link to={`/naplan/${yearId}/${subjectId}/topic${index + 1}`}>{item.name}</Link></Col>
                                                         <Col xs={7} className="td description">{item.description}</Col>
                                                     </Row>
                                                 ))}

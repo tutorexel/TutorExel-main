@@ -130,7 +130,7 @@ const PriceNaplan = ({ title, price1, price2 }) => {
                 <tbody>
                   <tr>
                     <td>29 AUD</td>
-                    <td>39 AUD</td>
+                    <td>49 AUD</td>
                   </tr>
                 </tbody>
               </Table>
