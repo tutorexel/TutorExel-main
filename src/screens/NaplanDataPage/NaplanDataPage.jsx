@@ -100,7 +100,7 @@ const NaplanDataPage = () => {
                             className="text-secondary page-intro" 
                             dangerouslySetInnerHTML={{ __html: subjectContent.introP2 }} 
                         />
-                        {/* <h3><i><b>To Practice click on Topic Name</b></i></h3> */}
+                        <h4><i><b>Click on any Topic below to practise exam-style questions</b></i></h4>
                     </Row>
                 </Container>
             </section>

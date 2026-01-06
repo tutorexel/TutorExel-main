@@ -51,7 +51,7 @@ function App() {
         <Route path="/guitar" element={<GuitarPage />} />
         <Route path="/naplan/:yearId/:subjectId" element={<NaplanDataPage />} />
         <Route path="/naplan/:yearId/:subjectId/:topicId" element={<ExamPageNaplan />} />
-        <Route path="/prep-zone/naplan" element={<NaplanPage />} />
+        {/* <Route path="/prep-zone/naplan" element={<NaplanPage />} /> */}
         {/* <Route path="/prep-zone/naplan/primary" element={<NaplanPrimary />} />
         <Route path="/prep-zone/naplan/secondary" element={<NaplanSecondary />} /> */}
         {/* <Route path="/prep-zone/icas/primary" element={<IcasPrimary />} />
