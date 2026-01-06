@@ -43,7 +43,7 @@ const cards = [
   <div className="sun-core">
     <span className="sun-text">
       Batch Starting<br />
-      <strong>12th Jan</strong><br />
+      <strong>19th Jan</strong><br />
       Limited Seats
     </span>
   </div>
