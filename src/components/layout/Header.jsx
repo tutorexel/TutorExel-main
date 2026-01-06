@@ -117,7 +117,7 @@ const Header = () => {
                                         >
                                           {/* First-level link (Naplan / Icas) */}
                                           <Link
-                                            to={`/prep-zone/${exam.name.toLowerCase()}`}
+                                            to="#"
                                             className="exam-main-link"
                                           >
                                             {exam.name}
@@ -265,7 +265,7 @@ const Header = () => {
                                 <div className="mobile-exam-header">
                                   {/* Main Naplan/Icas Link */}
                                   <Link
-                                    to={`/prep-zone/${exam.name.toLowerCase()}`}
+                                    to="#"
                                     className="mobile-subject-link"
                                     onClick={handleCloseMobileMenu}
                                   >

@@ -3083,125 +3083,1623 @@ What effect does this have on the audience?
     year7:{
         maths:{
             topic1:{
-                    name: 'Order',
+                    name: 'Number Sense & Whole Number Operations',
                     questions :[
-                        
+                        {
+                            question: (<>A number is rounded to the nearest thousand and becomes 38 000.
+Which number could NOT be the original number?
+</>),
+                            options: [
+                                "37 501",
+                                "37 499",
+                                "38 432",
+                                "38 499",
+                            ],
+                            answer: "37 499",
+                            explain: (<>Numbers that round to 38 000 must lie between 37 500 and 38 499 inclusive.
+37 499 is below 37 500, so it would round to 37 000, not 38 000.
+</>)
+                        },
+                        {
+                            question: (<>Evaluate the following expression: <br />
+120 − 6 × (8 + 4)
+</>),
+                            options: [
+                                "48",
+                                "72",
+                                "84",
+                                "96",
+                            ],
+                            answer: "48",
+                            explain: (<>Follow order of operations (BODMAS):
+<ul><li>Brackets: 8 + 4 = 12</li>
+<li>Multiplication: 6 × 12 = 72</li>
+<li>Subtraction: 120 − 72 = 48</li></ul>
+</>)
+                        },
+                        {
+                            question: (<>Which statement about the number 91 is correct?</>),
+                            options: [
+                                "It is a prime number",
+                                "It has exactly two factors",
+                                "It is a composite number because it can be written as 7 × 13",
+                                "It is divisible by 9",
+                            ],
+                            answer: "It is a composite number because it can be written as 7 × 13",
+                            explain: (<>91 = 7 × 13, so it has more than two factors.
+That makes it composite, not prime.
+</>)
+                        },
+                        {
+                            question: (<>A student says: <br />
+“If I multiply any whole number by zero, the answer will be the same number.”<br />
+Which statement best describes the student’s claim?
+</>),
+                            options: [
+                                "Correct, because zero does not change numbers",
+                                "Incorrect, because multiplying by zero always gives zero",
+                                "Correct only for even numbers",
+                                "Incorrect only for odd numbers",
+                            ],
+                            answer: "Incorrect, because multiplying by zero always gives zero",
+                            explain: (<>Any number × 0 = 0.
+The original number is not preserved, so the claim is false.
+</>)
+                        },
+                        {
+                            question: (<>Incorrect, because multiplying by zero always gives zero</>),
+                            options: [
+                                "4 × 18",
+                                "3 × 24",
+                                "6 × 12",
+                                "All are Equal",
+                            ],
+                            answer: "All are Equal",
+                            explain: (<>Calculate each:
+<ul><li>A: 72</li>
+<li>B: 72</li>
+<li>C: 72</li>
+<li>D: 72</li></ul>
+All results are equal.
+</>)
+                        },
                     ],
                 },
             topic2:{
-                    name: 'Order',
+                    name: 'Fractions – Equivalence & Fractions of Quantities',
                     questions :[
-                        
+                        {
+                            question: (<>Fractions – Equivalence & Fractions of Quantities</>),
+                            options: [
+                                "2/3",
+                                "3/4",
+                                "4/5",
+                                "5/6",
+                            ],
+                            answer: "3/4",
+                            explain: (<>Simplify 6⁄8 by dividing top and bottom by 2: <br />
+6 ÷ 2 = 3 <br />
+8 ÷ 2 = 4 <br />
+So, 6/8 = 3/4.
+</>)
+                        },
+                        {
+                            question: (<>Three-quarters of a number is 36.
+What is the original number?
+</>),
+                            options: [
+                                "27",
+                                "48",
+                                "54",
+                                "72",
+                            ],
+                            answer: "48",
+                            explain: (<>3⁄4 × number = 36 <br />
+Divide by 3⁄4: <br />
+36 ÷ (3⁄4) = 36 × 4⁄3 = 48
+</>)
+                        },
+                        {
+                            question: (<>Which fraction is closest to 1?</>),
+                            options: [
+                                "5/6",
+                                "7/8",
+                                "9/10",
+                                "11/12",
+                            ],
+                            answer: "11/12",
+                            explain: (<>Compare how far each is from 1:
+<ul><li>5⁄6 → missing 1⁄6</li>
+<li>7⁄8 → missing 1⁄8</li>
+<li>9⁄10 → missing 1⁄10</li>
+<li>11⁄12 → missing 1⁄12 (smallest gap)</li></ul>
+</>)
+                        },
+                        {
+                            question: (<>A class used 2⁄5 of a roll of ribbon on Monday and 1⁄4 on Tuesday.
+How much ribbon was used altogether?
+</>),
+                            options: [
+                                "9/20",
+                                "11/20",
+                                "13/20",
+                                "3/4",
+                            ],
+                            answer: "13/20",
+                            explain: (<>Find a common denominator (20): <br />
+2⁄5 = 8⁄20 <br />
+1⁄4 = 5⁄20 <br />
+Total = 8⁄20 + 5⁄20 = 13⁄20
+</>)
+                        },
+                        {
+                            question: (<>Which statement is always true?</>),
+                            options: [
+                                "A fraction with a larger denominator is larger",
+                                "A fraction with equal numerator and denominator equals zero",
+                                "A fraction less than 1 has a smaller numerator than denominator",
+                                "All fractions can be simplified",
+                            ],
+                            answer: "",
+                            explain: (<>For a fraction {'<'} 1, numerator {'<'} denominator.
+Other statements are not always true.
+</>)
+                        },
                     ],
                 },
             topic3:{
-                    name: 'Order',
+                    name: 'Decimals & Percentages',
                     questions :[
-                        
+                        {
+                            question: (<>0.6 × 0.4 is equal to:</>),
+                            options: [
+                                "0.024",
+                                "0.24",
+                                "2.4",
+                                "24",
+                            ],
+                            answer: "0.24",
+                            explain: (<>6 × 4 = 24 <br />
+Two decimal places total → 0.24
+</>)
+                        },
+                        {
+                            question: (<>A jacket costs $80.
+It is discounted by 25%.
+What is the new price?
+</>),
+                            options: [
+                                "$55",
+                                "$60",
+                                "$65",
+                                "$70",
+                            ],
+                            answer: "$60",
+                            explain: (<>25% of 80 = 0.25 × 80 = 20 <br />
+80 − 20 = 60
+</>)
+                        },
+                        {
+                            question: (<>Which decimal is equal to 3/8?</>),
+                            options: [
+                                "0.325",
+                                "0.35",
+                                "0.375",
+                                "0.38",
+                            ],
+                            answer: "0.375",
+                            explain: (<>3 ÷ 8 = 0.375</>)
+                        },
+                        {
+                            question: (<>A value increases from 200 to 230.
+What is the percentage increase?
+</>),
+                            options: [
+                                "10%",
+                                "12%",
+                                "15%",
+                                "30%",
+                            ],
+                            answer: "15%",
+                            explain: (<>Increase = 30 <br />
+Percentage increase = (30 ÷ 200) × 100 = 15%
+</>)
+                        },
+                        {
+                            question: (<>Which number is less than −0.3?</>),
+                            options: [
+                                "−0.1",
+                                "−0.25",
+                                "−0.35",
+                                "0.3",
+                            ],
+                            answer: "−0.35",
+                            explain: (<>On a number line, −0.35 lies further left than −0.3.</>)
+                        },
                     ],
                 },
             topic4:{
-                    name: 'Order',
+                    name: 'Ratio & Proportion',
                     questions :[
-                        
+                        {
+                            question: (<>The ratio of boys to girls is 3 : 5.
+There are 40 students in total.
+How many boys are there?
+</>),
+                            options: [
+                                "15",
+                                "18",
+                                "24",
+                                "25",
+                            ],
+                            answer: "15",
+                            explain: (<>Total parts = 3 + 5 = 8 <br />
+Each part = 40 ÷ 8 = 5 <br />
+Boys = 3 × 5 = 15
+</>)
+                        },
+                        {
+                            question: (<>A recipe uses flour and sugar in the ratio 4 : 1.
+If 200 g of flour is used, how much sugar is needed?
+</>),
+                            options: [
+                                "40 g",
+                                "50 g",
+                                "80 g",
+                                "100 g",
+                            ],
+                            answer: "50 g",
+                            explain: (<>4 parts flour = 200 g <br />
+1 part = 200 ÷ 4 = 50 g
+</>)
+                        },
+                        {
+                            question: (<>Which ratio is equivalent to 6 : 9?</>),
+                            options: [
+                                "2 : 3",
+                                "3 : 4",
+                                "4 : 6",
+                                "9 : 12",
+                            ],
+                            answer: "2 : 3",
+                            explain: (<>Divide both terms by 3: <br />
+6 ÷ 3 : 9 ÷ 3 = 2 : 3
+</>)
+                        },
+                        {
+                            question: (<>A car travels 180 km in 3 hours.
+What is its average speed?
+</>),
+                            options: [
+                                "50 km/h",
+                                "55 km/h",
+                                "60 km/h",
+                                "65 km/h",
+                            ],
+                            answer: "60 km/h",
+                            explain: (<>Speed = distance ÷ time <br />
+180 ÷ 3 = 60 km/h
+</>)
+                        },
+                        {
+                            question: (<>A statement says: <br />
+“If two ratios are equivalent, their fractions will also be equal.” <br />
+Which option best supports this statement?
+</>),
+                            options: [
+                                "2:4 and 3:6",
+                                "3:5 and 5:3",
+                                "4:6 and 6:8",
+                                "1:2 and 2:5",
+                            ],
+                            answer: "2:4 and 3:6",
+                            explain: (<>2⁄4 = 1⁄2 and 3⁄6 = 1⁄2 <br />
+Equivalent ratios produce equal fractions.
+</>)
+                        },
                     ],
                 },
             topic5:{
-                    name: 'Order',
+                    name: 'Algebra & Patterns',
                     questions :[
-                        
+                        {
+                            question: (<>A number pattern follows this rule: <br />
+Multiply by 2, then subtract 1 <br />
+The pattern starts at 3. <br />
+3, 5, 9, ___ <br />
+What is the next number?
+</>),
+                            options: [
+                                "16",
+                                "17",
+                                "18",
+                                "19",
+                            ],
+                            answer: "17",
+                            explain: (<>Apply the rule to 9: <br />
+•	9 × 2 = 18 <br />
+•	18 − 1 = 17
+</>)
+                        },
+                        {
+                            question: (<>Which expression represents “5 more than three times a number n”?</>),
+                            options: [
+                                "5n + 3",
+                                "3n + 5",
+                                "5(n + 3)",
+                                "n(3 + 5)",
+                            ],
+                            answer: "3n + 5",
+                            explain: (<>Three times a number = 3n <br />
+5 more than that → 3n + 5
+</>)
+                        },
+                        {
+                            question: (<>A student says: <br />
+“If n = 4, then 2n + 3 = 11.” <br />
+Which statement best explains why the student is correct?
+</>),
+                            options: [
+                                "Because 2 + 4 + 3 = 11",
+                                "Because 2 × 4 = 8, and 8 + 3 = 11",
+                                "Because 4² − 5 = 11",
+                                "Because n + n + n − 1 = 11",
+                            ],
+                            answer: "Because 2 × 4 = 8, and 8 + 3 = 11",
+                            explain: (<>Substitute n = 4: <br />
+2 × 4 = 8 <br />
+8 + 3 = 11
+</>)
+                        },
+                        {
+                            question: (<>Which number completes the pattern? <br />
+2, 6, 18, ___
+</>),
+                            options: [
+                                "24",
+                                "30",
+                                "36",
+                                "54",
+                            ],
+                            answer: "54",
+                            explain: (<>Each term is multiplied by 3: <br />
+2 × 3 = 6 <br />
+6 × 3 = 18 <br />
+18 × 3 = 54
+</>)
+                        },
+                        {
+                            question: (<>Which statement about the expression 4n − 4 is correct?</>),
+                            options: [
+                                "It is always even",
+                                "It is always odd",
+                                "It is always negative",
+                                "It is always a multiple of 3",
+                            ],
+                            answer: "It is always even",
+                            explain: (<>4n is always even, and subtracting 4 (even) keeps it even.
+So the expression is always even, regardless of n.
+</>)
+                        },
                     ],
                 },
             topic6:{
-                    name: 'Order',
+                    name: 'Coordinates, Graphs & Data Interpretation',
                     questions :[
-                        
+                        {
+                            question: (<>A point is plotted at (−3, 4).
+Which statement correctly describes its position?
+</>),
+                            options: [
+                                "Left of the origin and below the x-axis",
+                                "Right of the origin and above the x-axis",
+                                "Left of the origin and above the x-axis",
+                                "Right of the origin and below the x-axis",
+                            ],
+                            answer: "Left of the origin and above the x-axis",
+                            explain: (<>x = −3 → left of origin <br />
+y = 4 → above x-axis
+</>)
+                        },
+                        {
+                            question: (<>A line graph shows the number of books read over 5 weeks.
+The graph is flat between Week 3 and Week 4. <br />
+What does this most likely mean?
+</>),
+                            options: [
+                                "Books were returned",
+                                "No books were read in that time",
+                                "Fewer books were read",
+                                "Reading speed increased",
+                            ],
+                            answer: "No books were read in that time",
+                            explain: (<>A flat section on a graph means no change in value.
+So no additional books were read.
+</>)
+                        },
+                        {
+                            question: (<>Which ordered pair lies on the y-axis?</>),
+                            options: [
+                                "(3, 0)",
+                                "(0, −2)",
+                                "(−4, 1)",
+                                "(2, 5)",
+                            ],
+                            answer: "(0, −2)",
+                            explain: (<>Points on the y-axis always have x = 0.</>)
+                        },
+                        {
+                            question: (<>A bar graph shows the number of students choosing sports. <br />
+Basketball = 18 students <br />
+Soccer = 12 students <br />
+Which statement is true?
+</>),
+                            options: [
+                                "Soccer is 6 more than basketball",
+                                "Basketball is 1.5 times soccer",
+                                "Soccer is half of basketball",
+                                "Basketball is double soccer",
+                            ],
+                            answer: "Basketball is 1.5 times soccer",
+                            explain: (<>18 ÷ 12 = 1.5 <br />
+Basketball has 1.5 times as many students as soccer.
+</>)
+                        },
+                        {
+                            question: (<>A table shows distance travelled over time.
+If distance increases at a constant rate, which graph best represents this?
+</>),
+                            options: [
+                                "A curved line",
+                                "A zig-zag line",
+                                "A straight slanted line",
+                                "A horizontal line",
+                            ],
+                            answer: "A straight slanted line",
+                            explain: (<>Constant rate → equal increase per unit time → straight line with slope.</>)
+                        },
                     ],
                 },
             topic7:{
-                    name: 'Order',
+                    name: 'Measurement I – Perimeter & Area',
                     questions :[
-                        
+                        {
+                            question: (<>A rectangle has a perimeter of 36 cm. <br />
+One side is 10 cm long. <br />
+What is the length of the other side?
+</>),
+                            options: [
+                                "8 cm",
+                                "9 cm",
+                                "10 cm",
+                                "16 cm",
+                            ],
+                            answer: "8 cm",
+                            explain: (<>Perimeter = 2(l + w) <br />
+36 ÷ 2 = 18 <br />
+Other side = 18 − 10 = 8 cm
+</>)
+                        },
+                        {
+                            question: (<>Which shape always has equal area when its base and height are the same as a rectangle?</>),
+                            options: [
+                                "Square",
+                                "Triangle",
+                                "Parallelogram",
+                                "Trapezium",
+                            ],
+                            answer: "Parallelogram",
+                            explain: (<>Area of rectangle = base × height <br />
+Area of parallelogram = base × height <br />
+They match when base and height are equal.
+</>)
+                        },
+                        {
+                            question: (<>A triangle has a base of 10 cm and a height of 6 cm.
+What is its area?
+</>),
+                            options: [
+                                "30 cm²",
+                                "60 cm²",
+                                "16 cm²",
+                                "120 cm²",
+                            ],
+                            answer: "30 cm²",
+                            explain: (<>Area of triangle = ½ × base × height <br />
+= ½ × 10 × 6 = 30 cm²
+</>)
+                        },
+                        {
+                            question: (<>Which statement about perimeter is true?</>),
+                            options: [
+                                "It measures the space inside a shape",
+                                "It is measured in square units",
+                                "It measures the distance around a shape",
+                                "It depends only on area",
+                            ],
+                            answer: "It measures the distance around a shape",
+                            explain: (<>Perimeter measures the total length of the boundary of a shape.</>)
+                        },
+                        {
+                            question: (<>A composite shape is made from two identical rectangles.
+If the area of one rectangle is 24 cm², what is the total area?
+</>),
+                            options: [
+                                "24 cm²",
+                                "36 cm²",
+                                "48 cm²",
+                                "72 cm²",
+                            ],
+                            answer: "48 cm²",
+                            explain: (<>Total area = 2 × 24 = 48 cm²</>)
+                        },
                     ],
                 },
             topic8:{
-                    name: 'Order',
+                    name: 'Measurement II – Volume, Capacity & Conversions',
                     questions :[
-                        
+                        {
+                            question: (<>A rectangular prism has dimensions 5 cm, 4 cm and 3 cm.
+What is its volume?
+</>),
+                            options: [
+                                "12 cm³",
+                                "20 cm³",
+                                "60 cm³",
+                                "120 cm³",
+                            ],
+                            answer: "60 cm³",
+                            explain: (<>Volume = length × width × height <br />
+= 5 × 4 × 3 = 60 cm³
+</>)
+                        },
+                        {
+                            question: (<>Which conversion is correct?</>),
+                            options: [
+                                "1 L = 10 mL",
+                                "1 L = 100 mL",
+                                "1 L = 1000 mL",
+                                "1 L = 10 000 mL",
+                            ],
+                            answer: "1 L = 1000 mL",
+                            explain: (<>By definition, 1 litre = 1000 millilitres.</>)
+                        },
+                        {
+                            question: (<>A water tank holds 2.5 L of water.
+How much is this in millilitres?
+</>),
+                            options: [
+                                "25 mL",
+                                "250 mL",
+                                "2500 mL",
+                                "25 000 mL",
+                            ],
+                            answer: "2500 mL",
+                            explain: (<>2.5 × 1000 = 2500 mL</>)
+                        },
+                        {
+                            question: (<>A scale shows that every small division represents 50 mL.
+The liquid level is at the 6th division. <br />
+How much liquid is in the container?
+</>),
+                            options: [
+                                "150 mL",
+                                "250 mL",
+                                "300 mL",
+                                "350 mL",
+                            ],
+                            answer: "300 mL",
+                            explain: (<>6 × 50 mL = 300 mL</>)
+                        },
+                        {
+                            question: (<>Which statement is correct about volume and capacity?</>),
+                            options: [
+                                "They are measured in the same units",
+                                "Volume measures space, capacity measures how much it can hold",
+                                "Capacity is measured in cubic centimetres",
+                                "Volume applies only to liquids",
+                            ],
+                            answer: "Volume measures space, capacity measures how much it can hold",
+                            explain: (<>Volume = space an object occupies <br />
+Capacity = how much liquid it can hold <br />
+They are related but not the same concept.
+</>)
+                        },
                     ],
                 },
             topic9:{
-                    name: 'Order',
+                    name: 'Measurement III – Time, Timetables, Duration & Rates',
                     questions :[
-                        
+                        {
+                            question: (<>A bus leaves at 9:35 am and arrives at 11:10 am.
+Which statement correctly describes the travel time?
+</>),
+                            options: [
+                                "1 hour 25 minutes",
+                                "1 hour 35 minutes",
+                                "1 hour 45 minutes",
+                                "2 hours 15 minutes",
+                            ],
+                            answer: "1 hour 35 minutes",
+                            explain: (<>9:35 → 10:35 = 1 hour <br />
+10:35 → 11:10 = 35 minutes <br />
+Total = 1 hour 35 minutes 
+</>)
+                        },
+                        {
+                            question: (<>A train travels 120 km in 2 hours and then 90 km in the next 1.5 hours.
+Which statement is correct?
+</>),
+                            options: [
+                                "The train travelled faster in the first part",
+                                "The train travelled faster in the second part",
+                                "The speed was the same in both parts",
+                                "The speed cannot be compared",
+                            ],
+                            answer: "The speed was the same in both parts",
+                            explain: (<>First speed = 120 ÷ 2 = 60 km/h <br />
+Second speed = 90 ÷ 1.5 = 60 km/h <br />
+Speeds are equal.
+</>)
+                        },
+                        {
+                            question: (<>A movie starts at 6:50 pm and lasts 1 hour 55 minutes.
+What time does it finish?
+</>),
+                            options: [
+                                "8:35 pm",
+                                "8:45 pm",
+                                "9:35 pm",
+                                "9:45 pm",
+                            ],
+                            answer: "8:45 pm",
+                            explain: (<>6:50 + 1 hour = 7:50 <br />
+7:50 + 55 minutes = 8:45 pm
+</>)
+                        },
+                        {
+                            question: (<>A cyclist travels 15 km in 30 minutes.
+What is the cyclist’s speed in km/h?
+</>),
+                            options: [
+                                "20 km/h",
+                                "25 km/h",
+                                "30 km/h",
+                                "45 km/h",
+                            ],
+                            answer: "30 km/h",
+                            explain: (<>30 minutes = 0.5 hours <br />
+Speed = 15 ÷ 0.5 = 30 km/h
+</>)
+                        },
+                        {
+                            question: (<>Which situation best represents a rate?</>),
+                            options: [
+                                "The height of a building",
+                                "The mass of a parcel",
+                                "The distance travelled each hour",
+                                "The total time taken",
+                            ],
+                            answer: "The distance travelled each hour",
+                            explain: (<>A rate compares two different units, such as distance per time.</>)
+                        },
                     ],
                 },
             topic10:{
-                    name: 'Order',
+                    name: 'Geometry I – Angles, Symmetry & Transformations',
                     questions :[
-                        
+                        {
+                            question: (<>An angle measures 92°.
+How should it be classified?
+</>),
+                            options: [
+                                "Acute",
+                                "Right",
+                                "Obtuse",
+                                "Reflex",
+                            ],
+                            answer: "Obtuse",
+                            explain: (<>Angles between 90° and 180° are obtuse.</>)
+                        },
+                        {
+                            question: (<>Which triangle must always have two equal sides?</>),
+                            options: [
+                                "Scalene",
+                                "Isosceles",
+                                "Right-angled",
+                                "Obtuse",
+                            ],
+                            answer: "Isosceles",
+                            explain: (<>An isosceles triangle is defined by having two equal sides.</>)
+                        },
+                        {
+                            question: (<>A shape is reflected across a vertical line.
+Which property stays the same?
+</>),
+                            options: [
+                                "Orientation",
+                                "Direction",
+                                "Size and shape",
+                                "Position",
+                            ],
+                            answer: "Size and shape",
+                            explain: (<>Reflections change orientation and position, but size and shape remain unchanged.</>)
+                        },
+                        {
+                            question: (<>Which angle sum is correct for a triangle?</>),
+                            options: [
+                                "90°",
+                                "180°",
+                                "270°",
+                                "360°",
+                            ],
+                            answer: "180°",
+                            explain: (<>The interior angles of any triangle add up to 180°.</>)
+                        },
+                        {
+                            question: (<>A shape has rotational symmetry of order 4.
+What does this mean?
+</>),
+                            options: [
+                                "It has 4 lines of symmetry",
+                                "It looks the same after a quarter turn",
+                                "It must be a square",
+                                "It rotates only once",
+                            ],
+                            answer: "It looks the same after a quarter turn",
+                            explain: (<>Order 4 means it matches itself 4 times in a full turn, every 90°.</>)
+                        },
                     ],
                 },
             topic11:{
-                    name: 'Order',
+                    name: 'Geometry II – Nets, 3D Shapes & Spatial Reasoning',
                     questions :[
-                        
+                        {
+                            question: (<>Which net can fold to make a cube?</>),
+                            options: [
+                                "Six squares in a straight line",
+                                "Four squares in a row with one above and one below the second square",
+                                "Five squares only",
+                                "Three rectangles and two squares",
+                            ],
+                            answer: "Four squares in a row with one above and one below the second square",
+                            explain: (<>A cube needs 6 square faces arranged so they fold without overlap.
+Option B is a valid cube net.
+</>)
+                        },
+                        {
+                            question: (<>How many faces does a triangular prism have?</>),
+                            options: [
+                                "4",
+                                "5",
+                                "6",
+                                "8",
+                            ],
+                            answer: "5",
+                            explain: (<>Triangular prism: <br />
+•	2 triangular faces <br />
+•	3 rectangular faces <br />
+Total = 5 faces
+</>)
+                        },
+                        {
+                            question: (<>Which view shows only the top face of a cube stack?</>),
+                            options: [
+                                "Front view",
+                                "Side view",
+                                "Plan view",
+                                "Elevation",
+                            ],
+                            answer: "Plan view",
+                            explain: (<>The plan view shows what the object looks like from above.</>)
+                        },
+                        {
+                            question: (<>A solid has 6 faces, 12 edges and 8 vertices.
+What is the solid?
+</>),
+                            options: [
+                                "Rectangular prism",
+                                "Square pyramid",
+                                "Cylinder",
+                                "Triangular prism",
+                            ],
+                            answer: "Rectangular prism",
+                            explain: (<>A rectangular prism (cuboid) has: <br />
+6 faces, 12 edges, 8 vertices.
+</>)
+                        },
+                        {
+                            question: (<>Which statement about 3D objects is true?</>),
+                            options: [
+                                "All faces must be rectangles",
+                                "All edges must be equal",
+                                "Faces meet at edges",
+                                "Vertices occur only on pyramids",
+                            ],
+                            answer: "Faces meet at edges",
+                            explain: (<>Faces connect along edges in all 3D solids.</>)
+                        },
                     ],
                 },
             topic12:{
-                    name: 'Order',
+                    name: 'Probability & Chance',
                     questions :[
-                        
+                        {
+                            question: (<>A spinner has 4 equal sections numbered 1 to 4.
+What is the probability of landing on an even number?
+</>),
+                            options: [
+                                "1/4",
+                                "1/2",
+                                "3/4",
+                                "1",
+                            ],
+                            answer: "1/2",
+                            explain: (<>Even numbers = 2 and 4 → 2 outcomes <br />
+Total outcomes = 4 <br />
+Probability = 2/4 = 1/2
+</>)
+                        },
+                        {
+                            question: (<>Which event is certain?</>),
+                            options: [
+                                "Rolling a 6 on a die",
+                                "Tossing heads",
+                                "Getting a number less than 7 on a die",
+                                "Picking a red card from a deck",
+                            ],
+                            answer: "Getting a number less than 7 on a die",
+                            explain: (<>Getting a number less than 7 on a die</>)
+                        },
+                        {
+                            question: (<>A bag contains 3 red, 5 blue and 2 green marbles.
+What is the probability of choosing a blue marble?
+</>),
+                            options: [
+                                "1/10",
+                                "1/5",
+                                "1/3",
+                                "5/10",
+                            ],
+                            answer: "5/10",
+                            explain: (<>Total marbles = 10 <br />
+Blue = 5 <br />
+Probability = 5/10 = 1/2
+</>)
+                        },
+                        {
+                            question: (<>Which statement about probability is correct?</>),
+                            options: [
+                                "Probability can be greater than 1",
+                                "Probability can be negative",
+                                "Probability is between 0 and 1",
+                                "Probability must be a whole number",
+                            ],
+                            answer: "Probability is between 0 and 1",
+                            explain: (<>All probabilities lie between 0 (impossible) and 1 (certain).</>)
+                        },
+                        {
+                            question: (<>Two coins are tossed.
+Which outcome has the same probability as getting two heads?
+</>),
+                            options: [
+                                "One head and one tail",
+                                "Two tails",
+                                "Any outcome",
+                                "No outcome",
+                            ],
+                            answer: "Two tails",
+                            explain: (<>Outcomes: HH, HT, TH, TT <br />
+Each has probability 1/4 <br />
+So TT has the same probability as HH.
+</>)
+                        },
                     ],
                 },
         },
         english:{
             topic1:{
-                    name: 'Order',
+                    name: 'Text Purpose, Audience & Clear Opinions',
                     questions :[
-                        
+                        {
+                            question: (<>Which opening sentence best establishes a clear persuasive position?</>),
+                            options: [
+                                "Many people have different opinions about uniforms.",
+                                "School uniforms should be compulsory because they promote equality among students.",
+                                "Uniforms exist in many schools around the world.",
+                                "This text will discuss school uniforms.",
+                            ],
+                            answer: "School uniforms should be compulsory because they promote equality among students.",
+                            explain: (<>A strong persuasive introduction clearly states a position and gives a reason, not just background information.</>)
+                        },
+                        {
+                            question: (<>Which sentence avoids a bare assertion?</>),
+                            options: [
+                                "Homework is unfair.",
+                                "Homework should be reduced.",
+                                "Homework should be reduced because excessive tasks can limit students’ rest time.",
+                                "Homework exists in most schools.",
+                            ],
+                            answer: "Homework should be reduced because excessive tasks can limit students’ rest time.",
+                            explain: (<>A bare assertion is an opinion without support. Option C strengthens the claim with a reason.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Schools should encourage community service because it helps students develop responsibility and understand the needs of others. <br />
+What is the author’s main intent?
+</>),
+                            options: [
+                                "To explain what community service is",
+                                "To entertain the reader",
+                                "To persuade readers to support community service",
+                                "To describe school activities",
+                            ],
+                            answer: "To persuade readers to support community service",
+                            explain: (<>The paragraph presents an opinion supported by a benefit, showing a persuasive intent.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Wearing helmets must be compulsory for cyclists, as it significantly reduces the risk of serious head injuries. <br />
+Who is the most likely audience for this paragraph?
+</>),
+                            options: [
+                                "Medical researchers",
+                                "Young children only",
+                                "Cyclists and the general public",
+                                "Helmet manufacturers",
+                            ],
+                            answer: "Cyclists and the general public",
+                            explain: (<>The statement is aimed at people who ride bicycles or influence cycling behaviour, making the general public the intended audience.</>)
+                        },
+                        {
+                            question: (<>Which sentence correctly uses a modal verb to show obligation?</>),
+                            options: [
+                                "Students play sport daily.",
+                                "Students could play sport daily.",
+                                "Students must play sport daily.",
+                                "Students played sport daily.",
+                            ],
+                            answer: "Students must play sport daily.",
+                            explain: (<>“Must” is a modal verb showing strong obligation, common in persuasive texts.</>)
+                        },
+                        {
+                            question: (<>Students must play sport daily.</>),
+                            options: [
+                                "The bell rang.",
+                                "The bell rang, and students left.",
+                                "The bell rang because the lesson had ended.",
+                                "The bell rang loudly.",
+                            ],
+                            answer: "The bell rang because the lesson had ended.",
+                            explain: (<>A complex sentence includes a main clause and a subordinate clause joined by words like because.</>)
+                        },
+                        {
+                            question: (<>Which sentence has correct sentence boundary punctuation?</>),
+                            options: [
+                                "Students finished early they left quietly.",
+                                "Students finished early, they left quietly.",
+                                "Students finished early. They left quietly.",
+                                "Students finished, early they left quietly.",
+                            ],
+                            answer: "Students finished early. They left quietly.",
+                            explain: (<>Two complete ideas must be separated by a full stop or conjunction.</>)
+                        },
                     ],
                 },
             topic2:{
-                    name: 'Order',
+                    name: 'Persuasive Structure & Paragraphing',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence best uses evidence to support an argument?</>),
+                            options: [
+                                "I think school starts too early.",
+                                "School starts too early for students.",
+                                "Research shows that later start times improve student concentration.",
+                                "School start times are bad.",
+                            ],
+                            answer: "Research shows that later start times improve student concentration.",
+                            explain: (<>Evidence-based arguments refer to research, data, or examples, not personal opinion alone.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses emotive language most effectively?</>),
+                            options: [
+                                "The rule exists.",
+                                "The rule affects students.",
+                                "The rule unfairly robs students of valuable rest time.",
+                                "The rule was introduced last year.",
+                            ],
+                            answer: "The rule unfairly robs students of valuable rest time.",
+                            explain: (<>Words like “unfairly” and “robs” are emotionally charged and strengthen persuasion.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Some people argue that homework reinforces learning, while others believe it creates unnecessary stress for students. <br />
+What is the writer doing in this paragraph?
+</>),
+                            options: [
+                                "Giving instructions",
+                                "Presenting opposing viewpoints",
+                                "Sharing a personal story",
+                                "Making a final judgement",
+                            ],
+                            answer: "Presenting opposing viewpoints",
+                            explain: (<>The paragraph contrasts two perspectives, a key feature of balanced argument writing.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The author states that public transport reduces traffic congestion and supports this claim by describing lower pollution levels in major cities. <br />
+How does the author strengthen the argument?
+</>),
+                            options: [
+                                "By asking questions",
+                                "By using humour",
+                                "By providing supporting details",
+                                "By repeating the opinion",
+                            ],
+                            answer: "By providing supporting details",
+                            explain: (<>Arguments are strengthened when claims are backed by supporting details or examples.</>)
+                        },
+                        {
+                            question: (<>Which sentence correctly uses a subordinating conjunction?</>),
+                            options: [
+                                "I stayed inside, and it was raining.",
+                                "I stayed inside because it was raining.",
+                                "I stayed inside, it was raining.",
+                                "I stayed inside but it was raining.",
+                            ],
+                            answer: "I stayed inside because it was raining.",
+                            explain: (<>“Because” introduces a subordinate clause explaining reason.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses commas in clauses correctly?</>),
+                            options: [
+                                "Although it was late we continued working.",
+                                "Although it was late, we continued working.",
+                                "Although, it was late we continued working.",
+                                "Although it was late we, continued working.",
+                            ],
+                            answer: "Although it was late, we continued working.",
+                            explain: (<>A comma is used after an introductory subordinate clause.</>)
+                        },
+                        {
+                            question: (<>Which sentence is grammatically correct?</>),
+                            options: [
+                                "The reasons is clear.",
+                                "The reason are clear.",
+                                "The reasons are clear.",
+                                "The reason were clear.",
+                            ],
+                            answer: "The reasons are clear.",
+                            explain: (<>Plural subject reasons correctly matches with are.</>)
+                        },
                     ],
                 },
             topic3:{
-                    name: 'Order',
+                    name: 'Narrative Writing & Inference',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence best introduces a narrative orientation?</>),
+                            options: [
+                                "The storm was dangerous.",
+                                "I was afraid.",
+                                "On the night the power failed, everything changed.",
+                                "Storms happen often.",
+                            ],
+                            answer: "On the night the power failed, everything changed.",
+                            explain: (<>A strong orientation establishes time, situation, and mood, drawing the reader into the story.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses dialogue to advance the plot?</>),
+                            options: [
+                                "She felt nervous.",
+                                "She walked away quickly.",
+                                "“We don’t have much time,” he whispered, checking the door.",
+                                "The room was dark.",
+                            ],
+                            answer: "“We don’t have much time,” he whispered, checking the door.",
+                            explain: (<>Dialogue can move the story forward by revealing urgency or action.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Jake hesitated before stepping onto the stage. He took a deep breath and avoided looking at the audience. <br />
+What can the reader infer about Jake?
+</>),
+                            options: [
+                                "He is bored",
+                                "He is confident",
+                                "He is nervous",
+                                "He is angry",
+                            ],
+                            answer: "He is nervous",
+                            explain: (<>Jake’s actions suggest nervousness, even though it is not directly stated.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+“I didn’t mean to forget,” she muttered, gripping the letter tightly. <br />
+What does this dialogue reveal about the character?
+</>),
+                            options: [
+                                "She is excited",
+                                "She feels guilty",
+                                "She is confused",
+                                "She is amused",
+                            ],
+                            answer: "She feels guilty",
+                            explain: (<>Her words and actions suggest regret or guilt, which the reader infers.</>)
+                        },
+                        {
+                            question: (<>Which sentence shows consistent verb tense?</>),
+                            options: [
+                                "He opens the door and ran outside.",
+                                "He opened the door and runs outside.",
+                                "He opened the door and ran outside.",
+                                "He opens the door and running outside.",
+                            ],
+                            answer: "He opened the door and ran outside.",
+                            explain: (<>Both verbs are in past tense, maintaining consistency.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses quotation marks correctly?</>),
+                            options: [
+                                "“I am ready”, she said.",
+                                "“I am ready,” she said.",
+                                "“I am ready” she said.",
+                                "“I am ready.” She said.",
+                            ],
+                            answer: "“I am ready,” she said.",
+                            explain: (<>The comma is placed inside the quotation marks before the dialogue tag.</>)
+                        },
+                        {
+                            question: (<>Which sentence has clear pronoun reference?</>),
+                            options: [
+                                "Alex spoke to Sam when he was late.",
+                                "Alex spoke to Sam because he was angry.",
+                                "Alex spoke to Sam, who was angry.",
+                                "Alex spoke to Sam when they arrived.",
+                            ],
+                            answer: "Alex spoke to Sam, who was angry.",
+                            explain: (<>The relative clause clearly shows who was angry, avoiding ambiguity.</>)
+                        },
                     ],
                 },
             topic4:{
-                    name: 'Order',
+                    name: 'Informative & Explanatory Texts',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence would work best as a topic sentence for a persuasive paragraph?</>),
+                            options: [
+                                "Many people have opinions about technology.",
+                                "Technology exists in most classrooms.",
+                                "Technology improves learning by allowing students to access information quickly.",
+                                "Students use laptops at school.",
+                            ],
+                            answer: "Technology improves learning by allowing students to access information quickly.",
+                            explain: (<>A topic sentence clearly states the main idea of a paragraph and signals the argument that will be developed.</>)
+                        },
+                        {
+                            question: (<>Which sentence improves cohesion by linking ideas logically?</>),
+                            options: [
+                                "Exercise is important. People should exercise daily.",
+                                "Exercise is important, people should exercise daily.",
+                                "Exercise is important because it improves physical and mental health.",
+                                "Exercise is important people exercise daily.",
+                            ],
+                            answer: "Exercise is important because it improves physical and mental health.",
+                            explain: (<>The connective because clearly links cause and effect, improving cohesion.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The first paragraph explains the causes of climate change. The following paragraph describes how rising temperatures affect ecosystems. <br />
+How are the ideas in these paragraphs related?
+</>),
+                            options: [
+                                "Comparison",
+                                "Cause and effect",
+                                "Description",
+                                "Problem and solution",
+                            ],
+                            answer: "Cause and effect",
+                            explain: (<>The first paragraph presents causes, while the second explains the effects.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Many students struggle with time management. As a result, deadlines are often missed, leading to unnecessary stress. <br />
+Which phrase shows a cause–effect relationship?
+</>),
+                            options: [
+                                "Many students",
+                                "Time management",
+                                "As a result",
+                                "Unnecessary stress",
+                            ],
+                            answer: "As a result",
+                            explain: (<>“As a result” signals that one idea follows from another, showing cause and effect.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses an expanded noun group most effectively?</>),
+                            options: [
+                                "The report was clear.",
+                                "The detailed science report explained the experiment clearly.",
+                                "The report explained it.",
+                                "The science report was there.",
+                            ],
+                            answer: "The detailed science report explained the experiment clearly.",
+                            explain: (<>Expanded noun groups add detail using adjectives and modifiers to clarify meaning.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses an adverbial phrase correctly?</>),
+                            options: [
+                                "She answered confidently.",
+                                "She answered in a confident way.",
+                                "She answered confidence.",
+                                "She answered confident.",
+                            ],
+                            answer: "She answered in a confident way.",
+                            explain: (<>“In a confident way” is an adverbial phrase explaining how the action was done.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses a cohesive pronoun clearly?</>),
+                            options: [
+                                "Emma gave the book to Sarah because she forgot it.",
+                                "Emma gave the book to Sarah, who had forgotten it.",
+                                "Emma gave the book to Sarah when she was late.",
+                                "Emma gave the book to Sarah and she thanked her.",
+                            ],
+                            answer: "Emma gave the book to Sarah, who had forgotten it.",
+                            explain: (<>The relative clause clearly shows who forgot the book, improving cohesion.</>)
+                        },
                     ],
                 },
             topic5:{
-                    name: 'Order',
+                    name: 'Vocabulary, Idioms & Figurative Language',
                     questions :[
-                        
+                       {
+                            question: (<>Which sentence uses figurative language to strengthen meaning?</>),
+                            options: [
+                                "The classroom was noisy.",
+                                "The classroom was loud.",
+                                "The classroom was a thunderstorm of voices.",
+                                "The classroom had many students.",
+                            ],
+                            answer: "The classroom was a thunderstorm of voices.",
+                            explain: (<>The metaphor creates a vivid image, strengthening the description.</>)
+                        },
+                        {
+                            question: (<>Which sentence best shows register appropriate for a formal persuasive text?</>),
+                            options: [
+                                "This rule is totally unfair.",
+                                "This rule isn’t okay.",
+                                "This policy places unnecessary pressure on students.",
+                                "This rule is bad.",
+                            ],
+                            answer: "This policy places unnecessary pressure on students.",
+                            explain: (<>Formal register avoids slang and uses precise, measured language.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+After failing the test, Mia felt as if the ground had disappeared beneath her feet. <br />
+What does this expression suggest?
+</>),
+                            options: [
+                                "Mia fell over",
+                                "Mia felt shocked and overwhelmed",
+                                "Mia was excited",
+                                "Mia became angry",
+                            ],
+                            answer: "Mia felt shocked and overwhelmed",
+                            explain: (<>The figurative expression suggests emotional shock, not a literal event.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The author describes the city as “a restless giant that never sleeps”. <br />
+What effect does this metaphor create?
+</>),
+                            options: [
+                                "It explains the city’s size",
+                                "It suggests constant activity",
+                                "It shows the city is dangerous",
+                                "It compares buildings",
+                            ],
+                            answer: "It suggests constant activity",
+                            explain: (<>The metaphor implies continuous movement and energy, shaping the reader’s understanding.</>)
+                        },
+                        {
+                            question: (<>Which word is formed using a Greek or Latin root?</>),
+                            options: [
+                                "Bicycle",
+                                "Running",
+                                "Friendly",
+                                "Quickly",
+                            ],
+                            answer: "Bicycle",
+                            explain: (<>“Bi” (two) and “cycle” (circle) come from Greek and Latin roots.</>)
+                        },
+                        {
+                            question: (<>Which pair of words belong to the same word family?</>),
+                            options: [
+                                "Create / Creation",
+                                "Fast / Slow",
+                                "Speak / Said",
+                                "Run / Jump",
+                            ],
+                            answer: "Create / Creation",
+                            explain: (<>Both words share the same base meaning and origin.</>)
+                        },
+                        {
+                            question: (<>Which sentence correctly uses a prefix?</>),
+                            options: [
+                                "He redo his work.",
+                                "He re-did his work.",
+                                "He redid his work.",
+                                "He did again his work.",
+                            ],
+                            answer: "He redid his work.",
+                            explain: (<>“Re-” is correctly attached to the base word without a hyphen.</>)
+                        }, 
                     ],
                 },
             topic6:{
-                    name: 'Order',
+                    name: 'Visual & Multimodal Texts',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence best explains the purpose of a caption in a multimodal text?</>),
+                            options: [
+                                "To repeat the image",
+                                "To decorate the page",
+                                "To clarify or extend the meaning of the image",
+                                "To replace the written text",
+                            ],
+                            answer: "To clarify or extend the meaning of the image",
+                            explain: (<>Captions guide readers to interpret images accurately.</>)
+                        },
+                        {
+                            question: (<>Which sentence best integrates visual and written information?</>),
+                            options: [
+                                "The graph is there.",
+                                "The graph shows data.",
+                                "The graph shows a steady increase in rainfall over five years.",
+                                "The graph looks interesting.",
+                            ],
+                            answer: "The graph shows a steady increase in rainfall over five years.",
+                            explain: (<>Effective integration explains what the visual shows, not just that it exists.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The diagram places the largest image in the centre, while smaller images surround it. <br />
+What does the placement of the large image suggest?
+</>),
+                            options: [
+                                "It is less important",
+                                "It is decorative",
+                                "It is the main focus",
+                                "It is optional",
+                            ],
+                            answer: "It is the main focus",
+                            explain: (<>Central placement and size increase salience, signalling importance.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The photo is taken from a low angle, making the building appear taller and more powerful. <br />
+What effect does this angle have on the viewer?
+</>),
+                            options: [
+                                "It reduces importance",
+                                "It creates humour",
+                                "It emphasises strength or authority",
+                                "It hides details",
+                            ],
+                            answer: "It emphasises strength or authority",
+                            explain: (<>Low-angle shots often make subjects appear dominant or powerful.</>)
+                        },
+                        {
+                            question: (<>Which sentence correctly uses a comma after an introductory phrase?</>),
+                            options: [
+                                "After the storm passed the roads reopened.",
+                                "After the storm passed, the roads reopened.",
+                                "After, the storm passed the roads reopened.",
+                                "After the storm, passed the roads reopened.",
+                            ],
+                            answer: "After the storm passed, the roads reopened.",
+                            explain: (<>A comma follows an introductory dependent clause.</>)
+                        },
+                        {
+                            question: (<>Which sentence is the clearest and most concise?</>),
+                            options: [
+                                "The reason why is because students were late.",
+                                "The reason is because students were late.",
+                                "Students were late.",
+                                "Students were late due to the reason.",
+                            ],
+                            answer: "Students were late.",
+                            explain: (<>Concise writing removes unnecessary words while keeping meaning clear.</>)
+                        },
+                        {
+                            question: (<>Which sentence shows correct sentence flow and clarity?</>),
+                            options: [
+                                "The video was interesting it explained the process.",
+                                "The video was interesting, it explained the process.",
+                                "The video was interesting because it explained the process.",
+                                "The video interesting explained the process.",
+                            ],
+                            answer: "The video was interesting because it explained the process.",
+                            explain: (<>The conjunction because links ideas smoothly and avoids run-on sentences.</>)
+                        },
                     ],
                 },
             topic7:{
-                    name: 'Order',
+                    name: 'Sentence Variety, Cohesion & Editing',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence demonstrates the most precise word choice?</>),
+                            options: [
+                                "The scientist did a thing to fix the problem.",
+                                "The scientist made something to fix the problem.",
+                                "The scientist developed a solution to address the problem.",
+                                "The scientist worked on the problem.",
+                            ],
+                            answer: "The scientist developed a solution to address the problem.",
+                            explain: (<>Precise language uses specific verbs and nouns (“developed”, “solution”) rather than vague wording.</>)
+                        },
+                        {
+                            question: (<>Which sentence shows correct use of a multisyllabic word?</>),
+                            options: [
+                                "The enviroment was damaged.",
+                                "The environment was damaged.",
+                                "The enviroment were damaged.",
+                                "The enviornment was damaged.",
+                            ],
+                            answer: "The environment was damaged.",
+                            explain: (<>“Environment” is a multisyllabic word that must be spelled accurately for clarity.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The unfamiliar term <i>biodegradable</i> appears next to an explanation describing materials that break down naturally over time. <br />
+How does the explanation help the reader?
+</>),
+                            options: [
+                                "It distracts from the text",
+                                "It replaces the difficult word",
+                                "It confirms the meaning using context",
+                                "It changes the meaning of the word",
+                            ],
+                            answer: "It confirms the meaning using context",
+                            explain: (<>Context clues help readers confirm the meaning of unfamiliar vocabulary.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The word conduct can mean to behave in a certain way or to lead an activity, depending on how it is used. <br />
+What does this paragraph explain?
+</>),
+                            options: [
+                                "A spelling mistake",
+                                "A homophone",
+                                "A word with multiple meanings",
+                                "A prefix",
+                            ],
+                            answer: "A word with multiple meanings",
+                            explain: (<>Some words change meaning depending on context, which readers must interpret carefully.</>)
+                        },
+                        {
+                            question: (<>Which pair of words are homophones?</>),
+                            options: [
+                                "Affect / Effect",
+                                "Through / Thorough",
+                                "Brake / Break",
+                                "Build / Built",
+                            ],
+                            answer: "Brake / Break",
+                            explain: (<>Brake and break sound the same but have different meanings and spellings.</>)
+                        },
+                        {
+                            question: (<>Which word is formed using a prefix that changes meaning?</>),
+                            options: [
+                                "Rewrite",
+                                "Writer",
+                                "Writing",
+                                "Written",
+                            ],
+                            answer: "Rewrite",
+                            explain: (<>The prefix re- means “again”, changing the meaning of the base word.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses an irregular plural correctly?</>),
+                            options: [
+                                "The childs waited outside.",
+                                "The childrens waited outside.",
+                                "The children waited outside.",
+                                "The childes waited outside.",
+                            ],
+                            answer: "The children waited outside.",
+                            explain: (<>“Children” is an irregular plural and does not follow standard -s or -es rules.</>)
+                        },
                     ],
                 },
             topic8:{
-                    name: 'Order',
+                    name: 'NAPLAN Integration & Review',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence shows the most effective editing for clarity?</>),
+                            options: [
+                                "The report was very really confusing to read.",
+                                "The report was confusing to read.",
+                                "The report was confusing reading it.",
+                                "The report confusing.",
+                            ],
+                            answer: "The report was confusing to read.",
+                            explain: (<>Effective editing removes redundant or unnecessary words while keeping meaning clear.</>)
+                        },
+                        {
+                            question: (<>Which sentence best strengthens cohesion in a persuasive paragraph?</>),
+                            options: [
+                                "Students need more breaks. This is important.",
+                                "Students need more breaks, they are tired.",
+                                "Students need more breaks because regular rest improves focus.",
+                                "Students need more breaks. Breaks matter.",
+                            ],
+                            answer: "Students need more breaks because regular rest improves focus.",
+                            explain: (<>The connective because clearly links the claim with a reason.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Text A argues that online learning increases flexibility, while Text B suggests it reduces meaningful interaction between students. <br />
+What is the reader required to do here?
+</>),
+                            options: [
+                                "Summarise one text",
+                                "Identify a setting",
+                                "Compare ideas across texts",
+                                "Identify a character",
+                            ],
+                            answer: "Compare ideas across texts",
+                            explain: (<>The paragraph asks the reader to compare viewpoints, a key NAPLAN skill.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Although both articles discuss climate change, one presents it as an urgent crisis, while the other adopts a more cautious tone. <br />
+What is the key difference between the texts?
+</>),
+                            options: [
+                                "Topic",
+                                "Audience",
+                                "Tone",
+                                "Structure",
+                            ],
+                            answer: "Tone",
+                            explain: (<>Both texts share a topic, but differ in tone, which affects how the message is received.</>)
+                        },
+                        {
+                            question: (<>Which sentence correctly uses an apostrophe for plural possession?</>),
+                            options: [
+                                "The players boots were muddy.",
+                                "The player’s boots were muddy.",
+                                "The players’ boots were muddy.",
+                                "The players boots’ were muddy.",
+                            ],
+                            answer: "The players’ boots were muddy.",
+                            explain: (<>The apostrophe comes after the s to show possession by more than one player.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses capital letters correctly?</>),
+                            options: [
+                                "The Prime minister spoke on monday.",
+                                "The prime minister spoke on Monday.",
+                                "The Prime Minister spoke on monday.",
+                                "The Prime Minister spoke on Monday.",
+                            ],
+                            answer: "The Prime Minister spoke on Monday.",
+                            explain: (<>Proper nouns and titles require capital letters.</>)
+                        },
+                        {
+                            question: (<>Which sentence has correct punctuation and sentence boundaries?</>),
+                            options: [
+                                "The experiment failed however the results were useful.",
+                                "The experiment failed, however the results were useful.",
+                                "The experiment failed; however, the results were useful.",
+                                "The experiment failed however, the results were useful.",
+                            ],
+                            answer: "The experiment failed; however, the results were useful.",
+                            explain: (<>A semicolon correctly joins related independent clauses, and commas set off the connective.</>)
+                        },
                     ],
                 },
             topic9:{
@@ -3233,125 +4731,1503 @@ What effect does this have on the audience?
     year9:{
         maths:{
             topic1:{
-                    name: 'Order',
+                    name: 'Real Numbers, Indices & Scientific Notation',
                     questions :[
+                        {
+                            question: (<>A science textbook states that the diameter of a bacteria is 4 × 10⁻⁶ metres.
+Which statement best describes this value?
+</>),
+                            options: [
+                                "It is 4 million metres",
+                                "It is a very small number close to zero",
+                                "It is larger than 4 × 10⁶",
+                                "It equals 0.0004 metres",
+                            ],
+                            answer: "It is a very small number close to zero",
+                            explain: (<>A negative index represents division by powers of 10. 10⁻⁶ equals one millionth, making the value extremely small.</>)
+                        },
+                        {
+                            question: (<>Which of the following is closest in value to 3.14 × 10³?</>),
+                            options: [
+                                "0.00314",
+                                "31.4",
+                                "314",
+                                "3140",
+                            ],
+                            answer: "3140",
+                            explain: (<>3.14 multiplied by 1000 equals 3140.</>)
+                        },
+                        {
+                            question: (<>A student simplifies 2⁴ × 2⁻².
+Which statement is true?
+</>),
+                            options: [
+                                "It equals 2²",
+                                "It equals 2⁻⁸",
+                                "It equals 2⁶",
+                                "It equals 1",
+                            ],
+                            answer: "It equals 2²",
+                            explain: (<>Indices are added when multiplying same bases: 4 + (–2) = 2.</>)
+                        },
+                        {
+                            question: (<>Which number is irrational?</>),
+                            options: [
+                                "7/9",
+                                "0.125",
+                                "√2",
+                                "0.333",
+                            ],
+                            answer: "√2",
+                            explain: (<>√2 is non-terminating and non-repeating, so it is irrational.</>)
+                        },
+                        {
+                            question: (<>A value is written as 6.5 × 10⁴.
+Which situation best matches this number?
+</>),
+                            options: [
+                                "Mass of sand grain",
+                                "Seconds in a minute",
+                                "People in a large stadium",
+                                "Width of a coin",
+                            ],
+                            answer: "People in a large stadium",
+                            explain: (<>6.5 × 10⁴ equals 65,000, suitable for stadium capacity.</>)
+                        },
                         
                     ],
                 },
             topic2:{
-                    name: 'Order',
+                    name: 'Patterns, Sequences & Algebraic Rules',
                     questions :[
-                        
+                        {
+                            question: (<>A number pattern increases as shown: 5 → 11 → 17 → 23.
+Which rule generates this pattern?
+</>),
+                            options: [
+                                "Multiply by 2",
+                                "Add 5",
+                                "Add 6",
+                                "Multiply by 3 then subtract 4",
+                            ],
+                            answer: "Add 6",
+                            explain: (<>Each term increases by 6, so the rule is add 6.</>)
+                        },
+                        {
+                            question: (<>A pattern follows the rule 3n + 2.
+Which value belongs in the pattern when n = 4?
+</>),
+                            options: [
+                                "12",
+                                "14",
+                                "15",
+                                "20",
+                            ],
+                            answer: "14",
+                            explain: (<>Substituting n = 4 gives 3×4 + 2 = 14.</>)
+                        },
+                        {
+                            question: (<>A table shows the relationship: <br />
+Input: 1, 2, 3 <br />
+Output: 4, 7, 10 <br />
+Which rule fits this pattern?
+</>),
+                            options: [
+                                "Multiply by 3",
+                                "Add 3",
+                                "Multiply by 3 then add 1",
+                                "Multiply by 3 then subtract 2",
+                            ],
+                            answer: "Multiply by 3 then add 1",
+                            explain: (<>Each output equals 3 times the input plus 1.</>)
+                        },
+                        {
+                            question: (<>A pattern is decreasing and can be written as 20 − 4n.
+What happens to the value as n increases?
+</>),
+                            options: [
+                                "It increases faster",
+                                "It stays constant",
+                                "It decreases by equal amounts",
+                                "It doubles each time",
+                            ],
+                            answer: "It decreases by equal amounts",
+                            explain: (<>The −4 indicates a decrease of 4 each step.</>)
+                        },
+                        {
+                            question: (<>Which statement best describes a linear pattern?</>),
+                            options: [
+                                "It changes randomly",
+                                "It repeats",
+                                "It changes by the same amount each step",
+                                "It always multiplies",
+                            ],
+                            answer: "It changes by the same amount each step",
+                            explain: (<>Linear patterns have a constant difference.</>)
+                        },
                     ],
                 },
             topic3:{
-                    name: 'Order',
+                    name: 'Linear Expressions & Simplification',
                     questions :[
-                        
+                       {
+                            question: (<>Which expression is equivalent to 3x + 4 + 2x?</>),
+                            options: [
+                                "5x + 4",
+                                "6x + 4",
+                                "5x + 6",
+                                "x + 4",
+                            ],
+                            answer: "5x + 4",
+                            explain: (<>Like terms 3x and 2x combine to give 5x.</>)
+                        },
+                        {
+                            question: (<>A student simplifies 4(a + 3).
+Which result is correct?
+</>),
+                            options: [
+                                "4a + 3",
+                                "4a + 12",
+                                "a + 12",
+                                "7a",
+                            ],
+                            answer: "4a + 12",
+                            explain: (<>The 4 multiplies both terms inside the bracket.</>)
+                        },
+                        {
+                            question: (<>Which expression is NOT equivalent to 2(x + 5)?</>),
+                            options: [
+                                "2x + 10",
+                                "x + 10",
+                                "2x + 5 + 5",
+                                "10 + 2x",
+                            ],
+                            answer: "x + 10",
+                            explain: (<>x + 10 has only one x term, not two.</>)
+                        },
+                        {
+                            question: (<>Which pair of expressions are equivalent?</>),
+                            options: [
+                                "3(x − 2) and 3x − 6",
+                                "3x − 2 and x − 6",
+                                "3x − 2 and 3(x − 6)",
+                                "x − 2 and 2x − 3",
+                            ],
+                            answer: "3(x − 2) and 3x − 6",
+                            explain: (<>Expanding 3(x − 2) gives 3x − 6.</>)
+                        },
+                        {
+                            question: (<>Which expression has the same value as x + x + x?</>),
+                            options: [
+                                "x³",
+                                "3x",
+                                "x²",
+                                "2x",
+                            ],
+                            answer: "3x",
+                            explain: (<>Adding x three times equals 3x.</>)
+                        }, 
                     ],
                 },
             topic4:{
-                    name: 'Order',
+                    name: 'Linear Equations & Rearranging Formulas',
                     questions :[
-                        
+                        {
+                            question: (<>A mobile plan charges a fixed fee of $10 plus $2 per gigabyte.
+Which equation represents the total cost C for g gigabytes?
+</>),
+                            options: [
+                                "C = 10g + 2",
+                                "C = 2g − 10",
+                                "C = 2g + 10",
+                                "C = 10 − 2g",
+                            ],
+                            answer: "C = 2g + 10",
+                            explain: (<>$10 is a fixed cost, and $2 is charged per gigabyte.</>)
+                        },
+                        {
+                            question: (<>If x + 7 = 15, which value satisfies the equation?</>),
+                            options: [
+                                "7",
+                                "8",
+                                "15",
+                                "22",
+                            ],
+                            answer: "8",
+                            explain: (<>Subtracting 7 from both sides gives x = 8.</>)
+                        },
+                        {
+                            question: (<>A formula is given as A = 5p.
+Which equation makes p the subject?
+</>),
+                            options: [
+                                "p = A + 5",
+                                "p = 5A",
+                                "p = A ÷ 5",
+                                "p = A − 5",
+                            ],
+                            answer: "p = A ÷ 5",
+                            explain: (<>Dividing both sides by 5 isolates p.</>)
+                        },
+                        {
+                            question: (<>Which value of x makes 4x − 6 = 10 true?</>),
+                            options: [
+                                "1",
+                                "2",
+                                "3",
+                                "4",
+                            ],
+                            answer: "4",
+                            explain: (<>Solving gives 4x = 16, so x = 4.</>)
+                        },
+                        {
+                            question: (<>Which situation best matches y = 3x + 5?</>),
+                            options: [
+                                "Multiply by 5 then add 3",
+                                "A fixed value of 3 added repeatedly",
+                                "A starting value of 5 increasing by 3",
+                                "A decreasing pattern",
+                            ],
+                            answer: "A starting value of 5 increasing by 3",
+                            explain: (<>The constant 5 is the starting value and 3 is the rate of increase.</>)
+                        },
                     ],
                 },
             topic5:{
-                    name: 'Order',
+                    name: 'Graphs, Coordinates & Transformations',
                     questions :[
-                        
+                        {
+                            question: (<>A point is located at (−2, 4). After a translation 3 units to the right and 5 units down, where is the new position?</>),
+                            options: [
+                                "(1, 9)",
+                                "(−5, −1)",
+                                "(1, −1)",
+                                "(−1, −9)",
+                            ],
+                            answer: "(1, −1)",
+                            explain: (<>Explanation: Moving right increases x by 3 (−2 → 1) and moving down decreases y by 5 (4 → −1).</>)
+                        },
+                        {
+                            question: (<>A straight-line graph shows total cost increasing at a constant rate as the number of items increases.
+Which statement must be true?
+</>),
+                            options: [
+                                "The graph is curved",
+                                "The rate of change is constant",
+                                "The cost starts at zero",
+                                "The slope is negative",
+                            ],
+                            answer: "The rate of change is constant",
+                            explain: (<>A straight line represents a constant rate of change.</>)
+                        },
+                        {
+                            question: (<>Which transformation moves a shape without changing its size or orientation?</>),
+                            options: [
+                                "Reflection",
+                                "Rotation",
+                                "Translation",
+                                "Enlargement",
+                            ],
+                            answer: "Translation",
+                            explain: (<>A translation slides a shape without rotating or flipping it.</>)
+                        },
+                        {
+                            question: (<>A graph crosses the y-axis at 6.
+What does this value represent?
+</>),
+                            options: [
+                                "The maximum value",
+                                "The gradient",
+                                "The starting value",
+                                "The x-intercept",
+                            ],
+                            answer: "The starting value",
+                            explain: (<>The y-intercept shows the value when x = 0.</>)
+                        },
+                        {
+                            question: (<>A distance–time graph becomes steeper over time.
+Which statement best describes the motion?
+</>),
+                            options: [
+                                "The object stops",
+                                "The object moves at constant speed",
+                                "The object slows down",
+                                "The object speeds up",
+                            ],
+                            answer: "The object speeds up",
+                            explain: (<>A steeper slope indicates increasing speed.</>)
+                        },
                     ],
                 },
             topic6:{
-                    name: 'Order',
+                    name: 'Ratios, Rates & Proportional Reasoning',
                     questions :[
-                        
+                        {
+                            question: (<>The ratio of boys to girls in a class is 3:5. If there are 24 students, how many are girls?</>),
+                            options: [
+                                "9",
+                                "12",
+                                "15",
+                                "20",
+                            ],
+                            answer: "15",
+                            explain: (<>Total parts = 8. Each part = 24 ÷ 8 = 3. Girls = 5 × 3 = 15.</>)
+                        },
+                        {
+                            question: (<>A car travels 180 km in 3 hours at a constant speed.
+Which statement is correct?
+</>),
+                            options: [
+                                "The speed is 60 km/h",
+                                "The speed is 90 km/h",
+                                "The distance doubles each hour",
+                                "The time per km increases",
+                            ],
+                            answer: "The speed is 60 km/h",
+                            explain: (<>Speed = distance ÷ time = 180 ÷ 3 = 60 km/h.</>)
+                        },
+                        {
+                            question: (<>A recipe uses flour and sugar in the ratio 4:1. If 600 g of flour is used, how much sugar is needed?</>),
+                            options: [
+                                "120 g",
+                                "150 g",
+                                "240 g",
+                                "300 g",
+                            ],
+                            answer: "150 g",
+                            explain: (<>4 parts = 600 g, so 1 part = 150 g.</>)
+                        },
+                        {
+                            question: (<>A map scale is 1 : 50 000. Which distance on the map represents 2 km in real life?</>),
+                            options: [
+                                "2 cm",
+                                "4 cm",
+                                "5 cm",
+                                "10 cm",
+                            ],
+                            answer: "4 cm",
+                            explain: (<>1 cm represents 0.5 km, so 2 km is 4 cm.</>)
+                        },
+                        {
+                            question: (<>Two quantities are directly proportional.
+If one quantity doubles, what happens to the other?
+</>),
+                            options: [
+                                "It halves",
+                                "It stays the same",
+                                "It also doubles",
+                                "It increases randomly",
+                            ],
+                            answer: "It also doubles",
+                            explain: (<>Direct proportion means both quantities change by the same factor.</>)
+                        },
                     ],
                 },
             topic7:{
-                    name: 'Order',
+                    name: 'Percentages & Financial Mathematics',
                     questions :[
-                        
+                        {
+                            question: (<>A jacket priced at $120 is discounted by 25%.
+What is the sale price?
+</>),
+                            options: [
+                                "$30",
+                                "$90",
+                                "$95",
+                                "$100",
+                            ],
+                            answer: "$90",
+                            explain: (<>25% of 120 is 30, so the new price is 120 − 30 = 90.</>)
+                        },
+                        {
+                            question: (<>A phone plan costs $40 per month and increases by 10%.
+What is the new monthly cost?
+</>),
+                            options: [
+                                "$41",
+                                "$42",
+                                "$44",
+                                "$50",
+                            ],
+                            answer: "$44",
+                            explain: (<>10% of 40 is 4, so the new cost is 44.</>)
+                        },
+                        {
+                            question: (<>Which option represents the best value?</>),
+                            options: [
+                                "20% off $80",
+                                "25% off $80",
+                                "$15 off $80",
+                                "$10 off $80",
+                            ],
+                            answer: "25% off $80",
+                            explain: (<>25% of 80 equals $20, the largest saving.</>)
+                        },
+                        {
+                            question: (<>An item increases in price from $50 to $65.
+What is the percentage increase?
+</>),
+                            options: [
+                                "15%",
+                                "20%",
+                                "25%",
+                                "30%",
+                            ],
+                            answer: "30%",
+                            explain: (<>Increase is 15. 15 ÷ 50 = 0.3 = 30%.</>)
+                        },
+                        {
+                            question: (<>Which situation involves compound change?</>),
+                            options: [
+                                "Adding a fixed amount",
+                                "A one-time discount",
+                                "Repeated percentage increase",
+                                "A constant ratio",
+                            ],
+                            answer: "Repeated percentage increase",
+                            explain: (<>Compound change applies percentages repeatedly to updated values.</>)
+                        },
                     ],
                 },
             topic8:{
-                    name: 'Order',
+                    name: 'Measurement, Units & Estimation',
                     questions :[
-                        
+                        {
+                            question: (<>Which is the most reasonable estimate for the capacity of a bathtub?</>),
+                            options: [
+                                "2 L",
+                                "20 L",
+                                "200 L",
+                                "2000 L",
+                            ],
+                            answer: "200 L",
+                            explain: (<>A bathtub holds hundreds of litres.</>)
+                        },
+                        {
+                            question: (<>A rectangular garden measures 8 m by 5 m.
+Which statement is correct?
+</>),
+                            options: [
+                                "Area is 13 m²",
+                                "Area is 40 m²",
+                                "Perimeter is 26 m",
+                                "Perimeter is 40 m",
+                            ],
+                            answer: "Area is 40 m²",
+                            explain: (<>Area = 8 × 5 = 40 m².</>)
+                        },
+                        {
+                            question: (<>A box measures 4 cm × 5 cm × 6 cm.
+What is its volume?
+</>),
+                            options: [
+                                "15 cm³",
+                                "60 cm³",
+                                "120 cm³",
+                                "240 cm³",
+                            ],
+                            answer: "120 cm³",
+                            explain: (<>Volume = 4 × 5 × 6 = 120 cm³.</>)
+                        },
+                        {
+                            question: (<>Which unit is most appropriate for measuring the mass of a car?</>),
+                            options: [
+                                "grams",
+                                "kilograms",
+                                "milligrams",
+                                "litres",
+                            ],
+                            answer: "kilograms",
+                            explain: (<>Cars have large mass measured in kilograms or tonnes.</>)
+                        },
+                        {
+                            question: (<>A trip takes 2.5 hours.
+Which statement is true?
+</>),
+                            options: [
+                                "2 hours 5 minutes",
+                                "2 hours 15 minutes",
+                                "2 hours 30 minutes",
+                                "2 hours 50 minutes",
+                            ],
+                            answer: "2 hours 30 minutes",
+                            explain: (<>0.5 of an hour equals 30 minutes.</>)
+                        },
                     ],
                 },
             topic9:{
-                    name: 'Order',
+                    name: 'Geometry: Properties, Angles & Shape Reasoning',
                     questions :[
-                        
+                        {
+                            question: (<>Two parallel lines are cut by a transversal. One interior angle is 68°.
+Which statement must be true?
+</>),
+                            options: [
+                                "All angles are acute",
+                                "The corresponding angle is 112°",
+                                "The alternate interior angle is 68°",
+                                "The vertically opposite angle is 180°",
+                            ],
+                            answer: "The alternate interior angle is 68°",
+                            explain: (<>Alternate interior angles between parallel lines are equal.</>)
+                        },
+                        {
+                            question: (<>A triangle has angles in the ratio 2 : 3 : 4.
+Which statement is correct?
+</>),
+                            options: [
+                                "The smallest angle is 20°",
+                                "The largest angle is 80°",
+                                "The triangle is right-angled",
+                                "The triangle is obtuse",
+                            ],
+                            answer: "The largest angle is 80°",
+                            explain: (<>Total parts = 9, so each part is 20°. Largest angle = 4 × 20 = 80°.</>)
+                        },
+                        {
+                            question: (<>Which quadrilateral must have both pairs of opposite sides parallel?</>),
+                            options: [
+                                "Kite",
+                                "Trapezium",
+                                "Parallelogram",
+                                "Isosceles trapezium",
+                            ],
+                            answer: "Parallelogram",
+                            explain: (<>A parallelogram has two pairs of opposite parallel sides.</>)
+                        },
+                        {
+                            question: (<>A shape has rotational symmetry of order 2.
+What does this mean?
+</>),
+                            options: [
+                                "It has two lines of symmetry",
+                                "It fits onto itself twice in a full turn",
+                                "It can only rotate once",
+                                "It has reflection symmetry",
+                            ],
+                            answer: "It fits onto itself twice in a full turn",
+                            explain: (<>Order 2 symmetry means it matches itself every 180°.</>)
+                        },
+                        {
+                            question: (<>Which net could form a cube?</>),
+                            options: [
+                                "Six squares in a straight line",
+                                "Four squares in a row with one on each side of the second square",
+                                "Five squares only",
+                                "Six rectangles of different sizes",
+                            ],
+                            answer: "Four squares in a row with one on each side of the second square",
+                            explain: (<>A cube net needs six equal squares arranged to fold correctly.</>)
+                        },
                     ],
                 },
             topic10:{
-                    name: 'Order',
+                    name: 'Pythagoras, Circles & Scale',
                     questions :[
-                        
+                        {
+                            question: (<>A right-angled triangle has legs of 6 cm and 8 cm.
+Which statement is correct?
+</>),
+                            options: [
+                                "The hypotenuse is 10 cm",
+                                "The hypotenuse is 14 cm",
+                                "The area is 48 cm²",
+                                "The triangle is isosceles",
+                            ],
+                            answer: "The hypotenuse is 10 cm",
+                            explain: (<>6² + 8² = 36 + 64 = 100, so the hypotenuse is 10 cm.</>)
+                        },
+                        {
+                            question: (<>The radius of a circle is doubled.
+What happens to the area?
+</>),
+                            options: [
+                                "It doubles",
+                                "It triples",
+                                "It increases by 4 times",
+                                "It increases by 8 times",
+                            ],
+                            answer: "It increases by 4 times",
+                            explain: (<>Area depends on r², so doubling r makes area four times larger.</>)
+                        },
+                        {
+                            question: (<>A wheel has a circumference of approximately 1.88 m.
+Which radius best matches this?
+</>),
+                            options: [
+                                "0.3 m",
+                                "0.6 m",
+                                "1.0 m",
+                                "3.0 m",
+                            ],
+                            answer: "0.3 m",
+                            explain: (<>2π × 0.3 ≈ 1.88 m.</>)
+                        },
+                        {
+                            question: (<>A map scale is 1 : 25 000.
+A walking trail measures 8 cm on the map.
+Which is closest to the real distance?
+</>),
+                            options: [
+                                "200 m",
+                                "800 m",
+                                "2 km",
+                                "20 km",
+                            ],
+                            answer: "2 km",
+                            explain: (<>1 cm represents 0.25 km, so 8 cm represents 2 km.</>)
+                        },
+                        {
+                            question: (<>Why is π often rounded to 3.14 in NAPLAN?</>),
+                            options: [
+                                "Exact values are not allowed",
+                                "It simplifies estimation",
+                                "π equals 3.14 exactly",
+                                "Calculators cannot use π",
+                            ],
+                            answer: "It simplifies estimation",
+                            explain: (<>NAPLAN emphasises estimation and reasonable accuracy.</>)
+                        },
                     ],
                 },
             topic11:{
-                    name: 'Order',
+                    name: 'Data Representation & Interpretation',
                     questions :[
-                        
+                        {
+                            question: (<>Two data sets have the same mean but different spreads.
+Which statement must be true?
+</>),
+                            options: [
+                                "Their medians are equal",
+                                "Their ranges are equal",
+                                "Their values are identical",
+                                "One set has more variation",
+                            ],
+                            answer: "One set has more variation",
+                            explain: (<>Different spread means different variability.</>)
+                        },
+                        {
+                            question: (<>A graph shows a sharp increase followed by a steady decrease.
+What does this most likely represent?
+</>),
+                            options: [
+                                "Constant growth",
+                                "Random data",
+                                "A peak followed by decline",
+                                "No trend",
+                            ],
+                            answer: "A peak followed by decline",
+                            explain: (<>The shape indicates a maximum point then a decrease.</>)
+                        },
+                        {
+                            question: (<>Which average is most affected by extreme values?</>),
+                            options: [
+                                "Mean",
+                                "Median",
+                                "Mode",
+                                "Range",
+                            ],
+                            answer: "Mean",
+                            explain: (<>The mean uses all values and is affected by outliers.</>)
+                        },
+                        {
+                            question: (<>Two dot plots are compared. One is tightly clustered, the other widely spread.
+Which statement is correct?
+</>),
+                            options: [
+                                "The first has greater range",
+                                "The second has less variation",
+                                "The first is more consistent",
+                                "Both have equal spread",
+                            ],
+                            answer: "The first is more consistent",
+                            explain: (<>Closer clustering means more consistency.</>)
+                        },
+                        {
+                            question: (<>Which graph is best for showing change over time?</>),
+                            options: [
+                                "Pie chart",
+                                "Column graph",
+                                "Line graph",
+                                "Dot plot",
+                            ],
+                            answer: "Line graph",
+                            explain: (<>Line graphs clearly show trends over time.</>)
+                        },
                     ],
                 },
             topic12:{
-                    name: 'Order',
+                    name: 'Probability, Logic & NAPLAN Strategy',
                     questions :[
-                        
+                        {
+                            question: (<>A bag contains 3 red, 5 blue, and 2 green counters.
+Which colour is most likely to be chosen?
+</>),
+                            options: [
+                                "Red",
+                                "Blue",
+                                "Green",
+                                "All equally likely",
+                            ],
+                            answer: "Blue",
+                            explain: (<>Blue has the highest number of counters.</>)
+                        },
+                        {
+                            question: (<>The probability of rain tomorrow is 0.35.
+What is the probability it does not rain?
+</>),
+                            options: [
+                                "0.35",
+                                "0.45",
+                                "0.65",
+                                "1.35",
+                            ],
+                            answer: "0.65",
+                            explain: (<>1 − 0.35 = 0.65</>)
+                        },
+                        {
+                            question: (<>Two coins are tossed.
+Which outcome is least likely?
+</>),
+                            options: [
+                                "HH",
+                                "HT",
+                                "TH",
+                                "All are equally likely",
+                            ],
+                            answer: "All are equally likely",
+                            explain: (<>Each outcome has probability 1/4.</>)
+                        },
+                        {
+                            question: (<>A student guesses a multiple-choice question with 4 options.
+What is the probability of choosing the correct answer?
+</>),
+                            options: [
+                                "1",
+                                "0",
+                                "0.25",
+                                "Depends on skill",
+                            ],
+                            answer: "0.25",
+                            explain: (<>One correct option out of four gives probability 1/4.</>)
+                        },
+                        {
+                            question: (<>Which strategy is most effective when time is running out in NAPLAN?</>),
+                            options: [
+                                "Skip remaining questions",
+                                "Guess without reading",
+                                "Eliminate incorrect options first",
+                                "Redo completed questions",
+                            ],
+                            answer: "Eliminate incorrect options first",
+                            explain: (<>Eliminating wrong options increases the chance of a correct answer.</>)
+                        },
                     ],
                 },
         },
         english:{
             topic1:{
-                    name: 'Order',
+                    name: 'Text Purpose, Context & Literal Meaning',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence most clearly establishes a precise proposition in an analytical response?</>),
+                            options: [
+                                "Social media is interesting to many people.",
+                                "This text will discuss social media.",
+                                "Social media significantly reshapes how individuals construct identity and maintain relationships.",
+                                "People use social media every day.",
+                            ],
+                            answer: "Social media significantly reshapes how individuals construct identity and maintain relationships.",
+                            explain: (<>A strong Year 9 proposition is specific, abstract, and arguable, not descriptive or vague.</>)
+                        },
+                        {
+                            question: (<>Which sentence best demonstrates audience positioning in formal writing?</>),
+                            options: [
+                                "You should really think about this issue.",
+                                "This issue matters a lot.",
+                                "The issue warrants careful consideration due to its long-term social consequences.",
+                                "I feel strongly about this issue.",
+                            ],
+                            answer: "The issue warrants careful consideration due to its long-term social consequences.",
+                            explain: (<>Formal positioning avoids personal address and instead appeals to reason and consequence.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The council’s proposal outlines new public transport routes designed to reduce traffic congestion. The document specifies the suburbs affected, the projected costs, and the expected completion timeline, leaving little ambiguity about the plan’s immediate goals. <br />
+What information can be directly located in this paragraph?
+</>),
+                            options: [
+                                "Public opinion on the proposal",
+                                "Long-term environmental outcomes",
+                                "Specific details about implementation",
+                                "Political motives behind the plan",
+                            ],
+                            answer: "Specific details about implementation",
+                            explain: (<>The paragraph explicitly states routes, costs, and timelines, which are concrete details.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The article was published during a period of rising fuel prices and increased public concern about climate change. Within this context, the author’s emphasis on sustainable transport appears deliberately timed to influence policy discussions already dominating public debate. <br />
+How does context influence meaning in this paragraph?
+</>),
+                            options: [
+                                "It weakens the author’s argument",
+                                "It explains why the topic is fictional",
+                                "It strengthens the relevance of the author’s focus",
+                                "It removes the need for evidence",
+                            ],
+                            answer: "It strengthens the relevance of the author’s focus",
+                            explain: (<>Context explains why the argument matters at this moment, increasing its impact.</>)
+                        },
+                        {
+                            question: (<>Which sentence correctly contains a dependent clause?</>),
+                            options: [
+                                "Which sentence correctly contains a dependent clause?",
+                                "The experiment failed, the data was lost.",
+                                "Because the experiment failed, the data was lost.",
+                                "The experiment failed and the data lost.",
+                            ],
+                            answer: "Because the experiment failed, the data was lost.",
+                            explain: (<>“Because the experiment failed” is a dependent clause that cannot stand alone.</>)
+                        },
+                        {
+                            question: (<>Which sentence demonstrates accurate sentence boundaries?</>),
+                            options: [
+                                "The results were unclear therefore the study was repeated.",
+                                "The results were unclear therefore, the study was repeated.",
+                                "The results were unclear; therefore, the study was repeated.",
+                                "The results were unclear, therefore the study was repeated.",
+                            ],
+                            answer: "The results were unclear; therefore, the study was repeated.",
+                            explain: (<>A semicolon + conjunctive adverb is required to join two independent clauses correctly.</>)
+                        },
+                        {
+                            question: (<>Which sentence has correct subject–verb agreement?</>),
+                            options: [
+                                "A range of solutions have been proposed.",
+                                "A range of solutions has been proposed.",
+                                "A range of solutions are proposed.",
+                                "A range of solutions were proposed.",
+                            ],
+                            answer: "A range of solutions has been proposed.",
+                            explain: (<>The subject is range (singular), not solutions.</>)
+                        },
                     ],
                 },
             topic2:{
-                    name: 'Order',
+                    name: 'Argument Structure & Paragraph Control',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence best reflects a well-structured contention?</>),
+                            options: [
+                                "Pollution is bad for the environment.",
+                                "This essay discusses pollution.",
+                                "Industrial pollution must be more tightly regulated because current policies fail to prevent long-term ecological damage.",
+                                "Pollution exists in many countries.",
+                            ],
+                            answer: "Industrial pollution must be more tightly regulated because current policies fail to prevent long-term ecological damage.",
+                            explain: (<>A strong contention states a clear position + reason, appropriate for Year 9 argument writing.</>)
+                        },
+                        {
+                            question: (<>Which sentence most effectively supports a paragraph’s development?</>),
+                            options: [
+                                "This idea is important.",
+                                "For example, recent studies indicate a 30% decline in urban air quality.",
+                                "Pollution affects people.",
+                                "This shows pollution is bad.",
+                            ],
+                            answer: "For example, recent studies indicate a 30% decline in urban air quality.",
+                            explain: (<>Paragraph development is strengthened by specific evidence, not general claims.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The author begins by asserting that technology enhances learning outcomes. This claim is followed by statistical evidence, classroom examples, and a brief acknowledgment of potential drawbacks before reaffirming the original position. <br />
+How does the paragraph develop its argument?
+</>),
+                            options: [
+                                "By listing unrelated facts",
+                                "By repeating the same idea",
+                                "By sequencing claim, evidence, and qualification",
+                                "By telling a personal story",
+                            ],
+                            answer: "By sequencing claim, evidence, and qualification",
+                            explain: (<>Effective argument paragraphs progress logically from claim → support → refinement.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+While the opening sentence introduces the main idea, the following sentences expand on it by explaining causes, offering examples, and clarifying consequences, ensuring the paragraph remains focused and cohesive. <br />
+What is the primary function of the supporting sentences?
+</>),
+                            options: [
+                                "To distract the reader",
+                                "To restate the topic",
+                                "To develop and substantiate the main idea",
+                                "To introduce a new argument",
+                            ],
+                            answer: "To develop and substantiate the main idea",
+                            explain: (<>Supporting sentences elaborate and strengthen the topic sentence.</>)
+                        },
+                        {
+                            question: (<>Which connective best signals contrast?</>),
+                            options: [
+                                "Therefore",
+                                "Consequently",
+                                "However",
+                                "Similarly",
+                            ],
+                            answer: "However",
+                            explain: (<>“However” signals a shift or opposition between ideas.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses a cohesive device most effectively?</>),
+                            options: [
+                                "The policy failed. The policy caused problems.",
+                                "The policy failed, the policy caused problems.",
+                                "The policy failed; this resulted in widespread criticism.",
+                                "The policy failed and policy criticism happened.",
+                            ],
+                            answer: "The policy failed; this resulted in widespread criticism.",
+                            explain: (<>“This” refers back to the entire previous idea, improving cohesion.</>)
+                        },
+                        {
+                            question: (<>Which sentence demonstrates logical paragraph sequencing?</>),
+                            options: [
+                                "The conclusion appears before the argument.",
+                                "Evidence is presented before the contention.",
+                                "The contention is followed by supporting points and then a conclusion.",
+                                "Examples replace explanations entirely.",
+                            ],
+                            answer: "The contention is followed by supporting points and then a conclusion.",
+                            explain: (<>Logical sequencing is essential for clear argumentative structure.</>)
+                        },
                     ],
                 },
             topic3:{
-                    name: 'Order',
+                    name: 'Inference, Bias & Evaluative Reading',
                     questions :[
-                        
+                        {
+                            question: (<>Inference, Bias & Evaluative Reading</>),
+                            options: [
+                                "The policy is terrible.",
+                                "The policy is disappointing.",
+                                "The policy raises serious concerns regarding its long-term viability.",
+                                "I hate this policy.",
+                            ],
+                            answer: "The policy raises serious concerns regarding its long-term viability.",
+                            explain: (<>Subtle evaluation uses measured, formal language rather than emotional words.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses a modal verb to project authority?</>),
+                            options: [
+                                "The government could consider action.",
+                                "The government might respond eventually.",
+                                "The government must address this issue immediately.",
+                                "The government sometimes responds.",
+                            ],
+                            answer: "The government must address this issue immediately.",
+                            explain: (<>“Must” conveys certainty and authority, strengthening the stance.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The columnist highlights the economic benefits of automation while downplaying its impact on employment, focusing instead on innovation and efficiency gains that align closely with corporate interests. <br />
+What perspective is suggested in this paragraph?
+</>),
+                            options: [
+                                "Neutral",
+                                "Environmental",
+                                "Corporate or pro-industry",
+                                "Educational",
+                            ],
+                            answer: "Corporate or pro-industry",
+                            explain: (<>Selective emphasis on benefits and omission of drawbacks indicates bias.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+By repeatedly describing the proposal as “inevitable” and “long overdue,” the author frames opposition as unreasonable rather than engaging with counterarguments directly. <br />
+What technique is the author using?
+</>),
+                            options: [
+                                "Literal explanation",
+                                "Emotional narrative",
+                                "Evaluative framing",
+                                "Statistical reasoning",
+                            ],
+                            answer: "Evaluative framing",
+                            explain: (<>Word choice subtly guides reader judgement without explicit argument.</>)
+                        },
+                        {
+                            question: (<>Which word carries the strongest evocative connotation?</>),
+                            options: [
+                                "Change",
+                                "Adjustment",
+                                "Disruption",
+                                "Process",
+                            ],
+                            answer: "Disruption",
+                            explain: (<>“Disruption” suggests instability and impact, creating a stronger response.</>)
+                        },
+                        {
+                            question: (<>Which sentence avoids explicit opinion while still evaluating?</>),
+                            options: [
+                                "I believe this plan is risky.",
+                                "This plan is risky.",
+                                "The plan presents significant financial uncertainty.",
+                                "I don’t trust this plan.",
+                            ],
+                            answer: "The plan presents significant financial uncertainty.",
+                            explain: (<>The sentence evaluates indirectly using academic phrasing.</>)
+                        },
+                        {
+                            question: (<>Which sentence is punctuated correctly?</>),
+                            options: [
+                                "The proposal failed, therefore it was withdrawn.",
+                                "The proposal failed therefore, it was withdrawn.",
+                                "The proposal failed; therefore, it was withdrawn.",
+                                "The proposal failed therefore it was withdrawn.",
+                            ],
+                            answer: "The proposal failed; therefore, it was withdrawn.",
+                            explain: (<>A semicolon + comma correctly frames the conjunctive adverb.</>)
+                        },
                     ],
                 },
             topic4:{
-                    name: 'Order',
+                    name: 'Sentence Craft for Tone & Effect',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence most effectively creates a formal and critical tone?</>),
+                            options: [
+                                "The decision was bad and people didn’t like it.",
+                                "The decision caused many problems for everyone.",
+                                "The decision generated widespread concern due to its long-term implications.",
+                                "The decision was kind of unfair in many ways.",
+                            ],
+                            answer: "The decision generated widespread concern due to its long-term implications.",
+                            explain: (<>A critical tone at Year 9 uses measured, abstract vocabulary rather than emotional or vague wording.</>)
+                        },
+                        {
+                            question: (<>Which sentence demonstrates effective use of active voice to strengthen impact?</>),
+                            options: [
+                                "Mistakes were made during the experiment.",
+                                "Errors were discovered by the team.",
+                                "The team identified critical errors in the experiment.",
+                                "The experiment had some errors.",
+                            ],
+                            answer: "The team identified critical errors in the experiment.",
+                            explain: (<>Active voice clearly identifies who is responsible, creating stronger, more direct meaning.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The author opens with a short, declarative sentence: This policy will fail. This is followed by a longer explanation detailing financial risks, administrative delays, and public opposition. By alternating between brief assertions and extended explanations, the author controls pacing and emphasises certainty before elaboration. The sentence structure leaves little room for doubt, positioning the reader to accept the argument before fully engaging with its evidence. <br />
+How does sentence variety affect the reader?
+</>),
+                            options: [
+                                "It confuses the argument",
+                                "It weakens the author’s authority",
+                                "It reinforces confidence and emphasis",
+                                "It distracts from the topic",
+                            ],
+                            answer: "It reinforces confidence and emphasis",
+                            explain: (<>Short sentences assert authority, while longer ones develop reasoning, strengthening persuasion.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Throughout the commentary, the writer repeatedly interrupts long sentences with brief qualifying clauses—if implemented carefully, according to available data, as critics suggest. These interruptions slow the reading process, encouraging the audience to pause and reflect rather than accept claims uncritically. As a result, the tone becomes analytical rather than emotional, positioning the reader as a thoughtful evaluator instead of a passive recipient. <br />
+What is the primary effect of the interrupting clauses?
+</>),
+                            options: [
+                                "They make the text less formal",
+                                "They create humour",
+                                "They encourage critical reading",
+                                "They weaken the argument",
+                            ],
+                            answer: "They encourage critical reading",
+                            explain: (<>Interrupting clauses add nuance and restraint, shaping an analytical tone.</>)
+                        },
+                        {
+                            question: (<>Which sentence correctly uses an embedded clause?</>),
+                            options: [
+                                "The proposal failed unexpectedly.",
+                                "The proposal, which was rushed through parliament, failed unexpectedly.",
+                                "The proposal failed, it was rushed.",
+                                "Which was rushed through parliament, the proposal failed.",
+                            ],
+                            answer: "The proposal, which was rushed through parliament, failed unexpectedly.",
+                            explain: (<>Embedded clauses add information without breaking sentence flow.</>)
+                        },
+                        {
+                            question: (<>Which sentence is a run-on?</>),
+                            options: [
+                                "The data was incomplete, so the study was delayed.",
+                                "The data was incomplete the study was delayed.",
+                                "The data was incomplete; the study was delayed.",
+                                "Because the data was incomplete, the study was delayed.",
+                            ],
+                            answer: "The data was incomplete the study was delayed.",
+                            explain: (<>Two independent clauses are incorrectly joined without punctuation or conjunction.</>)
+                        },
+                        {
+                            question: (<>Which sentence fragment could be used deliberately for effect in persuasive writing?</>),
+                            options: [
+                                "Because the evidence was unclear.",
+                                "The evidence was unclear.",
+                                "The evidence, which was unclear.",
+                                "Unclear evidence undermined the claim.",
+                            ],
+                            answer: "Because the evidence was unclear.",
+                            explain: (<>Fragments can be used intentionally to emphasise a point, especially in persuasive texts.</>)
+                        },
                     ],
                 },
             topic5:{
-                    name: 'Order',
+                    name: 'Figurative, Symbolic & Rhetorical Meaning',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence contains an extended metaphor?</>),
+                            options: [
+                                "The city was busy.",
+                                "The city was like a machine.",
+                                "The city functioned as a machine, grinding endlessly as people became interchangeable parts.",
+                                "The city had many buildings.",
+                            ],
+                            answer: "The city functioned as a machine, grinding endlessly as people became interchangeable parts.",
+                            explain: (<>An extended metaphor is sustained and developed across ideas, not stated briefly.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses symbolism most effectively?</>),
+                            options: [
+                                "The door was red.",
+                                "The door was locked.",
+                                "The locked door symbolised the character’s isolation from society.",
+                                "The door could not be opened.",
+                            ],
+                            answer: "The locked door symbolised the character’s isolation from society.",
+                            explain: (<>Symbolism occurs when an object represents an abstract idea.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Throughout the novel, the river appears at moments of change: before the protagonist leaves home, after the final confrontation, and again in the closing chapter. Although the river is never described in detail, its repeated presence during transitions suggests movement, uncertainty, and renewal. Rather than serving as a physical setting alone, the river functions as a silent marker of transformation, reinforcing the novel’s broader exploration of identity and change. <br />
+What does the river most likely symbolise?
+</>),
+                            options: [
+                                "Danger",
+                                "Wealth",
+                                "Transition and change",
+                                "Power",
+                            ],
+                            answer: "Transition and change",
+                            explain: (<>Repeated placement during key moments indicates symbolic meaning beyond setting.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The columnist describes the budget cuts as “a necessary trimming of excess,” a phrase that minimises their severity while avoiding reference to the programs affected. By framing the cuts as routine maintenance rather than loss, the writer softens potential backlash and subtly guides readers toward acceptance rather than resistance. <br />
+What rhetorical technique is being used?
+</>),
+                            options: [
+                                "Irony",
+                                "Euphemism",
+                                "Hyperbole",
+                                "Allusion",
+                            ],
+                            answer: "Euphemism",
+                            explain: (<>A euphemism replaces harsh realities with milder language.</>)
+                        },
+                        {
+                            question: (<>Which sentence demonstrates understatement?</>),
+                            options: [
+                                "The error destroyed the entire project.",
+                                "The error caused some inconvenience.",
+                                "The error was catastrophic.",
+                                "The error changed everything forever.",
+                            ],
+                            answer: "The error caused some inconvenience.",
+                            explain: (<>Understatement deliberately downplays impact for rhetorical effect.</>)
+                        },
+                        {
+                            question: (<>Which sentence contains an allusion?</>),
+                            options: [
+                                "The journey was long and tiring.",
+                                "He faced his challenge like a hero.",
+                                "She opened Pandora’s box by revealing the secret.",
+                                "The secret was revealed unexpectedly.",
+                            ],
+                            answer: "She opened Pandora’s box by revealing the secret.",
+                            explain: (<>“Pandora’s box” refers to a mythological reference, creating layered meaning.</>)
+                        },
+                        {
+                            question: (<>Which device relies on saying the opposite of what is meant?</>),
+                            options: [
+                                "Hyperbole",
+                                "Irony",
+                                "Symbolism",
+                                "Metonymy",
+                            ],
+                            answer: "Irony",
+                            explain: (<>Irony creates meaning through contrast between appearance and intent.</>)
+                        },
                     ],
                 },
             topic6:{
-                    name: 'Order',
+                    name: 'Cohesion, Nominalisation & Academic Style',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence best demonstrates nominalisation?</>),
+                            options: [
+                                "The committee decided quickly.",
+                                "The committee made a quick decision.",
+                                "The committee’s rapid decision influenced outcomes.",
+                                "The committee quickly decided the outcome.",
+                            ],
+                            answer: "The committee’s rapid decision influenced outcomes.",
+                            explain: (<>Nominalisation turns actions into abstract nouns, increasing formality and cohesion.</>)
+                        },
+                        {
+                            question: (<>Which sentence is most appropriate for an academic analytical style?</>),
+                            options: [
+                                "People didn’t like the change.",
+                                "The change caused problems.",
+                                "The change generated significant public opposition.",
+                                "Everyone hated the change.",
+                            ],
+                            answer: "The change generated significant public opposition.",
+                            explain: (<>Academic style favours abstract, precise language.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The argument progresses through a series of logically connected claims, each building on the previous point. Pronoun reference and repeated key terms maintain continuity, while nominalised concepts such as implementation, regulation, and accountability allow complex ideas to be revisited without repetition. This cohesion enables the reader to follow the argument’s development across multiple paragraphs without losing focus. <br />
+How is cohesion primarily achieved in this paragraph?
+</>),
+                            options: [
+                                "By introducing new topics",
+                                "By using emotional language",
+                                "By linking ideas through reference and abstraction",
+                                "By shortening sentences",
+                            ],
+                            answer: "By linking ideas through reference and abstraction",
+                            explain: (<>Cohesion relies on reference chains and nominalised concepts.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Rather than restating earlier claims, the author condenses them into abstract nouns—failure, resistance, adaptation. This compression allows the discussion to move forward while still drawing on previous ideas, creating a sense of progression rather than repetition. As a result, the text feels cumulative and controlled rather than fragmented. <br />
+What is the main purpose of this technique?
+</>),
+                            options: [
+                                "To confuse the reader",
+                                "To shorten the text only",
+                                "To advance ideas without repetition",
+                                "To add emotional impact",
+                            ],
+                            answer: "To advance ideas without repetition",
+                            explain: (<>Nominalisation allows writers to compress and advance arguments efficiently.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses abstract nouns most effectively?</>),
+                            options: [
+                                "People argued loudly.",
+                                "There was an argument.",
+                                "The disagreement escalated rapidly.",
+                                "They were angry at each other.",
+                            ],
+                            answer: "The disagreement escalated rapidly.",
+                            explain: (<>Abstract nouns like disagreement elevate tone and precision.</>)
+                        },
+                        {
+                            question: (<>Which sentence has the strongest cohesive flow?</>),
+                            options: [
+                                "The policy failed. The public reacted. The debate continued.",
+                                "The policy failed; as a result, public debate intensified.",
+                                "The policy failed and the public reacted and debate continued.",
+                                "The policy failed. Debate. Reaction.",
+                            ],
+                            answer: "The policy failed; as a result, public debate intensified.",
+                            explain: (<>Cohesive devices signal cause and consequence, guiding the reader.</>)
+                        },
+                        {
+                            question: (<>Which sentence maintains formal register and clarity?</>),
+                            options: [
+                                "This shows stuff went wrong.",
+                                "This shows things didn’t work out.",
+                                "This indicates systemic failure within the process.",
+                                "This shows it was bad.",
+                            ],
+                            answer: "This indicates systemic failure within the process.",
+                            explain: (<>Formal register uses precise, abstract vocabulary, not vague expressions.</>)
+                        },
                     ],
                 },
             topic7:{
-                    name: 'Order',
+                    name: 'Multimodal, Visual & Intertextual Texts',
                     questions :[
-                        
+                        {
+                            question: (<>Which sentence best explains the purpose of transforming a written argument into a visual infographic?</>),
+                            options: [
+                                "To simplify the topic so details are removed",
+                                "To decorate the information",
+                                "To re-present key ideas using visual hierarchy and symbolism",
+                                "To replace the need for explanation",
+                            ],
+                            answer: "To re-present key ideas using visual hierarchy and symbolism",
+                            explain: (<>Text transformation changes mode, not meaning. Visual hierarchy and symbolism help audiences process complex ideas differently.</>)
+                        },
+                        {
+                            question: (<>Which sentence shows the strongest understanding of intertextuality?</>),
+                            options: [
+                                "The text is about the same topic as another text.",
+                                "The text copies ideas from earlier works.",
+                                "The text deliberately echoes ideas from earlier texts to shape meaning.",
+                                "The text uses pictures and words together.",
+                            ],
+                            answer: "The text deliberately echoes ideas from earlier texts to shape meaning.",
+                            explain: (<>Intertextuality occurs when a text intentionally references or reworks earlier texts to add layers of meaning.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+The political cartoon places a small, faceless figure beneath an oversized clock looming overhead. The clock’s cracked surface mirrors the fractured skyline behind it, while the caption references a deadline that has already passed. Together, these elements suggest urgency, neglect, and the pressure of time, positioning the individual as powerless within a broader system that continues to delay accountability. The absence of colour further reinforces the bleak tone, stripping the scene of optimism or momentum. <br />
+What is the primary message conveyed by the image–text combination?
+</>),
+                            options: [
+                                "Time moves quickly",
+                                "Deadlines are difficult to manage",
+                                "Authority figures control time efficiently",
+                                "Individuals are powerless within delayed systems",
+                            ],
+                            answer: "Individuals are powerless within delayed systems",
+                            explain: (<>Visual scale, symbolism, and caption work together to convey power imbalance and systemic delay, not just time pressure.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+A documentary opens with a sequence of slow-motion crowd shots intercut with historical footage from earlier protests. This deliberate sequencing encourages viewers to connect present events with past struggles, implying continuity rather than coincidence. By visually echoing earlier movements, the film positions current activism as part of an ongoing narrative rather than an isolated response, shaping audience interpretation through historical alignment rather than direct commentary. <br />
+How does the sequence of images shape meaning?
+</>),
+                            options: [
+                                "It provides entertainment",
+                                "It separates past and present",
+                                "It suggests repetition without significance",
+                                "It links contemporary events to historical movements",
+                            ],
+                            answer: "It links contemporary events to historical movements",
+                            explain: (<>Sequencing creates intertextual meaning, encouraging viewers to interpret present events through historical parallels.</>)
+                        },
+                        {
+                            question: (<>Which sentence best explains salience in a multimodal text?</>),
+                            options: [
+                                "The most colourful image is decorative",
+                                "The largest or most central element attracts attention first",
+                                "Images are less important than words",
+                                "Salience refers only to font choice",
+                            ],
+                            answer: "The largest or most central element attracts attention first",
+                            explain: (<>Salience refers to visual prominence, guiding where the reader looks first.</>)
+                        },
+                        {
+                            question: (<>Which sentence uses visual symbolism most effectively?</>),
+                            options: [
+                                "The image shows a broken clock.",
+                                "The broken clock symbolises lost opportunity and delay.",
+                                "The clock is old and damaged.  ",
+                                "The image includes a clock.",
+                            ],
+                            answer: "The broken clock symbolises lost opportunity and delay.",
+                            explain: (<>Symbolism occurs when a visual element represents an abstract idea, not just a literal object.</>)
+                        },
+                        {
+                            question: (<>Which sentence maintains formal analytical register when discussing images?</>),
+                            options: [
+                                "The picture looks sad and gloomy.",
+                                "The image feels depressing.",
+                                "The image constructs a bleak mood through muted colour and scale.",
+                                "The image is bad and dark.",
+                            ],
+                            answer: "The image constructs a bleak mood through muted colour and scale.",
+                            explain: (<>Formal analysis explains how meaning is created, not just personal reaction.</>)
+                        },
                     ],
                 },
             topic8:{
-                    name: 'Order',
+                    name: 'Editing, Evaluation & NAPLAN Exam Mastery',
                     questions :[
-                        
+                        {
+                            question: (<>Which revision most effectively improves clarity and precision?</>),
+                            options: [
+                                "The argument is kind of weak and not good.",
+                                "The argument is weak because reasons are missing.",
+                                "The argument lacks sufficient substantiation to sustain its claims.",
+                                "The argument isn’t strong enough.",
+                            ],
+                            answer: "The argument lacks sufficient substantiation to sustain its claims.",
+                            explain: (<>High-level editing replaces vague judgement with specific, academic critique.</>)
+                        },
+                        {
+                            question: (<>Which sentence best strengthens cohesion across an analytical paragraph?</>),
+                            options: [
+                                "This is another point.",
+                                "Also, this matters.",
+                                "This reinforces the previous claim by extending its implications.",
+                                "This is important again.",
+                            ],
+                            answer: "This reinforces the previous claim by extending its implications.",
+                            explain: (<>Cohesion links ideas conceptually, not just sequentially.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+Text A frames technological progress as inevitable, emphasising efficiency and innovation, while Text B adopts a more cautious stance, foregrounding ethical concerns and social consequences. Although both texts address the same issue, their differing assumptions about progress shape how evidence is selected and presented. As a result, readers are positioned to either accept rapid advancement as necessary or question its broader implications. <br />
+What is the reader required to do here?
+</>),
+                            options: [
+                                "Identify literal details",
+                                "Compare perspectives and assumptions",
+                                "Summarise one text",
+                                "Identify a visual technique",
+                            ],
+                            answer: "Compare perspectives and assumptions",
+                            explain: (<>This task requires comparative and evaluative reading, central to Year 9 NAPLAN.</>)
+                        },
+                        {
+                            question: (<>Read the paragraph below. <br />
+In evaluating the evidence presented, the author prioritises anecdotal success stories while largely omitting broader statistical data. This imbalance subtly shifts reader focus away from measurable outcomes toward emotionally resonant examples, increasing persuasive appeal while reducing analytical transparency. <br />
+What weakness is being identified?
+</>),
+                            options: [
+                                "Lack of structure",
+                                "Overuse of technical language",
+                                "Biased selection of evidence",
+                                "Incorrect grammar",
+                            ],
+                            answer: "Biased selection of evidence",
+                            explain: (<>Selective evidence creates bias, affecting credibility and balance.</>)
+                        },
+                        {
+                            question: (<>Which sentence correctly uses a semicolon?</>),
+                            options: [
+                                "The study failed; because the data was incomplete.",
+                                "The study failed; the data was incomplete.",
+                                "The study failed; and the data was incomplete.",
+                                "The study failed,; the data was incomplete.",
+                            ],
+                            answer: "The study failed; the data was incomplete.",
+                            explain: (<>A semicolon joins closely related independent clauses.</>)
+                        },
+                        {
+                            question: (<>Which sentence correctly integrates a quotation?</>),
+                            options: [
+                                "The author states “change is inevitable”.",
+                                "The author states, “change is inevitable.”",
+                                "The author states “change is inevitable.”",
+                                "The author states, change is inevitable.ss",
+                            ],
+                            answer: "The author states, “change is inevitable.”",
+                            explain: (<>Commas and full stops are placed correctly inside quotation marks.</>)
+                        },
+                        {
+                            question: (<>Which sentence demonstrates mature exam-style control?</>),
+                            options: [
+                                "This shows things went bad.",
+                                "This proves the idea is wrong.",
+                                "This highlights structural weaknesses within the argument.",
+                                "This shows the author messed up.",
+                            ],
+                            answer: "This highlights structural weaknesses within the argument.",
+                            explain: (<>High-level responses use objective, analytical language, not informal judgement.</>)
+                        },
                     ],
                 },
             topic9:{
