@@ -172,7 +172,7 @@ const Header = () => {
 
             <Nav className="align-items-center justify-content-end desktop-nav-actions">
               
-              <a href="https://learn.tutorexel.com/d2q1kr392kq4gu3vn2ig/join/JjJCwO6.r9GqgrpkB8KYV6BP6RXVj4rYXvovQrWOf53qVGCwyC15HxAKs8yNNt3BXQHRugQowSh_xG6kTWlSqcDVKwBUZwMF" target="_blank" rel="noopener noreferrer">
+              <a href="https://learn.tutorexel.com/d2q1kr392kq4gu3vn2ig/d5cahicrtl0urqja0kvg/courses/view/vQv1DYN._1UqwIGhiyA632W6Rr43YuGq3XCaJR-sclBEPqctuHqy9auyK9FTp72xL39iniEmXUhxnKZFFjzjfPgfeXa_NL4JgNLlTdscLCfEmS8LaAV9ZeHhzKG4zLxDgjEjgV0FdBqFrvfhV6zdTWB3Qw9iiLE3Ua5iXbCkvyd6wkL4o8DJ" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="primary-orange"
                   className="d-inline-flex align-items-center"
@@ -363,7 +363,7 @@ const Header = () => {
                   Enroll Now
                 </NavLink>
                 <div className="mobile-cta-section">
-                  <a href="https://learn.tutorexel.com/d2q1kr392kq4gu3vn2ig/join/JjJCwO6.r9GqgrpkB8KYV6BP6RXVj4rYXvovQrWOf53qVGCwyC15HxAKs8yNNt3BXQHRugQowSh_xG6kTWlSqcDVKwBUZwMF" target="_blank" rel="noopener noreferrer" className="w-100 d-block">
+                  <a href="https://learn.tutorexel.com/d2q1kr392kq4gu3vn2ig/d5cahicrtl0urqja0kvg/courses/view/vQv1DYN._1UqwIGhiyA632W6Rr43YuGq3XCaJR-sclBEPqctuHqy9auyK9FTp72xL39iniEmXUhxnKZFFjzjfPgfeXa_NL4JgNLlTdscLCfEmS8LaAV9ZeHhzKG4zLxDgjEjgV0FdBqFrvfhV6zdTWB3Qw9iiLE3Ua5iXbCkvyd6wkL4o8DJ" target="_blank" rel="noopener noreferrer" className="w-100 d-block">
                     <Button 
                       variant="primary-orange" 
                       className="w-100 mobile-cta-button mb-2"
