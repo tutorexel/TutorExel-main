@@ -25,7 +25,7 @@ const TermPage = () => {
                                     <hr />
 
                                     <h4>1. Introduction</h4>
-                                    <p>Welcome to <strong>TutorExel</strong> (“we”, “us”, “our”). TutorExel operates under <strong>HEXATRAIL LLP</strong>, providing online tutoring and enrichment programs for students across various subjects and skill areas.</p>
+                                    <p>Welcome to <strong>TutorExel</strong> (“we”, “us”, “our”). TutorExel operates under <strong>Ardan Consulting LLP</strong>, providing online tutoring and enrichment programs for students across various subjects and skill areas.</p>
                                     <p>By accessing or using our website (<a href="https://www.tutorexel.com">www.tutorexel.com</a>) and related services (collectively, “Services”), you agree to these Terms & Conditions (“Terms”). If you do not agree, please do not use the Services.</p>
 
                                     <hr />
@@ -100,7 +100,7 @@ const TermPage = () => {
         <hr />
 
         <h4>8. Intellectual Property</h4>
-        <p>All course content, lesson materials, slides, worksheets, recordings, reports, and designs are the <b>exclusive intellectual property</b> of TutorExel / HEXATRAIL LLP. <br />
+        <p>All course content, lesson materials, slides, worksheets, recordings, reports, and designs are the <b>exclusive intellectual property</b> of TutorExel / Ardan Consulting LLP. <br />
         You may use materials only for personal learning purposes. Copying, redistribution, or resale is strictly prohibited.
         </p>
 
