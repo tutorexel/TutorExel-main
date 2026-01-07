@@ -36,7 +36,7 @@ const ThankYouPage = () => {
             <p className="thank-you-message mb-3">{message}</p>
             
               <Link 
-              to="https://rzp.io/rzp/tutorexelpayment"
+              to="#"
               target="_blank"
               >
                 <Button className="btn btn-primary-orange" style={{marginTop: '3px'}}>
