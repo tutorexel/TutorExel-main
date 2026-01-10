@@ -31,6 +31,7 @@ import SingleBlogPage from './screens/BlogPage/SingleBlogPage';
 import StudentForm from './screens/ContactPage/StudentForm';
 import TeacherForm from './screens/ContactPage/TeacherForm';
 import ThankYouPage from './screens/ContactPage/ThankYouPage';
+import TermsConditionPage from './screens/ContactPage/TC';
 import PolicyPage from './screens/PolicyPage/PolicyPage';
 import TermPage from './screens/TermsPage/TermPage';
 
@@ -62,6 +63,7 @@ function App() {
         <Route path="/contact" element={<StudentForm />} />
         <Route path="/contact/careers" element={<TeacherForm />} />
         <Route path="/contact/thank-you" element={<ThankYouPage />} />
+        <Route path="/terms-and-conditions" element={<TermsConditionPage />} />
         <Route path="/privacy-policy" element={<PolicyPage />} />
         <Route path="/term-condition" element={<TermPage />} />
       </Routes>

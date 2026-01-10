@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useNavigate, useNavigation } from "react-router-dom";
 
 // 1. Import the new assets and styles
 import PageHero from "../../components/ui/PageHero";
@@ -10,10 +10,21 @@ import iconSuccessCheck from "../../assets/icons/icon-success-check.svg";
 import "./ThankYouPage.css";
 
 const ThankYouPage = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   // const isTeacherForm = location.state?.from === "teacher";
   const { from, price} = location.state || {};
   const isTeacherForm = from === "teacher";
+
+  // After Click on Payment Button
+  const handleProceed = () => {
+    navigate("/terms-and-conditions", {
+      state: {
+        price,
+        paymentUrl: "https://pages.razorpay.com/tutorexel-pay"
+      }
+    });
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -42,6 +53,9 @@ const ThankYouPage = () => {
                 <Button className="btn btn-primary-orange" style={{marginTop: '3px'}}>
                   Proceed to Payment
                 </Button>
+                {/* <Button className="btn btn-primary-orange" style={{marginTop: '3px'}} onClick={handleProceed}>
+                  Proceed to Payment
+                </Button> */}
               </Link>
               <Link 
               to="/"

@@ -266,7 +266,7 @@ const Footer = () => {
           <hr className="my-5" />
           
           <p className="text-center text-white-50 small">
-            © {new Date().getFullYear()} Ardan Consulting LLP. TutorExel is a brand owned and operated by Ardan Consulting LLP. All rights reserved.
+            © {new Date().getFullYear()} TutorExel LLP. TutorExel is a brand owned and operated by TutorExel LLP. All rights reserved.
           </p>
         </Container>
       </footer>
