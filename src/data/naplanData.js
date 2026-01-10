@@ -114,14 +114,14 @@ export const naplanData = {
                             name: "Accuracy, Editing & NAPLAN Simulation",
                             description: "Edit and revise writing for clarity, spelling and punctuation; produce persuasive and narrative responses; answer mixed reading comprehension questions; identify main ideas and cause–effect; apply apostrophes, capital letters, commas and sentence boundary punctuation in NAPLAN-style questions."
                         },
-                        {
-                            name: "Practice Session – Reading & Language Conventions",
-                            description: "Intensive practice of reading comprehension and language conventions using mixed NAPLAN-style MCQs; focus on literal and inferential questions, main idea, vocabulary in context, sentence structure, punctuation and spelling accuracy with guided feedback."
-                        },
-                        {
-                            name: "Practice Session – Writing & Full-Length Practice",
-                            description: "Timed practice of persuasive and narrative writing tasks; apply structure, paragraphing, vocabulary and sentence accuracy; edit responses independently; complete a short full-length NAPLAN-style practice with reflection and improvement strategies."
-                        },
+                        // {
+                        //     name: "Practice Session – Reading & Language Conventions",
+                        //     description: "Intensive practice of reading comprehension and language conventions using mixed NAPLAN-style MCQs; focus on literal and inferential questions, main idea, vocabulary in context, sentence structure, punctuation and spelling accuracy with guided feedback."
+                        // },
+                        // {
+                        //     name: "Practice Session – Writing & Full-Length Practice",
+                        //     description: "Timed practice of persuasive and narrative writing tasks; apply structure, paragraphing, vocabulary and sentence accuracy; edit responses independently; complete a short full-length NAPLAN-style practice with reflection and improvement strategies."
+                        // },
                     ]
                 },
             sidebar: {
@@ -253,14 +253,14 @@ export const naplanData = {
                             name: "Poetry, Drama & Integrated Exam Practice",
                             description: "Students practise reading and responding to poetry and drama, analysing imagery and sound devices, evaluating author intent and bias, and completing integrated NAPLAN-style reading, writing and language conventions tasks."
                         },
-                        {
-                            name: "Practice Session – Reading & Language Conventions",
-                            description: "Students practise mixed NAPLAN-style reading and language conventions questions, focusing on literal and inferential comprehension, vocabulary in context, sentence structure, punctuation and spelling accuracy with targeted feedback."
-                        },
-                        {
-                            name: "Practice Session – Writing & Full NAPLAN Simulation",
-                            description: "Students practise timed persuasive and narrative writing tasks, applying structure, paragraphing, vocabulary and sentence accuracy; editing responses independently; and completing a short full NAPLAN-style writing simulation with reflection."
-                        },
+                        // {
+                        //     name: "Practice Session – Reading & Language Conventions",
+                        //     description: "Students practise mixed NAPLAN-style reading and language conventions questions, focusing on literal and inferential comprehension, vocabulary in context, sentence structure, punctuation and spelling accuracy with targeted feedback."
+                        // },
+                        // {
+                        //     name: "Practice Session – Writing & Full NAPLAN Simulation",
+                        //     description: "Students practise timed persuasive and narrative writing tasks, applying structure, paragraphing, vocabulary and sentence accuracy; editing responses independently; and completing a short full NAPLAN-style writing simulation with reflection."
+                        // },
                     ]
                 },
             sidebar: {
@@ -392,14 +392,14 @@ export const naplanData = {
                             name: "NAPLAN Integration & Review",
                             description: "Integrated persuasive or narrative writing; literal, inferential and evaluative reading; skimming and scanning; multimodal interpretation; spelling patterns; sound–letter patterns (digraphs, blends, dge/tch/kn); sentence correctness; punctuation accuracy."
                         },
-                        {
-                            name: "Practice Session – Reading & Language Conventions",
-                            description: "Intensive practice of NAPLAN-style reading and language conventions questions, including literal and inferential comprehension, main idea, vocabulary in context, sentence structure, punctuation and spelling, with guided review and feedback."
-                        },
-                        {
-                            name: "Practice Session – Writing & Full NAPLAN Simulation",
-                            description: "Timed persuasive and narrative writing practice; applying structure, paragraphing, vocabulary and sentence control; independent editing; completion of a short full NAPLAN-style literacy simulation with reflection and improvement strategies."
-                        },
+                        // {
+                        //     name: "Practice Session – Reading & Language Conventions",
+                        //     description: "Intensive practice of NAPLAN-style reading and language conventions questions, including literal and inferential comprehension, main idea, vocabulary in context, sentence structure, punctuation and spelling, with guided review and feedback."
+                        // },
+                        // {
+                        //     name: "Practice Session – Writing & Full NAPLAN Simulation",
+                        //     description: "Timed persuasive and narrative writing practice; applying structure, paragraphing, vocabulary and sentence control; independent editing; completion of a short full NAPLAN-style literacy simulation with reflection and improvement strategies."
+                        // },
                     ]
                 },
             sidebar: {
@@ -531,14 +531,14 @@ export const naplanData = {
                             name: "Editing, Spelling & Exam Mastery",
                             description: "Edit writing for clarity, cohesion, purpose and audience positioning; refine and publish polished texts; compare and contrast texts; analyse evidence and reasoning; apply punctuation accurately (semicolons, dashes, quotations, referencing); use morphemic spelling strategies; recognise neologisms; use spelling for stylistic, humorous and voice effects."
                         },
-                        {
-                            name: "Practice Session – Reading & Language Conventions",
-                            description: "Apply literal, inferential and evaluative comprehension strategies to mixed NAPLAN-style texts; analyse bias, perspective, evidence and multimodal features; practise high-level grammar, cohesion, punctuation and spelling through targeted MCQs and short-response tasks with feedback."
-                        },
-                        {
-                            name: "Practice Session – Writing & Full NAPLAN Simulation",
-                            description: "Complete timed analytical or persuasive writing under exam conditions; plan, draft and edit independently; integrate reading stimulus material; apply advanced sentence control, vocabulary, cohesion, punctuation and spelling accuracy in a full NAPLAN-style literacy simulation."
-                        },
+                        // {
+                        //     name: "Practice Session – Reading & Language Conventions",
+                        //     description: "Apply literal, inferential and evaluative comprehension strategies to mixed NAPLAN-style texts; analyse bias, perspective, evidence and multimodal features; practise high-level grammar, cohesion, punctuation and spelling through targeted MCQs and short-response tasks with feedback."
+                        // },
+                        // {
+                        //     name: "Practice Session – Writing & Full NAPLAN Simulation",
+                        //     description: "Complete timed analytical or persuasive writing under exam conditions; plan, draft and edit independently; integrate reading stimulus material; apply advanced sentence control, vocabulary, cohesion, punctuation and spelling accuracy in a full NAPLAN-style literacy simulation."
+                        // },
                     ]
                 },
             sidebar: {
