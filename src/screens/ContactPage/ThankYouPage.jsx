@@ -18,10 +18,10 @@ const ThankYouPage = () => {
 
   // After Click on Payment Button
   const handleProceed = () => {
-    navigate("/terms-and-conditions", {
+    navigate("/policy-acceptance", {
       state: {
-        price,
-        paymentUrl: "https://pages.razorpay.com/tutorexel-pay"
+        // price,
+        paymentUrl: "https://www.tutorexel.com/"
       }
     });
   };
@@ -46,17 +46,17 @@ const ThankYouPage = () => {
             <h2 className="title mb-5" style={{color: '#FFF'}}>Enrolment Submitted</h2>
             <p className="thank-you-message mb-3">{message}</p>
             
-              <Link 
+              {/* <Link 
               to="#"
               target="_blank"
               >
                 <Button className="btn btn-primary-orange" style={{marginTop: '3px'}}>
                   Proceed to Payment
-                </Button>
-                {/* <Button className="btn btn-primary-orange" style={{marginTop: '3px'}} onClick={handleProceed}>
-                  Proceed to Payment
                 </Button> */}
-              </Link>
+                <Button className="btn btn-primary-orange" style={{marginTop: '3px'}} onClick={handleProceed}>
+                  Proceed to Payment
+                </Button>
+              {/* </Link> */}
               <Link 
               to="/"
               target="_blank"
