@@ -63,8 +63,9 @@ function App() {
         <Route path="/contact" element={<StudentForm />} />
         <Route path="/contact/careers" element={<TeacherForm />} />
         <Route path="/contact/thank-you" element={<ThankYouPage />} />
-        <Route path="/terms-and-conditions" element={<TermsConditionPage />} />
+        <Route path="/policy-acceptance" element={<TermsConditionPage />} />
         <Route path="/privacy-policy" element={<PolicyPage />} />
+        {/* <Route path="/refund-and-cancellation-policy" element={<RefundPage />} /> */}
         <Route path="/term-condition" element={<TermPage />} />
       </Routes>
 
