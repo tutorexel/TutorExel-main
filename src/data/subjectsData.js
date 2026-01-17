@@ -3516,6 +3516,186 @@ export const subjectsData = {
       introHeading: "We've Got the Curriculum Covered",
       introP1: "At TutorExel, our Year 10 English program builds a strong foundation in key skills. Lessons are tailored to your child’s pace and aligned with the Australian National Curriculum.",
       introP2: "Tutoring is delivered through <strong>1-on-1 or group online sessions</strong>, guided by expert tutors who focus on real progress.",
+      term1:{
+                title: "Language, Power & Representation",
+                topics: [
+                    {
+                        name: "Inclusive & Exclusive Language",
+                        description: "Students explore how language can include, exclude, empower or marginalise audiences. They analyse pronouns, shared assumptions and persuasive phrasing such as “we”, “of course” and “as you can imagine”. Real-world examples from speeches and articles are examined. Students identify whose voices are centred and whose are silenced. They practise rewriting sentences to make language more inclusive."
+                    },
+                    {
+                        name: "Representation in Media Texts",
+                        description: "Students analyse how people, places and groups are represented in news and media texts. They identify stereotypes and discuss how these reflect social and cultural contexts. Visual and written elements are examined together. Students evaluate whether representations are fair, biased or misleading. They justify their opinions using evidence from the text."
+                    },
+                    {
+                        name: "Analytical Paragraph Writing",
+                        description: "Students learn the structure of an analytical paragraph: topic sentence, evidence, explanation and link. They write a paragraph explaining how language positions an audience. Model responses are unpacked to highlight effective technique. Students draft, peer-review and refine their work. Emphasis is placed on clarity, cohesion and formal tone."
+                    },
+                    {
+                        name: "Sentence Focus & Syntax",
+                        description: "Students examine how sentence structures shape meaning and emphasis. They compare active and passive voice and explore verbless clauses for effect. Complex sentences are analysed to show cause, concession and condition. Students manipulate sentences to shift focus and tone. This builds control over precision and style in writing."
+                    },
+                    {
+                        name: "Vocabulary & Inference",
+                        description: "Students develop academic and technical vocabulary for analysing texts. They practise inferring implicit meanings and values from word choices. Strategies such as predicting, questioning and summarising are modelled. Short texts are used to locate subtle viewpoints. Students apply new vocabulary in analytical responses."
+                    },
+                    {
+                        name: "Nominalisation & Abstraction",
+                        description: "Students explore how nominalisation turns actions into concepts (e.g., “decide” → “decision”). They examine how abstraction creates authority and objectivity in formal writing. Examples from essays and articles are analysed. Students rewrite sentences to increase or reduce abstraction. They evaluate how these choices affect tone and meaning."
+                    },
+                    {
+                        name: "Short Story: Identity & Voice",
+                        description: "Students read a short story that explores identity and voice. They analyse how characters and contexts are represented. Literary devices and aesthetic choices are examined for their emotional impact. Students discuss how the author positions the reader. Responses are supported with close textual evidence."
+                    },
+                    {
+                        name: "Persuasive Writing Task",
+                        description: "Students craft a persuasive response on an issue linked to representation or power. They identify values embedded in language and replicate these techniques. Planning focuses on argument structure and audience awareness. Drafts are edited for clarity, precision and tone. Students reflect on how their language choices reveal values."
+                    },
+                    {
+                        name: "Speaking: Media Bias Debate",
+                        description: "Students prepare and deliver a short debate on media bias. They use rhetorical devices to engage and persuade an audience. Listening skills are developed through rebuttal and questioning. Students evaluate how spoken language conveys values and attitudes. Peer feedback focuses on clarity, impact and effectiveness."
+                    },
+                    {
+                        name: "Revision & Integrated Assessment",
+                        description: "Students complete a mixed assessment combining reading, language analysis and writing. They apply comprehension strategies across unfamiliar texts. Tasks mirror NAPLAN-style integration of skills. Students review key concepts from the term. Reflection identifies strengths and areas for improvement."
+                    },
+                ]
+            },
+      term2:{
+                title: "Literary Voice & Interpretation",
+                topics: [
+                    {
+                        name: "Text Structures Across Modes",
+                        description: "Students analyse how text structures and language features differ across print and digital environments. They compare a print article with its online version. Students evaluate how layout, hyperlinks and visuals alter meaning. Discussion focuses on purpose and audience. Students justify which version is more effective and why."
+                    },
+                    {
+                        name: "Interpreting Literary Meaning",
+                        description: "Students explore multiple interpretations of a shared literary text. They compare responses and debate whether the text has universal relevance. Close reading is modelled to support claims. Students extend others’ ideas using evidence. Respectful literary discussion is emphasised."
+                    },
+                    {
+                        name: "Literary Response Writing",
+                        description: "Students write an analytical response interpreting a key moment in a text. They structure ideas logically and integrate quotations. Models demonstrate how to link evidence to interpretation. Students draft and refine with teacher feedback. Focus is placed on coherence and depth."
+                    },
+                    {
+                        name: "Paragraph Variation & Cohesion",
+                        description: "Students examine how authors vary paragraph length and structure for effect. They analyse examples from novels and online texts. The role of topic shifts and transitions is explored. Students experiment with paragraphing in their own writing. They evaluate how cohesion shapes reader engagement."
+                    },
+                    {
+                        name: "Reading Strategies for Complex Texts",
+                        description: "Students apply visualising, questioning and inferring strategies to dense literary passages. They track how meaning builds across a chapter. Abstract ideas such as justice or loss are unpacked. Students annotate to monitor comprehension. Discussion focuses on how strategies deepen understanding."
+                    },
+                    {
+                        name: "Visual Features & Representation",
+                        description: "Students analyse still and moving images from film and graphic novels. They examine light, framing and colour to interpret representation. The impact of visual choices on mood and meaning is evaluated. Students compare alternative images. They justify which is most effective."
+                    },
+                    {
+                        name: "Comparing Literary Voices",
+                        description: "Students compare “voice” in poetry, prose and film. They examine how tone, rhythm and perspective shape emotional response. Extracts are paired for contrast. Students discuss how different voices position audiences. Written comparisons reinforce analytical language."
+                    },
+                    {
+                        name: "Creative Voice Experiment",
+                        description: "Students create a short literary piece in a sustained voice. They adapt structure and devices for a chosen audience. Drafting focuses on tone, imagery and rhythm. Students edit for impact. Reflection explains creative choices."
+                    },
+                    {
+                        name: "Spoken Interpretation",
+                        description: "Students listen to spoken literary texts such as monologues or slam poetry. They analyse how structure and delivery create effect. Students present an interpretation of a text aloud. Interaction skills are practised through peer response. Emphasis is on clarity and audience engagement."
+                    },
+                    {
+                        name: "Review & Literary Assessment",
+                        description: "Students evaluate the aesthetic qualities of studied texts. They use literary terminology accurately. A short assessment requires analysis of device, structure and effect. Students revise key concepts. Reflection identifies growth in interpretation."
+                    },
+                ]
+            },
+      term3:{
+                title: "Argument, Ethics & Persuasion",
+                topics: [
+                    {
+                        name: "Values in Language",
+                        description: "Students analyse how evaluative language reveals values. They identify explicit and implicit judgement in opinion texts. Word choice is linked to attitude and bias. Students rewrite sentences to shift values. Discussion focuses on ethical positioning."
+                    },
+                    {
+                        name: "Ethical Positions in Literature",
+                        description: "Students examine how a text presents a moral or ethical stance. They identify principles and values embedded in narrative. Strengths and weaknesses of the position are debated. Evidence is drawn from key scenes. Students articulate informed viewpoints."
+                    },
+                    {
+                        name: "Argument Writing Structure",
+                        description: "Students learn to plan an extended argument. They preview claims, structure paragraphs and craft conclusions. Model essays are deconstructed. Students draft an introduction and first body paragraph. Feedback targets clarity and logic."
+                    },
+                    {
+                        name: "Punctuation for Effect",
+                        description: "Students analyse how authors use colons, semicolons and ellipses. Examples from expositions and fiction are examined. Students practise using punctuation to extend ideas. Emotional tone is manipulated through punctuation. Editing focuses on precision."
+                    },
+                    {
+                        name: "Persuasive Reading Strategies",
+                        description: "Students apply comprehension strategies to persuasive texts. They identify claims, evidence and rhetorical moves. Abstract concepts such as freedom or fairness are interpreted. Annotation supports critical reading. Students summarise arguments concisely."
+                    },
+                    {
+                        name: "Organising Ideas in Texts",
+                        description: "Students analyse how arguments are organised for effect. They compare pamphlets, articles and online posts. Visual flow and sequencing are evaluated. Students map structure. They judge effectiveness for audience and purpose."
+                    },
+                    {
+                        name: "Satire & Interpretation",
+                        description: "Students examine satirical texts such as cartoons and parody. They identify devices that layer meaning. Discussion explores how satire shapes interpretation. Students analyse intertextual references. Written responses explain intended impact."
+                    },
+                    {
+                        name: "Extended Persuasive Essay",
+                        description: "Students write a full persuasive piece on a contemporary issue. They integrate evidence and rhetorical devices. Drafting emphasises coherence across paragraphs. Peer review supports refinement. Final versions demonstrate control of argument."
+                    },
+                    {
+                        name: "Debate & Rhetoric",
+                        description: "Students prepare and deliver a structured debate. They experiment with rhetorical devices to persuade. Rehearsal focuses on pacing and emphasis. Interaction skills are practised in rebuttal. Reflection evaluates effectiveness."
+                    },
+                    {
+                        name: "Term Assessment",
+                        description: "Students analyse how values and beliefs are represented in a persuasive text. They identify implicit and explicit attitudes. A written response evaluates techniques. Revision consolidates term learning. Students reflect on growth in argument skills."
+                    },
+                ]
+            },
+      term4:{
+                title: "Creative Control & Multimodal Craft",
+                topics: [
+                    {
+                        name: "Multimodal Structures",
+                        description: "Students analyse how documentaries and webpages combine modes. They evaluate how structure shapes meaning. Examples are deconstructed for purpose. Students plan a multimodal concept. Discussion focuses on audience impact."
+                    },
+                    {
+                        name: "Creating Sustained Voice",
+                        description: "Students begin a creative project with a consistent voice. They select structures and devices to suit purpose. Models demonstrate effective voice. Drafting focuses on tone and imagery. Students justify their creative choices."
+                    },
+                    {
+                        name: "Integrating Images & Text",
+                        description: "Students examine how images and paragraphs interact. Websites and graphic texts are analysed. They evaluate the effect of layout. Students design a page combining text and visuals. Reflection explains design decisions."
+                    },
+                    {
+                        name: "Academic Vocabulary in Writing",
+                        description: "Students expand technical and academic vocabulary. They practise precision in analytical and reflective writing. Examples from essays are examined. Students revise drafts to elevate language. Focus is on clarity and authority."
+                    },
+                    {
+                        name: "Multimodal Comprehension",
+                        description: "Students interpret complex multimodal texts. They apply predicting, inferring and summarising. Abstract ideas are decoded through visuals. Students annotate meaning across modes. Discussion links form and concept."
+                    },
+                    {
+                        name: "Visual Representation",
+                        description: "Students analyse how images construct meaning. Light, angle and composition are examined. They evaluate representation choices. Students redesign an image for different effect. Justification links to audience response."
+                    },
+                    {
+                        name: "Editing for Purpose",
+                        description: "Students revise written and multimodal drafts. They refine structure, language and cohesion. Peer feedback guides improvement. Editing targets grammar and style. Reflection explains changes made."
+                    },
+                    {
+                        name: "Creative Portfolio",
+                        description: "Students compile a suite of short creative texts. Each piece explores the same idea in a different voice. They experiment with genre and form. Editing ensures consistency and impact. Students articulate authorial intent."
+                    },
+                    {
+                        name: "Spoken Performance",
+                        description: "Students rehearse and deliver a creative or persuasive presentation. They use rhetorical devices to engage. Multimodal elements support meaning. Feedback focuses on delivery and impact. Students refine performance."
+                    },
+                    {
+                        name: "Spelling for Effect",
+                        description: "Students explore how spelling can be manipulated for effect. Homophones and playful variants are examined. Examples from advertising and literature are analysed. Students experiment in creative tasks. Reflection evaluates purpose and impact."
+                    },
+                ]
+            },
       sidebar: {
         title: "Year 10 English",
         subtitle: "Personalised Online Tutoring",

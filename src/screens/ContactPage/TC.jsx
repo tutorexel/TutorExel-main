@@ -78,7 +78,7 @@ const TermsConditionPage = () => {
         Privacy Policy
       </a>
       , and{" "}
-      <a href="/#" target="_blank" rel="noopener noreferrer">
+      <a href="/refund-and-cancellation-policy" target="_blank" rel="noopener noreferrer">
         Refund & Cancellation Policy
       </a>.
     </Form.Check.Label>

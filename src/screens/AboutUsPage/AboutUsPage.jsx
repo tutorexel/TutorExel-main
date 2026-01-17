@@ -112,6 +112,27 @@ const AboutUsPage = () => {
           </div>
         }
       />
+
+      <section className="founder-speak-section">
+        <Container>
+          <Row className="justify-content-center">
+            <Col md={10} lg={8}>
+              <div className="founder-speak-card">
+                <h2 className="founder-speak-title">Founders Speak</h2>
+
+                <p className="founder-speak-text">
+                  “TutorExel was founded with a simple belief—that structured learning, when aligned with the right curriculum and supported by the right systems, can transform student outcomes. Our focus is on clarity, consistency, and measurable progress for every learner. We are committed to building a platform that empowers students and gives parents complete confidence in their child’s academic journey.”
+                </p>
+
+                <div className="founder-speak-name">
+                  — Viresh Sharma
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
       <FeatureSection
         imagePosition="right"
         image={differenceTeacher}
