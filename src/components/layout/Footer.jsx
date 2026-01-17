@@ -236,6 +236,7 @@ const Footer = () => {
               <Link to="/contact" className="text-white-50 text-decoration-none mb-2 d-block">Enroll Now</Link>
               <Link to="/term-condition" className="text-white-50 text-decoration-none mb-2 d-block">Terms and Conditions</Link>
               <Link to="/privacy-policy" className="text-white-50 text-decoration-none mb-2 d-block">Privacy Policy</Link>
+              <Link to="/refund-and-cancellation-policy" className="text-white-50 text-decoration-none mb-2 d-block">Refund & Cancellation Policy</Link>
             </Col>
 
             {/* Contact */}
