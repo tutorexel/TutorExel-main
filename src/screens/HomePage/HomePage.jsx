@@ -183,7 +183,7 @@ const Home = () => {
 
                         <h3><strong>NAPLAN Bootcamp</strong></h3>
                         <p>
-                            <strong>Starting 19th Jan, 2026</strong>
+                            <strong>Starting 26th Jan, 2026</strong>
                         </p>
 
                         <p>

@@ -250,7 +250,7 @@ const Footer = () => {
               {/* WhatsApp quick chat link */}
               <div className="mt-3">
                 <a
-                  href="https://wa.me/919872550572"
+                  href="https://wa.me/916284598837"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white-50 text-decoration-none d-inline-flex align-items-center gap-2"

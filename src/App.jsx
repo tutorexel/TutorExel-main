@@ -34,6 +34,7 @@ import ThankYouPage from './screens/ContactPage/ThankYouPage';
 import TermsConditionPage from './screens/ContactPage/TC';
 import PolicyPage from './screens/PolicyPage/PolicyPage';
 import TermPage from './screens/TermsPage/TermPage';
+import RefundPage from './screens/RefundPage/RefundPage';
 
 function App() {
   return (
@@ -65,7 +66,7 @@ function App() {
         <Route path="/contact/thank-you" element={<ThankYouPage />} />
         <Route path="/policy-acceptance" element={<TermsConditionPage />} />
         <Route path="/privacy-policy" element={<PolicyPage />} />
-        {/* <Route path="/refund-and-cancellation-policy" element={<RefundPage />} /> */}
+        <Route path="/refund-and-cancellation-policy" element={<RefundPage />} />
         <Route path="/term-condition" element={<TermPage />} />
       </Routes>
 
