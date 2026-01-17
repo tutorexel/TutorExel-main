@@ -13,9 +13,9 @@ const TermsConditionPage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (!paymentUrl) {
-      navigate("/");
-    }
+    // if (!paymentUrl) {
+    //   navigate("/");
+    // }
   }, [paymentUrl, navigate]);
 
   const handleSubmit = () => {
