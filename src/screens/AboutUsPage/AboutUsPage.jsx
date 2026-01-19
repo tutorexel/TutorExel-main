@@ -11,6 +11,7 @@ import './AboutUsPage.css';
 import logo from '../../assets/images/logo.svg';
 import missionTeacher from '../../assets/images/mission-teacher.png';
 import differenceTeacher from '../../assets/images/difference-teacher.png';
+import founder from '../../assets/images/viresh_sharma.jpeg';
 // import ctaFamily from '../../assets/images/cta-family.png';
 import iconAssess from '../../assets/icons/icon-assess.svg';
 import approachPlans from '../../assets/icons/icon-plans.svg';
@@ -119,6 +120,15 @@ const AboutUsPage = () => {
             <Col md={10} lg={8}>
               <div className="founder-speak-card">
                 <h2 className="founder-speak-title">Founders Speak</h2>
+
+                {/* Founder Image */}
+                <div className="founder-image-wrapper">
+                  <img
+                    src={founder}   // place image in public/images
+                    alt="Founder - Viresh Sharma"
+                    className="founder-image"
+                  />
+                </div>
 
                 <p className="founder-speak-text">
                   “TutorExel was founded with a simple belief—that structured learning, when aligned with the right curriculum and supported by the right systems, can transform student outcomes. Our focus is on clarity, consistency, and measurable progress for every learner. We are committed to building a platform that empowers students and gives parents complete confidence in their child’s academic journey.”
