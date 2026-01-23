@@ -1,6 +1,5 @@
 # tutor-excel
 
-
 ### DEMO
 
 You can access a live demo of the Tutor Excel website [here](https://tutor-excel.vercel.app/). Feel free to explore and use the platform.
@@ -8,6 +7,24 @@ You can access a live demo of the Tutor Excel website [here](https://tutor-excel
 ### Prerequisites
 
 You'll need to have Node.js and npm installed on your computer. You can download them from [nodejs.org](https://nodejs.org/).
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### Installation
 
@@ -32,15 +49,15 @@ To start the development server, run the following command. This will open the a
 npm run dev
 ```
 
-The application will be accessible at `http://localhost:5173`.
+The application will be accessible at `http://localhost:3000`.
 
 ## Available Scripts
 
 In the project directory, you can run the following commands:
 
-*   `npm run dev`: Runs the app in development mode.
-*   `npm run build`: Builds the app for production to the `dist` folder. It correctly bundles the app in production mode and optimizes the build for the best performance.
-*   `npm run preview`: Serves the production build locally to preview it before deploying.
+- `npm run dev`: Runs the app in development mode.
+- `npm run build`: Builds the app for production.
+- `npm run preview`: Serves the production build locally to preview it before deploying.
 
 ## Deployment
 
@@ -49,8 +66,6 @@ To deploy this project, you first need to build it:
 ```sh
 npm run build
 ```
-
-This will create a `dist` directory with all the static files needed for deployment. You can then deploy the contents of the `dist` folder to any static hosting service like Netlify, Vercel, or GitHub Pages.
 
 ## Contributing
 

@@ -1,0 +1,5681 @@
+/* =========================================== */
+/* ############### INDEX.CSS ############### */
+/* =========================================== */
+
+@import "tailwindcss";
+
+/* Define brand colors as CSS variables */
+:root {
+  --primary-blue: #22A3D2;
+  --primary-orange: #FF9E10;
+  --light-gray: #F3F5F5;
+  --dark-navy: #0F2A47;
+  --almost-black: #070709;
+  --teal-green: #05AC8F;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+ul li{
+  list-style-type: disc;
+}
+ol li{
+  list-style-type: decimal;
+}
+img{
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Custom Bootstrap Button Variants */
+.btn-primary-orange {
+  background-color: var(--primary-orange);
+  border-color: var(--primary-orange);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: transform 0.2s;
+}
+.btn-primary-orange:hover {
+  background-color: #e68e0e;
+  border-color: #e68e0e;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-secondary-blue {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: transform 0.2s;
+}
+.btn-secondary-blue:hover {
+  background-color: #1e92bb;
+  border-color: #1e92bb;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Custom Text Colors */
+.text-dark-navy { color: var(--dark-navy) !important; }
+.text-primary-orange { color: var(--primary-orange) !important; }
+.text-primary-blue { color: var(--primary-blue) !important; }
+
+/* Custom Background Colors */
+.bg-light-gray { background-color: var(--light-gray); }
+.bg-almost-black { background-color: var(--almost-black); }
+.bg-primary-orange-gradient { background: linear-gradient(to right, #FF9E10, #ffb74e); }
+
+/* General Styling */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-navy);
+  font-weight: 500;
+}
+
+/* Standardized Section Headings */
+.section-heading {
+  font-size: 44.8px !important;
+  font-weight: 700 !important;
+  color: var(--dark-navy) !important;
+}
+
+/* Responsive adjustments for section headings */
+@media (max-width: 991.98px) {
+  .section-heading {
+    font-size: 36px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-heading {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-heading {
+    font-size: 28px !important;
+  }
+}
+
+/* Find and replace or add this class */
+.hero-section-bg {
+  /* This gradient goes from light blue, to white, to light orange */
+  background: linear-gradient(to right, #CDF2FF, #FFE8C7);
+  
+}
+
+/* NEW HERO SECTION for Home */
+
+.cloudnew-section{
+  display: flex;
+}
+.cloudnew-img {
+    display: inline-block;
+    position: relative;
+}
+
+.cloudnew-img .cloud-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 37%;
+}
+.cloudnew-img .cloud-text h2{
+  font-weight: 700;
+  font-size: 27px;
+}
+.cloud-text p {
+    font-size: 14px;
+}
+.cloudnew-part:first-child .cloud-text h2, .cloudnew-part:first-child .cloud-text p{
+  margin-bottom: 0;
+}
+
+
+.heronew-section {
+    height: 370px;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 1400px){
+  .cloudnew-img .cloud-text h2{
+    font-size: 23px;
+  }
+}
+@media (max-width: 1200px){
+  .cloudnew-img .cloud-text h2{
+    font-size: 19px;
+  }
+  .cloudnew-img .cloud-text p{
+    margin-bottom: 2px;
+  }
+}
+@media (max-width: 992px){
+  .cloudnew-section{
+    flex-wrap: wrap;
+  }
+  .cloudnew-section .cloudnew-part{
+    flex: 0 0 calc(50% - 16px);
+  }
+  .cloudnew-section .cloudnew-part:last-child{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .heronew-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+}
+@media (max-width: 767.98px){
+  .heronew-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .cloudnew-section {
+    flex-direction: column;
+  }
+  .cloudnew-section .cloudnew-part{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cloudnew-img a.hotspot1{
+    bottom: 13%;
+    left: 44%;
+  }
+  
+}
+
+
+.new-hero-section{
+  background: url('/images/herobg.svg') no-repeat top/contain;
+}
+
+.cloud1{
+  background: url('/images/cloud1.svg') no-repeat top/contain;
+}
+.cloud-row-container {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.cloud-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+/* Single cloud card */
+.cloud-card {
+  width: 340px;
+  padding: 65px 10px 80px;
+  
+  text-align: center;
+  /* border: 4px solid;  */
+  border-radius: 50px;
+  position: relative;
+}
+
+.cloud-card-bg{
+  background: url("/images/cloud1.png") no-repeat center/contain;
+  background-size: 100% auto;
+}
+
+/* Card title and text */
+.cloud-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cloud-card p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.cloud-link {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  /* margin-bottom: 20px;
+  display: inline-block; */
+}
+
+.cloud-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.cloud-buttons button {
+  border-radius: 25px;
+  font-size: 13px;
+  padding: 8px 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Course Curriculum */
+.curriculum-section {
+  padding: 60px 0;
+  background: #f7f5ee;
+  background-image: url('/images/curriculum_bg.png');
+  background-size: cover;
+}
+
+.curriculum-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.curriculum-subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* YEAR BOXES */
+.year-card {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+  max-width: 350px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.year-card h4 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.year-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  min-height: 100px;
+}
+
+/* Buttons */
+.subject-btn {
+  background: #ff9d00;
+  color: #fff;
+  border: none;
+  padding: 6px 18px;
+  font-size: 14px;
+  border-radius: 999px;
+  margin: 0 6px;
+}
+
+.subject-btn:hover {
+  opacity: 0.9;
+}
+
+/* NAPLAN BOX */
+.naplan-box {
+  background: #1fa7d8;
+  text-align: center;
+  padding: 40px 25px;
+  border-radius: 12px;
+  max-width: 450px;
+  margin: 60px auto 0 auto;
+  color: #fff;
+}
+
+.naplan-box p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.white-btn {
+  background: #ffffff;
+  color: #000 !important;
+}
+.btn-row {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Add this new class for the styled feature pointers */
+.feature-item {
+  background-color: #F3F5F5; /* The light gray background */
+  padding: 0.6rem 1.25rem;
+  border-radius: 50px;       /* This creates the pill shape */
+  color: var(--dark-navy);
+  font-weight: 500;
+  display: inline-flex;      /* Ensures the background fits the content */
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Add this new class for the section with the wavy orange background */
+.why-trust-section {
+  background-color: var(--primary-orange);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Add this class for the testimonial card's speech bubble tail */
+.testimonial-card {
+  position: relative; /* Required for the pseudo-element positioning */
+  background-color: var(--primary-blue);
+  border: none;
+  padding: 2rem;
+  border-radius: 20px;
+  color: white;
+}
+
+/* The ::after pseudo-element creates the triangle/tail */
+.testimonial-card::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* Position it at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 20px 20px 0 20px;
+  border-style: solid;
+  border-color: var(--primary-blue) transparent transparent transparent;
+}
+
+/* Add this new class for the white CTA button */
+.btn-white-custom {
+  background-color: white;
+  color: var(--primary-orange);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  border: 2px solid white; /* Optional: adds thickness */
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-white-custom:hover {
+  background-color: #fff8f0; /* A very light orange for hover */
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+
+.btn-white-custom:active {
+  background-color: var(--primary-orange) !important;
+  border-color: white !important; /* White border on click */
+  color: white !important; /* White text on click */
+  transform: scale(1.05); /* Keep it zoomed while clicked */
+  box-shadow: none;
+}
+
+
+/* Custom styles for the footer */
+.footer-section {
+  padding-top: 80px; /* Use a larger padding for better aesthetics */
+  padding-bottom: 30px;
+}
+
+/* Footer logo size */
+.footer-logo {
+  height: 20px; /* per request */
+  width: auto;
+}
+
+@media (max-width: 575.98px) {
+  .footer-logo {
+    height: 20px; /* keep consistent on mobile */
+  }
+}
+
+/* Custom bullet points for the subjects list */
+.footer-subjects-list {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-subjects-list li {
+  padding-left: 1.2rem;
+  position: relative;
+}
+.footer-subjects-list li::before {
+  content: '•';
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Custom styles for the subscribe form */
+.subscribe-input {
+  border-radius: 50px !important;
+  padding: 0.75rem 1.25rem !important;
+  border: none !important;
+}
+
+.subscribe-button {
+  border-radius: 50px !important;
+  background-color: var(--primary-orange) !important;
+  border-color: var(--primary-orange) !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 1.5rem !important;
+  transition: transform 0.2s;
+}
+
+.subscribe-button:hover {
+  transform: scale(1.05);
+}
+
+/* Footer about paragraph justification */
+.footer-about-text {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+/* Standard page intro paragraph (below headings, non-Home pages) */
+.page-intro {
+  width: 100%;
+  max-width: 100% !important;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+.page-intro strong { font-weight: 400 !important; }
+
+/* src/index.css */
+
+/* ... (keep all the existing CSS) ... */
+
+/* Find and replace the existing .why-trust-section class */
+.why-trust-section {
+  /* 
+    Layering multiple backgrounds with CSS.
+    The first image listed is the TOP layer.
+  */
+  background:
+    url('/icons/topo-lines-bg.png') center / cover no-repeat, /* Blue lines on top */
+    var(--primary-orange); /* Base orange color at the very back */
+  
+  position: relative; /* Good practice for sections with complex backgrounds */
+}
+/* === RESPONSIVE HERO SECTION STYLES === */
+
+.responsive-hero {
+  padding: 3rem 0;
+}
+
+.hero-row {
+  min-height: 70vh;
+}
+
+.hero-content {
+  padding: 1rem 0;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.325rem;
+    max-width: 500px;
+    /* margin: 0 auto; */
+    color: #0f2a47;
+    font-weight: 600;
+}
+
+.hero-actions {
+  margin-top: 2rem;
+}
+
+.hero-cta-button {
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  white-space: nowrap;
+  min-width: 250px;
+}
+
+.hero-watch-button {
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-watch-button:hover {
+  transform: translateY(-2px);
+}
+
+.play-icon {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hero-watch-button:hover .play-icon {
+  transform: scale(1.1);
+}
+
+.hero-image-container {
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+}
+
+.hero-image {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991.98px) {
+  .responsive-hero {
+    padding: 2rem 0;
+  }
+  
+  .hero-row {
+    min-height: auto;
+  }
+  
+  .hero-content {
+    text-align: center !important;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin: 0 auto 1.5rem auto;
+  }
+  
+  .hero-actions {
+    margin-top: 1.5rem;
+    justify-content: center !important;
+  }
+  
+  .hero-cta-button {
+    min-width: 200px;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .hero-image-container {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .responsive-hero {
+    padding: 1.5rem 0;
+  }
+  
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  .hero-cta-button {
+    min-width: 280px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .hero-watch-button {
+    font-size: 0.95rem;
+  }
+  
+  .play-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .hero-image-container {
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .responsive-hero {
+    padding: 1rem 0;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-actions {
+    margin-top: 1rem;
+  }
+  
+  .hero-cta-button {
+    font-size: 0.9rem;
+    padding: 0.625rem 1.25rem;
+  }
+  
+  .hero-image-container {
+    max-width: 250px;
+  }
+}
+
+/* Large desktop adjustments */
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* Text alignment fixes for mobile */
+@media (max-width: 991.98px) {
+  .hero-content .hero-subtitle {
+    text-align: center;
+  }
+}
+
+
+/* === SPECIFIC FIXES FOR 992px-1120px BREAKPOINT RANGE === */
+
+/* Target the problematic range between tablet landscape and small desktop */
+@media (min-width: 992px) and (max-width: 1120px) {
+  
+  /* Header/Navigation fixes */
+  .responsive-navbar {
+    min-height: 85px;
+  }
+  
+  .nav-link-base {
+    height: 85px;
+    padding: 0 1.2rem !important;
+    font-size: 0.95rem;
+  }
+  
+  .subjects-mega-menu {
+    width: 95vw;
+    max-width: 1000px;
+    padding: 1.5rem;
+  }
+  
+  /* Hero section adjustments */
+  .hero-title {
+    font-size: 2.25rem;
+    line-height: 1.25;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    max-width: 450px;
+  }
+  
+  .hero-cta-button {
+    padding: 0.8rem 1.75rem;
+    font-size: 0.95rem;
+  }
+  
+  .hero-image-container {
+    max-width: 400px;
+  }
+
+  /* Tighter hero for small tablets */
+  .responsive-hero {
+    padding: 1rem 0 !important;
+  }
+}
+
+/* Extra-tight hero for phones */
+@media (max-width: 575.98px) {
+  /* Compress hero to fit one fold */
+  .responsive-hero { padding: 0.5rem 0 !important; }
+  .hero-row { align-items: center !important; }
+  .hero-content { padding: 0.5rem 0 !important; }
+
+  .hero-title {
+    /* Phone size: 32px, weight handled by .section-heading */
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.5rem !important;
+    letter-spacing: -0.2px;
+    font-weight: 700 !important;
+  }
+  .hero-subtitle {
+    font-size: 0.85rem !important;
+    margin: 0.25rem 0 0.75rem !important;
+  }
+  .hero-actions { margin-top: 0.5rem !important; gap: 0.75rem !important; }
+  .hero-cta-button { max-width: 220px !important; padding: 0.55rem 1rem !important; font-size: 0.9rem !important; }
+
+  .hero-image-col { margin-top: 0 !important; }
+  .hero-image-container { max-width: 180px !important; margin-top: 0 !important; }
+
+  /* Container gutters (scoped to hero only) */
+  .hero-section-bg .container { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+}
+  
+  /* Container adjustments - removed custom override to restore Bootstrap defaults */
+  /* (intentionally left blank) */
+  
+  /* Section spacing adjustments */
+  .section-responsive {
+    padding: 3.5rem 0;
+  }
+  
+  /* Feature items spacing */
+  .feature-item {
+    padding: 0.55rem 1.1rem;
+    font-size: 0.9rem;
+    gap: 0.6rem;
+  }
+  
+  /* Subject cards grid adjustments */
+  .subject-card {
+    min-width: 230px;
+    min-height: 230px;
+  }
+  
+  /* Testimonial cards adjustments */
+  .testimonial-card {
+    padding: 1.75rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Button responsive adjustments */
+  .btn-responsive {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Typography adjustments */
+  .responsive-heading-1 {
+    font-size: 2.25rem;
+  }
+  
+  .responsive-heading-2 {
+    font-size: 1.85rem;
+  }
+  
+  .responsive-heading-3 {
+    font-size: 1.4rem;
+  }
+  
+  /* Grid and flex adjustments */
+  .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+  
+  .row > * {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  /* Trust section adjustments */
+  .why-trust-section {
+    padding: 3.5rem 0;
+  }
+  
+  /* CTA section adjustments */
+  .mobile-cta-section {
+    margin-top: 1.75rem;
+    padding-top: 1.25rem;
+  }
+  
+  /* Page hero banner adjustments */
+  .page-hero-banner {
+    min-height: 280px;
+    padding: 90px 0;
+  }
+  
+  /* Ensure proper text wrapping (avoid auto hyphenation in headings) */
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    hyphens: none;            /* prevent words like "Tutoring" splitting */
+  }
+  
+  /* Adjust margins for better spacing */
+  .my-4 {
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+  
+  .my-5 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  /* Fix any potential overflow issues */
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  /* Ensure images scale properly */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Card deck adjustments */
+  .card-deck > .card {
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Form elements adjustments */
+  .form-control {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.9rem;
+  }
+  
+  /* Navigation dropdown adjustments */
+  .dropdown-menu {
+    font-size: 0.9rem;
+  }
+  
+  /* Ensure proper button sizing */
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.7rem 1.4rem;
+  }
+  
+  .btn-sm {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Analyst Page */
+.its-for {
+    border-radius: 70px;
+    border: 2px dotted orange;
+    padding: 30px;
+}
+
+/* Additional fine-tuning for the upper end of the range */
+@media (min-width: 1080px) and (max-width: 1120px) {
+  
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.15rem;
+    max-width: 480px;
+  }
+  
+  .container {
+    max-width: 1080px;
+  }
+  
+  .nav-link-base {
+    padding: 0 1.3rem !important;
+    font-size: 1rem;
+  }
+  
+  .subjects-mega-menu {
+    max-width: 1050px;
+    padding: 1.75rem;
+  }
+}
+
+/* Ensure smooth transitions between breakpoints */
+@media (min-width: 992px) {
+  .responsive-transition {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+
+/* === MOBILE WIDTH FIXES AND IMAGE VISIBILITY === */
+
+/* Ensure full width on mobile devices */
+@media (max-width: 767.98px) {
+  
+  /* Fix mobile viewport and container width issues */
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .container-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Show hero image on mobile (override previous rule) */
+  .hero-image-col {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  /* Keep content centered but allow image alongside/under */
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    padding: 1.5rem 0 !important;
+  }
+  
+  /* Ensure hero image scales nicely on small screens */
+  .hero-image-container {
+    max-width: 300px !important;
+  }
+  .hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Ensure sections take full width */
+  section {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Fix any potential margin/padding issues */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+  }
+  
+  .row > * {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  /* Ensure responsive hero section takes full width */
+  .responsive-hero {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  
+  .hero-row {
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Mobile-specific hero adjustments */
+  .hero-title {
+    font-size: 1.75rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem !important;
+    margin: 0 auto 1.5rem auto !important;
+    max-width: 90% !important;
+  }
+  
+  .hero-actions {
+    width: 100%;
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+  
+  .hero-cta-button {
+    width: 100% !important;
+    max-width: 280px !important;
+    padding: 0.875rem 1.5rem !important;
+    font-size: 0.95rem !important;
+  }
+  
+  .hero-watch-button {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Additional mobile fixes for smaller screens */
+@media (max-width: 575.98px) {
+  
+  .container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem !important;
+    max-width: 95% !important;
+  }
+  
+  .hero-cta-button {
+    max-width: 260px !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Hide other decorative images on mobile that are not in Figma design */
+@media (max-width: 767.98px) {
+  
+  /* Hide background decorative images */
+  .why-trust-section {
+    background-image: none !important;
+    background: var(--primary-orange) !important;
+  }
+  
+  /* Hide any other decorative images in sections */
+  .section-bg-image {
+    background-image: none !important;
+  }
+  
+  /* Ensure images in cards are responsive but hide decorative ones */
+  .decorative-image {
+    display: none !important;
+  }
+  
+  /* Keep essential images but make them smaller */
+  .essential-image {
+    max-width: 80px !important;
+    height: auto !important;
+  }
+  
+  /* Hide large feature images on mobile */
+  .feature-large-image {
+    display: none !important;
+  }
+  
+  /* Hide testimonial background images if any */
+  .testimonial-bg-image {
+    display: none !important;
+  }
+}
+
+/* Ensure proper mobile viewport behavior */
+@media (max-width: 767.98px) {
+  /* Stronger override for hero titles on mobile: keep words intact */
+  .page-hero-banner h1 {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    white-space: normal !important;
+  }
+  
+  /* Prevent horizontal scrolling */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Fix any overflow issues */
+  .overflow-hidden-mobile {
+    overflow: hidden;
+  }
+  
+  /* Ensure buttons don't cause overflow */
+  .btn {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  
+  /* Fix navigation width issues */
+  .navbar {
+    width: 100% !important;
+  }
+  
+  .navbar-brand {
+    max-width: 150px;
+  }
+  
+  /* Ensure footer takes full width */
+  footer {
+    width: 100% !important;
+  }
+}
+
+.main-btn{
+     background-color: white;
+    color: #070709 !important;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    font-size: 12px;
+    border-radius: 50px;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+.main-btn-b{
+     background-color: #22a3d2;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+.main-btn1{
+     background-color: #ff9e10;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.para{
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (max-width: 767.98px) {
+  .footer-logo{
+    width: 50% !important;
+  }
+  .page-hero-banner {
+    min-height: 130px;
+    padding: 9px 0;
+    text-align: center;
+  }
+}
+
+/* Exam page */
+@media (max-width: 462px){
+  .exam-page .container .row {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+@media (max-width: 767px){
+  .exam-page .container .mock-container{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* =========================================== */
+/* ############### components/layout/layout.css ############### */
+/* =========================================== */
+
+/* src/components/layout/layout.css */
+
+/* --- Top Blue Bar --- */
+.top-bar {
+  background-color: var(--primary-blue);
+  height: 20px; /* Slightly thinner */
+}
+
+/* --- Main Navbar Container --- */
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 90px; /* Taller */
+}
+
+/* --- Centered Nav Group --- */
+.nav-centered {
+  display: flex;
+  height: 100%;
+}
+
+/* --- Base Nav Link Styling --- */
+/* This is the clickable area */
+.nav-link-base {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center; /* Center text inside the link */
+  height: 90px; /* Match navbar height */
+  padding: 0 1.5rem !important;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333 !important; /* Darker text for better contrast */
+  white-space: nowrap; /* Prevent text from wrapping */
+  transition: all 0.2s ease-in-out;
+}
+
+/* --- Active Nav Link Styling (Orange Block) --- */
+.nav-link-base.active {
+  background-color: var(--primary-orange);
+  color: white !important;
+  font-weight: 700;
+}
+
+/* --- Subjects Mega Menu --- */
+/* Position relative on the parent is key */
+.subjects-dropdown-container {
+  position: relative;
+}
+
+/* The dropdown menu itself */
+.subjects-mega-menu {
+  display: block; /* Force it to be visible when the parent has the .show class */
+  position: absolute;
+  top: 90px; /* Position it directly below the navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  max-width: 1100px;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: white;
+  z-index: 1000;
+}
+
+.subjects-mega-menu .col {
+  padding: 0 15px;
+}
+
+.subjects-mega-menu h5 {
+  font-weight: 700;
+  color: var(--dark-navy);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.subjects-mega-menu a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #6c757d;
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+.subjects-mega-menu a:hover {
+  color: var(--primary-orange);
+}
+
+/* Co-Curricular Menu */
+.nav-item-cc{
+  position: relative;
+}
+.dropdown-cc {
+  position: absolute !important;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.dropdown-link {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-link:hover {
+  color: var(--primary-orange);
+}
+
+/* --- Nav Link Arrow Animation --- */
+.nav-arrow {
+  margin-left: 0.35rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* === RESPONSIVE STYLES === */
+
+/* Mobile Navigation Controls */
+.mobile-nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mobile-menu-toggle {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.mobile-menu-toggle:focus {
+  box-shadow: none !important;
+}
+
+/* Exam Prep */
+.exam-main-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+.submenu-arrow {
+  margin-left: 8px;
+}
+
+.nested-submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nested-submenu a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nested-submenu a:hover {
+  background-color: #f2f2f2;
+}
+
+.subjects-dropdown-container {
+  position: relative;
+}
+
+.subjects-mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.exam-parent {
+  position: relative;
+  margin-right: 20px;
+}
+
+.exam-main-link {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+.exam-main-link:hover {
+  background-color: #f2f2f2;
+}
+
+.submenu-arrow {
+  margin-left: 5px;
+}
+
+.nested-submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1001;
+}
+
+.nested-submenu a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+.nested-submenu a:hover {
+  background-color: #f2f2f2;
+}
+
+
+
+@media all and (min-width: 992px){
+  .exam-mega-menu {
+    width: max-content !important;
+  }
+}
+
+.mobile-subjects-menu.pl-3 {
+  padding-left: 15px;
+  border-left: 2px solid #ddd;
+  margin-left: 5px;
+}
+.mobile-subject-link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-subject-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.mobile-exam-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-exam-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.mobile-submenu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem; /* indent submenu */
+  margin-top: 4px; /* slight gap below parent */
+}
+
+.mobile-submenu-link {
+  padding: 6px 0;
+  display: block;
+  font-size: 0.95rem;
+  color: #6c757d;
+  text-decoration: auto;
+}
+
+
+/* Exam Prep Ends*/
+
+/* Desktop Logo Adjustments */
+@media (min-width: 992px) {
+  .desktop-logo {
+    height:80px !important;
+    width: 180px !important;
+  }
+}
+
+/* Mobile Logo Adjustments */
+.mobile-logo img.d-lg-none {
+  height: 32px !important;
+  width: auto !important;
+}
+
+/* Desktop Navigation Actions */
+.desktop-nav-actions {
+  gap: 1rem;
+}
+
+/* Mobile Offcanvas Styles */
+.mobile-offcanvas {
+  width: 300px !important;
+}
+
+.mobile-offcanvas-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-offcanvas-body {
+  padding: 1.5rem;
+}
+
+/* Ensure logo is always visible in the mobile drawer header */
+.mobile-offcanvas-title { margin: 0; }
+.mobile-offcanvas-brand {
+  display: inline-flex;
+  align-items: center;
+}
+.mobile-offcanvas-logo {
+  display: block;
+  height: 28px !important; /* Match mobile header (<= 992px) */
+  width: auto;
+}
+
+/* Mobile Navigation Links */
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f8f9fa;
+  text-decoration: none;
+  color: var(--dark-navy) !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  color: var(--primary-orange) !important;
+}
+
+.mobile-nav-link.active {
+  color: var(--primary-orange) !important;
+  font-weight: 600;
+}
+
+/* Mobile Subjects Section */
+.mobile-subjects-section {
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.mobile-subjects-toggle {
+  cursor: pointer;
+}
+
+/*
+  Mobile Subjects list: make it clearly scrollable on phones.
+  - Force a vertical scrollbar so users notice there is more.
+  - Increase max height to use viewport space while keeping menu compact.
+*/
+.mobile-subjects-menu {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  max-height: 60vh;              /* show more items while contained */
+  overflow-y: scroll;            /* force scrollbar visibility */
+  scrollbar-gutter: stable;      /* keep layout stable when scrollbar shows */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom scrollbar for mobile subjects menu */
+.mobile-subjects-menu::-webkit-scrollbar {
+  width: 6px; /* make the bar more noticeable */
+}
+
+.mobile-subjects-menu::-webkit-scrollbar-track {
+  background: #e9ecef;
+  border-radius: 6px;
+}
+
+.mobile-subjects-menu::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 6px;
+}
+
+.mobile-subjects-menu::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-orange);
+}
+
+/* Firefox scrollbar styling */
+.mobile-subjects-menu { scrollbar-width: thin; scrollbar-color: var(--primary-blue) #e9ecef; }
+
+.mobile-year-group {
+  margin-bottom: 1rem;
+}
+
+.mobile-year-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.mobile-subject-link {
+  display: block;
+  padding: 0.25rem 0;
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.mobile-subject-link:hover {
+  color: var(--primary-orange);
+}
+
+/* Mobile CTA Section */
+.mobile-cta-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f8f9fa;
+}
+
+.mobile-cta-button {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
+
+/* Responsive Navbar */
+.responsive-navbar {
+  position: relative;
+}
+
+/* Media Queries for Better Responsiveness */
+@media (max-width: 991.98px) {
+  /* Hide desktop navigation on mobile */
+  .nav-centered {
+    display: none !important;
+  }
+  
+  .desktop-nav-actions {
+    display: none !important;
+  }
+  
+  /* Adjust navbar height for mobile */
+  .responsive-navbar {
+    min-height: 70px;
+  }
+  
+  .nav-link-base {
+    height: 70px;
+  }
+  
+  /* Adjust top bar for mobile */
+  .top-bar {
+    height: 15px;
+  }
+  
+  /* Mobile logo adjustments */
+  .mobile-logo img.d-lg-none {
+    height: 28px !important;
+  }
+  /* Offcanvas logo matches mobile header */
+  .mobile-offcanvas-logo { height: 28px !important; }
+}
+
+@media (max-width: 767.98px) {
+  /* Further mobile adjustments */
+  .responsive-navbar {
+    min-height: 60px;
+  }
+  
+  .mobile-logo img.d-lg-none {
+    height: 26px !important;
+  }
+  /* Smaller phones: offcanvas logo matches header */
+  .mobile-offcanvas-logo { height: 26px !important; }
+  
+  .top-bar {
+    height: 12px;
+  }
+  
+  /* Adjust mobile offcanvas for smaller screens */
+  .mobile-offcanvas {
+    width: 280px !important;
+  }
+  
+  .mobile-offcanvas-header,
+  .mobile-offcanvas-body {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Extra small screens */
+  .mobile-offcanvas {
+    width: 100% !important;
+  }
+  
+  .mobile-nav-controls {
+    gap: 0.25rem;
+  }
+}
+
+/* Fix for subjects mega menu on desktop */
+@media (min-width: 992px) {
+  .subjects-mega-menu {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 1100px;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: white;
+    z-index: 1000;
+  }
+}
+
+/* Ensure proper z-index for mobile menu */
+.mobile-offcanvas {
+  z-index: 1055 !important;
+}
+
+/* Smooth transitions for nav arrows */
+.nav-arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-arrow.open {
+  transform: rotate(180deg);
+}
+
+
+/* === HEADER SPECIFIC FIXES FOR 992px-1120px BREAKPOINT === */
+
+@media (min-width: 992px) and (max-width: 1120px) {
+  
+  /* Navigation adjustments for medium desktop */
+  .nav-centered {
+    gap: 0.5rem;
+  }
+  
+  .nav-link-base {
+    padding: 0 1rem !important;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+  
+  /* Ensure navigation doesn't wrap */
+  .navbar-nav {
+    flex-wrap: nowrap;
+  }
+  
+  /* Adjust logo size slightly */
+  .desktop-logo {
+    height: 100px !important;
+    width: 220px !important;
+  }
+  
+  /* Desktop navigation actions spacing */
+  .desktop-nav-actions {
+    gap: 0.75rem;
+  }
+  
+  .desktop-nav-actions .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Subjects mega menu adjustments */
+  .subjects-mega-menu {
+    top: 85px;
+    width: 92vw;
+    max-width: 950px;
+    padding: 1.5rem;
+  }
+  
+  .subjects-mega-menu .col {
+    padding: 0 10px;
+  }
+  
+  .subjects-mega-menu h5 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .subjects-mega-menu a {
+    padding: 0.4rem 0;
+    font-size: 0.85rem;
+  }
+  
+  /* Ensure proper navbar height */
+  .responsive-navbar .container {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Top bar adjustment */
+  .top-bar {
+    height: 18px;
+  }
+  
+  /* Search icon adjustment */
+  .desktop-nav-actions .nav-link {
+    padding: 0.5rem;
+  }
+  
+  /* Prevent navigation overflow */
+  .navbar-collapse {
+    overflow: visible;
+  }
+  
+  /* Ensure proper z-index for dropdowns */
+  .subjects-dropdown-container {
+    position: static;
+  }
+  
+  .subjects-mega-menu {
+    position: absolute;
+    z-index: 1050;
+  }
+}
+
+/* Fine-tuning for upper range */
+@media (min-width: 1080px) and (max-width: 1120px) {
+  
+  .nav-link-base {
+    padding: 0 1.2rem !important;
+    font-size: 0.95rem;
+  }
+  
+  .subjects-mega-menu {
+    max-width: 1000px;
+    padding: 1.75rem;
+  }
+  
+  .desktop-nav-actions .btn {
+    padding: 0.65rem 1.3rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* === HEADER SPECIFIC FIXES FOR 992px-1120px BREAKPOINT === */
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .nav-link-base{
+    padding: 0 1rem !important;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1399px) {
+  .subjects-mega-menu{
+    left: 190%;
+  }
+}
+
+/* Ensure smooth hover transitions */
+@media (min-width: 992px) and (max-width: 1120px) {
+  
+  .nav-link-base:hover {
+    transform: none;
+    background-color: rgba(255, 158, 16, 0.1);
+  }
+  
+  .nav-link-base.active:hover {
+    background-color: var(--primary-orange);
+  }
+  
+  /* Prevent layout shifts on hover */
+  .subjects-dropdown-container:hover .nav-arrow {
+    transform: rotate(180deg);
+  }
+}
+
+/* FOOTER CSS */
+.footer-section .subscribe-form input, .footer-section .subscribe-form button{
+  border-radius: 20px;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup container for Calendly */
+.popup-content {
+  width: 90%;
+  max-width: 700px;
+  height: 80%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Demo class Popup */
+@media (min-width: 0px) {
+    .inner-fixed-div {
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .inner-fixed-div h6 {
+        text-align: left;
+        /* display: none; */
+    }
+}
+.fixed-div{
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+}
+.inner-fixed-div {
+  border-radius: 1.5rem;
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 1400;
+    background-color: rgb(253, 238, 232);
+    box-shadow: rgb(153, 153, 153) 2px 2px 7px 0px;
+}
+.inner-fixed-div h6 {
+    margin: 0px;
+    color: rgb(83, 76, 68);
+    font-weight: 700 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.75rem !important;
+    font-family: "Quicksand Variable", Roboto, Arial, sans-serif !important;
+}
+
+@media (min-width: 900px) {
+    .inner-fixed-div {
+        max-width: 25rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   .inner-fixed-div h6{
+        text-align: center;
+        display: block;
+    }
+}
+@media (min-width: 600px) {
+    .inner-fixed-div h6 {
+        font-size: 1rem !important;
+        line-height: 1.5rem !important;
+    }
+}
+
+
+/* =========================================== */
+/* ############### components/ui/HowItWorks.css ############### */
+/* =========================================== */
+
+/* HowItWorksSection responsive typography and subtle brand animations */
+
+:root {
+  --brand-orange: #fe9d10;
+  --brand-navy: #0f2b46;
+}
+
+.hiw-wrapper {
+  padding: 64px 0;
+}
+
+.hiw-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  padding: 2rem 2.25rem;
+}
+
+.hiw-title {
+  font-size: clamp(1.75rem, 1.1rem + 2vw, 2.4rem);
+  color: var(--brand-navy);
+}
+
+.hiw-step img {
+  width: 70px;
+  height: 70px;
+}
+
+.hiw-step h4 {
+  font-size: clamp(1.1rem, 0.95rem + 0.7vw, 1.35rem);
+  text-align: center;
+  text-shadow: 0 0 10px rgba(254,157,16,0.12), 0 1px 0 rgba(15,43,70,0.05);
+}
+
+.hiw-step p {
+  font-size: clamp(0.98rem, 0.9rem + 0.42vw, 1.08rem);
+  line-height: 1.75;
+  color: #5b6775 !important;
+  margin: 0.5rem auto 0;
+  max-width: 32ch;
+  text-align: center;
+  text-wrap: balance; /* balanced line breaks where supported */
+  hyphens: none; /* avoid awkward word splits */
+  word-break: normal;
+  letter-spacing: 0.1px;
+  text-shadow: 0 0 8px rgba(254,157,16,0.08);
+}
+
+.hero-section-bg .hiw-step, .hero-section-bg .hiw-step h4, .hero-section-bg .hiw-step p {
+    text-align: left !important;
+}
+
+/* Keep center alignment on desktop as well */
+@media (min-width: 992px) {
+  .hiw-step p { text-align: center; }
+}
+
+/* Animated arrow between steps */
+.hiw-arrow {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiw-arrow img {
+  width: 44px;
+  opacity: 0.95;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.12));
+}
+
+/* Moving pulse dot along the arrow path (horizontal by default) */
+.hiw-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: var(--brand-orange);
+  border-radius: 50%;
+  transform: translate(-4px, -50%);
+  animation: travelX 2s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgba(254,157,16,0.5);
+}
+
+@keyframes travelX {
+  0%   { left: 0; box-shadow: 0 0 0 0 rgba(254,157,16,0.45); }
+  50%  { left: calc(100% - 8px); box-shadow: 0 0 0 8px rgba(254,157,16,0); }
+  100% { left: 0; box-shadow: 0 0 0 0 rgba(254,157,16,0.45); }
+}
+
+/* On small screens stack nicely and center arrows; animate bottom -> top */
+@media (max-width: 991.98px) {
+  .hiw-step img { width: 64px; height: 64px; }
+  .hiw-step p { max-width: 42ch; text-align: center; }
+  .hiw-arrow { width: 40px; height: 56px; margin: 0.25rem auto; }
+  .hiw-arrow img { width: 40px; }
+  .hiw-arrow::after {
+    left: 50%;
+    top: calc(100% - 8px); /* start at bottom */
+    transform: translate(-50%, 0);
+    animation: travelY 2s ease-in-out infinite;
+  }
+}
+
+@keyframes travelY {
+  0%   { top: calc(100% - 8px); box-shadow: 0 0 0 0 rgba(254,157,16,0.45); }
+  50%  { top: 0; box-shadow: 0 0 0 8px rgba(254,157,16,0); }
+  100% { top: calc(100% - 8px); box-shadow: 0 0 0 0 rgba(254,157,16,0.45); }
+}
+
+@media (max-width: 575.98px) {
+  .hiw-card { padding: 1.25rem 1rem; }
+  .hiw-step img { width: 56px; height: 56px; }
+}
+
+/* =========================================== */
+/* ############### components/ui/HowItWorksSection.css ############### */
+/* =========================================== */
+
+/* HowItWorksSection responsive typography and subtle brand animations */
+
+:root {
+  --brand-orange: #fe9d10;
+  --brand-navy: #0f2b46;
+}
+
+.hiw-wrapper {
+  padding: 64px 0;
+}
+
+.hiw-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  padding: 2rem 2.25rem;
+}
+
+.hiw-title {
+  font-size: clamp(1.75rem, 1.1rem + 2vw, 2.4rem);
+  color: var(--brand-navy);
+}
+
+.hiw-step img {
+  width: 70px;
+  height: 70px;
+}
+
+.hiw-step h4 {
+  font-size: clamp(1.1rem, 0.95rem + 0.7vw, 1.35rem);
+  text-align: center;
+  text-shadow: 0 0 10px rgba(254,157,16,0.12), 0 1px 0 rgba(15,43,70,0.05);
+}
+
+.hiw-step p {
+  font-size: clamp(0.98rem, 0.9rem + 0.42vw, 1.08rem);
+  line-height: 1.75;
+  color: #5b6775 !important;
+  margin: 0.5rem auto 0;
+  max-width: 32ch;
+  text-align: center;
+  text-wrap: balance; /* balanced line breaks where supported */
+  hyphens: none; /* avoid awkward word splits */
+  word-break: normal;
+  letter-spacing: 0.1px;
+  text-shadow: 0 0 8px rgba(254,157,16,0.08);
+}
+
+/* Keep center alignment on desktop as well */
+@media (min-width: 992px) {
+  .hiw-step p { text-align: center; }
+}
+
+/* Animated arrow between steps */
+.hiw-arrow {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiw-arrow img {
+  width: 44px;
+  opacity: 0.95;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.12));
+}
+
+/* Moving pulse dot along the arrow path (horizontal by default) */
+.hiw-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: var(--brand-orange);
+  border-radius: 50%;
+  transform: translate(-4px, -50%);
+  animation: travelX 2s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgba(254,157,16,0.5);
+}
+
+@keyframes travelX {
+  0%   { left: 0; box-shadow: 0 0 0 0 rgba(254,157,16,0.45); }
+  50%  { left: calc(100% - 8px); box-shadow: 0 0 0 8px rgba(254,157,16,0); }
+  100% { left: 0; box-shadow: 0 0 0 0 rgba(254,157,16,0.45); }
+}
+
+/* On small screens stack nicely and center arrows; animate bottom -> top */
+@media (max-width: 991.98px) {
+  .hiw-step img { width: 64px; height: 64px; }
+  .hiw-step p { max-width: 42ch; text-align: center; }
+  .hiw-arrow { width: 40px; height: 56px; margin: 0.25rem auto; }
+  .hiw-arrow img { width: 40px; }
+  .hiw-arrow::after {
+    left: 50%;
+    top: calc(100% - 8px); /* start at bottom */
+    transform: translate(-50%, 0);
+    animation: travelY 2s ease-in-out infinite;
+  }
+}
+
+@keyframes travelY {
+  0%   { top: calc(100% - 8px); box-shadow: 0 0 0 0 rgba(254,157,16,0.45); }
+  50%  { top: 0; box-shadow: 0 0 0 8px rgba(254,157,16,0); }
+  100% { top: calc(100% - 8px); box-shadow: 0 0 0 0 rgba(254,157,16,0.45); }
+}
+
+@media (max-width: 575.98px) {
+  .hiw-card { padding: 1.25rem 1rem; }
+  .hiw-step img { width: 56px; height: 56px; }
+}
+
+/* =========================================== */
+/* ############### components/ui/ui.css ############### */
+/* =========================================== */
+
+/* src/components/ui/ui.css */
+
+/* --- Feature/Info/Progress Section Styles --- */
+.feature-item {
+  background-color: #F3F5F5;
+  padding: 0.6rem 1.25rem;
+  border-radius: 50px;
+  color: var(--dark-navy);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* --- Testimonials Section Styles --- */
+.testimonial-card {
+  position: relative;
+  background-color: var(--primary-blue);
+  border: none;
+  padding: 2rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.testimonial-card::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 20px 20px 0 20px;
+  border-style: solid;
+  border-color: var(--primary-blue) transparent transparent transparent;
+}
+
+/* This is the class we need for the TrustSection */
+.why-trust-section {
+  background:
+    url('/images/topo-lines-bg.png') center / cover no-repeat, /* Blue lines on top */
+    var(--primary-orange); /* Base orange color at the very back */
+  
+  position: relative;
+}
+
+.subject-card {
+  min-width: 320px;
+  min-height: 280px;
+  border: 1px solid #B4B4B4;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.subject-card:hover {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+
+/* --- Page Hero Banner Styles --- */
+.page-hero-banner {
+  background: linear-gradient(to right, #CDF2FF, #FFE8C7);
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+}
+
+@media (max-width: 768px) {
+  .page-hero-banner {
+    padding: 100px 0;
+  }
+}
+/* Content Banner: ensure image fully covers and matches content height */
+.content-banner-row { min-height: 220px; }
+.content-banner-image { background-size: cover; background-position: center; background-repeat: no-repeat; }
+@media (min-width: 992px) { .content-banner-row { min-height: 280px; } }
+@media (max-width: 575.98px) { .content-banner-row { min-height: 200px; } }
+
+/* === COMPREHENSIVE RESPONSIVE STYLES FOR UI COMPONENTS === */
+
+/* Feature Items Responsive */
+@media (max-width: 767.98px) {
+  .feature-item {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  /* Center FeatureSection content on tablets and phones */
+  .feature-section { padding: 48px 0 !important; }
+  .feature-section .row { text-align: center; }
+  .feature-section .feature-list { 
+    max-width: 560px; 
+    margin-left: auto; 
+    margin-right: auto;
+    gap: 0.25rem !important; /* Match desktop spacing - very tight */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .feature-item {
+    padding: 0.55rem 1rem;
+    font-size: 0.95rem;
+    gap: 0.45rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .feature-section { padding: 41px 0 !important; }
+  .feature-section .feature-list { 
+    gap: 0.25rem !important; /* Same tight spacing as desktop */
+  }
+  .feature-heading { font-size: 1.75rem !important; line-height: 1.25 !important; }
+  .feature-description { font-size: 1rem; }
+  .main-btn1 { width: 100%; max-width: 320px; justify-content: center; }
+}
+
+/* Global mobile alignment fix for all pointer pills */
+@media (max-width: 767.98px) {
+  .feature-section .feature-list { 
+    max-width: 100% !important; 
+    margin-left: 0 !important; 
+    margin-right: 0 !important; 
+  }
+  .feature-section .feature-list > div { margin: 0 !important; }
+  .feature-section .feature-item {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+  }
+  .feature-section .feature-item img {
+    width: 28px !important;
+    height: 28px !important;
+    flex: 0 0 28px !important;
+  }
+}
+
+/* Testimonial Cards Responsive */
+@media (max-width: 991.98px) {
+  .testimonial-card {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonial-card::after {
+    bottom: -15px;
+    border-width: 15px 15px 0 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .testimonial-card {
+    padding: 1.25rem;
+    border-radius: 15px;
+    font-size: 0.95rem;
+  }
+  
+  .testimonial-card::after {
+    bottom: -12px;
+    border-width: 12px 12px 0 12px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .testimonial-card {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Subject Cards Responsive */
+@media (max-width: 991.98px) {
+  .subject-card {
+    min-width: 280px;
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .subject-card {
+    min-width: 100%;
+    min-height: 220px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Justified paragraph support */
+.text-justify {
+  text-align: justify;
+}
+
+/* Improve justification by enabling hyphenation where supported to reduce big gaps */
+.clean-justify {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  text-justify: inter-word; /* fallback */
+}
+
+/* Tweak large banner text readability */
+.content-banner p,
+.content-banner h2,
+.content-banner h3 {
+  letter-spacing: 0.15px;
+}
+
+/* Ensure banner body text uses normal font weight */
+.content-banner p,
+.content-banner li {
+  font-weight: 400 !important;
+}
+
+/* Banner copy layout: constrain width and prevent hyphenation */
+.banner-copy {
+  max-width: 46ch; /* measure-based for optimal readability */
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media (max-width: 991.98px) {
+  .banner-copy { max-width: 52ch; font-size: 1.125rem; line-height: 1.65; }
+}
+
+@media (max-width: 575.98px) {
+  .banner-copy { max-width: 100%; font-size: 1.05rem; line-height: 1.6; }
+}
+
+@media (max-width: 575.98px) {
+  .subject-card {
+    min-height: 200px;
+    border-radius: 15px;
+  }
+}
+
+/* Page Hero Banner Responsive */
+@media (max-width: 991.98px) {
+  .page-hero-banner {
+    min-height: 250px;
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-hero-banner {
+    min-height: 200px;
+    padding: 60px 0;
+  }
+  
+  /* Fix title text breaking on mobile */
+  .page-hero-banner h1 {
+    word-break: normal;         /* do not split words like "Tutoring" */
+    overflow-wrap: normal;      /* wrap only at spaces */
+    hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    line-height: 1.3;
+    text-align: center;         /* center align on small screens */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-hero-banner {
+    min-height: 180px;
+    padding: 40px 0;
+  }
+  
+  /* Better mobile title handling */
+  .page-hero-banner h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.4;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    text-align: center;
+  }
+}
+
+/* Trust Section Responsive */
+@media (max-width: 767.98px) {
+  .why-trust-section {
+    background-size: contain;
+    background-position: center top;
+  }
+}
+
+/* General Section Spacing */
+.section-responsive {
+  padding: 4rem 0;
+}
+
+@media (max-width: 991.98px) {
+  .section-responsive {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-responsive {
+    padding: 2.5rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-responsive {
+    padding: 2rem 0;
+  }
+}
+
+/* Button Responsive Styles */
+.btn-responsive {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .btn-responsive {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .btn-responsive {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Typography Responsive */
+.responsive-heading-1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.responsive-heading-2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.responsive-heading-3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 991.98px) {
+  .responsive-heading-1 {
+    font-size: 2.25rem;
+  }
+  
+  .responsive-heading-2 {
+    font-size: 1.75rem;
+  }
+  
+  .responsive-heading-3 {
+    font-size: 1.375rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .responsive-heading-1 {
+    font-size: 2rem;
+  }
+  
+  .responsive-heading-2 {
+    font-size: 1.5rem;
+  }
+  
+  .responsive-heading-3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .responsive-heading-1 {
+    font-size: 1.75rem;
+  }
+  
+  .responsive-heading-2 {
+    font-size: 1.375rem;
+  }
+  
+  .responsive-heading-3 {
+    font-size: 1.125rem;
+  }
+}
+
+/* Container Padding Adjustments */
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Image Responsive Utilities */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Flex Utilities for Mobile */
+@media (max-width: 767.98px) {
+  .flex-mobile-column {
+    flex-direction: column !important;
+  }
+  
+  .text-mobile-center {
+    text-align: center !important;
+  }
+  
+  .gap-mobile-small {
+    gap: 1rem !important;
+  }
+}
+
+/* Card Hover Effects - Disable on Touch Devices */
+@media (hover: none) and (pointer: coarse) {
+  .subject-card:hover {
+    transform: none;
+    box-shadow: none;
+    border: 1px solid #B4B4B4;
+  }
+}
+
+/* Ensure proper spacing for mobile cards */
+@media (max-width: 767.98px) {
+  .card-deck-mobile .card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-deck-mobile .card:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/* === UI COMPONENTS FIXES FOR 992px-1120px BREAKPOINT === */
+
+@media (min-width: 992px) and (max-width: 1120px) {
+  
+  /* Feature Section Adjustments */
+  .feature-item {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    gap: 0.5rem;
+    margin: 0.25rem;
+  }
+  
+  /* Subject Cards Grid Optimization */
+  .subject-card {
+    min-width: 260px;
+    min-height: 240px;
+    margin-bottom: 1.25rem;
+  }
+  
+  .subject-card .card-body {
+    padding: 1.25rem;
+  }
+  
+  .subject-card .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .subject-card .card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* Testimonial Cards Optimization */
+  .testimonial-card {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-card::after {
+    bottom: -15px;
+    border-width: 15px 15px 0 15px;
+  }
+  
+  /* Trust Section Grid Adjustments */
+  .why-trust-section .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  
+  .why-trust-section .col {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  /* Page Hero Banner Adjustments */
+  .page-hero-banner {
+    min-height: 260px;
+    padding: 80px 0;
+  }
+  
+  .page-hero-banner h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page-hero-banner p {
+    font-size: 1.05rem;
+    max-width: 600px;
+  }
+  
+  /* Button Adjustments */
+  .btn-responsive {
+    padding: 0.65rem 1.3rem;
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary-orange {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+  }
+  
+  .btn-secondary-blue {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Typography Scaling */
+  .responsive-heading-1 {
+    font-size: 2.2rem;
+    line-height: 1.25;
+  }
+  
+  .responsive-heading-2 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  
+  .responsive-heading-3 {
+    font-size: 1.35rem;
+    line-height: 1.4;
+  }
+  
+  /* Card Deck Spacing */
+  .card-deck-mobile .card {
+    margin-bottom: 1rem;
+  }
+  
+  /* Form Elements */
+  .form-control {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .form-label {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  /* Image Containers */
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Section Spacing */
+  .section-responsive {
+    padding: 3rem 0;
+  }
+  
+  /* Grid System Adjustments */
+  .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+  
+  .row > * {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  /* Flex Utilities */
+  .gap-3 {
+    gap: 0.75rem !important;
+  }
+  
+  .gap-4 {
+    gap: 1rem !important;
+  }
+  
+  /* Margin and Padding Adjustments */
+  .my-3 {
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .my-4 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .py-5 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  
+  /* Ensure proper text alignment */
+  .text-center {
+    text-align: center !important;
+  }
+  
+  .text-start {
+    text-align: left !important;
+  }
+  
+  /* Icon Sizing */
+  .icon-large {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .icon-medium {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .icon-small {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Fine-tuning for upper range (1080px-1120px) */
+@media (min-width: 1080px) and (max-width: 1120px) {
+  
+  .subject-card {
+    min-width: 280px;
+    min-height: 250px;
+  }
+  
+  .testimonial-card {
+    padding: 1.75rem;
+    font-size: 0.95rem;
+  }
+  
+  .responsive-heading-1 {
+    font-size: 2.3rem;
+  }
+  
+  .responsive-heading-2 {
+    font-size: 1.9rem;
+  }
+  
+  .btn-responsive {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Prevent layout shifts and ensure smooth transitions */
+@media (min-width: 992px) and (max-width: 1120px) {
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .transition-smooth {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Ensure container doesn't exceed viewport */
+  .container-fluid {
+    max-width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
+/* === MOBILE-SPECIFIC IMAGE HIDING AND LAYOUT FIXES === */
+
+/* Learning Style Cards - Mobile Optimizations */
+@media (max-width: 767.98px) {
+  /* Ensure images are visible on mobile */
+  .learning-style-image {
+    display: block !important;
+  }
+
+  .learning-style-card {
+    margin-bottom: 1.5rem !important;
+    border-radius: 15px !important;
+  }
+  
+  .learning-style-card .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .learning-style-card .card-title {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .learning-style-card p {
+    font-size: 0.95rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .learning-style-card ol {
+    font-size: 0.9rem !important;
+    padding-left: 1rem !important;
+  }
+  
+  .learning-style-card ol li {
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+/* Trust Section - Mobile Optimizations */
+@media (max-width: 767.98px) {
+  
+  .why-trust-section {
+    padding: 3rem 0 !important;
+  }
+  
+  .why-trust-section h2 {
+    font-size: 2rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .why-trust-section .card {
+    margin-bottom: 1.5rem !important;
+    padding: 1.5rem !important;
+    border-radius: 15px !important;
+  }
+  
+  .why-trust-section .card img {
+    width: 60px !important;
+    height: 60px !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .why-trust-section .card-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .why-trust-section .card-text {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* How It Works Section - Mobile Optimizations */
+@media (max-width: 767.98px) {
+  
+  .how-it-works-section {
+    padding: 3rem 0 !important;
+  }
+  
+  .how-it-works-section h2 {
+    font-size: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .how-it-works-section .bg-white {
+    padding: 2rem 1rem !important;
+    margin-top: 2rem !important;
+    border-radius: 15px !important;
+  }
+  
+  .how-it-works-section .col-lg-2 {
+    margin-bottom: 2rem !important;
+  }
+  
+  .how-it-works-section img {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .how-it-works-section h4 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .how-it-works-section .small {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* CTA Section - Mobile Optimizations */
+@media (max-width: 767.98px) {
+  
+  .cta-section {
+    padding: 2rem 0 !important;
+  }
+  
+  .cta-section .bg-primary-orange-gradient {
+    padding: 2rem 1.5rem !important;
+    border-radius: 15px !important;
+    min-height: auto !important;
+    text-align: center !important;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .cta-section .d-flex {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+  }
+  
+  .cta-section .btn {
+    width: 100% !important;
+    max-width: 280px !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Feature Section - Mobile Optimizations */
+@media (max-width: 767.98px) {
+  
+  .feature-section {
+    padding: 3rem 0 !important;
+  }
+  
+  .feature-section h2 {
+    font-size: 2rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .feature-section .lead {
+    font-size: 1rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .feature-item {
+    margin: 0.5rem 0.25rem !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.85rem !important;
+    border-radius: 25px !important;
+  }
+  
+  .feature-item img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+/* Content Banner - Mobile Optimizations */
+@media (max-width: 767.98px) {
+  
+  .content-banner {
+    padding: 2.5rem 0 !important;
+  }
+  
+  .content-banner h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .content-banner p {
+    font-size: 0.95rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .content-banner .btn {
+    width: 100% !important;
+    max-width: 280px !important;
+    padding: 0.75rem 1.5rem !important;
+  }
+}
+
+/* Testimonials - Mobile Optimizations */
+@media (max-width: 767.98px) {
+  
+  .testimonials-section {
+    padding: 3rem 0 !important;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .testimonial-card {
+    margin-bottom: 2rem !important;
+    padding: 1.5rem !important;
+    border-radius: 15px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .testimonial-card::after {
+    bottom: -12px !important;
+    border-width: 12px 12px 0 12px !important;
+  }
+  
+  .testimonial-author {
+    margin-top: 1rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+/* General Mobile Layout Fixes */
+@media (max-width: 767.98px) {
+  
+  /* Ensure all sections have proper mobile spacing */
+  section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  /* Fix container overflow issues */
+  .container {
+    overflow-x: hidden !important;
+  }
+  
+  /* Ensure images don't cause horizontal scroll */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Fix card spacing on mobile */
+  .card {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Ensure proper text alignment on mobile */
+  .text-center-mobile {
+    text-align: center !important;
+  }
+  
+  /* Fix button overflow on mobile */
+  .btn {
+    word-wrap: break-word !important;
+    white-space: normal !important;
+  }
+  
+  /* Hide decorative elements on mobile */
+  .mobile-hide {
+    display: none !important;
+  }
+  
+  /* Show mobile-only elements */
+  .mobile-show {
+    display: block !important;
+  }
+}
+
+/* Additional fixes for very small screens */
+@media (max-width: 575.98px) {
+  
+  .container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  /* Do NOT hyphenate headings on very small screens.
+     Prevents words like "Tutoring" from splitting. */
+  h1, h2, h3, h4, h5, h6 {
+    -webkit-hyphens: none !important;
+    -ms-hyphens: none !important;
+    hyphens: none !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+  
+  .btn {
+    font-size: 0.9rem !important;
+    padding: 0.625rem 1.25rem !important;
+  }
+  
+  .card {
+    border-radius: 12px !important;
+  }
+  
+  .card-body {
+    padding: 1.25rem !important;
+  }
+}
+
+/* Feature Item */
+section.feature-items {
+    padding: 30px 0;
+}
+@media all and (max-width: 992px){
+  
+  .feature-items .item-directn{
+    flex-direction: column;
+  }
+}
+
+/* Career Outcome */
+.pricing-feature-item img {
+    width: 70px;
+}
+
+/* =========================================== */
+/* ############### components/ui/WhatsAppFloat.css ############### */
+/* =========================================== */
+
+/* src/components/ui/WhatsAppFloat.css */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0) translateY(20px);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.whatsapp-float.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.whatsapp-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.whatsapp-float:hover .whatsapp-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+  animation: none;
+}
+
+.whatsapp-float:hover .whatsapp-icon::before {
+  opacity: 1;
+}
+
+.whatsapp-float:active .whatsapp-icon {
+  transform: scale(0.95);
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.whatsapp-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid #333;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(-5px);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4), 0 0 0 10px rgba(37, 211, 102, 0.1);
+  }
+  100% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4), 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+}
+
+/* Bounce animation on first appearance */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-5px);
+  }
+  70% {
+    transform: scale(0.9) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.whatsapp-float.visible {
+  animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-icon {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .whatsapp-tooltip {
+    display: none; /* Hide tooltip on mobile to avoid clutter */
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Accessibility improvements */
+.whatsapp-float:focus {
+  outline: 2px solid #25D366;
+  outline-offset: 2px;
+}
+
+.whatsapp-float:focus .whatsapp-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+}
+
+/* =========================================== */
+/* ############### screens/HomePage/HomePage.css ############### */
+/* =========================================== */
+
+
+
+.trust-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* ensures it wraps nicely on smaller screens */
+  padding: 20px;
+  gap: 10px; /* space between spans */
+}
+
+.trust-strip span {
+  flex: 1; /* each span takes equal width */
+  text-align: center;
+  background-color: white;
+  padding: 15px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 120px; /* optional: prevent shrinking too small */
+}
+
+
+@media (max-width: 768px) {
+  .horizontal-scroll-container {
+    gap: 1rem;
+  }
+}
+
+/* Only affect subject card headings on HomePage */
+.subjects-section .subject-card h4 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+
+/* Trust section card titles (HomePage only) */
+.why-trust-section .card-title,
+.why-trust-section h4 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+
+/* Popup load on homepage at  first */
+.nap-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.nap-popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.nap-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.naplan-popup h3 {
+    margin-bottom: 10px;
+    color: #ff6a00;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Glow badge in third cloud */
+.sun-wrapper {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 1.2rem auto;
+  left: 70%;
+    top: 18%;
+}
+
+/* 🌞 Rotating Rays */
+.sun-rays {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  height: 160px;
+  background: repeating-conic-gradient(
+    from 0deg,
+    #ffc107 0deg 10deg,
+    transparent 10deg 20deg
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateRays 28s linear infinite;
+}
+
+/* ☀️ Sun core (text stays still) */
+.sun-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110px;
+  height: 110px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff3cd 35%, #ffc107 75%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 0 18px rgba(255, 193, 7, 0.9); */
+  animation: glow 1.8s infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 6px rgba(255,193,7,0.5);
+  }
+  to {
+    box-shadow: 0 0 14px rgba(255,193,7,0.9);
+  }
+}
+
+/* Text */
+.sun-text {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #212529;
+  line-height: 1.2;
+}
+
+.sun-text strong {
+  font-size: 0.95rem;
+  color: #dc3545;
+}
+
+/* Animation */
+@keyframes rotateRays {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+/* =========================================== */
+/* ############### screens/AboutUsPage/AboutUsPage.css ############### */
+/* =========================================== */
+/* About Us page typography tweaks */
+
+/* Lead paragraph: smaller, comfortable measure, justified without awkward gaps */
+.about-lead {
+  font-size: 1.05rem; /* slightly smaller than default lead */
+  line-height: 1.75;
+  width: 100%;
+  max-width: 100% !important; /* occupy full column width */
+  text-align: justify;
+  text-justify: inter-word; /* fallback */
+  hyphens: auto; /* allow better justification */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+/* Our Mission heading already set to black inline; refine subtext */
+.about-mission-desc {
+  color: #fff; /* white text on colored banner */
+  line-height: 1.7;
+  max-width: 60ch;
+}
+
+.founder-speak-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.founder-speak-card {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.founder-speak-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #212529;
+}
+
+/* Founder Image */
+.founder-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.founder-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e9ecef;
+}
+
+.founder-speak-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #495057;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.founder-speak-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #343a40;
+}
+
+@media (max-width: 991.98px) {
+  .about-lead { font-size: 1rem; line-height: 1.7; max-width: 100%; }
+  .about-mission-desc { font-size: 1rem; line-height: 1.65; max-width: 70ch; }
+}
+
+@media (max-width: 575.98px) {
+  .about-lead { font-size: 0.98rem; line-height: 1.6; max-width: 100%; }
+  .about-mission-desc { font-size: 0.98rem; line-height: 1.6; max-width: 100%; }
+}
+
+/* Mobile fix: align feature bullets consistently on About page */
+@media (max-width: 767.98px) {
+  .about-page .feature-section .feature-list {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .about-page .feature-section .feature-list > div { margin: 0 !important; }
+  .about-page .feature-section .feature-item {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+  }
+  .about-page .feature-section .feature-item img { flex: 0 0 28px; }
+}
+
+/* Phone spacing reductions for About page */
+@media (max-width: 575.98px) {
+  .about-page .page-hero-banner {
+    padding: 48px 0 !important;
+    min-height: auto !important;
+  }
+  .about-intro {
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+/* =========================================== */
+/* ############### screens/MusicPage/Music.css ############### */
+/* =========================================== */
+
+
+.hero_image_music {
+    background: url('/images/music_hero.png');
+    background-position: 2px 2px;
+}
+.music-choose .why-trust-section{
+    background-color: #05ac90 !important;
+}
+
+.music-approach .hiw-step img{
+    width: auto;
+    height: auto;
+}
+.music-approach .hiw-step h4{
+    font-weight: 400 !important;
+}
+.music_cta .bg-primary-orange-gradient{
+    background: url('/images/music_cta.png') center / cover no-repeat;
+}
+.music_cta .main-btn-b{
+    background-color: #FF9E10;
+}
+
+/* New CSS */
+.music-page .desktopview .display-3{
+    font-size: 40.8px !important;
+}
+.music-page .section-heading{
+    font-size: 37px !important;
+}
+.music-page .feature-items .pricing-feature-item img{
+    width: 35px;
+    height: 35px;
+}
+.music-page .feature-items  .pricing-feature-item{
+    align-items: flex-start;
+}
+.music-page .feature-items .pricing-feature-item .feature-text h5{
+    font-weight: 400;
+}
+.music-page .nap-matter .row > *{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.music-page .nap-matter .card-body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.music-page .nap-matter .card-body h4{
+    font-size: 18px !important;
+}
+.music-page .nap-matter .card-body p{
+    display: none;
+}
+.music-page .music-approach .hiw-step h4{
+    font-size: 20px;
+}
+.list-bg ul {
+    background-color: #f7f6ee;
+    padding: 3rem;
+}
+.music-page .music_cta section{
+    padding-top: 54px !important;
+}
+
+.offer-img {
+    position: fixed;
+    z-index: 1000;
+    bottom: 100px;
+    right: 25px;
+    animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: scale(1) translateY(0);
+}
+.offer-img img {
+    width: 60px;
+}
+/* Wrapper must be relative */
+.tooltip-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip box */
+.custom-tooltip {
+    position: absolute;
+    right: 110%;
+    bottom: 50%;
+    transform: translateY(50%);
+    background: #FFF;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    white-space: nowrap;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 0 3px gray;
+}
+
+/* Tooltip arrow */
+.custom-tooltip::after {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent gray;
+}
+
+/* Close button */
+.tooltip-close {
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1;
+    background-color: #000;
+}
+
+/* Icon styling (optional) */
+.offer-icon {
+    cursor: pointer;
+}
+.offer-data .btn-primary, .offer-data .btn-primary:hover{
+    background: none;
+    padding: 0 !important;
+    border: none;
+}
+
+@media all and (max-width: 992px){
+    .music-page .main-btn1{
+        font-size: 14px;
+        max-width: 270px;
+    }
+    .music-page .music-choose .text-secondary,
+    .naplan-page .hiw-step .text-secondary{
+        text-align: center;
+    }
+    section.feature-items{ padding: 0; }
+    .who_join .mt-5{margin-top: 1.5rem !important;}
+    .who_join ul li{text-align: justify;}
+    .music-page .text-secondary{
+        text-align: justify;
+    }
+    
+}
+
+@media all and (max-width: 768px){
+    .offer-img {
+        right: 20px;
+    }
+    .offer-img img{
+        width: 55px;
+    }
+    .custom-tooltip{
+        right: 110%;
+        max-width: 200px;
+    }
+}
+@media all and (max-width: 480px){
+    .offer-img {
+        right: 15px;
+    }
+    .offer-img img{
+        width: 50px;
+    }
+}
+
+/* =========================================== */
+/* ############### screens/PricingPage/PricingPage.css ############### */
+/* =========================================== */
+
+.coaching-card {
+  border-radius: 10px !important;
+  padding: 25px;
+  border: none !important;
+}
+
+/* Title */
+.title-wrapper {
+  min-height: 60px;   /* ensures 1-line and 2-line titles align */
+  display: flex;
+  align-items: flex-start;
+}
+.coaching-card .card-title {
+  font-weight: 700;
+  /* font-size: 1.4rem; */
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Feature List */
+.feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.feature-icon {
+  width: 20px;     /* adjust to your PNG size */
+  height: 20px;
+  object-fit: contain;
+}
+
+.feature-list li::before {
+  /* content: "✔";
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.1rem; */
+}
+
+/* Select Button */
+.select-btn {
+  width: 100%;          /* Full width */
+  background: #ffffff !important;   /* White background */
+  color: #070709 !important;        /* Black text */
+  border: none !important;          
+  border-radius: 20px !important;   /* Rounded 20px */
+  padding: 12px 0;       /* Vertical padding */
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.select-btn:hover {
+  background: #f4f4f4 !important;
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 576px) {
+  .coaching-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .coaching-card .card-title {
+    font-size: 1.5rem;
+  }
+
+  .select-btn {
+    width: 100%;
+    padding: 12px;
+  }
+  .pricing-footer .row .col{
+    flex-basis: 100%;
+  }
+}
+
+/* ############### Price Coaching ############# */
+.price-coach.pricing-box {
+    border-radius: 18px !important;
+    border: 6px solid #05AC8F !important;
+    overflow: hidden !important;
+    padding: 10px !important;
+    }
+
+    .price-coach .pricing-title {
+    color: #05AC8F;
+    font-weight: 700;
+    font-size: 40px;
+    min-height: 100px;
+    }
+
+    .price-coach .pricing-label {
+    font-size: 16px;
+    color: #444;
+    margin: 0;
+    }
+
+    .price-coach .pricing-price {
+    font-size: 35px;
+    margin-top: 5px;
+    }
+
+    .price-coach .pricing-price span{
+    font-size: 19px;
+    font-weight: 600;
+    }
+
+    .price-coach .sessions-box {
+    background: #05AC8F;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 100%;
+    }
+
+    .price-coach .sessions-number {
+    font-size: 80px;
+    font-weight: 600;
+    margin: 0;
+    }
+
+    .price-coach .sessions-text {
+    font-size: 1.3rem;
+    margin: 0;
+    }
+
+    .price-coach .pricing-footer {
+    background-color: #FFFFFF !important;
+    border-top: none !important;
+    padding: 20px !important;
+    }
+
+    .price-coach .demo-btn,
+    .price-coach .join-btn {
+    width: 100%;
+    padding: 12px 0 !important;
+    border-radius: 30px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    border: none !important;
+    }
+
+    .price-coach .demo-btn {
+    background-color: #FF9E10 !important;
+    }
+
+    .price-coach .join-btn {
+    background-color: #FF9E10 !important;
+    }
+
+    /* ################# Price Circular ################# */
+    .curricular-card{margin: auto;}
+    .price-circular.pricing-box {
+    border-radius: 18px !important;
+    border: 6px solid #FF9E10 !important;
+    overflow: hidden !important;
+    padding: 10px !important;
+    }
+
+    .price-circular .pricing-title {
+    color: #FF9E10;
+    font-weight: 700;
+    font-size: 40px;
+    min-height: 100px;
+    }
+
+    .price-circular .pricing-label {
+    font-size: 16px;
+    color: #444;
+    margin: 0;
+    }
+
+    .price-circular .pricing-price {
+    font-size: 35px;
+    margin-top: 5px;
+    }
+
+    .price-circular .pricing-price span{
+    font-size: 19px;
+    font-weight: 600;
+    }
+
+    .price-circular .sessions-box {
+    background: #FF9E10;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 100%;
+    }
+
+    .price-circular .sessions-number {
+    font-size: 80px;
+    font-weight: 600;
+    margin: 0;
+    }
+
+    .price-circular .sessions-text {
+    font-size: 1.3rem;
+    margin: 0;
+    }
+
+    .price-circular .pricing-footer {
+    background-color: #FFFFFF !important;
+    border-top: none !important;
+    padding: 20px !important;
+    }
+
+    .price-circular .demo-btn,
+    .price-circular .join-btn {
+    width: 100%;
+    padding: 12px 0 !important;
+    border-radius: 30px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    border: none !important;
+    }
+
+    .price-circular .demo-btn {
+    background-color: #22A3D2 !important;
+    }
+
+    .price-circular .join-btn {
+    background-color: #22A3D2 !important;
+    }
+    @media (max-width: 767px){
+        .curricular-card{
+            margin-top: 1.5rem;
+        }
+    }
+
+  /* ################### Price Naplan #################### */
+  .naplan-card{margin: auto;}
+    .price-nap.pricing-wrapper {
+    max-width: 900px;
+    }
+
+    .price-nap .pricing-card {
+    border-radius: 18px;
+    border: 6px solid #0F2A47;
+    padding: 25px;
+    }
+
+    .price-nap .title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #0F2A47;
+    text-align: left;
+    }
+
+    .price-nap .subtitle {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    }
+
+    .price-nap .price {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 10px 0;
+    text-align: left;
+    }
+    .price-nap .pricing-section table{
+    border-color: #0F2A47;
+    }
+    .price-nap .pricing-section table th {
+        background-color: #0F2A47 !important;
+        color: #fff !important;
+        border-color: #fff;
+    }
+
+    .price-nap .currency {
+    font-size: 18px;
+    font-weight: 600;
+    }
+
+    .price-nap .action-btn {
+    background-color: #FF9E10;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    }
+
+    .price-nap .action-btn:hover {
+    background-color: #fb8c00;
+    }
+
+    @media (max-width: 576px) {
+        .price-nap .pricing-card {
+            padding: 20px;
+        }
+
+        .price-nap .action-btn {
+            width: 100%;
+        }
+    }
+    @media (max-width: 767px){
+        .naplan-card{
+            margin-top: 1.5rem;
+        }
+    }
+
+
+/* =========================================== */
+/* ############### screens/ContactPage/StudentForm.css ############### */
+/* =========================================== */
+
+/* src/screens/ContactPage/StudentForm.css */
+
+@import "react-phone-input-2/lib/style.css";
+
+/* --- Main Form Container --- */
+.form-container {
+  background-color: #091D32; /* NEW: Darkest blue background */
+  padding: 3rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.form-container h2 {
+  color: white !important;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Override global section-heading class for form container */
+.form-container .section-heading {
+  color: white !important;
+}
+
+.form-container .subheading {
+  color: #a0aec0;
+  margin-bottom: 2rem;
+}
+
+/* --- Form Labels --- */
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* --- Custom Form Controls (Inputs, Select, Textarea) --- */
+.form-control.form-control-custom,
+.form-select.form-control-custom {
+  background-color: #0F2A47;
+  border: 1px solid #82BCFA;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  color: white;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* This rule applies to BOTH */
+.form-control.form-control-custom::placeholder,
+.form-select.form-control-custom::placeholder {
+  color: #a0aec0;
+}
+
+/* This rule applies to BOTH */
+.form-control.form-control-custom:focus,
+.form-select.form-control-custom:focus {
+  background-color: #0F2A47;
+  color: white;
+  border-color: #82BCFA;
+  box-shadow: 0 0 0 0.25rem rgba(130, 188, 250, 0.25);
+}
+
+.form-control.form-control-custom:-webkit-autofill,
+.form-control.form-control-custom:-webkit-autofill:hover, 
+.form-control.form-control-custom:-webkit-autofill:focus, 
+.form-control.form-control-custom:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #0F2A47 inset !important;
+    -webkit-text-fill-color: white !important;
+    border: 1px solid #82BCFA !important;
+}
+
+/* Phone number field */
+.form-control-phone{
+  background: #0F2A47 !important;
+  border: 1px solid #82BCFA !important;
+  border-radius: 10px !important;
+  color: #FFF !important;
+}
+.react-tel-input .country-list{
+  background-color: #0F2A47 !important;
+}
+
+/* This is the specific rule for the dropdown arrow, it remains the same */
+.form-select.form-control-custom {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23a0aec0' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+/* --- Custom Checkbox/Radio Styling --- */
+.custom-form-check .form-check-input {
+  background-color: transparent; /* Hollow style */
+  border: 2px solid #82BCFA; /* Blue border */
+  margin-top: 0.2em;
+}
+
+.custom-form-check .form-check-input:checked {
+  background-color: #82BCFA; /* Fill with blue on check */
+  border-color: #82BCFA;
+}
+
+.custom-form-check .form-check-label {
+  padding-left: 0.5rem;
+  color: #d1d5db;
+}
+
+
+/* --- NEW: Submit Button outside the container --- */
+.btn.btn-submit-form {
+  background-color: #FF9E10 !important; /* The !important flag provides extra certainty */
+  color: white !important;
+  border-color: #FF9E10 !important;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: transform 0.2s;
+}
+
+.btn.btn-submit-form:hover {
+  transform: scale(1.05);
+}
+
+/* --- Mobile Responsive Fixes --- */
+@media (max-width: 767.98px) {
+  /* Reduce form container padding on mobile */
+  .form-container {
+    padding: 1.5rem 1rem;
+    margin: 0 0.5rem;
+  }
+  
+  /* Make all form inputs uniform on mobile */
+  .form-control.form-control-custom,
+  .form-select.form-control-custom {
+    width: 100%;
+    min-width: 0;
+    font-size: 14px;
+    padding: 0.875rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Ensure placeholder text fits properly on mobile */
+  .form-control.form-control-custom::placeholder {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Remove Bootstrap column gutters on mobile for better spacing */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .row > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Uniform spacing for form groups */
+  .mb-4 {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Better checkbox and radio button layout on mobile */
+  .d-flex.flex-wrap.gap-4 {
+    gap: 1rem !important;
+    justify-content: flex-start;
+  }
+  
+  .custom-form-check {
+    margin-bottom: 0.5rem;
+    flex: 0 0 auto;
+  }
+  .react-tel-input .country-list{
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Extra small screens - further adjustments */
+  .form-container {
+    padding: 1rem 0.75rem;
+    margin: 0 0.25rem;
+  }
+  
+  .form-control.form-control-custom,
+  .form-select.form-control-custom {
+    font-size: 13px;
+    padding: 0.8rem 0.875rem;
+  }
+  
+  .form-control.form-control-custom::placeholder {
+    font-size: 13px;
+  }
+  
+  /* Tighter spacing on very small screens */
+  .mb-4 {
+    margin-bottom: 0.75rem !important;
+  }
+}
+
+/* =========================================== */
+/* ############### screens/ContactPage/TeacherForm.css ############### */
+/* =========================================== */
+
+/* src/screens/ContactPage/TeacherForm.css */
+
+/* --- Main Form Container --- */
+.form-container { background-color: #091D32; padding: 3rem; border-radius: 20px; color: white; }
+.form-container h2 { color: white; font-weight: 700; margin-bottom: 0.5rem; }
+.form-container .subheading { color: #a0aec0; margin-bottom: 2rem; }
+.form-label { font-weight: 600; margin-bottom: 0.75rem; display: block; }
+.form-section-heading {
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #2a5a8e;
+  padding-bottom: 0.75rem;
+}
+
+/* ... (keep other CSS like .custom-form-check, .file-upload-area, etc.) ... */
+/* --- Text Inputs, Selects --- */
+.form-control.form-control-custom, .form-select.form-control-custom {
+  background-color: #0F2A47; border: 1px solid #82BCFA; border-radius: 10px; padding: 0.75rem 1rem; color: white; transition: all 0.2s;
+}
+.form-control.form-control-custom::placeholder { color: #a0aec0; }
+.form-control.form-control-custom:focus, .form-select.form-control-custom:focus {
+  background-color: #0F2A47; color: white; border-color: #82BCFA; box-shadow: 0 0 0 0.25rem rgba(130, 188, 250, 0.25);
+}
+.form-select.form-control-custom {
+  background-color: #0F2A47;
+  color: white;
+  border-color: #82BCFA;
+  box-shadow: 0 0 0 0.25rem rgba(130, 188, 250, 0.25);
+}
+
+.form-control.form-control-custom:-webkit-autofill,
+.form-control.form-control-custom:-webkit-autofill:hover, 
+.form-control.form-control-custom:-webkit-autofill:focus, 
+.form-control.form-control-custom:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #0F2A47 inset !important;
+    -webkit-text-fill-color: white !important;
+    border: 1px solid #82BCFA !important;
+}
+
+/* --- Checkboxes/Radios --- */
+.custom-form-check .form-check-input { background-color: transparent; border: 2px solid #82BCFA; margin-top: 0.2em; }
+.custom-form-check .form-check-input:checked { background-color: #82BCFA; border-color: #82BCFA; }
+.custom-form-check .form-check-label { padding-left: 0.5rem; color: #d1d5db; }
+
+/* --- NEW: Document Upload Area --- */
+.file-upload-area {
+  border: 2px dashed #2a5a8e;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.file-upload-area:hover {
+  background-color: #112a45;
+}
+.file-upload-area p {
+  margin-bottom: 0.25rem;
+}
+.file-upload-area .file-formats {
+  font-size: 0.8rem;
+  color: #a0aec0;
+}
+.btn-upload {
+  background-color: #2a5a8e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.file-display-area {
+  border: 2px dashed #2a5a8e;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  background-color: #112a45; /* Give it a slight background */
+}
+
+.file-display-area .file-name {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.file-display-area .file-size {
+  font-size: 0.8rem;
+  color: #a0aec0;
+  margin-bottom: 1.5rem;
+}
+
+/* Styling for the View/Remove action links */
+.file-action-link {
+  color: var(--primary-blue);
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 1rem;
+}
+
+.file-action-link:hover {
+  opacity: 0.8;
+}
+
+/* --- Mobile Responsive Fixes --- */
+@media (max-width: 767.98px) {
+  /* Reduce form container padding on mobile */
+  .form-container {
+    padding: 1.5rem 1rem !important;
+    margin: 0 0.5rem;
+  }
+  
+  /* Make all form inputs uniform on mobile */
+  .form-control.form-control-custom,
+  .form-select.form-control-custom {
+    width: 100%;
+    min-width: 0;
+    font-size: 14px;
+    padding: 0.875rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Ensure placeholder text fits properly on mobile */
+  .form-control.form-control-custom::placeholder {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Remove Bootstrap column gutters on mobile for better spacing */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .row > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Uniform spacing for form groups */
+  .mb-4 {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Better checkbox and radio button layout on mobile */
+  .d-flex.flex-wrap.gap-4 {
+    gap: 1rem !important;
+    justify-content: flex-start;
+  }
+  
+  .custom-form-check {
+    margin-bottom: 0.5rem;
+    flex: 0 0 auto;
+  }
+  
+  /* Adjust file upload area for mobile */
+  .file-upload-area,
+  .file-display-area {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Extra small screens - further adjustments */
+  .form-container {
+    padding: 1rem 0.75rem !important;
+    margin: 0 0.25rem;
+  }
+  
+  .form-control.form-control-custom,
+  .form-select.form-control-custom {
+    font-size: 13px;
+    padding: 0.8rem 0.875rem;
+  }
+  
+  .form-control.form-control-custom::placeholder {
+    font-size: 13px;
+  }
+  
+  /* Tighter spacing on very small screens */
+  .mb-4 {
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .file-upload-area,
+  .file-display-area {
+    padding: 1rem;
+  }
+}
+
+/* =========================================== */
+/* ############### screens/ContactPage/ThankYouPage.css ############### */
+/* =========================================== */
+
+/* src/screens/ContactPage/ThankYouPage.css */
+
+.thank-you-container {
+  background-color: #091D32; /* Darkest blue background from the forms */
+  border: 1px solid #2a5a8e;
+  border-radius: 20px;
+  padding: 4rem; /* More vertical padding */
+  color: white;
+  text-align: center;
+  max-width: 800px; /* Constrain the width for better readability */
+  margin: 0 auto; /* Center the container on the page */
+}
+
+.thank-you-container .success-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2rem;
+}
+
+.thank-you-container .thank-you-message {
+  font-size: 1.5rem; /* Larger font size for the message */
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto; /* Center the text block within the container */
+}
+
+/* =========================================== */
+/* ############### screens/BlogPage/BlogPage.css ############### */
+/* =========================================== */
+
+/* CSS code for BlogPage */
+
+.blog-page .list-group button.active{
+  background: var(--primary-orange);
+  border-color: inherit;
+}
+.blog-page .pagination li.active,
+.blog-page .pagination .active>.page-link, 
+.blog-page .pagination .page-link.active{
+  background-color: #22A3D2;
+  color: #fff;
+}
+.blog-page .pagination .page-link{
+  color: #22A3D2;
+}
+.bg-orange{
+  background: var(--primary-orange);
+}
+.blog-card-img {
+  height: 200px; /* fixed height for image */
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-body {
+  margin-bottom: 10px;
+}
+
+/* Single Blog */
+.single-blog .shadow-sm{
+    border: none;
+    box-shadow: none !important;
+}
+.blog-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.blog-header img{
+  width: 35%;
+  border-radius: 10%;
+  box-shadow: 0px 19px 21px #cac5c5;
+  min-height: 400px;
+  object-fit: cover;
+}
+.blog-header h2{
+  font-size: 60px;
+  font-weight: 700;
+  text-align: left;
+  border-bottom: 5px double #ff9e10;
+  padding: 20px;
+}
+
+.single-blog .blog-content h4 {
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+.single-blog .blog-content hr {
+    border-width: 3px;
+    border-style: groove;
+    border-bottom-color: #000;
+    margin: 40px 0;
+}
+.single-blog .blog-content ul li, .single-blog .blog-content ol li {
+    line-height: 35px;
+}
+tbody, td, tfoot, th, thead, tr{
+  border-width: 1px !important;
+  padding: 5px;
+}
+.single-blog h5{
+  font-weight: 500;
+}
+.single-blog blockquote{
+  padding: 20px;
+  background-color: #e7e7e7;
+  font-size: 18px;
+  font-style: italic;
+  box-shadow: 0 0 9px #b7b7b7;
+  border-radius: 5px;
+}
+.blog-cta {
+    margin: 20px 0;
+}
+
+@media all and (max-width: 992px){
+  .blog-header{
+    flex-direction: column;
+  }
+  .blog-header img{
+    width: 100%;
+  }
+  .blog-header h2{
+    font-size: 30px;
+  }
+  .single-blog .blog-content p, 
+  .single-blog .blog-content ul li, 
+  .single-blog .blog-content ol li {
+      text-align: justify;
+  }
+}
+
+/* =========================================== */
+/* ############### screens/CareersPage/CareersPage.css ############### */
+/* =========================================== */
+
+
+/* --- Current Openings Section --- */
+/* This div wraps each detail item (e.g., Job Type + its description) */
+.detail-item {
+  display: flex;
+  flex-wrap: wrap; /* Allows text to wrap on smaller screens */
+  margin-bottom: 1rem;
+  align-items: baseline; /* Keep labels and values aligned nicely */
+  gap: 0.25rem 0.75rem;
+}
+
+/* This is the label (e.g., "Job Type:") */
+.detail-item dt {
+  font-weight: 700;
+  color: var(--dark-navy);
+  min-width: 130px; /* Consistent label width for alignment */
+  flex-shrink: 0; /* Prevents the label from shrinking */
+}
+
+/* This is the description (e.g., "Freelance / Part-time") */
+.detail-item dd {
+  color: #6c757d;
+  margin-left: 0;
+}
+
+/* src/screens/CareersPage/CareersPage.css */
+
+/* New class to make the subjects list fill the height of its container */
+.subjects-list-distributed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This is the key property */
+  height: 100%; /* Ensures the ul takes up all available vertical space */
+}
+
+/* Light padding for both columns */
+.current-openings-col { padding: 0.5rem 0.75rem; }
+
+/* Make subjects list spacing/elevation consistent */
+.openings-subjects { margin: 0; padding-left: 1rem; }
+.openings-subjects li { margin-bottom: 0.5rem; }
+
+/* Tighter spacing on small screens */
+@media (max-width: 575.98px) {
+  /* Stack label and value on phones for uniformity */
+  .detail-item {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .detail-item dt {
+    min-width: 0;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .detail-item dd {
+    display: block;
+    margin-left: 0;
+  }
+  .current-openings-col { padding: 0.25rem 0.5rem; }
+}
+
+/* --- Life at Tutorexel Quote Section --- */
+.life-quote-card {
+  position: relative;
+  background-color: var(--primary-orange);
+  padding: 2.5rem;
+  border-radius: 25px;
+  color: white;
+  max-width: 700px; /* Constrain the width */
+  margin: 0 auto; /* Center the card */
+}
+
+/* The speech bubble tail for the quote */
+.life-quote-card::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 20px 20px 0 20px;
+  border-style: solid;
+  border-color: var(--primary-orange) transparent transparent transparent;
+}
+
+.team-avatar {
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--primary-orange);
+}
+
+/* =========================================== */
+/* ############### screens/SubjectPage/SubjectPage.css ############### */
+/* =========================================== */
+
+.top-year-section{
+    background-color: #CDF2FF;
+}
+.top-year-section p span a{
+  text-decoration: none !important;
+  color: inherit;
+}
+.top-subject-section{
+    background-color: #22A3D2;
+}
+.top-subject-section p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+.top-subject-section p span {
+    display: inline-flex;
+}
+.top-subject-section span.highlight{
+    background-color: #fff;
+    color: #000;
+    border-bottom: 5px solid #FF9E10;
+}
+.top-subject-section p span a{
+  text-decoration: none;
+  color: inherit;
+}
+h1.section-heading{
+    color: #22A3D2 !important;
+}
+h2.section-heading{
+    font-size: 35px !important;
+}
+
+/* Term Box CSS */
+/* .term-box {
+    border-radius: 16px;
+    padding: 25px 30px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.term-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.term-header, .term-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 14px 5px;
+}
+
+.th {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.td {
+    font-size: 15px;
+}
+
+.name {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.index {
+    font-weight: 700;
+}
+
+/* Responsive tweaks */
+/* @media (max-width: 768px) {
+    .term-title {
+        font-size: 22px;
+    }
+    .td, .th {
+        font-size: 14px;
+    }
+}  */
+
+
+.term-box {
+    border-radius: 16px;
+    padding: 30px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+/* Title */
+.term-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+/* Wrapper that creates spacing for header inside the colored box */
+.term-content-wrapper {
+    background: transparent;
+    padding: 0 10px;               /* left-right spacing */
+}
+
+/* HEADER BAR */
+.term-header {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    padding: 14px 18px;
+    border-radius: 30px;
+
+    /* pushes header inward from the blue background */
+    margin-bottom: 12px;
+
+    /* continuous vertical line alignment */
+    display: flex;
+    align-items: center;
+}
+
+/* SOLID VERTICAL LINES — continuous from header through rows */
+.term-header > div,
+.term-row > div {
+    /*border-right: 2px solid #fff;*/      /* high contrast solid line */
+}
+
+.term-header > div:last-child,
+.term-row > div:last-child {
+    border-right: none;
+}
+
+/* ROWS */
+.term-row {
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+}
+
+.term-box a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.term-box a:hover{
+  text-decoration: underline;
+}
+
+@media all and (max-width: 467px){
+  .term-row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media (max-width: 360px){
+  .term-row {
+    display: -webkit-box !important;
+  } 
+}
+
+/* TEXT */
+.index { font-weight: 700; }
+.name { font-weight: 600; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .term-title { font-size: 22px; }
+}
+
+/* EXAMP PAGE CSS */
+.exam-page{
+  background-color: #ebebeb;
+}
+.mock-container {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 0 !important;
+}
+.mock-container h2{
+  background: linear-gradient(to right, #CDF2FF, #FFE8C7);
+  border-radius: 20px 20px 0 0;
+}
+
+.question-block {
+  margin-bottom: 40px;
+}
+
+.question-title {
+  color: #00a8e8;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-item {
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.2s;
+  flex-shrink: 0;
+
+  /* Make sure the container expands horizontally and wraps text */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.option-item:hover {
+  background: #f7f7f7;
+}
+
+/* small circle left side */
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  flex-shrink: 0;          /* Don't let circle shrink */
+ 
+  border-radius: 50%;      /* Circle shape */
+ 
+  margin-right: 12px;      /* Space between circle and text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  user-select: none;
+}
+
+/* correct answer (green) */
+.option-correct {
+  background: #c4f7d6;
+  border-color: #33c46a;
+}
+
+.option-correct .circle {
+  border-color: #33c46a;
+  background: #33c46a;
+}
+
+/* wrong answer (red) */
+.option-wrong {
+  background: #ffd6d6;
+  border-color: #e63b3b;
+}
+
+.option-wrong .circle {
+  border-color: #e63b3b;
+  background: #e63b3b;
+}
+
+.explanation {
+  margin-top: 12px;
+  background: #fff7e6;
+  border-left: 4px solid orange;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+/* WELCOME SCREEN CSS */
+/* Dimmed background */
+.page-dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45); /* darker overlay */
+  backdrop-filter: blur(4px);       /* soft blur */
+  z-index: 998;
+}
+
+/* Popup container */
+.completion-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1fa2ce;
+  width: 80%;
+  max-width: 650px;
+  padding: 60px 40px;
+  border-radius: 20px;
+  z-index: 999;
+  text-align: center;
+  animation: popupFade 0.3s ease;
+}
+
+/* Popup fade-in animation */
+@keyframes popupFade {
+  from {
+    transform: translate(-50%, -45%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Keep your existing green success circle */
+.success-icon-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: #1bcf3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px dashed rgba(255, 255, 255, 0.6);
+  margin: 0 auto 30px;
+}
+
+.success-inner-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #1bcf3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title */
+.completion-title {
+  color: white;
+  font-size: 34px;
+  font-weight: 400;
+  margin: 25px 0 40px;
+  background: none !important;
+}
+
+/* Buttons container */
+.completion-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-white,
+.btn-yellow {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.btn-white {
+  background: white;
+  color: black;
+}
+
+.btn-yellow {
+  background: #fca311;
+  color: white;
+}
+
+.btn-white:hover,
+.btn-yellow:hover {
+  opacity: 0.9;
+}
+
+/* =========================================== */
+/* ############### screens/NaplanDataPage/NaplanDataPage.css ############### */
+/* =========================================== */
+
+.top-year-section{
+    background-color: #CDF2FF;
+}
+.top-year-section p span a{
+  text-decoration: none;
+  color: inherit;
+}
+.top-subject-section{
+    background-color: #22A3D2;
+}
+.top-subject-section p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+.top-subject-section p span {
+    display: inline-flex;
+}
+.top-subject-section span.highlight{
+    background-color: #fff;
+    color: #000;
+    border-bottom: 5px solid #FF9E10;
+}
+.top-subject-section p span a{
+  text-decoration: none;
+  color: inherit;
+}
+h1.section-heading{
+    color: #22A3D2 !important;
+}
+h2.section-heading{
+    font-size: 35px !important;
+}
+
+/* Term Box CSS */
+/* .term-box {
+    border-radius: 16px;
+    padding: 25px 30px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.term-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.term-header, .term-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 14px 5px;
+}
+
+.th {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.td {
+    font-size: 15px;
+}
+
+.name {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.index {
+    font-weight: 700;
+}
+
+/* Responsive tweaks */
+/* @media (max-width: 768px) {
+    .term-title {
+        font-size: 22px;
+    }
+    .td, .th {
+        font-size: 14px;
+    }
+}  */
+
+
+.term-box {
+    border-radius: 16px;
+    padding: 30px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+/* Title */
+.term-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+/* Wrapper that creates spacing for header inside the colored box */
+.term-content-wrapper {
+    background: transparent;
+    padding: 0 10px;               /* left-right spacing */
+}
+
+/* HEADER BAR */
+.term-header {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    padding: 14px 18px;
+    border-radius: 30px;
+
+    /* pushes header inward from the blue background */
+    margin-bottom: 12px;
+
+    /* continuous vertical line alignment */
+    display: flex;
+    align-items: center;
+}
+
+/* SOLID VERTICAL LINES — continuous from header through rows */
+.term-header > div,
+.term-row > div {
+    /*border-right: 2px solid #fff;*/      /* high contrast solid line */
+}
+
+.term-header > div:last-child,
+.term-row > div:last-child {
+    border-right: none;
+}
+
+/* ROWS */
+.term-row {
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+}
+
+.term-box a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.term-box a:hover{
+  text-decoration: underline;
+}
+
+/* TEXT */
+.index { font-weight: 700; }
+.name { font-weight: 600; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .term-title { font-size: 22px; }
+}
+
+/* EXAMP PAGE CSS */
+.exam-page{
+  background-color: #ebebeb;
+}
+.mock-container {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 0 !important;
+}
+.mock-container h2{
+  background: linear-gradient(to right, #CDF2FF, #FFE8C7);
+  border-radius: 20px 20px 0 0;
+}
+
+.question-block {
+  margin-bottom: 40px;
+}
+
+.question-title {
+  color: #00a8e8;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-item {
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.2s;
+  flex-shrink: 0;
+
+  /* Make sure the container expands horizontally and wraps text */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.option-item:hover {
+  background: #f7f7f7;
+}
+
+/* small circle left side */
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  flex-shrink: 0;          /* Don't let circle shrink */
+ 
+  border-radius: 50%;      /* Circle shape */
+ 
+  margin-right: 12px;      /* Space between circle and text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  user-select: none;
+}
+
+/* correct answer (green) */
+.option-correct {
+  background: #c4f7d6;
+  border-color: #33c46a;
+}
+
+.option-correct .circle {
+  border-color: #33c46a;
+  background: #33c46a;
+}
+
+/* wrong answer (red) */
+.option-wrong {
+  background: #ffd6d6;
+  border-color: #e63b3b;
+}
+
+.option-wrong .circle {
+  border-color: #e63b3b;
+  background: #e63b3b;
+}
+
+.explanation {
+  margin-top: 12px;
+  background: #fff7e6;
+  border-left: 4px solid orange;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+/* WELCOME SCREEN CSS */
+/* Dimmed background */
+.page-dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45); /* darker overlay */
+  backdrop-filter: blur(4px);       /* soft blur */
+  z-index: 998;
+}
+
+/* Popup container */
+.completion-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1fa2ce;
+  width: 80%;
+  max-width: 650px;
+  padding: 60px 40px;
+  border-radius: 20px;
+  z-index: 999;
+  text-align: center;
+  animation: popupFade 0.3s ease;
+}
+
+/* Popup fade-in animation */
+@keyframes popupFade {
+  from {
+    transform: translate(-50%, -45%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Keep your existing green success circle */
+.success-icon-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: #1bcf3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px dashed rgba(255, 255, 255, 0.6);
+  margin: 0 auto 30px;
+}
+
+.success-inner-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #1bcf3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title */
+.completion-title {
+  color: white;
+  font-size: 34px;
+  font-weight: 400;
+  margin: 25px 0 40px;
+  background: none !important;
+}
+
+/* Buttons container */
+.completion-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-white,
+.btn-yellow {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.btn-white {
+  background: white;
+  color: black;
+}
+
+.btn-yellow {
+  background: #fca311;
+  color: white;
+}
+
+.btn-white:hover,
+.btn-yellow:hover {
+  opacity: 0.9;
+}
