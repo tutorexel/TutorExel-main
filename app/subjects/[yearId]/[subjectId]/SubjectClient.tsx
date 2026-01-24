@@ -11,19 +11,24 @@ import TermBox from "@/components/ui/TermBox";
 import PageHero from "@/components/ui/PageHero";
 import CTAHome from "@/components/ui/CTAHome";
 
-type PageProps = {
-  params: {
-    yearId: string;
-    subjectId: string;
-  };
-};
+// type PageProps = {
+//   params: {
+//     yearId: string;
+//     subjectId: string;
+//   };
+// };
 
-export default function SubjectPage({
-  params,
-}: {
-  params: Promise<{ yearId: string; subjectId: string }>;
-}) {
-  const { yearId, subjectId } = React.use(params);
+// export default function SubjectPage({
+//   params,
+// }: {
+//   params: Promise<{ yearId: string; subjectId: string }>;
+// }) {
+type SubjectPageProps = {
+  yearId: string;
+  subjectId: string;
+};
+export default function SubjectPage({ yearId, subjectId }: SubjectPageProps) {
+  // const { yearId, subjectId } = React.use(params);
 
   // Scroll to top on route change (optional in Next.js)
   useEffect(() => {
