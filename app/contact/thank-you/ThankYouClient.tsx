@@ -30,17 +30,9 @@ const ThankYouPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const message = isTeacherForm ? (
-    "Thank you! Our team has received your application and will connect with you via WhatsApp and email within 3-5 business days if you are shortlisted."
-  ) : (
-    <>
-      Your details have been received. Please complete payment of{" "}
-      <span style={{ fontWeight: "700", fontSize: "30px", color: "#FF9E10" }}>
-        ${price}
-      </span>{" "}
-      to confirm enrolment and activate the programme.
-    </>
-  );
+  const message = isTeacherForm
+    ? "Thank you! Our team has received your application and will connect with you via WhatsApp and email within 3-5 business days if you are shortlisted."
+    : "Thank you! Your details have been received. Someone from our team will contact you shortly to complete the payment and activate the programme.";
   return (
     <main>
       <PageHero title="Enroll Now" />
@@ -59,29 +51,22 @@ const ThankYouPage = () => {
             </h2>
             <p className="thank-you-message mb-3">{message}</p>
 
-            {/* <Link 
-              href="#"
-              target="_blank"
-              >
-                <Button className="btn btn-primary-orange" style={{marginTop: '3px'}}>
-                  Proceed to Payment
-                </Button> */}
-            <Button
+            {/* <Button
               className="btn btn-primary-orange"
               style={{ marginTop: "3px" }}
               onClick={handleProceed}
             >
               Proceed to Payment
-            </Button>
-            {/* </Link> */}
-            <Link href="/" target="_blank">
+            </Button> */}
+
+            {/* <Link href="/" target="_blank">
               <Button
                 className="btn btn-primary-orange"
                 style={{ marginLeft: "10px", marginTop: "3px" }}
               >
                 Go to Home
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </Container>
       </section>
