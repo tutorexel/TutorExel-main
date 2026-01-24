@@ -31,6 +31,9 @@ a{
   text-decoration: none;
   color: inherit;
 }
+.btn:hover{
+  background-color: #fff;
+}
 
 /* Custom Bootstrap Button Variants */
 .btn-primary-orange {
@@ -106,6 +109,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px !important;
   }
 }
+/* MENU */
+/* #main-navbar-nav .mx-auto{
+  
+} */
 
 /* Find and replace or add this class */
 .hero-section-bg {
@@ -2105,6 +2112,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left !important;
 }
 
+@media (max-width: 767px){
+  .hero-section-bg .hiw-step, .hero-section-bg .hiw-step h4, .hero-section-bg .hiw-step p {
+    text-align: center !important;
+  }
+}
+
 /* Keep center alignment on desktop as well */
 @media (min-width: 992px) {
   .hiw-step p { text-align: center; }
@@ -2333,7 +2346,7 @@ h1, h2, h3, h4, h5, h6 {
 /* This is the class we need for the TrustSection */
 .why-trust-section {
   background:
-    url('/images/topo-lines-bg.png') center / cover no-repeat, /* Blue lines on top */
+    url('/icons/topo-lines-bg.png') center / cover no-repeat, /* Blue lines on top */
     var(--primary-orange); /* Base orange color at the very back */
   
   position: relative;
@@ -3117,7 +3130,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .cta-section .d-flex {
-    flex-direction: column !important;
+    /* flex-direction: column !important; */
     gap: 1rem !important;
     align-items: center !important;
   }

@@ -1,0 +1,9 @@
+
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /staging/
+Disallow: /private/
+
+Sitemap: https://www.tutorexel.com/sitemap.xml

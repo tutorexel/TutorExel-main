@@ -54,7 +54,7 @@ export default function CTASection({
                 <div className="d-flex flex-column flex-sm-row gap-3 mt-4 text-center justify-content-center">
                   <Button
                     onClick={openPopup}
-                    className="main-btn d-flex align-items-center"
+                    className="main-btn d-flex align-items-center justify-content-between"
                     style={{ color: primaryButtonTextColor }}
                   >
                     {primaryButtonText}
@@ -65,7 +65,7 @@ export default function CTASection({
 
                   <Link
                     href="/contact"
-                    className="main-btn-b d-flex align-items-center"
+                    className="main-btn-b d-flex align-items-center justify-content-between"
                     style={{ color: secondaryButtonTextColor }}
                   >
                     {secondaryButtonText}

@@ -76,8 +76,8 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <Navbar id="main-navbar-nav" className="d-none d-lg-flex">
-            <Nav className="mx-auto nav-centered" onMouseLeave={() => setShowSubjects(false)}>
+          <Navbar id="main-navbar-nav" className="d-none d-lg-flex gap-4">
+            <Nav className="nav-centered" onMouseLeave={() => setShowSubjects(false)}>
               <Link href="/" className={`nav-link-base ${pathname === "/" ? "active" : ""}`}>Home</Link>
               <Link href="/about-us" className={`nav-link-base ${pathname === "/about-us" ? "active" : ""}`}>About Us</Link>
               

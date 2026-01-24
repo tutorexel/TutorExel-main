@@ -56,7 +56,7 @@ const CTAHome: React.FC<CTAHomeProps> = ({
                 <div className="d-flex flex-column flex-sm-row gap-3 mt-4 ">
                   <Button
                     onClick={openPopup}
-                    className="main-btn d-flex align-items-center"
+                    className="main-btn d-flex align-items-center justify-content-between"
                     style={{ color: primaryButtonTextColor }}
                   >
                     {primaryButtonText}{" "}
@@ -67,7 +67,7 @@ const CTAHome: React.FC<CTAHomeProps> = ({
 
                   <Link
                     href="/contact"
-                    className="main-btn-b d-flex align-items-center"
+                    className="main-btn-b d-flex align-items-center justify-content-between"
                     style={{ color: secondaryButtonTextColor }}
                     passHref
                   >
