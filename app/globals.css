@@ -31,6 +31,9 @@ a{
   text-decoration: none;
   color: inherit;
 }
+.btn:hover{
+  background-color: #fff;
+}
 
 /* Custom Bootstrap Button Variants */
 .btn-primary-orange {
@@ -2105,6 +2108,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left !important;
 }
 
+@media (max-width: 767px){
+  .hero-section-bg .hiw-step, .hero-section-bg .hiw-step h4, .hero-section-bg .hiw-step p {
+    text-align: center !important;
+  }
+}
+
 /* Keep center alignment on desktop as well */
 @media (min-width: 992px) {
   .hiw-step p { text-align: center; }
@@ -3117,7 +3126,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .cta-section .d-flex {
-    flex-direction: column !important;
+    /* flex-direction: column !important; */
     gap: 1rem !important;
     align-items: center !important;
   }
