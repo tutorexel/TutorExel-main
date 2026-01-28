@@ -46,11 +46,23 @@ const howItWorksSteps = [
   },
 ];
 
-// export const metadata = {
-//   title: "Online Tutoring Australia | TutorExel Personalised Learning",
-//   description:
-//     "TutorExel offers expert online tutoring across Australia. We provide personalised learning & exam prep in all subjects, aligned with the Australian Curriculum.",
-// };
+const homepageSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "TutorExel",
+  description:
+    "TutorExel offers expert online tutoring across Australia. We provide personalised learning & exam prep in all subjects, aligned with the Australian Curriculum.",
+  url: "https://www.tutorexel.com",
+  publisher: {
+    "@type": "Organization",
+    name: "TutorExel",
+    url: "https://www.tutorexel.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.tutorexel.com/images/logo.svg",
+    },
+  },
+};
 
 const Home = () => {
   const [showNaplanPopup, setShowNaplanPopup] = useState(false);
@@ -69,35 +81,44 @@ const Home = () => {
   const [show, setShow] = useState(true); // visible by default
 
   return (
-    <main>
-      <HeroNew openPopup={openPopup} />
-
-      <Curriculum />
-
-      <HowItWorksSection
-        headingText="How It Works"
-        stepsData={howItWorksSteps}
-        showButton={true}
-        buttonText="Take your assessment test"
-        buttonIcon={<FaArrowRight />}
-        buttonLink="https://learn.tutorexel.com/d2q1kr392kq4gu3vn2ig/join/JjJCwO6.r9GqgrpkB8KYV6BP6RXVj4rYXvovQrWOf53qVGCwyC15HxAKs8yNNt3BXQHRugQowSh_xG6kTWlSqcDVKwBUZwMF"
+    <>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homepageSchema),
+        }}
       />
 
-      <Testimonials />
+      <main>
+        <HeroNew openPopup={openPopup} />
 
-      <CTAHome
-        headingText="Ready to Help Your Child Succeed?"
-        image={""}
-        primaryButtonText="Book Your Free Trial Class"
-        primaryButtonIcon={<FaArrowRight />}
-        primaryButtonTextColor="black"
-        secondaryButtonText="Contact Us to Learn More"
-        secondaryButtonIcon={<FaArrowRight />}
-        secondaryButtonTextColor="#FFFFFF"
-        openPopup={openPopup}
-      />
+        <Curriculum />
 
-      {/* <div className="offer-img">
+        <HowItWorksSection
+          headingText="How It Works"
+          stepsData={howItWorksSteps}
+          showButton={true}
+          buttonText="Take your assessment test"
+          buttonIcon={<FaArrowRight />}
+          buttonLink="https://learn.tutorexel.com/d2q1kr392kq4gu3vn2ig/join/JjJCwO6.r9GqgrpkB8KYV6BP6RXVj4rYXvovQrWOf53qVGCwyC15HxAKs8yNNt3BXQHRugQowSh_xG6kTWlSqcDVKwBUZwMF"
+        />
+
+        <Testimonials />
+
+        <CTAHome
+          headingText="Ready to Help Your Child Succeed?"
+          image={""}
+          primaryButtonText="Book Your Free Trial Class"
+          primaryButtonIcon={<FaArrowRight />}
+          primaryButtonTextColor="black"
+          secondaryButtonText="Contact Us to Learn More"
+          secondaryButtonIcon={<FaArrowRight />}
+          secondaryButtonTextColor="#FFFFFF"
+          openPopup={openPopup}
+        />
+
+        {/* <div className="offer-img">
                 <div className="offer-data tooltip-wrapper">
                     
                     
@@ -124,70 +145,71 @@ const Home = () => {
                 </div>
             </div> */}
 
-      <div className="fixed-div">
-        <div className="inner-fixed-div">
-          <h6>Hurry up. Book your demo class</h6>
-          <div className="inner-btn">
-            <Button
-              onClick={openPopup}
-              className="d-inline-flex align-items-center btn btn-primary-orange"
-            >
-              Book Here
-            </Button>
+        <div className="fixed-div">
+          <div className="inner-fixed-div">
+            <h6>Hurry up. Book your demo class</h6>
+            <div className="inner-btn">
+              <Button
+                onClick={openPopup}
+                className="d-inline-flex align-items-center btn btn-primary-orange"
+              >
+                Book Here
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Popup Overlay */}
-      {showPopup && (
-        <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <iframe
-              loading="lazy"
-              src="https://calendly.com/tutorexel-info/democlass"
-              style={{
-                width: "100%",
-                height: "100%",
-                border: "none",
-              }}
-              title="Book a meeting"
-            ></iframe>
+        {/* Popup Overlay */}
+        {showPopup && (
+          <div className="popup-overlay" onClick={closePopup}>
+            <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+              <iframe
+                loading="lazy"
+                src="https://calendly.com/tutorexel-info/democlass"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  border: "none",
+                }}
+                title="Book a meeting"
+              ></iframe>
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {showNaplanPopup && (
-        <div
-          className="nap-popup-overlay"
-          onClick={() => setShowNaplanPopup(false)}
-        >
+        {showNaplanPopup && (
           <div
-            className="nap-popup-content naplan-popup"
-            onClick={(e) => e.stopPropagation()}
+            className="nap-popup-overlay"
+            onClick={() => setShowNaplanPopup(false)}
           >
-            <button
-              className="nap-popup-close"
-              onClick={() => setShowNaplanPopup(false)}
+            <div
+              className="nap-popup-content naplan-popup"
+              onClick={(e) => e.stopPropagation()}
             >
-              ×
-            </button>
+              <button
+                className="nap-popup-close"
+                onClick={() => setShowNaplanPopup(false)}
+              >
+                ×
+              </button>
 
-            <h3>
-              <strong>NAPLAN Bootcamp</strong>
-            </h3>
-            <p>
-              <strong>Starting 26th Jan, 2026</strong>
-            </p>
+              <h3>
+                <strong>NAPLAN Bootcamp</strong>
+              </h3>
+              <p>
+                <strong>Starting 26th Jan, 2026</strong>
+              </p>
 
-            <p>Click below to know more and enroll now!</p>
+              <p>Click below to know more and enroll now!</p>
 
-            <Link href="/pricing" passHref>
-              <Button className="btn btn-primary-orange">Enroll Now</Button>
-            </Link>
+              <Link href="/pricing" passHref>
+                <Button className="btn btn-primary-orange">Enroll Now</Button>
+              </Link>
+            </div>
           </div>
-        </div>
-      )}
-    </main>
+        )}
+      </main>
+    </>
   );
 };
 
