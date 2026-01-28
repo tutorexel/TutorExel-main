@@ -1,13 +1,13 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 
 const musicHero = "/images/music_hero.png";
-const music = "/images/Music.png";
-const musiclearn = "/images/music_learn.png";
+const guitar = "/images/guitar.jpg";
+const guitarlearn = "/images/learn-guitar.jpg";
+// import musiclearn from '../../assets/images/music_learn.png';
 const card1 = "/images/music_card1.png";
 const card2 = "/images/music_card2.png";
 const card3 = "/images/music_card3.png";
@@ -71,22 +71,16 @@ const learnFeatures = [
   {
     text: (
       <>
-        <b>Technique:</b> Hand position, scales, arpeggios, exercises.
+        <b>Technique:</b> Finger placement, chord shapes, scales, strumming
+        techniques.
       </>
     ),
   },
   {
     text: (
       <>
-        <b>Repertoire:</b> Performance pieces set by the Trinity syllabus.
-      </>
-    ),
-    bold: "",
-  },
-  {
-    text: (
-      <>
-        <b>Theory & Musicianship:</b> Reading sheet music, rhythm, dynamics.
+        <b>Repertoire:</b> Performance pieces set by the Trinity guitar
+        syllabus.
       </>
     ),
     bold: "",
@@ -94,8 +88,8 @@ const learnFeatures = [
   {
     text: (
       <>
-        <b>Creativity:</b> Improvisation and simple composition for interested
-        learners.
+        <b>Theory & Musicianship:</b> Reading notation and tabs, rhythm,
+        dynamics.
       </>
     ),
     bold: "",
@@ -103,8 +97,17 @@ const learnFeatures = [
   {
     text: (
       <>
-        <b>Performance Skills:</b> Building confidence to play in front of
-        others or at exam recitals.
+        <b>Creativity:</b> Improvisation, chord progressions, and simple
+        songwriting.
+      </>
+    ),
+    bold: "",
+  },
+  {
+    text: (
+      <>
+        <b>Performance Skills:</b> Building confidence to perform songs and exam
+        pieces.
       </>
     ),
     bold: "",
@@ -115,12 +118,12 @@ const whyPrepMatter = [
   {
     icon: card1,
     title: "Qualified Tutors",
-    description: "Experienced musicians with a passion for teaching.",
+    description: "Experienced guitarists with a passion for teaching.",
   },
   {
     icon: card2,
     title: "Structured Progression",
-    description: "Clear milestones through Trinity grades.",
+    description: "Clear milestones through Trinity guitar grades.",
   },
   {
     icon: card3,
@@ -131,7 +134,7 @@ const whyPrepMatter = [
     icon: card4,
     title: "Globally Recognised",
     description:
-      "Option to sit official Trinity music exams for international certificates.",
+      "Option to sit official Trinity guitar exams for international certificates.",
   },
 ];
 
@@ -182,14 +185,14 @@ const whyParent = [
 
 const points = [
   <>
-    <b>Children (6+)</b> starting music for the first time.
+    <b>Children (6+)</b> starting guitar for the first time.
   </>,
   <>
-    Students already learning piano who want to move into the{" "}
+    Students already learning guitar who want to move into the{" "}
     <b>Trinity pathway.</b>
   </>,
   <>
-    <b>Adults</b> looking to learn piano as a hobby or work towards graded
+    <b>Adults</b> looking to learn guitar as a hobby or work towards graded
     exams.
   </>,
 ];
@@ -221,7 +224,7 @@ const approach = [
     icon: maprch3,
     title: (
       <>
-        Optional <b>Trinity Piano Exams</b> online
+        Optional <b>Trinity Guitar Exams</b> online
       </>
     ),
     description: "",
@@ -287,7 +290,7 @@ const featureData = [
   },
 ];
 
-const MusicPage = () => {
+const GuitarPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -303,20 +306,20 @@ const MusicPage = () => {
 
   return (
     <main className="music-page">
-      <div className="hero_image_music text-center">
-        <img src={musicHero} alt="Piano" />
-      </div>
+      {/* <div className='hero_image_music text-center'>
+                <img src={musicHero} alt="" />
+            </div> */}
       <ExamTitle
-        title="Learn Piano Online with Tutorexel"
+        title="Learn Guitar Online with Tutorexel"
         showButton={true}
         buttonText="Book Your Free Trial Class"
         openPopup={openPopup}
       />
       <FeatureSection
         imagePosition="left"
-        image={music}
-        headingText="About Our Piano Classes"
-        descriptionText="At Tutorexel, we make learning piano enjoyable, structured, and rewarding."
+        image={guitar}
+        headingText="About Our Guitar Classes"
+        descriptionText="At Tutorexel, we make learning guitar enjoyable, structured, and rewarding."
         showButton={false}
         features={tutoringFeatures}
       />
@@ -324,14 +327,14 @@ const MusicPage = () => {
       {/* Preparation matter section */}
       <div className="music-choose">
         <TrustSection
-          headingText="Why Choose Tutorexel Piano Lessons?"
+          headingText="Why Choose Tutorexel Guitar Lessons?"
           cardsData={whyPrepMatter}
         />
       </div>
 
       <FeatureSection
         imagePosition="right"
-        image={musiclearn}
+        image={guitarlearn}
         headingText="What You’ll Learn"
         descriptionText={
           <>
@@ -366,7 +369,7 @@ const MusicPage = () => {
 
       <div className="nap-matter">
         <TrustSection
-          headingText="Why Parents Love Tutorexel Piano"
+          headingText="Why Parents Love Tutorexel Guitar"
           cardsData={whyParent}
           length={3}
         />
@@ -449,4 +452,4 @@ const MusicPage = () => {
   );
 };
 
-export default MusicPage;
+export default GuitarPage;
